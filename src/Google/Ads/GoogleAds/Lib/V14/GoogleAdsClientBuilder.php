@@ -18,11 +18,12 @@
 
 namespace Google\Ads\GoogleAds\Lib\V14;
 
+use Google\Ads\GoogleAds\Lib\AbstractGoogleAdsBuilder;
 use Google\Ads\GoogleAds\Lib\Configuration;
 use Google\Ads\GoogleAds\Lib\ConfigurationLoader;
 use Google\Ads\GoogleAds\Lib\GoogleAdsBuilder;
-use Google\Ads\GoogleAds\Lib\AbstractGoogleAdsBuilder;
 use Google\Ads\GoogleAds\Lib\GoogleAdsMiddlewareAbstract;
+use Google\Ads\GoogleAds\Util\Dependencies;
 use Google\Ads\GoogleAds\Util\EnvironmentalVariables;
 use Google\ApiCore\GrpcSupportTrait;
 use Google\Auth\FetchAuthTokenInterface;
@@ -31,6 +32,7 @@ use Grpc\Interceptor;
 use InvalidArgumentException;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
+use UnexpectedValueException;
 
 /**
  * Builds Google Ads API clients.
@@ -43,6 +45,7 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
 
     private const DEFAULT_LOGGER_CHANNEL = 'google-ads';
     private const DEFAULT_GRPC_CHANNEL_IS_SECURE = true;
+    private const DEFAULT_USE_GAPIC_V2_SOURCE = false;
 
     private $loggerFactory;
 
@@ -57,9 +60,12 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
     private $transport;
     private $grpcChannelIsSecure;
     private $grpcChannelCredential;
+    private $useGapicV2Source;
     private $unaryMiddlewares = [];
     private $streamingMiddlewares = [];
     private $grpcInterceptors = [];
+    /** @var Dependencies $dependencies */
+    private $dependencies;
 
     public function __construct(
         ConfigurationLoader $configurationLoader = null,
@@ -104,6 +110,19 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
                     // Defaults when value is not a valid boolean.
                     [
                         'options' => ['default' => self::DEFAULT_GRPC_CHANNEL_IS_SECURE],
+                        'flags' => FILTER_NULL_ON_FAILURE
+                    ]
+                );
+        $this->useGapicV2Source =
+            is_null($configuration->getConfiguration('useGapicV2Source', 'GAPIC'))
+            || $configuration->getConfiguration('useGapicV2Source', 'GAPIC') === ""
+                ? self::DEFAULT_USE_GAPIC_V2_SOURCE
+                : filter_var(
+                    $configuration->getConfiguration('useGapicV2Source', 'GAPIC'),
+                    FILTER_VALIDATE_BOOLEAN,
+                    // Defaults when value is not a valid boolean.
+                    [
+                        'options' => ['default' => self::DEFAULT_USE_GAPIC_V2_SOURCE],
                         'flags' => FILTER_NULL_ON_FAILURE
                     ]
                 );
@@ -277,6 +296,18 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
     }
 
     /**
+     * Sets whether this library should use GAPIC v2 source code or not.
+     *
+     * @param bool $useGapicV2Source
+     * @return self this builder
+     */
+    public function usingGapicV2Source(bool $useGapicV2Source)
+    {
+        $this->useGapicV2Source = $useGapicV2Source;
+        return $this;
+    }
+
+    /**
      * Sets the unary middlewares for Google Ads API requests. They execute in order after the ones
      * defined by the library.
      *
@@ -316,6 +347,18 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
     }
 
     /**
+     * Sets the Dependencies utilities for this Google Ads client builder.
+     *
+     * @param Dependencies $dependencies
+     * @return self this builder
+     */
+    public function withDependencies(Dependencies $dependencies)
+    {
+        $this->dependencies = $dependencies;
+        return $this;
+    }
+
+    /**
      * @see GoogleAdsBuilder::build()
      *
      * @return GoogleAdsClient the created Google Ads client
@@ -333,7 +376,7 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
      */
     public function defaultOptionals()
     {
-        // No default optionals for this class.
+        $this->dependencies = $this->dependencies ?? new Dependencies();
     }
 
     /**
@@ -413,6 +456,21 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
         ) {
             throw new InvalidArgumentException(
                 'The gRPC channel credential can only be set when the transport is "grpc".'
+            );
+        }
+        // Check if the version of the grpc extension installed by Composer is greater than that of
+        // the extension installed as a system package, throw an exception to remind the user to
+        // upgrade.
+        $grpcPackageVersion = $this->dependencies->getGrpcSystemPackageVersion();
+        $grpcComposerVersion = $this->dependencies->getGrpcComposerVersion();
+        if (
+            !empty($grpcComposerVersion) && !empty($grpcPackageVersion)
+            && version_compare($grpcComposerVersion, $grpcPackageVersion, '>')
+        ) {
+            throw new UnexpectedValueException(
+                'The grpc extension installed by Composer has a greater version than that'
+                . ' installed by PECL. Upgrade the PECL extension to avoid issues caused by the'
+                . ' version difference. For linux, run "sudo pecl install grpc".'
             );
         }
     }
@@ -525,6 +583,16 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
     public function getGrpcChannelCredential()
     {
         return $this->grpcChannelCredential;
+    }
+
+    /**
+     * Returns true when this library is set to use GAPIC v2 source.
+     *
+     * @return bool
+     */
+    public function useGapicV2Source()
+    {
+        return $this->useGapicV2Source;
     }
 
     /**
