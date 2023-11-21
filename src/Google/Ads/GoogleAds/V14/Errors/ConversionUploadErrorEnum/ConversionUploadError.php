@@ -18,33 +18,33 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Upload fewer than 2001 events in a single request.
      *
      * Generated from protobuf enum <code>TOO_MANY_CONVERSIONS_IN_REQUEST = 2;</code>
      */
-    const TOO_MANY_CONVERSIONS_IN_REQUEST = 2;
+    public const TOO_MANY_CONVERSIONS_IN_REQUEST = 2;
     /**
      * The imported gclid could not be decoded. Make sure you have not modified
      * the click IDs.
      *
      * Generated from protobuf enum <code>UNPARSEABLE_GCLID = 3;</code>
      */
-    const UNPARSEABLE_GCLID = 3;
+    public const UNPARSEABLE_GCLID = 3;
     /**
      * The imported event has a `conversion_date_time` that precedes the click.
      * Make sure your `conversion_date_time` is correct and try again.
      *
      * Generated from protobuf enum <code>CONVERSION_PRECEDES_EVENT = 42;</code>
      */
-    const CONVERSION_PRECEDES_EVENT = 42;
+    public const CONVERSION_PRECEDES_EVENT = 42;
     /**
      * The imported event can't be recorded because its click occurred before
      * this conversion's click-through window. Make sure you import the most
@@ -52,21 +52,21 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>EXPIRED_EVENT = 43;</code>
      */
-    const EXPIRED_EVENT = 43;
+    public const EXPIRED_EVENT = 43;
     /**
      * The click associated with the given identifier or iOS URL parameter
      * occurred less than 6 hours ago. Retry after 6 hours have passed.
      *
      * Generated from protobuf enum <code>TOO_RECENT_EVENT = 44;</code>
      */
-    const TOO_RECENT_EVENT = 44;
+    public const TOO_RECENT_EVENT = 44;
     /**
      * The imported event could not be attributed to a click. This may be
      * because the event did not come from a Google Ads campaign.
      *
      * Generated from protobuf enum <code>EVENT_NOT_FOUND = 45;</code>
      */
-    const EVENT_NOT_FOUND = 45;
+    public const EVENT_NOT_FOUND = 45;
     /**
      * The click ID or call is associated with an Ads account you don't have
      * access to. Make sure you import conversions for accounts managed by your
@@ -74,28 +74,28 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>UNAUTHORIZED_CUSTOMER = 8;</code>
      */
-    const UNAUTHORIZED_CUSTOMER = 8;
+    public const UNAUTHORIZED_CUSTOMER = 8;
     /**
      * Make sure you specify a valid conversion action set up for offline
      * import.
      *
      * Generated from protobuf enum <code>INVALID_CONVERSION_ACTION = 9;</code>
      */
-    const INVALID_CONVERSION_ACTION = 9;
+    public const INVALID_CONVERSION_ACTION = 9;
     /**
      * Can't import events to a conversion action that was just created. Try
      * importing again in 6 hours.
      *
      * Generated from protobuf enum <code>TOO_RECENT_CONVERSION_ACTION = 10;</code>
      */
-    const TOO_RECENT_CONVERSION_ACTION = 10;
+    public const TOO_RECENT_CONVERSION_ACTION = 10;
     /**
      * At the time of the click, conversion tracking was not enabled in the
      * effective conversion account of the click's Google Ads account.
      *
      * Generated from protobuf enum <code>CONVERSION_TRACKING_NOT_ENABLED_AT_IMPRESSION_TIME = 11;</code>
      */
-    const CONVERSION_TRACKING_NOT_ENABLED_AT_IMPRESSION_TIME = 11;
+    public const CONVERSION_TRACKING_NOT_ENABLED_AT_IMPRESSION_TIME = 11;
     /**
      * The imported event includes external attribution data, but the conversion
      * action isn't set up to use an external attribution model. Make sure the
@@ -103,7 +103,7 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>EXTERNAL_ATTRIBUTION_DATA_SET_FOR_NON_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 12;</code>
      */
-    const EXTERNAL_ATTRIBUTION_DATA_SET_FOR_NON_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 12;
+    public const EXTERNAL_ATTRIBUTION_DATA_SET_FOR_NON_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 12;
     /**
      * The conversion action is set up to use an external attribution model, but
      * the imported event is missing data. Make sure imported events include the
@@ -111,7 +111,7 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>EXTERNAL_ATTRIBUTION_DATA_NOT_SET_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 13;</code>
      */
-    const EXTERNAL_ATTRIBUTION_DATA_NOT_SET_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 13;
+    public const EXTERNAL_ATTRIBUTION_DATA_NOT_SET_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 13;
     /**
      * Order IDs can't be used for a conversion measured with an external
      * attribution model. Make sure the conversion is correctly configured and
@@ -119,28 +119,28 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>ORDER_ID_NOT_PERMITTED_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 14;</code>
      */
-    const ORDER_ID_NOT_PERMITTED_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 14;
+    public const ORDER_ID_NOT_PERMITTED_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 14;
     /**
      * The imported event includes an order ID that was previously recorded, so
      * the event was not processed.
      *
      * Generated from protobuf enum <code>ORDER_ID_ALREADY_IN_USE = 15;</code>
      */
-    const ORDER_ID_ALREADY_IN_USE = 15;
+    public const ORDER_ID_ALREADY_IN_USE = 15;
     /**
      * Imported events include multiple conversions with the same order ID and
      * were not processed.  Make sure order IDs are unique and try again.
      *
      * Generated from protobuf enum <code>DUPLICATE_ORDER_ID = 16;</code>
      */
-    const DUPLICATE_ORDER_ID = 16;
+    public const DUPLICATE_ORDER_ID = 16;
     /**
      * Can't import calls that occurred less than 6 hours ago. Try uploading
      * again in 6 hours.
      *
      * Generated from protobuf enum <code>TOO_RECENT_CALL = 17;</code>
      */
-    const TOO_RECENT_CALL = 17;
+    public const TOO_RECENT_CALL = 17;
     /**
      * The call can't be recorded because it occurred before this conversion
      * action's lookback window. Make sure your import is configured to get the
@@ -148,35 +148,35 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>EXPIRED_CALL = 18;</code>
      */
-    const EXPIRED_CALL = 18;
+    public const EXPIRED_CALL = 18;
     /**
      * The call or click leading to the imported event can't be found. Make sure
      * your data source is set up to include correct identifiers.
      *
      * Generated from protobuf enum <code>CALL_NOT_FOUND = 19;</code>
      */
-    const CALL_NOT_FOUND = 19;
+    public const CALL_NOT_FOUND = 19;
     /**
      * The call has a `conversion_date_time` that precedes the associated click.
      * Make sure your `conversion_date_time` is correct.
      *
      * Generated from protobuf enum <code>CONVERSION_PRECEDES_CALL = 20;</code>
      */
-    const CONVERSION_PRECEDES_CALL = 20;
+    public const CONVERSION_PRECEDES_CALL = 20;
     /**
      * At the time of the imported call, conversion tracking was not enabled in
      * the effective conversion account of the click's Google Ads account.
      *
      * Generated from protobuf enum <code>CONVERSION_TRACKING_NOT_ENABLED_AT_CALL_TIME = 21;</code>
      */
-    const CONVERSION_TRACKING_NOT_ENABLED_AT_CALL_TIME = 21;
+    public const CONVERSION_TRACKING_NOT_ENABLED_AT_CALL_TIME = 21;
     /**
      * Make sure phone numbers are formatted as E.164 (+16502531234),
      * International (+64 3-331 6005), or US national number (6502531234).
      *
      * Generated from protobuf enum <code>UNPARSEABLE_CALLERS_PHONE_NUMBER = 22;</code>
      */
-    const UNPARSEABLE_CALLERS_PHONE_NUMBER = 22;
+    public const UNPARSEABLE_CALLERS_PHONE_NUMBER = 22;
     /**
      * The imported event has the same click and `conversion_date_time` as an
      * existing conversion. Use a unique `conversion_date_time` or order ID for
@@ -184,7 +184,7 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>CLICK_CONVERSION_ALREADY_EXISTS = 23;</code>
      */
-    const CLICK_CONVERSION_ALREADY_EXISTS = 23;
+    public const CLICK_CONVERSION_ALREADY_EXISTS = 23;
     /**
      * The imported call has the same `conversion_date_time` as an existing
      * conversion. Make sure your `conversion_date_time` correctly configured
@@ -192,27 +192,27 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>CALL_CONVERSION_ALREADY_EXISTS = 24;</code>
      */
-    const CALL_CONVERSION_ALREADY_EXISTS = 24;
+    public const CALL_CONVERSION_ALREADY_EXISTS = 24;
     /**
      * Multiple events have the same click and `conversion_date_time`. Make sure
      * your `conversion_date_time` is correctly configured and try again.
      *
      * Generated from protobuf enum <code>DUPLICATE_CLICK_CONVERSION_IN_REQUEST = 25;</code>
      */
-    const DUPLICATE_CLICK_CONVERSION_IN_REQUEST = 25;
+    public const DUPLICATE_CLICK_CONVERSION_IN_REQUEST = 25;
     /**
      * Multiple events have the same call and `conversion_date_time`. Make sure
      * your `conversion_date_time` is correctly configured and try again.
      *
      * Generated from protobuf enum <code>DUPLICATE_CALL_CONVERSION_IN_REQUEST = 26;</code>
      */
-    const DUPLICATE_CALL_CONVERSION_IN_REQUEST = 26;
+    public const DUPLICATE_CALL_CONVERSION_IN_REQUEST = 26;
     /**
      * Enable the custom variable in your conversion settings and try again.
      *
      * Generated from protobuf enum <code>CUSTOM_VARIABLE_NOT_ENABLED = 28;</code>
      */
-    const CUSTOM_VARIABLE_NOT_ENABLED = 28;
+    public const CUSTOM_VARIABLE_NOT_ENABLED = 28;
     /**
      * Can't import events with custom variables containing
      * personally-identifiable information (PII). Remove these variables and try
@@ -220,14 +220,14 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>CUSTOM_VARIABLE_VALUE_CONTAINS_PII = 29;</code>
      */
-    const CUSTOM_VARIABLE_VALUE_CONTAINS_PII = 29;
+    public const CUSTOM_VARIABLE_VALUE_CONTAINS_PII = 29;
     /**
      * The click from the imported event is associated with a different Google
      * Ads account. Make sure you're importing to the correct account.
      *
      * Generated from protobuf enum <code>INVALID_CUSTOMER_FOR_CLICK = 30;</code>
      */
-    const INVALID_CUSTOMER_FOR_CLICK = 30;
+    public const INVALID_CUSTOMER_FOR_CLICK = 30;
     /**
      * The click from the call is associated with a different Google Ads
      * account. Make sure you're importing to the correct account. Query
@@ -236,7 +236,7 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>INVALID_CUSTOMER_FOR_CALL = 31;</code>
      */
-    const INVALID_CUSTOMER_FOR_CALL = 31;
+    public const INVALID_CUSTOMER_FOR_CALL = 31;
     /**
      * The connversion can't be imported because the conversion source didn't
      * comply with Apple App Transparency Tracking (ATT) policies or because the
@@ -244,69 +244,69 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>CONVERSION_NOT_COMPLIANT_WITH_ATT_POLICY = 32;</code>
      */
-    const CONVERSION_NOT_COMPLIANT_WITH_ATT_POLICY = 32;
+    public const CONVERSION_NOT_COMPLIANT_WITH_ATT_POLICY = 32;
     /**
      * The click can't be found for the specified identifiers. This may be
      * because it did not come from a Google Ads campaign.
      *
      * Generated from protobuf enum <code>CLICK_NOT_FOUND = 33;</code>
      */
-    const CLICK_NOT_FOUND = 33;
+    public const CLICK_NOT_FOUND = 33;
     /**
      * Make sure you hash user provided data using SHA-256 and ensure you are
      * normalizing according to the guidelines.
      *
      * Generated from protobuf enum <code>INVALID_USER_IDENTIFIER = 34;</code>
      */
-    const INVALID_USER_IDENTIFIER = 34;
+    public const INVALID_USER_IDENTIFIER = 34;
     /**
      * User provided data can't be used with external attribution models. Use a
      * different attribution model or omit user identifiers and try again.
      *
      * Generated from protobuf enum <code>EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION_NOT_PERMITTED_WITH_USER_IDENTIFIER = 35;</code>
      */
-    const EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION_NOT_PERMITTED_WITH_USER_IDENTIFIER = 35;
+    public const EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION_NOT_PERMITTED_WITH_USER_IDENTIFIER = 35;
     /**
      * The provided user identifiers are not supported. Use only hashed email
      * or phone number and try again.
      *
      * Generated from protobuf enum <code>UNSUPPORTED_USER_IDENTIFIER = 36;</code>
      */
-    const UNSUPPORTED_USER_IDENTIFIER = 36;
+    public const UNSUPPORTED_USER_IDENTIFIER = 36;
     /**
      * Can't use both gbraid and wbraid parameters. Use only 1 and try again.
      *
      * Generated from protobuf enum <code>GBRAID_WBRAID_BOTH_SET = 38;</code>
      */
-    const GBRAID_WBRAID_BOTH_SET = 38;
+    public const GBRAID_WBRAID_BOTH_SET = 38;
     /**
      * Can't parse event import data. Check if your wbraid parameter was
      * not modified and try again.
      *
      * Generated from protobuf enum <code>UNPARSEABLE_WBRAID = 39;</code>
      */
-    const UNPARSEABLE_WBRAID = 39;
+    public const UNPARSEABLE_WBRAID = 39;
     /**
      * Can't parse event import data. Check if your gbraid parameter was
      * not modified and try again.
      *
      * Generated from protobuf enum <code>UNPARSEABLE_GBRAID = 40;</code>
      */
-    const UNPARSEABLE_GBRAID = 40;
+    public const UNPARSEABLE_GBRAID = 40;
     /**
      * Conversion actions that use one-per-click counting can't be used with
      * gbraid or wbraid parameters.
      *
      * Generated from protobuf enum <code>ONE_PER_CLICK_CONVERSION_ACTION_NOT_PERMITTED_WITH_BRAID = 46;</code>
      */
-    const ONE_PER_CLICK_CONVERSION_ACTION_NOT_PERMITTED_WITH_BRAID = 46;
+    public const ONE_PER_CLICK_CONVERSION_ACTION_NOT_PERMITTED_WITH_BRAID = 46;
     /**
      * Enhanced conversions can't be used for this account because of Google
      * customer data policies. Contact your Google representative.
      *
      * Generated from protobuf enum <code>CUSTOMER_DATA_POLICY_PROHIBITS_ENHANCED_CONVERSIONS = 47;</code>
      */
-    const CUSTOMER_DATA_POLICY_PROHIBITS_ENHANCED_CONVERSIONS = 47;
+    public const CUSTOMER_DATA_POLICY_PROHIBITS_ENHANCED_CONVERSIONS = 47;
     /**
      * Make sure you agree to the customer data processing terms in conversion
      * settings and try again. You can check your setting by querying
@@ -314,14 +314,14 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS = 48;</code>
      */
-    const CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS = 48;
+    public const CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS = 48;
     /**
      * Can't import events with order IDs containing personally-identifiable
      * information (PII).
      *
      * Generated from protobuf enum <code>ORDER_ID_CONTAINS_PII = 49;</code>
      */
-    const ORDER_ID_CONTAINS_PII = 49;
+    public const ORDER_ID_CONTAINS_PII = 49;
     /**
      * Make sure you've turned on enhanced conversions for leads in conversion
      * settings and try again. You can check your setting by querying
@@ -330,9 +330,9 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>CUSTOMER_NOT_ENABLED_ENHANCED_CONVERSIONS_FOR_LEADS = 50;</code>
      */
-    const CUSTOMER_NOT_ENABLED_ENHANCED_CONVERSIONS_FOR_LEADS = 50;
+    public const CUSTOMER_NOT_ENABLED_ENHANCED_CONVERSIONS_FOR_LEADS = 50;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::TOO_MANY_CONVERSIONS_IN_REQUEST => 'TOO_MANY_CONVERSIONS_IN_REQUEST',
@@ -383,7 +383,7 @@ class ConversionUploadError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -391,10 +391,10 @@ class ConversionUploadError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -18,27 +18,27 @@ class CallType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The phone call was manually dialed.
      *
      * Generated from protobuf enum <code>MANUALLY_DIALED = 2;</code>
      */
-    const MANUALLY_DIALED = 2;
+    public const MANUALLY_DIALED = 2;
     /**
      * The phone call was a mobile click-to-call.
      *
      * Generated from protobuf enum <code>HIGH_END_MOBILE_SEARCH = 3;</code>
      */
-    const HIGH_END_MOBILE_SEARCH = 3;
+    public const HIGH_END_MOBILE_SEARCH = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::MANUALLY_DIALED => 'MANUALLY_DIALED',
@@ -49,7 +49,7 @@ class CallType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -57,10 +57,10 @@ class CallType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

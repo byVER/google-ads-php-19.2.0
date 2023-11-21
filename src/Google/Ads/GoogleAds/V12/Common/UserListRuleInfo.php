@@ -88,7 +88,7 @@ class UserListRuleInfo extends \Google\Protobuf\Internal\Message
      */
     public function setRuleType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\UserListRuleTypeEnum\UserListRuleType::class);
+        GPBUtil::checkEnum($var);
         $this->rule_type = $var;
 
         return $this;

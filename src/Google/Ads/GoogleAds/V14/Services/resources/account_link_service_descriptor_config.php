@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.AccountLinkService' => [
             'CreateAccountLink' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\CreateAccountLinkResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\CreateAccountLinkResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',
@@ -17,7 +17,7 @@ return [
             ],
             'MutateAccountLink' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateAccountLinkResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateAccountLinkResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

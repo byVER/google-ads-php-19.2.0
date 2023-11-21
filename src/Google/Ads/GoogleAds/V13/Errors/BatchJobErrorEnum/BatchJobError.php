@@ -18,52 +18,52 @@ class BatchJobError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The batch job cannot add more operations or run after it has started
      * running.
      *
      * Generated from protobuf enum <code>CANNOT_MODIFY_JOB_AFTER_JOB_STARTS_RUNNING = 2;</code>
      */
-    const CANNOT_MODIFY_JOB_AFTER_JOB_STARTS_RUNNING = 2;
+    public const CANNOT_MODIFY_JOB_AFTER_JOB_STARTS_RUNNING = 2;
     /**
      * The operations for an AddBatchJobOperations request were empty.
      *
      * Generated from protobuf enum <code>EMPTY_OPERATIONS = 3;</code>
      */
-    const EMPTY_OPERATIONS = 3;
+    public const EMPTY_OPERATIONS = 3;
     /**
      * The sequence token for an AddBatchJobOperations request was invalid.
      *
      * Generated from protobuf enum <code>INVALID_SEQUENCE_TOKEN = 4;</code>
      */
-    const INVALID_SEQUENCE_TOKEN = 4;
+    public const INVALID_SEQUENCE_TOKEN = 4;
     /**
      * Batch job results can only be retrieved once the job is finished.
      *
      * Generated from protobuf enum <code>RESULTS_NOT_READY = 5;</code>
      */
-    const RESULTS_NOT_READY = 5;
+    public const RESULTS_NOT_READY = 5;
     /**
      * The page size for ListBatchJobResults was invalid.
      *
      * Generated from protobuf enum <code>INVALID_PAGE_SIZE = 6;</code>
      */
-    const INVALID_PAGE_SIZE = 6;
+    public const INVALID_PAGE_SIZE = 6;
     /**
      * The batch job cannot be removed because it has started running.
      *
      * Generated from protobuf enum <code>CAN_ONLY_REMOVE_PENDING_JOB = 7;</code>
      */
-    const CAN_ONLY_REMOVE_PENDING_JOB = 7;
+    public const CAN_ONLY_REMOVE_PENDING_JOB = 7;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CANNOT_MODIFY_JOB_AFTER_JOB_STARTS_RUNNING => 'CANNOT_MODIFY_JOB_AFTER_JOB_STARTS_RUNNING',
@@ -78,7 +78,7 @@ class BatchJobError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -86,10 +86,10 @@ class BatchJobError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

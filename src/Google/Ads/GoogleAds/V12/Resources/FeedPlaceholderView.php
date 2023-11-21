@@ -99,7 +99,7 @@ class FeedPlaceholderView extends \Google\Protobuf\Internal\Message
      */
     public function setPlaceholderType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\PlaceholderTypeEnum\PlaceholderType::class);
+        GPBUtil::checkEnum($var);
         $this->placeholder_type = $var;
 
         return $this;

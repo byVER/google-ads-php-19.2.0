@@ -18,51 +18,51 @@ class AdStrength
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The ad strength is currently pending.
      *
      * Generated from protobuf enum <code>PENDING = 2;</code>
      */
-    const PENDING = 2;
+    public const PENDING = 2;
     /**
      * No ads could be generated.
      *
      * Generated from protobuf enum <code>NO_ADS = 3;</code>
      */
-    const NO_ADS = 3;
+    public const NO_ADS = 3;
     /**
      * Poor strength.
      *
      * Generated from protobuf enum <code>POOR = 4;</code>
      */
-    const POOR = 4;
+    public const POOR = 4;
     /**
      * Average strength.
      *
      * Generated from protobuf enum <code>AVERAGE = 5;</code>
      */
-    const AVERAGE = 5;
+    public const AVERAGE = 5;
     /**
      * Good strength.
      *
      * Generated from protobuf enum <code>GOOD = 6;</code>
      */
-    const GOOD = 6;
+    public const GOOD = 6;
     /**
      * Excellent strength.
      *
      * Generated from protobuf enum <code>EXCELLENT = 7;</code>
      */
-    const EXCELLENT = 7;
+    public const EXCELLENT = 7;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::PENDING => 'PENDING',
@@ -77,7 +77,7 @@ class AdStrength
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -85,10 +85,10 @@ class AdStrength
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

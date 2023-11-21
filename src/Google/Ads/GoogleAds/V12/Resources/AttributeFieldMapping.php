@@ -104,7 +104,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function getFeedAttributeId()
     {
-        return isset($this->feed_attribute_id) ? $this->feed_attribute_id : 0;
+        return $this->feed_attribute_id ?? 0;
     }
 
     public function hasFeedAttributeId()
@@ -143,7 +143,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function getFieldId()
     {
-        return isset($this->field_id) ? $this->field_id : 0;
+        return $this->field_id ?? 0;
     }
 
     public function hasFieldId()
@@ -199,7 +199,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setSitelinkField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\SitelinkPlaceholderFieldEnum\SitelinkPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(3, $var);
 
         return $this;
@@ -230,7 +230,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setCallField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\CallPlaceholderFieldEnum\CallPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(4, $var);
 
         return $this;
@@ -261,7 +261,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setAppField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AppPlaceholderFieldEnum\AppPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(5, $var);
 
         return $this;
@@ -292,7 +292,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setLocationField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\LocationPlaceholderFieldEnum\LocationPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(6, $var);
 
         return $this;
@@ -323,7 +323,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setAffiliateLocationField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AffiliateLocationPlaceholderFieldEnum\AffiliateLocationPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(7, $var);
 
         return $this;
@@ -354,7 +354,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setCalloutField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\CalloutPlaceholderFieldEnum\CalloutPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(8, $var);
 
         return $this;
@@ -385,7 +385,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setStructuredSnippetField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\StructuredSnippetPlaceholderFieldEnum\StructuredSnippetPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(9, $var);
 
         return $this;
@@ -416,7 +416,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setMessageField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\MessagePlaceholderFieldEnum\MessagePlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(10, $var);
 
         return $this;
@@ -447,7 +447,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setPriceField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\PricePlaceholderFieldEnum\PricePlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(11, $var);
 
         return $this;
@@ -478,7 +478,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setPromotionField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\PromotionPlaceholderFieldEnum\PromotionPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(12, $var);
 
         return $this;
@@ -509,7 +509,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setAdCustomizerField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AdCustomizerPlaceholderFieldEnum\AdCustomizerPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(13, $var);
 
         return $this;
@@ -540,7 +540,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setDsaPageFeedField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\DsaPageFeedCriterionFieldEnum\DsaPageFeedCriterionField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(14, $var);
 
         return $this;
@@ -571,7 +571,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setLocationExtensionTargetingField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\LocationExtensionTargetingCriterionFieldEnum\LocationExtensionTargetingCriterionField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(15, $var);
 
         return $this;
@@ -602,7 +602,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setEducationField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\EducationPlaceholderFieldEnum\EducationPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(16, $var);
 
         return $this;
@@ -633,7 +633,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setFlightField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FlightPlaceholderFieldEnum\FlightPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(17, $var);
 
         return $this;
@@ -664,7 +664,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setCustomField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\CustomPlaceholderFieldEnum\CustomPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(18, $var);
 
         return $this;
@@ -695,7 +695,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setHotelField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\HotelPlaceholderFieldEnum\HotelPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(19, $var);
 
         return $this;
@@ -726,7 +726,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setRealEstateField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\RealEstatePlaceholderFieldEnum\RealEstatePlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(20, $var);
 
         return $this;
@@ -757,7 +757,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setTravelField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\TravelPlaceholderFieldEnum\TravelPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(21, $var);
 
         return $this;
@@ -788,7 +788,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setLocalField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\LocalPlaceholderFieldEnum\LocalPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(22, $var);
 
         return $this;
@@ -819,7 +819,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setJobField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\JobPlaceholderFieldEnum\JobPlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(23, $var);
 
         return $this;
@@ -850,7 +850,7 @@ class AttributeFieldMapping extends \Google\Protobuf\Internal\Message
      */
     public function setImageField($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\ImagePlaceholderFieldEnum\ImagePlaceholderField::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(26, $var);
 
         return $this;

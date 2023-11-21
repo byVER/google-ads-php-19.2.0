@@ -112,7 +112,7 @@ class CallConversion extends \Google\Protobuf\Internal\Message
      */
     public function getCallerId()
     {
-        return isset($this->caller_id) ? $this->caller_id : '';
+        return $this->caller_id ?? '';
     }
 
     public function hasCallerId()
@@ -151,7 +151,7 @@ class CallConversion extends \Google\Protobuf\Internal\Message
      */
     public function getCallStartDateTime()
     {
-        return isset($this->call_start_date_time) ? $this->call_start_date_time : '';
+        return $this->call_start_date_time ?? '';
     }
 
     public function hasCallStartDateTime()
@@ -192,7 +192,7 @@ class CallConversion extends \Google\Protobuf\Internal\Message
      */
     public function getConversionAction()
     {
-        return isset($this->conversion_action) ? $this->conversion_action : '';
+        return $this->conversion_action ?? '';
     }
 
     public function hasConversionAction()
@@ -233,7 +233,7 @@ class CallConversion extends \Google\Protobuf\Internal\Message
      */
     public function getConversionDateTime()
     {
-        return isset($this->conversion_date_time) ? $this->conversion_date_time : '';
+        return $this->conversion_date_time ?? '';
     }
 
     public function hasConversionDateTime()
@@ -271,7 +271,7 @@ class CallConversion extends \Google\Protobuf\Internal\Message
      */
     public function getConversionValue()
     {
-        return isset($this->conversion_value) ? $this->conversion_value : 0.0;
+        return $this->conversion_value ?? 0.0;
     }
 
     public function hasConversionValue()
@@ -308,7 +308,7 @@ class CallConversion extends \Google\Protobuf\Internal\Message
      */
     public function getCurrencyCode()
     {
-        return isset($this->currency_code) ? $this->currency_code : '';
+        return $this->currency_code ?? '';
     }
 
     public function hasCurrencyCode()

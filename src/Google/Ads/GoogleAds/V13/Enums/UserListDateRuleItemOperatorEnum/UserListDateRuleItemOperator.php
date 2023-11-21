@@ -18,39 +18,39 @@ class UserListDateRuleItemOperator
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Equals.
      *
      * Generated from protobuf enum <code>EQUALS = 2;</code>
      */
-    const EQUALS = 2;
+    public const EQUALS = 2;
     /**
      * Not Equals.
      *
      * Generated from protobuf enum <code>NOT_EQUALS = 3;</code>
      */
-    const NOT_EQUALS = 3;
+    public const NOT_EQUALS = 3;
     /**
      * Before.
      *
      * Generated from protobuf enum <code>BEFORE = 4;</code>
      */
-    const BEFORE = 4;
+    public const BEFORE = 4;
     /**
      * After.
      *
      * Generated from protobuf enum <code>AFTER = 5;</code>
      */
-    const AFTER = 5;
+    public const AFTER = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::EQUALS => 'EQUALS',
@@ -63,7 +63,7 @@ class UserListDateRuleItemOperator
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -71,10 +71,10 @@ class UserListDateRuleItemOperator
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

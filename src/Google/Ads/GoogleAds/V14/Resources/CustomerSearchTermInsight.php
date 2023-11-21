@@ -99,7 +99,7 @@ class CustomerSearchTermInsight extends \Google\Protobuf\Internal\Message
      */
     public function getCategoryLabel()
     {
-        return isset($this->category_label) ? $this->category_label : '';
+        return $this->category_label ?? '';
     }
 
     public function hasCategoryLabel()
@@ -136,7 +136,7 @@ class CustomerSearchTermInsight extends \Google\Protobuf\Internal\Message
      */
     public function getId()
     {
-        return isset($this->id) ? $this->id : 0;
+        return $this->id ?? 0;
     }
 
     public function hasId()

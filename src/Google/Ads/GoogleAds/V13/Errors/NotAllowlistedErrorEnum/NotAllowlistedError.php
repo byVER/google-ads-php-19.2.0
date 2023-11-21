@@ -18,21 +18,21 @@ class NotAllowlistedError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Customer is not allowlisted for accessing this feature.
      *
      * Generated from protobuf enum <code>CUSTOMER_NOT_ALLOWLISTED_FOR_THIS_FEATURE = 2;</code>
      */
-    const CUSTOMER_NOT_ALLOWLISTED_FOR_THIS_FEATURE = 2;
+    public const CUSTOMER_NOT_ALLOWLISTED_FOR_THIS_FEATURE = 2;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CUSTOMER_NOT_ALLOWLISTED_FOR_THIS_FEATURE => 'CUSTOMER_NOT_ALLOWLISTED_FOR_THIS_FEATURE',
@@ -42,7 +42,7 @@ class NotAllowlistedError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -50,10 +50,10 @@ class NotAllowlistedError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

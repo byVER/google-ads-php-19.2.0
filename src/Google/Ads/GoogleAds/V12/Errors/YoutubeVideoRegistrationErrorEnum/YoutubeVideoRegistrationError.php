@@ -18,33 +18,33 @@ class YoutubeVideoRegistrationError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Video to be registered wasn't found.
      *
      * Generated from protobuf enum <code>VIDEO_NOT_FOUND = 2;</code>
      */
-    const VIDEO_NOT_FOUND = 2;
+    public const VIDEO_NOT_FOUND = 2;
     /**
      * Video to be registered is not accessible (for example, private).
      *
      * Generated from protobuf enum <code>VIDEO_NOT_ACCESSIBLE = 3;</code>
      */
-    const VIDEO_NOT_ACCESSIBLE = 3;
+    public const VIDEO_NOT_ACCESSIBLE = 3;
     /**
      * Video to be registered is not eligible (for example, mature content).
      *
      * Generated from protobuf enum <code>VIDEO_NOT_ELIGIBLE = 4;</code>
      */
-    const VIDEO_NOT_ELIGIBLE = 4;
+    public const VIDEO_NOT_ELIGIBLE = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::VIDEO_NOT_FOUND => 'VIDEO_NOT_FOUND',
@@ -56,7 +56,7 @@ class YoutubeVideoRegistrationError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -64,10 +64,10 @@ class YoutubeVideoRegistrationError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

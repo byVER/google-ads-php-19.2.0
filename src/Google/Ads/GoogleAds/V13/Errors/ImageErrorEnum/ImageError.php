@@ -18,236 +18,236 @@ class ImageError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The image is not valid.
      *
      * Generated from protobuf enum <code>INVALID_IMAGE = 2;</code>
      */
-    const INVALID_IMAGE = 2;
+    public const INVALID_IMAGE = 2;
     /**
      * The image could not be stored.
      *
      * Generated from protobuf enum <code>STORAGE_ERROR = 3;</code>
      */
-    const STORAGE_ERROR = 3;
+    public const STORAGE_ERROR = 3;
     /**
      * There was a problem with the request.
      *
      * Generated from protobuf enum <code>BAD_REQUEST = 4;</code>
      */
-    const BAD_REQUEST = 4;
+    public const BAD_REQUEST = 4;
     /**
      * The image is not of legal dimensions.
      *
      * Generated from protobuf enum <code>UNEXPECTED_SIZE = 5;</code>
      */
-    const UNEXPECTED_SIZE = 5;
+    public const UNEXPECTED_SIZE = 5;
     /**
      * Animated image are not permitted.
      *
      * Generated from protobuf enum <code>ANIMATED_NOT_ALLOWED = 6;</code>
      */
-    const ANIMATED_NOT_ALLOWED = 6;
+    public const ANIMATED_NOT_ALLOWED = 6;
     /**
      * Animation is too long.
      *
      * Generated from protobuf enum <code>ANIMATION_TOO_LONG = 7;</code>
      */
-    const ANIMATION_TOO_LONG = 7;
+    public const ANIMATION_TOO_LONG = 7;
     /**
      * There was an error on the server.
      *
      * Generated from protobuf enum <code>SERVER_ERROR = 8;</code>
      */
-    const SERVER_ERROR = 8;
+    public const SERVER_ERROR = 8;
     /**
      * Image cannot be in CMYK color format.
      *
      * Generated from protobuf enum <code>CMYK_JPEG_NOT_ALLOWED = 9;</code>
      */
-    const CMYK_JPEG_NOT_ALLOWED = 9;
+    public const CMYK_JPEG_NOT_ALLOWED = 9;
     /**
      * Flash images are not permitted.
      *
      * Generated from protobuf enum <code>FLASH_NOT_ALLOWED = 10;</code>
      */
-    const FLASH_NOT_ALLOWED = 10;
+    public const FLASH_NOT_ALLOWED = 10;
     /**
      * Flash images must support clickTag.
      *
      * Generated from protobuf enum <code>FLASH_WITHOUT_CLICKTAG = 11;</code>
      */
-    const FLASH_WITHOUT_CLICKTAG = 11;
+    public const FLASH_WITHOUT_CLICKTAG = 11;
     /**
      * A flash error has occurred after fixing the click tag.
      *
      * Generated from protobuf enum <code>FLASH_ERROR_AFTER_FIXING_CLICK_TAG = 12;</code>
      */
-    const FLASH_ERROR_AFTER_FIXING_CLICK_TAG = 12;
+    public const FLASH_ERROR_AFTER_FIXING_CLICK_TAG = 12;
     /**
      * Unacceptable visual effects.
      *
      * Generated from protobuf enum <code>ANIMATED_VISUAL_EFFECT = 13;</code>
      */
-    const ANIMATED_VISUAL_EFFECT = 13;
+    public const ANIMATED_VISUAL_EFFECT = 13;
     /**
      * There was a problem with the flash image.
      *
      * Generated from protobuf enum <code>FLASH_ERROR = 14;</code>
      */
-    const FLASH_ERROR = 14;
+    public const FLASH_ERROR = 14;
     /**
      * Incorrect image layout.
      *
      * Generated from protobuf enum <code>LAYOUT_PROBLEM = 15;</code>
      */
-    const LAYOUT_PROBLEM = 15;
+    public const LAYOUT_PROBLEM = 15;
     /**
      * There was a problem reading the image file.
      *
      * Generated from protobuf enum <code>PROBLEM_READING_IMAGE_FILE = 16;</code>
      */
-    const PROBLEM_READING_IMAGE_FILE = 16;
+    public const PROBLEM_READING_IMAGE_FILE = 16;
     /**
      * There was an error storing the image.
      *
      * Generated from protobuf enum <code>ERROR_STORING_IMAGE = 17;</code>
      */
-    const ERROR_STORING_IMAGE = 17;
+    public const ERROR_STORING_IMAGE = 17;
     /**
      * The aspect ratio of the image is not allowed.
      *
      * Generated from protobuf enum <code>ASPECT_RATIO_NOT_ALLOWED = 18;</code>
      */
-    const ASPECT_RATIO_NOT_ALLOWED = 18;
+    public const ASPECT_RATIO_NOT_ALLOWED = 18;
     /**
      * Flash cannot have network objects.
      *
      * Generated from protobuf enum <code>FLASH_HAS_NETWORK_OBJECTS = 19;</code>
      */
-    const FLASH_HAS_NETWORK_OBJECTS = 19;
+    public const FLASH_HAS_NETWORK_OBJECTS = 19;
     /**
      * Flash cannot have network methods.
      *
      * Generated from protobuf enum <code>FLASH_HAS_NETWORK_METHODS = 20;</code>
      */
-    const FLASH_HAS_NETWORK_METHODS = 20;
+    public const FLASH_HAS_NETWORK_METHODS = 20;
     /**
      * Flash cannot have a Url.
      *
      * Generated from protobuf enum <code>FLASH_HAS_URL = 21;</code>
      */
-    const FLASH_HAS_URL = 21;
+    public const FLASH_HAS_URL = 21;
     /**
      * Flash cannot use mouse tracking.
      *
      * Generated from protobuf enum <code>FLASH_HAS_MOUSE_TRACKING = 22;</code>
      */
-    const FLASH_HAS_MOUSE_TRACKING = 22;
+    public const FLASH_HAS_MOUSE_TRACKING = 22;
     /**
      * Flash cannot have a random number.
      *
      * Generated from protobuf enum <code>FLASH_HAS_RANDOM_NUM = 23;</code>
      */
-    const FLASH_HAS_RANDOM_NUM = 23;
+    public const FLASH_HAS_RANDOM_NUM = 23;
     /**
      * Ad click target cannot be '_self'.
      *
      * Generated from protobuf enum <code>FLASH_SELF_TARGETS = 24;</code>
      */
-    const FLASH_SELF_TARGETS = 24;
+    public const FLASH_SELF_TARGETS = 24;
     /**
      * GetUrl method should only use '_blank'.
      *
      * Generated from protobuf enum <code>FLASH_BAD_GETURL_TARGET = 25;</code>
      */
-    const FLASH_BAD_GETURL_TARGET = 25;
+    public const FLASH_BAD_GETURL_TARGET = 25;
     /**
      * Flash version is not supported.
      *
      * Generated from protobuf enum <code>FLASH_VERSION_NOT_SUPPORTED = 26;</code>
      */
-    const FLASH_VERSION_NOT_SUPPORTED = 26;
+    public const FLASH_VERSION_NOT_SUPPORTED = 26;
     /**
      * Flash movies need to have hard coded click URL or clickTAG
      *
      * Generated from protobuf enum <code>FLASH_WITHOUT_HARD_CODED_CLICK_URL = 27;</code>
      */
-    const FLASH_WITHOUT_HARD_CODED_CLICK_URL = 27;
+    public const FLASH_WITHOUT_HARD_CODED_CLICK_URL = 27;
     /**
      * Uploaded flash file is corrupted.
      *
      * Generated from protobuf enum <code>INVALID_FLASH_FILE = 28;</code>
      */
-    const INVALID_FLASH_FILE = 28;
+    public const INVALID_FLASH_FILE = 28;
     /**
      * Uploaded flash file can be parsed, but the click tag can not be fixed
      * properly.
      *
      * Generated from protobuf enum <code>FAILED_TO_FIX_CLICK_TAG_IN_FLASH = 29;</code>
      */
-    const FAILED_TO_FIX_CLICK_TAG_IN_FLASH = 29;
+    public const FAILED_TO_FIX_CLICK_TAG_IN_FLASH = 29;
     /**
      * Flash movie accesses network resources
      *
      * Generated from protobuf enum <code>FLASH_ACCESSES_NETWORK_RESOURCES = 30;</code>
      */
-    const FLASH_ACCESSES_NETWORK_RESOURCES = 30;
+    public const FLASH_ACCESSES_NETWORK_RESOURCES = 30;
     /**
      * Flash movie attempts to call external javascript code
      *
      * Generated from protobuf enum <code>FLASH_EXTERNAL_JS_CALL = 31;</code>
      */
-    const FLASH_EXTERNAL_JS_CALL = 31;
+    public const FLASH_EXTERNAL_JS_CALL = 31;
     /**
      * Flash movie attempts to call flash system commands
      *
      * Generated from protobuf enum <code>FLASH_EXTERNAL_FS_CALL = 32;</code>
      */
-    const FLASH_EXTERNAL_FS_CALL = 32;
+    public const FLASH_EXTERNAL_FS_CALL = 32;
     /**
      * Image file is too large.
      *
      * Generated from protobuf enum <code>FILE_TOO_LARGE = 33;</code>
      */
-    const FILE_TOO_LARGE = 33;
+    public const FILE_TOO_LARGE = 33;
     /**
      * Image data is too large.
      *
      * Generated from protobuf enum <code>IMAGE_DATA_TOO_LARGE = 34;</code>
      */
-    const IMAGE_DATA_TOO_LARGE = 34;
+    public const IMAGE_DATA_TOO_LARGE = 34;
     /**
      * Error while processing the image.
      *
      * Generated from protobuf enum <code>IMAGE_PROCESSING_ERROR = 35;</code>
      */
-    const IMAGE_PROCESSING_ERROR = 35;
+    public const IMAGE_PROCESSING_ERROR = 35;
     /**
      * Image is too small.
      *
      * Generated from protobuf enum <code>IMAGE_TOO_SMALL = 36;</code>
      */
-    const IMAGE_TOO_SMALL = 36;
+    public const IMAGE_TOO_SMALL = 36;
     /**
      * Input was invalid.
      *
      * Generated from protobuf enum <code>INVALID_INPUT = 37;</code>
      */
-    const INVALID_INPUT = 37;
+    public const INVALID_INPUT = 37;
     /**
      * There was a problem reading the image file.
      *
      * Generated from protobuf enum <code>PROBLEM_READING_FILE = 38;</code>
      */
-    const PROBLEM_READING_FILE = 38;
+    public const PROBLEM_READING_FILE = 38;
     /**
      * Image constraints are violated, but details like ASPECT_RATIO_NOT_ALLOWED
      * can't be provided. This happens when asset spec contains more than one
@@ -255,15 +255,15 @@ class ImageError
      *
      * Generated from protobuf enum <code>IMAGE_CONSTRAINTS_VIOLATED = 39;</code>
      */
-    const IMAGE_CONSTRAINTS_VIOLATED = 39;
+    public const IMAGE_CONSTRAINTS_VIOLATED = 39;
     /**
      * Image format is not allowed.
      *
      * Generated from protobuf enum <code>FORMAT_NOT_ALLOWED = 40;</code>
      */
-    const FORMAT_NOT_ALLOWED = 40;
+    public const FORMAT_NOT_ALLOWED = 40;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INVALID_IMAGE => 'INVALID_IMAGE',
@@ -311,7 +311,7 @@ class ImageError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -319,10 +319,10 @@ class ImageError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

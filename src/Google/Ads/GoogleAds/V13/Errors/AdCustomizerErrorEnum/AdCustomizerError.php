@@ -18,45 +18,45 @@ class AdCustomizerError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Invalid date argument in countdown function.
      *
      * Generated from protobuf enum <code>COUNTDOWN_INVALID_DATE_FORMAT = 2;</code>
      */
-    const COUNTDOWN_INVALID_DATE_FORMAT = 2;
+    public const COUNTDOWN_INVALID_DATE_FORMAT = 2;
     /**
      * Countdown end date is in the past.
      *
      * Generated from protobuf enum <code>COUNTDOWN_DATE_IN_PAST = 3;</code>
      */
-    const COUNTDOWN_DATE_IN_PAST = 3;
+    public const COUNTDOWN_DATE_IN_PAST = 3;
     /**
      * Invalid locale string in countdown function.
      *
      * Generated from protobuf enum <code>COUNTDOWN_INVALID_LOCALE = 4;</code>
      */
-    const COUNTDOWN_INVALID_LOCALE = 4;
+    public const COUNTDOWN_INVALID_LOCALE = 4;
     /**
      * Days-before argument to countdown function is not positive.
      *
      * Generated from protobuf enum <code>COUNTDOWN_INVALID_START_DAYS_BEFORE = 5;</code>
      */
-    const COUNTDOWN_INVALID_START_DAYS_BEFORE = 5;
+    public const COUNTDOWN_INVALID_START_DAYS_BEFORE = 5;
     /**
      * A user list referenced in an IF function does not exist.
      *
      * Generated from protobuf enum <code>UNKNOWN_USER_LIST = 6;</code>
      */
-    const UNKNOWN_USER_LIST = 6;
+    public const UNKNOWN_USER_LIST = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::COUNTDOWN_INVALID_DATE_FORMAT => 'COUNTDOWN_INVALID_DATE_FORMAT',
@@ -70,7 +70,7 @@ class AdCustomizerError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -78,10 +78,10 @@ class AdCustomizerError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

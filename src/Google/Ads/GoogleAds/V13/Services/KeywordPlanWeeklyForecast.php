@@ -53,7 +53,7 @@ class KeywordPlanWeeklyForecast extends \Google\Protobuf\Internal\Message
      */
     public function getStartDate()
     {
-        return isset($this->start_date) ? $this->start_date : '';
+        return $this->start_date ?? '';
     }
 
     public function hasStartDate()

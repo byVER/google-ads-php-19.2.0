@@ -18,33 +18,33 @@ class QualityScoreBucket
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Quality of the creative is below average.
      *
      * Generated from protobuf enum <code>BELOW_AVERAGE = 2;</code>
      */
-    const BELOW_AVERAGE = 2;
+    public const BELOW_AVERAGE = 2;
     /**
      * Quality of the creative is average.
      *
      * Generated from protobuf enum <code>AVERAGE = 3;</code>
      */
-    const AVERAGE = 3;
+    public const AVERAGE = 3;
     /**
      * Quality of the creative is above average.
      *
      * Generated from protobuf enum <code>ABOVE_AVERAGE = 4;</code>
      */
-    const ABOVE_AVERAGE = 4;
+    public const ABOVE_AVERAGE = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::BELOW_AVERAGE => 'BELOW_AVERAGE',
@@ -56,7 +56,7 @@ class QualityScoreBucket
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -64,10 +64,10 @@ class QualityScoreBucket
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

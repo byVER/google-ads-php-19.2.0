@@ -18,20 +18,20 @@ class PolicyTopicEvidenceDestinationNotWorkingDnsErrorType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received value is not known in this version.
      * This is a response-only value.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Host name not found in DNS when fetching landing page.
      *
      * Generated from protobuf enum <code>HOSTNAME_NOT_FOUND = 2;</code>
      */
-    const HOSTNAME_NOT_FOUND = 2;
+    public const HOSTNAME_NOT_FOUND = 2;
     /**
      * Google internal crawler issue when communicating with DNS. This error
      * doesn't mean the landing page doesn't work. Google will recrawl the
@@ -39,9 +39,9 @@ class PolicyTopicEvidenceDestinationNotWorkingDnsErrorType
      *
      * Generated from protobuf enum <code>GOOGLE_CRAWLER_DNS_ISSUE = 3;</code>
      */
-    const GOOGLE_CRAWLER_DNS_ISSUE = 3;
+    public const GOOGLE_CRAWLER_DNS_ISSUE = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::HOSTNAME_NOT_FOUND => 'HOSTNAME_NOT_FOUND',
@@ -52,7 +52,7 @@ class PolicyTopicEvidenceDestinationNotWorkingDnsErrorType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -60,10 +60,10 @@ class PolicyTopicEvidenceDestinationNotWorkingDnsErrorType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

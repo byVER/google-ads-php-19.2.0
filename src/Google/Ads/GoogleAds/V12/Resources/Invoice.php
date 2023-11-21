@@ -329,7 +329,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getId()
     {
-        return isset($this->id) ? $this->id : '';
+        return $this->id ?? '';
     }
 
     public function hasId()
@@ -377,7 +377,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\InvoiceTypeEnum\InvoiceType::class);
+        GPBUtil::checkEnum($var);
         $this->type = $var;
 
         return $this;
@@ -392,7 +392,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getBillingSetup()
     {
-        return isset($this->billing_setup) ? $this->billing_setup : '';
+        return $this->billing_setup ?? '';
     }
 
     public function hasBillingSetup()
@@ -431,7 +431,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getPaymentsAccountId()
     {
-        return isset($this->payments_account_id) ? $this->payments_account_id : '';
+        return $this->payments_account_id ?? '';
     }
 
     public function hasPaymentsAccountId()
@@ -471,7 +471,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getPaymentsProfileId()
     {
-        return isset($this->payments_profile_id) ? $this->payments_profile_id : '';
+        return $this->payments_profile_id ?? '';
     }
 
     public function hasPaymentsProfileId()
@@ -510,7 +510,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getIssueDate()
     {
-        return isset($this->issue_date) ? $this->issue_date : '';
+        return $this->issue_date ?? '';
     }
 
     public function hasIssueDate()
@@ -547,7 +547,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getDueDate()
     {
-        return isset($this->due_date) ? $this->due_date : '';
+        return $this->due_date ?? '';
     }
 
     public function hasDueDate()
@@ -620,7 +620,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getCurrencyCode()
     {
-        return isset($this->currency_code) ? $this->currency_code : '';
+        return $this->currency_code ?? '';
     }
 
     public function hasCurrencyCode()
@@ -818,7 +818,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getSubtotalAmountMicros()
     {
-        return isset($this->subtotal_amount_micros) ? $this->subtotal_amount_micros : 0;
+        return $this->subtotal_amount_micros ?? 0;
     }
 
     public function hasSubtotalAmountMicros()
@@ -861,7 +861,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getTaxAmountMicros()
     {
-        return isset($this->tax_amount_micros) ? $this->tax_amount_micros : 0;
+        return $this->tax_amount_micros ?? 0;
     }
 
     public function hasTaxAmountMicros()
@@ -903,7 +903,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getTotalAmountMicros()
     {
-        return isset($this->total_amount_micros) ? $this->total_amount_micros : 0;
+        return $this->total_amount_micros ?? 0;
     }
 
     public function hasTotalAmountMicros()
@@ -947,7 +947,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getCorrectedInvoice()
     {
-        return isset($this->corrected_invoice) ? $this->corrected_invoice : '';
+        return $this->corrected_invoice ?? '';
     }
 
     public function hasCorrectedInvoice()
@@ -1026,7 +1026,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function getPdfUrl()
     {
-        return isset($this->pdf_url) ? $this->pdf_url : '';
+        return $this->pdf_url ?? '';
     }
 
     public function hasPdfUrl()

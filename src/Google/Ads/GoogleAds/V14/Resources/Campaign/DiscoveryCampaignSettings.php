@@ -57,7 +57,7 @@ class DiscoveryCampaignSettings extends \Google\Protobuf\Internal\Message
      */
     public function getUpgradedTargeting()
     {
-        return isset($this->upgraded_targeting) ? $this->upgraded_targeting : false;
+        return $this->upgraded_targeting ?? false;
     }
 
     public function hasUpgradedTargeting()

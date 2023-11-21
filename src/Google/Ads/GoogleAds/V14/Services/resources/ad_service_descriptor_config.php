@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.AdService' => [
             'GetAd' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Resources\Ad',
+                'responseType' => \Google\Ads\GoogleAds\V14\Resources\Ad::class,
                 'headerParams' => [
                     [
                         'keyName' => 'resource_name',
@@ -17,7 +17,7 @@ return [
             ],
             'MutateAds' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateAdsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateAdsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

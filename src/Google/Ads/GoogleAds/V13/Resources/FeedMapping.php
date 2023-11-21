@@ -120,7 +120,7 @@ class FeedMapping extends \Google\Protobuf\Internal\Message
      */
     public function getFeed()
     {
-        return isset($this->feed) ? $this->feed : '';
+        return $this->feed ?? '';
     }
 
     public function hasFeed()
@@ -204,7 +204,7 @@ class FeedMapping extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\FeedMappingStatusEnum\FeedMappingStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;
@@ -237,7 +237,7 @@ class FeedMapping extends \Google\Protobuf\Internal\Message
      */
     public function setPlaceholderType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\PlaceholderTypeEnum\PlaceholderType::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(3, $var);
 
         return $this;
@@ -270,7 +270,7 @@ class FeedMapping extends \Google\Protobuf\Internal\Message
      */
     public function setCriterionType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\FeedMappingCriterionTypeEnum\FeedMappingCriterionType::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(4, $var);
 
         return $this;

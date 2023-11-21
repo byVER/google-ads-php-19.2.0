@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.CustomerManagerLinkService' => [
             'MoveManagerLink' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MoveManagerLinkResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MoveManagerLinkResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',
@@ -17,7 +17,7 @@ return [
             ],
             'MutateCustomerManagerLink' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCustomerManagerLinkResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCustomerManagerLinkResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

@@ -18,33 +18,33 @@ class TargetImpressionShareLocation
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Any location on the web page.
      *
      * Generated from protobuf enum <code>ANYWHERE_ON_PAGE = 2;</code>
      */
-    const ANYWHERE_ON_PAGE = 2;
+    public const ANYWHERE_ON_PAGE = 2;
     /**
      * Top box of ads.
      *
      * Generated from protobuf enum <code>TOP_OF_PAGE = 3;</code>
      */
-    const TOP_OF_PAGE = 3;
+    public const TOP_OF_PAGE = 3;
     /**
      * Top slot in the top box of ads.
      *
      * Generated from protobuf enum <code>ABSOLUTE_TOP_OF_PAGE = 4;</code>
      */
-    const ABSOLUTE_TOP_OF_PAGE = 4;
+    public const ABSOLUTE_TOP_OF_PAGE = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ANYWHERE_ON_PAGE => 'ANYWHERE_ON_PAGE',
@@ -56,7 +56,7 @@ class TargetImpressionShareLocation
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -64,10 +64,10 @@ class TargetImpressionShareLocation
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

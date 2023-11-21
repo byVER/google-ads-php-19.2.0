@@ -18,115 +18,115 @@ class RecommendationError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The specified budget amount is too low for example, lower than minimum
      * currency unit or lower than ad group minimum cost-per-click.
      *
      * Generated from protobuf enum <code>BUDGET_AMOUNT_TOO_SMALL = 2;</code>
      */
-    const BUDGET_AMOUNT_TOO_SMALL = 2;
+    public const BUDGET_AMOUNT_TOO_SMALL = 2;
     /**
      * The specified budget amount is too large.
      *
      * Generated from protobuf enum <code>BUDGET_AMOUNT_TOO_LARGE = 3;</code>
      */
-    const BUDGET_AMOUNT_TOO_LARGE = 3;
+    public const BUDGET_AMOUNT_TOO_LARGE = 3;
     /**
      * The specified budget amount is not a valid amount, for example, not a
      * multiple of minimum currency unit.
      *
      * Generated from protobuf enum <code>INVALID_BUDGET_AMOUNT = 4;</code>
      */
-    const INVALID_BUDGET_AMOUNT = 4;
+    public const INVALID_BUDGET_AMOUNT = 4;
     /**
      * The specified keyword or ad violates ad policy.
      *
      * Generated from protobuf enum <code>POLICY_ERROR = 5;</code>
      */
-    const POLICY_ERROR = 5;
+    public const POLICY_ERROR = 5;
     /**
      * The specified bid amount is not valid, for example, too many fractional
      * digits, or negative amount.
      *
      * Generated from protobuf enum <code>INVALID_BID_AMOUNT = 6;</code>
      */
-    const INVALID_BID_AMOUNT = 6;
+    public const INVALID_BID_AMOUNT = 6;
     /**
      * The number of keywords in ad group have reached the maximum allowed.
      *
      * Generated from protobuf enum <code>ADGROUP_KEYWORD_LIMIT = 7;</code>
      */
-    const ADGROUP_KEYWORD_LIMIT = 7;
+    public const ADGROUP_KEYWORD_LIMIT = 7;
     /**
      * The recommendation requested to apply has already been applied.
      *
      * Generated from protobuf enum <code>RECOMMENDATION_ALREADY_APPLIED = 8;</code>
      */
-    const RECOMMENDATION_ALREADY_APPLIED = 8;
+    public const RECOMMENDATION_ALREADY_APPLIED = 8;
     /**
      * The recommendation requested to apply has been invalidated.
      *
      * Generated from protobuf enum <code>RECOMMENDATION_INVALIDATED = 9;</code>
      */
-    const RECOMMENDATION_INVALIDATED = 9;
+    public const RECOMMENDATION_INVALIDATED = 9;
     /**
      * The number of operations in a single request exceeds the maximum allowed.
      *
      * Generated from protobuf enum <code>TOO_MANY_OPERATIONS = 10;</code>
      */
-    const TOO_MANY_OPERATIONS = 10;
+    public const TOO_MANY_OPERATIONS = 10;
     /**
      * There are no operations in the request.
      *
      * Generated from protobuf enum <code>NO_OPERATIONS = 11;</code>
      */
-    const NO_OPERATIONS = 11;
+    public const NO_OPERATIONS = 11;
     /**
      * Operations with multiple recommendation types are not supported when
      * partial failure mode is not enabled.
      *
      * Generated from protobuf enum <code>DIFFERENT_TYPES_NOT_SUPPORTED = 12;</code>
      */
-    const DIFFERENT_TYPES_NOT_SUPPORTED = 12;
+    public const DIFFERENT_TYPES_NOT_SUPPORTED = 12;
     /**
      * Request contains multiple operations with the same resource_name.
      *
      * Generated from protobuf enum <code>DUPLICATE_RESOURCE_NAME = 13;</code>
      */
-    const DUPLICATE_RESOURCE_NAME = 13;
+    public const DUPLICATE_RESOURCE_NAME = 13;
     /**
      * The recommendation requested to dismiss has already been dismissed.
      *
      * Generated from protobuf enum <code>RECOMMENDATION_ALREADY_DISMISSED = 14;</code>
      */
-    const RECOMMENDATION_ALREADY_DISMISSED = 14;
+    public const RECOMMENDATION_ALREADY_DISMISSED = 14;
     /**
      * The recommendation apply request was malformed and invalid.
      *
      * Generated from protobuf enum <code>INVALID_APPLY_REQUEST = 15;</code>
      */
-    const INVALID_APPLY_REQUEST = 15;
+    public const INVALID_APPLY_REQUEST = 15;
     /**
      * The type of recommendation requested to apply is not supported.
      *
      * Generated from protobuf enum <code>RECOMMENDATION_TYPE_APPLY_NOT_SUPPORTED = 17;</code>
      */
-    const RECOMMENDATION_TYPE_APPLY_NOT_SUPPORTED = 17;
+    public const RECOMMENDATION_TYPE_APPLY_NOT_SUPPORTED = 17;
     /**
      * The target multiplier specified is invalid.
      *
      * Generated from protobuf enum <code>INVALID_MULTIPLIER = 18;</code>
      */
-    const INVALID_MULTIPLIER = 18;
+    public const INVALID_MULTIPLIER = 18;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::BUDGET_AMOUNT_TOO_SMALL => 'BUDGET_AMOUNT_TOO_SMALL',
@@ -151,7 +151,7 @@ class RecommendationError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -159,10 +159,10 @@ class RecommendationError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

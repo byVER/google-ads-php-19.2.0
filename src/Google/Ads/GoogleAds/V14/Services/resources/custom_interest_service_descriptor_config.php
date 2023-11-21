@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.CustomInterestService' => [
             'MutateCustomInterests' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCustomInterestsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCustomInterestsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

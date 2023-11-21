@@ -18,20 +18,20 @@ class HotelReconciliationStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Bookings are for a future date, or a stay is underway but the check-out
      * date hasn't passed. An active reservation can't be reconciled.
      *
      * Generated from protobuf enum <code>RESERVATION_ENABLED = 2;</code>
      */
-    const RESERVATION_ENABLED = 2;
+    public const RESERVATION_ENABLED = 2;
     /**
      * Check-out has already taken place, or the booked dates have passed
      * without cancellation. Bookings that are not reconciled within 45 days of
@@ -39,14 +39,14 @@ class HotelReconciliationStatus
      *
      * Generated from protobuf enum <code>RECONCILIATION_NEEDED = 3;</code>
      */
-    const RECONCILIATION_NEEDED = 3;
+    public const RECONCILIATION_NEEDED = 3;
     /**
      * These bookings have been reconciled. Reconciled bookings are billed 45
      * days after the check-out date.
      *
      * Generated from protobuf enum <code>RECONCILED = 4;</code>
      */
-    const RECONCILED = 4;
+    public const RECONCILED = 4;
     /**
      * This booking was marked as canceled. Canceled stays with a value greater
      * than zero (due to minimum stay rules or cancellation fees) are billed 45
@@ -54,9 +54,9 @@ class HotelReconciliationStatus
      *
      * Generated from protobuf enum <code>CANCELED = 5;</code>
      */
-    const CANCELED = 5;
+    public const CANCELED = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::RESERVATION_ENABLED => 'RESERVATION_ENABLED',
@@ -69,7 +69,7 @@ class HotelReconciliationStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -77,10 +77,10 @@ class HotelReconciliationStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -48,7 +48,7 @@ class AudienceSetting extends \Google\Protobuf\Internal\Message
      */
     public function getUseAudienceGrouped()
     {
-        return isset($this->use_audience_grouped) ? $this->use_audience_grouped : false;
+        return $this->use_audience_grouped ?? false;
     }
 
     public function hasUseAudienceGrouped()

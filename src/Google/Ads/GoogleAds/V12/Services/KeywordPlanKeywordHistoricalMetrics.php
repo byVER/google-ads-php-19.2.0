@@ -86,7 +86,7 @@ class KeywordPlanKeywordHistoricalMetrics extends \Google\Protobuf\Internal\Mess
      */
     public function getSearchQuery()
     {
-        return isset($this->search_query) ? $this->search_query : '';
+        return $this->search_query ?? '';
     }
 
     public function hasSearchQuery()

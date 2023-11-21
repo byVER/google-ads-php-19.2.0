@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.AssetGroupService' => [
             'MutateAssetGroups' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateAssetGroupsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateAssetGroupsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

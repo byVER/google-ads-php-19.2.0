@@ -5,8 +5,8 @@ return [
         'google.ads.googleads.v14.services.CampaignDraftService' => [
             'PromoteCampaignDraft' => [
                 'longRunning' => [
-                    'operationReturnType' => '\Google\Protobuf\GPBEmpty',
-                    'metadataReturnType' => '\Google\Protobuf\GPBEmpty',
+                    'operationReturnType' => '\\' . \Google\Protobuf\GPBEmpty::class,
+                    'metadataReturnType' => '\\' . \Google\Protobuf\GPBEmpty::class,
                     'initialPollDelayMillis' => '500',
                     'pollDelayMultiplier' => '1.5',
                     'maxPollDelayMillis' => '5000',
@@ -32,7 +32,7 @@ return [
                     'resourcesGetMethod' => 'getErrors',
                 ],
                 'callType' => \Google\ApiCore\Call::PAGINATED_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\ListCampaignDraftAsyncErrorsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\ListCampaignDraftAsyncErrorsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'resource_name',
@@ -44,7 +44,7 @@ return [
             ],
             'MutateCampaignDrafts' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCampaignDraftsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCampaignDraftsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

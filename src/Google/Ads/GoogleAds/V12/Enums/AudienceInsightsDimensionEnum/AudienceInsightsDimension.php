@@ -18,87 +18,87 @@ class AudienceInsightsDimension
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * A Product & Service category.
      *
      * Generated from protobuf enum <code>CATEGORY = 2;</code>
      */
-    const CATEGORY = 2;
+    public const CATEGORY = 2;
     /**
      * A Knowledge Graph entity.
      *
      * Generated from protobuf enum <code>KNOWLEDGE_GRAPH = 3;</code>
      */
-    const KNOWLEDGE_GRAPH = 3;
+    public const KNOWLEDGE_GRAPH = 3;
     /**
      * A country, represented by a geo target.
      *
      * Generated from protobuf enum <code>GEO_TARGET_COUNTRY = 4;</code>
      */
-    const GEO_TARGET_COUNTRY = 4;
+    public const GEO_TARGET_COUNTRY = 4;
     /**
      * A geographic location within a country.
      *
      * Generated from protobuf enum <code>SUB_COUNTRY_LOCATION = 5;</code>
      */
-    const SUB_COUNTRY_LOCATION = 5;
+    public const SUB_COUNTRY_LOCATION = 5;
     /**
      * A YouTube channel.
      *
      * Generated from protobuf enum <code>YOUTUBE_CHANNEL = 6;</code>
      */
-    const YOUTUBE_CHANNEL = 6;
+    public const YOUTUBE_CHANNEL = 6;
     /**
      * A YouTube Dynamic Lineup.
      *
      * Generated from protobuf enum <code>YOUTUBE_DYNAMIC_LINEUP = 7;</code>
      */
-    const YOUTUBE_DYNAMIC_LINEUP = 7;
+    public const YOUTUBE_DYNAMIC_LINEUP = 7;
     /**
      * An Affinity UserInterest.
      *
      * Generated from protobuf enum <code>AFFINITY_USER_INTEREST = 8;</code>
      */
-    const AFFINITY_USER_INTEREST = 8;
+    public const AFFINITY_USER_INTEREST = 8;
     /**
      * An In-Market UserInterest.
      *
      * Generated from protobuf enum <code>IN_MARKET_USER_INTEREST = 9;</code>
      */
-    const IN_MARKET_USER_INTEREST = 9;
+    public const IN_MARKET_USER_INTEREST = 9;
     /**
      * A Parental Status value (parent, or not a parent).
      *
      * Generated from protobuf enum <code>PARENTAL_STATUS = 10;</code>
      */
-    const PARENTAL_STATUS = 10;
+    public const PARENTAL_STATUS = 10;
     /**
      * A household income percentile range.
      *
      * Generated from protobuf enum <code>INCOME_RANGE = 11;</code>
      */
-    const INCOME_RANGE = 11;
+    public const INCOME_RANGE = 11;
     /**
      * An age range.
      *
      * Generated from protobuf enum <code>AGE_RANGE = 12;</code>
      */
-    const AGE_RANGE = 12;
+    public const AGE_RANGE = 12;
     /**
      * A gender.
      *
      * Generated from protobuf enum <code>GENDER = 13;</code>
      */
-    const GENDER = 13;
+    public const GENDER = 13;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CATEGORY => 'CATEGORY',
@@ -119,7 +119,7 @@ class AudienceInsightsDimension
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -127,10 +127,10 @@ class AudienceInsightsDimension
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

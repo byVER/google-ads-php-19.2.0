@@ -18,34 +18,34 @@ class AssetSetAssetError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The asset type is not eligible to be linked to the specific type of asset
      * set.
      *
      * Generated from protobuf enum <code>INVALID_ASSET_TYPE = 2;</code>
      */
-    const INVALID_ASSET_TYPE = 2;
+    public const INVALID_ASSET_TYPE = 2;
     /**
      * The asset set type is not eligible to contain the specified type of
      * assets.
      *
      * Generated from protobuf enum <code>INVALID_ASSET_SET_TYPE = 3;</code>
      */
-    const INVALID_ASSET_SET_TYPE = 3;
+    public const INVALID_ASSET_SET_TYPE = 3;
     /**
      * The asset contains duplicate external key with another asset in the asset
      * set.
      *
      * Generated from protobuf enum <code>DUPLICATE_EXTERNAL_KEY = 4;</code>
      */
-    const DUPLICATE_EXTERNAL_KEY = 4;
+    public const DUPLICATE_EXTERNAL_KEY = 4;
     /**
      * When attaching a Location typed Asset to a LocationGroup typed AssetSet,
      * the AssetSetAsset linkage between the parent LocationSync AssetSet and
@@ -53,9 +53,9 @@ class AssetSetAssetError
      *
      * Generated from protobuf enum <code>PARENT_LINKAGE_DOES_NOT_EXIST = 5;</code>
      */
-    const PARENT_LINKAGE_DOES_NOT_EXIST = 5;
+    public const PARENT_LINKAGE_DOES_NOT_EXIST = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INVALID_ASSET_TYPE => 'INVALID_ASSET_TYPE',
@@ -68,7 +68,7 @@ class AssetSetAssetError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -76,10 +76,10 @@ class AssetSetAssetError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -18,22 +18,22 @@ class CustomizerAttributeError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * CustomizerAttribute name matches that of another active
      * CustomizerAttribute.
      *
      * Generated from protobuf enum <code>DUPLICATE_CUSTOMIZER_ATTRIBUTE_NAME = 2;</code>
      */
-    const DUPLICATE_CUSTOMIZER_ATTRIBUTE_NAME = 2;
+    public const DUPLICATE_CUSTOMIZER_ATTRIBUTE_NAME = 2;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::DUPLICATE_CUSTOMIZER_ATTRIBUTE_NAME => 'DUPLICATE_CUSTOMIZER_ATTRIBUTE_NAME',
@@ -43,7 +43,7 @@ class CustomizerAttributeError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -51,10 +51,10 @@ class CustomizerAttributeError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

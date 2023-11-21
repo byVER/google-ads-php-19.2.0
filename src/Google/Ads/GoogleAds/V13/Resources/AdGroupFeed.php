@@ -127,7 +127,7 @@ class AdGroupFeed extends \Google\Protobuf\Internal\Message
      */
     public function getFeed()
     {
-        return isset($this->feed) ? $this->feed : '';
+        return $this->feed ?? '';
     }
 
     public function hasFeed()
@@ -163,7 +163,7 @@ class AdGroupFeed extends \Google\Protobuf\Internal\Message
      */
     public function getAdGroup()
     {
-        return isset($this->ad_group) ? $this->ad_group : '';
+        return $this->ad_group ?? '';
     }
 
     public function hasAdGroup()
@@ -281,7 +281,7 @@ class AdGroupFeed extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\FeedLinkStatusEnum\FeedLinkStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;

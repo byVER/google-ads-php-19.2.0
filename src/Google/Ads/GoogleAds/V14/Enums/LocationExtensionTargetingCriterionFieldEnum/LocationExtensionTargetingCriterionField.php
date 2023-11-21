@@ -18,51 +18,51 @@ class LocationExtensionTargetingCriterionField
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Data Type: STRING. Line 1 of the business address.
      *
      * Generated from protobuf enum <code>ADDRESS_LINE_1 = 2;</code>
      */
-    const ADDRESS_LINE_1 = 2;
+    public const ADDRESS_LINE_1 = 2;
     /**
      * Data Type: STRING. Line 2 of the business address.
      *
      * Generated from protobuf enum <code>ADDRESS_LINE_2 = 3;</code>
      */
-    const ADDRESS_LINE_2 = 3;
+    public const ADDRESS_LINE_2 = 3;
     /**
      * Data Type: STRING. City of the business address.
      *
      * Generated from protobuf enum <code>CITY = 4;</code>
      */
-    const CITY = 4;
+    public const CITY = 4;
     /**
      * Data Type: STRING. Province of the business address.
      *
      * Generated from protobuf enum <code>PROVINCE = 5;</code>
      */
-    const PROVINCE = 5;
+    public const PROVINCE = 5;
     /**
      * Data Type: STRING. Postal code of the business address.
      *
      * Generated from protobuf enum <code>POSTAL_CODE = 6;</code>
      */
-    const POSTAL_CODE = 6;
+    public const POSTAL_CODE = 6;
     /**
      * Data Type: STRING. Country code of the business address.
      *
      * Generated from protobuf enum <code>COUNTRY_CODE = 7;</code>
      */
-    const COUNTRY_CODE = 7;
+    public const COUNTRY_CODE = 7;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ADDRESS_LINE_1 => 'ADDRESS_LINE_1',
@@ -77,7 +77,7 @@ class LocationExtensionTargetingCriterionField
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -85,10 +85,10 @@ class LocationExtensionTargetingCriterionField
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

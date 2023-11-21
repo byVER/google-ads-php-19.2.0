@@ -176,7 +176,7 @@ class Audience extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\AudienceStatusEnum\AudienceStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;

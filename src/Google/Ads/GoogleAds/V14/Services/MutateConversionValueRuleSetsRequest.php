@@ -239,7 +239,7 @@ class MutateConversionValueRuleSetsRequest extends \Google\Protobuf\Internal\Mes
      */
     public function setResponseContentType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\ResponseContentTypeEnum\ResponseContentType::class);
+        GPBUtil::checkEnum($var);
         $this->response_content_type = $var;
 
         return $this;

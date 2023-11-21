@@ -47,23 +47,23 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
     private const DEFAULT_GRPC_CHANNEL_IS_SECURE = true;
     private const DEFAULT_USE_GAPIC_V2_SOURCE = false;
 
-    private $loggerFactory;
+    private \Google\Ads\GoogleAds\Lib\V14\LoggerFactory $loggerFactory;
 
     private $developerToken;
     private $loginCustomerId;
     private $linkedCustomerId;
     private $endpoint;
-    private $oAuth2Credential;
+    private ?\Google\Auth\FetchAuthTokenInterface $oAuth2Credential = null;
     private $logger;
     private $logLevel;
     private $proxy;
     private $transport;
-    private $grpcChannelIsSecure;
-    private $grpcChannelCredential;
+    private $grpcChannelIsSecure = self::DEFAULT_GRPC_CHANNEL_IS_SECURE;
+    private ?\Grpc\ChannelCredentials $grpcChannelCredential = null;
     private $useGapicV2Source;
-    private $unaryMiddlewares = [];
-    private $streamingMiddlewares = [];
-    private $grpcInterceptors = [];
+    private array $unaryMiddlewares = [];
+    private array $streamingMiddlewares = [];
+    private array $grpcInterceptors = [];
     /** @var Dependencies $dependencies */
     private $dependencies;
 
@@ -73,7 +73,6 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
     ) {
         parent::__construct($configurationLoader, $environmentalVariables);
         $this->loggerFactory = new LoggerFactory();
-        $this->grpcChannelIsSecure = self::DEFAULT_GRPC_CHANNEL_IS_SECURE;
     }
 
     /**
@@ -376,7 +375,7 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
      */
     public function defaultOptionals()
     {
-        $this->dependencies = $this->dependencies ?? new Dependencies();
+        $this->dependencies ??= new Dependencies();
     }
 
     /**

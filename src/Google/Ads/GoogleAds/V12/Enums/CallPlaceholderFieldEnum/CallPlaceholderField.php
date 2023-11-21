@@ -18,33 +18,33 @@ class CallPlaceholderField
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Data Type: STRING. The advertiser's phone number to append to the ad.
      *
      * Generated from protobuf enum <code>PHONE_NUMBER = 2;</code>
      */
-    const PHONE_NUMBER = 2;
+    public const PHONE_NUMBER = 2;
     /**
      * Data Type: STRING. Uppercase two-letter country code of the advertiser's
      * phone number.
      *
      * Generated from protobuf enum <code>COUNTRY_CODE = 3;</code>
      */
-    const COUNTRY_CODE = 3;
+    public const COUNTRY_CODE = 3;
     /**
      * Data Type: BOOLEAN. Indicates whether call tracking is enabled. Default:
      * true.
      *
      * Generated from protobuf enum <code>TRACKED = 4;</code>
      */
-    const TRACKED = 4;
+    public const TRACKED = 4;
     /**
      * Data Type: INT64. The ID of an AdCallMetricsConversion object. This
      * object contains the phoneCallDurationfield which is the minimum duration
@@ -52,7 +52,7 @@ class CallPlaceholderField
      *
      * Generated from protobuf enum <code>CONVERSION_TYPE_ID = 5;</code>
      */
-    const CONVERSION_TYPE_ID = 5;
+    public const CONVERSION_TYPE_ID = 5;
     /**
      * Data Type: STRING. Indicates whether this call extension uses its own
      * call conversion setting or follows the account level setting.
@@ -61,9 +61,9 @@ class CallPlaceholderField
      *
      * Generated from protobuf enum <code>CONVERSION_REPORTING_STATE = 6;</code>
      */
-    const CONVERSION_REPORTING_STATE = 6;
+    public const CONVERSION_REPORTING_STATE = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::PHONE_NUMBER => 'PHONE_NUMBER',
@@ -77,7 +77,7 @@ class CallPlaceholderField
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -85,10 +85,10 @@ class CallPlaceholderField
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

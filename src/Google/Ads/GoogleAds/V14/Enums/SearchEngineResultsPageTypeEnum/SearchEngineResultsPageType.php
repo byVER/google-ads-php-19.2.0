@@ -18,34 +18,34 @@ class SearchEngineResultsPageType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Only ads were contained in the search engine results page.
      *
      * Generated from protobuf enum <code>ADS_ONLY = 2;</code>
      */
-    const ADS_ONLY = 2;
+    public const ADS_ONLY = 2;
     /**
      * Only organic results were contained in the search engine results page.
      *
      * Generated from protobuf enum <code>ORGANIC_ONLY = 3;</code>
      */
-    const ORGANIC_ONLY = 3;
+    public const ORGANIC_ONLY = 3;
     /**
      * Both ads and organic results were contained in the search engine results
      * page.
      *
      * Generated from protobuf enum <code>ADS_AND_ORGANIC = 4;</code>
      */
-    const ADS_AND_ORGANIC = 4;
+    public const ADS_AND_ORGANIC = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ADS_ONLY => 'ADS_ONLY',
@@ -57,7 +57,7 @@ class SearchEngineResultsPageType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -65,10 +65,10 @@ class SearchEngineResultsPageType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

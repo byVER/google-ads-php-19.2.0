@@ -18,101 +18,101 @@ class ExperimentArmError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Number of experiment arms is above limit.
      *
      * Generated from protobuf enum <code>EXPERIMENT_ARM_COUNT_LIMIT_EXCEEDED = 2;</code>
      */
-    const EXPERIMENT_ARM_COUNT_LIMIT_EXCEEDED = 2;
+    public const EXPERIMENT_ARM_COUNT_LIMIT_EXCEEDED = 2;
     /**
      * Cannot add campaign with invalid status to the experiment arm.
      *
      * Generated from protobuf enum <code>INVALID_CAMPAIGN_STATUS = 3;</code>
      */
-    const INVALID_CAMPAIGN_STATUS = 3;
+    public const INVALID_CAMPAIGN_STATUS = 3;
     /**
      * Cannot add duplicate experiment arm name in one experiment.
      *
      * Generated from protobuf enum <code>DUPLICATE_EXPERIMENT_ARM_NAME = 4;</code>
      */
-    const DUPLICATE_EXPERIMENT_ARM_NAME = 4;
+    public const DUPLICATE_EXPERIMENT_ARM_NAME = 4;
     /**
      * Cannot set campaigns of treatment experiment arm.
      *
      * Generated from protobuf enum <code>CANNOT_SET_TREATMENT_ARM_CAMPAIGN = 5;</code>
      */
-    const CANNOT_SET_TREATMENT_ARM_CAMPAIGN = 5;
+    public const CANNOT_SET_TREATMENT_ARM_CAMPAIGN = 5;
     /**
      * Cannot edit campaign ids in trial arms in non SETUP experiment.
      *
      * Generated from protobuf enum <code>CANNOT_MODIFY_CAMPAIGN_IDS = 6;</code>
      */
-    const CANNOT_MODIFY_CAMPAIGN_IDS = 6;
+    public const CANNOT_MODIFY_CAMPAIGN_IDS = 6;
     /**
      * Cannot modify the campaigns in the control arm
      * if there is not a suffix set in the trial.
      *
      * Generated from protobuf enum <code>CANNOT_MODIFY_CAMPAIGN_WITHOUT_SUFFIX_SET = 7;</code>
      */
-    const CANNOT_MODIFY_CAMPAIGN_WITHOUT_SUFFIX_SET = 7;
+    public const CANNOT_MODIFY_CAMPAIGN_WITHOUT_SUFFIX_SET = 7;
     /**
      * Traffic split related settings (like traffic share bounds) can't be
      * modified after the trial has started.
      *
      * Generated from protobuf enum <code>CANNOT_MUTATE_TRAFFIC_SPLIT_AFTER_START = 8;</code>
      */
-    const CANNOT_MUTATE_TRAFFIC_SPLIT_AFTER_START = 8;
+    public const CANNOT_MUTATE_TRAFFIC_SPLIT_AFTER_START = 8;
     /**
      * Cannot use shared budget on experiment's control campaign.
      *
      * Generated from protobuf enum <code>CANNOT_ADD_CAMPAIGN_WITH_SHARED_BUDGET = 9;</code>
      */
-    const CANNOT_ADD_CAMPAIGN_WITH_SHARED_BUDGET = 9;
+    public const CANNOT_ADD_CAMPAIGN_WITH_SHARED_BUDGET = 9;
     /**
      * Cannot use custom budget on experiment's control campaigns.
      *
      * Generated from protobuf enum <code>CANNOT_ADD_CAMPAIGN_WITH_CUSTOM_BUDGET = 10;</code>
      */
-    const CANNOT_ADD_CAMPAIGN_WITH_CUSTOM_BUDGET = 10;
+    public const CANNOT_ADD_CAMPAIGN_WITH_CUSTOM_BUDGET = 10;
     /**
      * Cannot have enable_dynamic_assets turned on in experiment's campaigns.
      *
      * Generated from protobuf enum <code>CANNOT_ADD_CAMPAIGNS_WITH_DYNAMIC_ASSETS_ENABLED = 11;</code>
      */
-    const CANNOT_ADD_CAMPAIGNS_WITH_DYNAMIC_ASSETS_ENABLED = 11;
+    public const CANNOT_ADD_CAMPAIGNS_WITH_DYNAMIC_ASSETS_ENABLED = 11;
     /**
      * Cannot use campaign's advertising channel sub type in experiment.
      *
      * Generated from protobuf enum <code>UNSUPPORTED_CAMPAIGN_ADVERTISING_CHANNEL_SUB_TYPE = 12;</code>
      */
-    const UNSUPPORTED_CAMPAIGN_ADVERTISING_CHANNEL_SUB_TYPE = 12;
+    public const UNSUPPORTED_CAMPAIGN_ADVERTISING_CHANNEL_SUB_TYPE = 12;
     /**
      * Experiment date range must be within base campaign's date range.
      *
      * Generated from protobuf enum <code>CANNOT_ADD_BASE_CAMPAIGN_WITH_DATE_RANGE = 13;</code>
      */
-    const CANNOT_ADD_BASE_CAMPAIGN_WITH_DATE_RANGE = 13;
+    public const CANNOT_ADD_BASE_CAMPAIGN_WITH_DATE_RANGE = 13;
     /**
      * Bidding strategy is not supported in experiments.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_NOT_SUPPORTED_IN_EXPERIMENTS = 14;</code>
      */
-    const BIDDING_STRATEGY_NOT_SUPPORTED_IN_EXPERIMENTS = 14;
+    public const BIDDING_STRATEGY_NOT_SUPPORTED_IN_EXPERIMENTS = 14;
     /**
      * Traffic split is not supported for some channel types.
      *
      * Generated from protobuf enum <code>TRAFFIC_SPLIT_NOT_SUPPORTED_FOR_CHANNEL_TYPE = 15;</code>
      */
-    const TRAFFIC_SPLIT_NOT_SUPPORTED_FOR_CHANNEL_TYPE = 15;
+    public const TRAFFIC_SPLIT_NOT_SUPPORTED_FOR_CHANNEL_TYPE = 15;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::EXPERIMENT_ARM_COUNT_LIMIT_EXCEEDED => 'EXPERIMENT_ARM_COUNT_LIMIT_EXCEEDED',
@@ -135,7 +135,7 @@ class ExperimentArmError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -143,10 +143,10 @@ class ExperimentArmError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

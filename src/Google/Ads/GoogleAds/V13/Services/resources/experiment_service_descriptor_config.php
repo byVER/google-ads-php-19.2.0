@@ -5,8 +5,8 @@ return [
         'google.ads.googleads.v13.services.ExperimentService' => [
             'PromoteExperiment' => [
                 'longRunning' => [
-                    'operationReturnType' => '\Google\Protobuf\GPBEmpty',
-                    'metadataReturnType' => '\Google\Ads\GoogleAds\V13\Services\PromoteExperimentMetadata',
+                    'operationReturnType' => '\\' . \Google\Protobuf\GPBEmpty::class,
+                    'metadataReturnType' => '\\' . \Google\Ads\GoogleAds\V13\Services\PromoteExperimentMetadata::class,
                     'initialPollDelayMillis' => '500',
                     'pollDelayMultiplier' => '1.5',
                     'maxPollDelayMillis' => '5000',
@@ -15,8 +15,8 @@ return [
             ],
             'ScheduleExperiment' => [
                 'longRunning' => [
-                    'operationReturnType' => '\Google\Protobuf\GPBEmpty',
-                    'metadataReturnType' => '\Google\Ads\GoogleAds\V13\Services\ScheduleExperimentMetadata',
+                    'operationReturnType' => '\\' . \Google\Protobuf\GPBEmpty::class,
+                    'metadataReturnType' => '\\' . \Google\Ads\GoogleAds\V13\Services\ScheduleExperimentMetadata::class,
                     'initialPollDelayMillis' => '500',
                     'pollDelayMultiplier' => '1.5',
                     'maxPollDelayMillis' => '5000',

@@ -148,7 +148,7 @@ class AdGroupBidModifier extends \Google\Protobuf\Internal\Message
      */
     public function getAdGroup()
     {
-        return isset($this->ad_group) ? $this->ad_group : '';
+        return $this->ad_group ?? '';
     }
 
     public function hasAdGroup()
@@ -185,7 +185,7 @@ class AdGroupBidModifier extends \Google\Protobuf\Internal\Message
      */
     public function getCriterionId()
     {
-        return isset($this->criterion_id) ? $this->criterion_id : 0;
+        return $this->criterion_id ?? 0;
     }
 
     public function hasCriterionId()
@@ -224,7 +224,7 @@ class AdGroupBidModifier extends \Google\Protobuf\Internal\Message
      */
     public function getBidModifier()
     {
-        return isset($this->bid_modifier) ? $this->bid_modifier : 0.0;
+        return $this->bid_modifier ?? 0.0;
     }
 
     public function hasBidModifier()
@@ -266,7 +266,7 @@ class AdGroupBidModifier extends \Google\Protobuf\Internal\Message
      */
     public function getBaseAdGroup()
     {
-        return isset($this->base_ad_group) ? $this->base_ad_group : '';
+        return $this->base_ad_group ?? '';
     }
 
     public function hasBaseAdGroup()
@@ -318,7 +318,7 @@ class AdGroupBidModifier extends \Google\Protobuf\Internal\Message
      */
     public function setBidModifierSource($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\BidModifierSourceEnum\BidModifierSource::class);
+        GPBUtil::checkEnum($var);
         $this->bid_modifier_source = $var;
 
         return $this;

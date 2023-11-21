@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.FeedItemSetLinkService' => [
             'MutateFeedItemSetLinks' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateFeedItemSetLinksResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateFeedItemSetLinksResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

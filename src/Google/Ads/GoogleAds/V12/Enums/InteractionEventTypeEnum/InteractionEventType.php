@@ -18,13 +18,13 @@ class InteractionEventType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Click to site. In most cases, this interaction navigates to an external
      * location, usually the advertiser's landing page. This is also the default
@@ -32,19 +32,19 @@ class InteractionEventType
      *
      * Generated from protobuf enum <code>CLICK = 2;</code>
      */
-    const CLICK = 2;
+    public const CLICK = 2;
     /**
      * The user's expressed intent to engage with the ad in-place.
      *
      * Generated from protobuf enum <code>ENGAGEMENT = 3;</code>
      */
-    const ENGAGEMENT = 3;
+    public const ENGAGEMENT = 3;
     /**
      * User viewed a video ad.
      *
      * Generated from protobuf enum <code>VIDEO_VIEW = 4;</code>
      */
-    const VIDEO_VIEW = 4;
+    public const VIDEO_VIEW = 4;
     /**
      * The default InteractionEventType for ad conversion events.
      * This is used when an ad conversion row does NOT indicate
@@ -54,9 +54,9 @@ class InteractionEventType
      *
      * Generated from protobuf enum <code>NONE = 5;</code>
      */
-    const NONE = 5;
+    public const NONE = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CLICK => 'CLICK',
@@ -69,7 +69,7 @@ class InteractionEventType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -77,10 +77,10 @@ class InteractionEventType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -18,118 +18,118 @@ class ChangeStatusResourceType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents an unclassified resource unknown
      * in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * An AdGroup resource change.
      *
      * Generated from protobuf enum <code>AD_GROUP = 3;</code>
      */
-    const AD_GROUP = 3;
+    public const AD_GROUP = 3;
     /**
      * An AdGroupAd resource change.
      *
      * Generated from protobuf enum <code>AD_GROUP_AD = 4;</code>
      */
-    const AD_GROUP_AD = 4;
+    public const AD_GROUP_AD = 4;
     /**
      * An AdGroupCriterion resource change.
      *
      * Generated from protobuf enum <code>AD_GROUP_CRITERION = 5;</code>
      */
-    const AD_GROUP_CRITERION = 5;
+    public const AD_GROUP_CRITERION = 5;
     /**
      * A Campaign resource change.
      *
      * Generated from protobuf enum <code>CAMPAIGN = 6;</code>
      */
-    const CAMPAIGN = 6;
+    public const CAMPAIGN = 6;
     /**
      * A CampaignCriterion resource change.
      *
      * Generated from protobuf enum <code>CAMPAIGN_CRITERION = 7;</code>
      */
-    const CAMPAIGN_CRITERION = 7;
+    public const CAMPAIGN_CRITERION = 7;
     /**
      * A Feed resource change.
      *
      * Generated from protobuf enum <code>FEED = 9;</code>
      */
-    const FEED = 9;
+    public const FEED = 9;
     /**
      * A FeedItem resource change.
      *
      * Generated from protobuf enum <code>FEED_ITEM = 10;</code>
      */
-    const FEED_ITEM = 10;
+    public const FEED_ITEM = 10;
     /**
      * An AdGroupFeed resource change.
      *
      * Generated from protobuf enum <code>AD_GROUP_FEED = 11;</code>
      */
-    const AD_GROUP_FEED = 11;
+    public const AD_GROUP_FEED = 11;
     /**
      * A CampaignFeed resource change.
      *
      * Generated from protobuf enum <code>CAMPAIGN_FEED = 12;</code>
      */
-    const CAMPAIGN_FEED = 12;
+    public const CAMPAIGN_FEED = 12;
     /**
      * An AdGroupBidModifier resource change.
      *
      * Generated from protobuf enum <code>AD_GROUP_BID_MODIFIER = 13;</code>
      */
-    const AD_GROUP_BID_MODIFIER = 13;
+    public const AD_GROUP_BID_MODIFIER = 13;
     /**
      * A SharedSet resource change.
      *
      * Generated from protobuf enum <code>SHARED_SET = 14;</code>
      */
-    const SHARED_SET = 14;
+    public const SHARED_SET = 14;
     /**
      * A CampaignSharedSet resource change.
      *
      * Generated from protobuf enum <code>CAMPAIGN_SHARED_SET = 15;</code>
      */
-    const CAMPAIGN_SHARED_SET = 15;
+    public const CAMPAIGN_SHARED_SET = 15;
     /**
      * An Asset resource change.
      *
      * Generated from protobuf enum <code>ASSET = 16;</code>
      */
-    const ASSET = 16;
+    public const ASSET = 16;
     /**
      * A CustomerAsset resource change.
      *
      * Generated from protobuf enum <code>CUSTOMER_ASSET = 17;</code>
      */
-    const CUSTOMER_ASSET = 17;
+    public const CUSTOMER_ASSET = 17;
     /**
      * A CampaignAsset resource change.
      *
      * Generated from protobuf enum <code>CAMPAIGN_ASSET = 18;</code>
      */
-    const CAMPAIGN_ASSET = 18;
+    public const CAMPAIGN_ASSET = 18;
     /**
      * An AdGroupAsset resource change.
      *
      * Generated from protobuf enum <code>AD_GROUP_ASSET = 19;</code>
      */
-    const AD_GROUP_ASSET = 19;
+    public const AD_GROUP_ASSET = 19;
     /**
      * A CombinedAudience resource change.
      *
      * Generated from protobuf enum <code>COMBINED_AUDIENCE = 20;</code>
      */
-    const COMBINED_AUDIENCE = 20;
+    public const COMBINED_AUDIENCE = 20;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::AD_GROUP => 'AD_GROUP',
@@ -155,7 +155,7 @@ class ChangeStatusResourceType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -163,10 +163,10 @@ class ChangeStatusResourceType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

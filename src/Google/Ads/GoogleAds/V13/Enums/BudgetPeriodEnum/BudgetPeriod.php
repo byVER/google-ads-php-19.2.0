@@ -18,19 +18,19 @@ class BudgetPeriod
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Daily budget.
      *
      * Generated from protobuf enum <code>DAILY = 2;</code>
      */
-    const DAILY = 2;
+    public const DAILY = 2;
     /**
      * Custom budget, added back in V5.
      * Custom bugdet can be used with total_amount to specify lifetime budget
@@ -39,9 +39,9 @@ class BudgetPeriod
      *
      * Generated from protobuf enum <code>CUSTOM_PERIOD = 5;</code>
      */
-    const CUSTOM_PERIOD = 5;
+    public const CUSTOM_PERIOD = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::DAILY => 'DAILY',
@@ -52,7 +52,7 @@ class BudgetPeriod
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -60,10 +60,10 @@ class BudgetPeriod
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

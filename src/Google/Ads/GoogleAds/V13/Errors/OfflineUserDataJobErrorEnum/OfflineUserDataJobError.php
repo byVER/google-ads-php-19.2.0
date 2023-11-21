@@ -18,87 +18,87 @@ class OfflineUserDataJobError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The user list ID provided for the job is invalid.
      *
      * Generated from protobuf enum <code>INVALID_USER_LIST_ID = 3;</code>
      */
-    const INVALID_USER_LIST_ID = 3;
+    public const INVALID_USER_LIST_ID = 3;
     /**
      * Type of the user list is not applicable for the job.
      *
      * Generated from protobuf enum <code>INVALID_USER_LIST_TYPE = 4;</code>
      */
-    const INVALID_USER_LIST_TYPE = 4;
+    public const INVALID_USER_LIST_TYPE = 4;
     /**
      * Customer is not allowisted for using user ID in upload data.
      *
      * Generated from protobuf enum <code>NOT_ON_ALLOWLIST_FOR_USER_ID = 33;</code>
      */
-    const NOT_ON_ALLOWLIST_FOR_USER_ID = 33;
+    public const NOT_ON_ALLOWLIST_FOR_USER_ID = 33;
     /**
      * Upload data is not compatible with the upload key type of the associated
      * user list.
      *
      * Generated from protobuf enum <code>INCOMPATIBLE_UPLOAD_KEY_TYPE = 6;</code>
      */
-    const INCOMPATIBLE_UPLOAD_KEY_TYPE = 6;
+    public const INCOMPATIBLE_UPLOAD_KEY_TYPE = 6;
     /**
      * The user identifier is missing valid data.
      *
      * Generated from protobuf enum <code>MISSING_USER_IDENTIFIER = 7;</code>
      */
-    const MISSING_USER_IDENTIFIER = 7;
+    public const MISSING_USER_IDENTIFIER = 7;
     /**
      * The mobile ID is malformed.
      *
      * Generated from protobuf enum <code>INVALID_MOBILE_ID_FORMAT = 8;</code>
      */
-    const INVALID_MOBILE_ID_FORMAT = 8;
+    public const INVALID_MOBILE_ID_FORMAT = 8;
     /**
      * Maximum number of user identifiers allowed per request is 100,000 and per
      * operation is 20.
      *
      * Generated from protobuf enum <code>TOO_MANY_USER_IDENTIFIERS = 9;</code>
      */
-    const TOO_MANY_USER_IDENTIFIERS = 9;
+    public const TOO_MANY_USER_IDENTIFIERS = 9;
     /**
      * Customer is not on the allow-list for store sales direct data.
      *
      * Generated from protobuf enum <code>NOT_ON_ALLOWLIST_FOR_STORE_SALES_DIRECT = 31;</code>
      */
-    const NOT_ON_ALLOWLIST_FOR_STORE_SALES_DIRECT = 31;
+    public const NOT_ON_ALLOWLIST_FOR_STORE_SALES_DIRECT = 31;
     /**
      * Customer is not on the allow-list for unified store sales data.
      *
      * Generated from protobuf enum <code>NOT_ON_ALLOWLIST_FOR_UNIFIED_STORE_SALES = 32;</code>
      */
-    const NOT_ON_ALLOWLIST_FOR_UNIFIED_STORE_SALES = 32;
+    public const NOT_ON_ALLOWLIST_FOR_UNIFIED_STORE_SALES = 32;
     /**
      * The partner ID in store sales direct metadata is invalid.
      *
      * Generated from protobuf enum <code>INVALID_PARTNER_ID = 11;</code>
      */
-    const INVALID_PARTNER_ID = 11;
+    public const INVALID_PARTNER_ID = 11;
     /**
      * The data in user identifier should not be encoded.
      *
      * Generated from protobuf enum <code>INVALID_ENCODING = 12;</code>
      */
-    const INVALID_ENCODING = 12;
+    public const INVALID_ENCODING = 12;
     /**
      * The country code is invalid.
      *
      * Generated from protobuf enum <code>INVALID_COUNTRY_CODE = 13;</code>
      */
-    const INVALID_COUNTRY_CODE = 13;
+    public const INVALID_COUNTRY_CODE = 13;
     /**
      * Incompatible user identifier when using third_party_user_id for store
      * sales direct first party data or not using third_party_user_id for store
@@ -106,13 +106,13 @@ class OfflineUserDataJobError
      *
      * Generated from protobuf enum <code>INCOMPATIBLE_USER_IDENTIFIER = 14;</code>
      */
-    const INCOMPATIBLE_USER_IDENTIFIER = 14;
+    public const INCOMPATIBLE_USER_IDENTIFIER = 14;
     /**
      * A transaction time in the future is not allowed.
      *
      * Generated from protobuf enum <code>FUTURE_TRANSACTION_TIME = 15;</code>
      */
-    const FUTURE_TRANSACTION_TIME = 15;
+    public const FUTURE_TRANSACTION_TIME = 15;
     /**
      * The conversion_action specified in transaction_attributes is used to
      * report conversions to a conversion action configured in Google Ads. This
@@ -120,96 +120,96 @@ class OfflineUserDataJobError
      *
      * Generated from protobuf enum <code>INVALID_CONVERSION_ACTION = 16;</code>
      */
-    const INVALID_CONVERSION_ACTION = 16;
+    public const INVALID_CONVERSION_ACTION = 16;
     /**
      * Mobile ID is not supported for store sales direct data.
      *
      * Generated from protobuf enum <code>MOBILE_ID_NOT_SUPPORTED = 17;</code>
      */
-    const MOBILE_ID_NOT_SUPPORTED = 17;
+    public const MOBILE_ID_NOT_SUPPORTED = 17;
     /**
      * When a remove-all operation is provided, it has to be the first operation
      * of the operation list.
      *
      * Generated from protobuf enum <code>INVALID_OPERATION_ORDER = 18;</code>
      */
-    const INVALID_OPERATION_ORDER = 18;
+    public const INVALID_OPERATION_ORDER = 18;
     /**
      * Mixing creation and removal of offline data in the same job is not
      * allowed.
      *
      * Generated from protobuf enum <code>CONFLICTING_OPERATION = 19;</code>
      */
-    const CONFLICTING_OPERATION = 19;
+    public const CONFLICTING_OPERATION = 19;
     /**
      * The external update ID already exists.
      *
      * Generated from protobuf enum <code>EXTERNAL_UPDATE_ID_ALREADY_EXISTS = 21;</code>
      */
-    const EXTERNAL_UPDATE_ID_ALREADY_EXISTS = 21;
+    public const EXTERNAL_UPDATE_ID_ALREADY_EXISTS = 21;
     /**
      * Once the upload job is started, new operations cannot be added.
      *
      * Generated from protobuf enum <code>JOB_ALREADY_STARTED = 22;</code>
      */
-    const JOB_ALREADY_STARTED = 22;
+    public const JOB_ALREADY_STARTED = 22;
     /**
      * Remove operation is not allowed for store sales direct updates.
      *
      * Generated from protobuf enum <code>REMOVE_NOT_SUPPORTED = 23;</code>
      */
-    const REMOVE_NOT_SUPPORTED = 23;
+    public const REMOVE_NOT_SUPPORTED = 23;
     /**
      * Remove-all is not supported for certain offline user data job types.
      *
      * Generated from protobuf enum <code>REMOVE_ALL_NOT_SUPPORTED = 24;</code>
      */
-    const REMOVE_ALL_NOT_SUPPORTED = 24;
+    public const REMOVE_ALL_NOT_SUPPORTED = 24;
     /**
      * The SHA256 encoded value is malformed.
      *
      * Generated from protobuf enum <code>INVALID_SHA256_FORMAT = 25;</code>
      */
-    const INVALID_SHA256_FORMAT = 25;
+    public const INVALID_SHA256_FORMAT = 25;
     /**
      * The custom key specified is not enabled for the unified store sales
      * upload.
      *
      * Generated from protobuf enum <code>CUSTOM_KEY_DISABLED = 26;</code>
      */
-    const CUSTOM_KEY_DISABLED = 26;
+    public const CUSTOM_KEY_DISABLED = 26;
     /**
      * The custom key specified is not predefined through the Google Ads UI.
      *
      * Generated from protobuf enum <code>CUSTOM_KEY_NOT_PREDEFINED = 27;</code>
      */
-    const CUSTOM_KEY_NOT_PREDEFINED = 27;
+    public const CUSTOM_KEY_NOT_PREDEFINED = 27;
     /**
      * The custom key specified is not set in the upload.
      *
      * Generated from protobuf enum <code>CUSTOM_KEY_NOT_SET = 29;</code>
      */
-    const CUSTOM_KEY_NOT_SET = 29;
+    public const CUSTOM_KEY_NOT_SET = 29;
     /**
      * The customer has not accepted the customer data terms in the conversion
      * settings page.
      *
      * Generated from protobuf enum <code>CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS = 30;</code>
      */
-    const CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS = 30;
+    public const CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS = 30;
     /**
      * User attributes cannot be uploaded into a user list.
      *
      * Generated from protobuf enum <code>ATTRIBUTES_NOT_APPLICABLE_FOR_CUSTOMER_MATCH_USER_LIST = 34;</code>
      */
-    const ATTRIBUTES_NOT_APPLICABLE_FOR_CUSTOMER_MATCH_USER_LIST = 34;
+    public const ATTRIBUTES_NOT_APPLICABLE_FOR_CUSTOMER_MATCH_USER_LIST = 34;
     /**
      * Lifetime bucket value must be a number from 0 to 10; 0 is only accepted
      * for remove operations
      *
      * Generated from protobuf enum <code>LIFETIME_VALUE_BUCKET_NOT_IN_RANGE = 35;</code>
      */
-    const LIFETIME_VALUE_BUCKET_NOT_IN_RANGE = 35;
+    public const LIFETIME_VALUE_BUCKET_NOT_IN_RANGE = 35;
     /**
      * Identifiers not supported for Customer Match attributes. User attributes
      * can only be provided with contact info (email, phone, address) user
@@ -217,19 +217,19 @@ class OfflineUserDataJobError
      *
      * Generated from protobuf enum <code>INCOMPATIBLE_USER_IDENTIFIER_FOR_ATTRIBUTES = 36;</code>
      */
-    const INCOMPATIBLE_USER_IDENTIFIER_FOR_ATTRIBUTES = 36;
+    public const INCOMPATIBLE_USER_IDENTIFIER_FOR_ATTRIBUTES = 36;
     /**
      * A time in the future is not allowed.
      *
      * Generated from protobuf enum <code>FUTURE_TIME_NOT_ALLOWED = 37;</code>
      */
-    const FUTURE_TIME_NOT_ALLOWED = 37;
+    public const FUTURE_TIME_NOT_ALLOWED = 37;
     /**
      * Last purchase date time cannot be less than acquisition date time.
      *
      * Generated from protobuf enum <code>LAST_PURCHASE_TIME_LESS_THAN_ACQUISITION_TIME = 38;</code>
      */
-    const LAST_PURCHASE_TIME_LESS_THAN_ACQUISITION_TIME = 38;
+    public const LAST_PURCHASE_TIME_LESS_THAN_ACQUISITION_TIME = 38;
     /**
      * Only emails are accepted as user identifiers for shopping loyalty match.
      * {-- api.dev/not-precedent: The identifier is not limited to ids, but
@@ -237,41 +237,41 @@ class OfflineUserDataJobError
      *
      * Generated from protobuf enum <code>CUSTOMER_IDENTIFIER_NOT_ALLOWED = 39;</code>
      */
-    const CUSTOMER_IDENTIFIER_NOT_ALLOWED = 39;
+    public const CUSTOMER_IDENTIFIER_NOT_ALLOWED = 39;
     /**
      * Provided item ID is invalid.
      *
      * Generated from protobuf enum <code>INVALID_ITEM_ID = 40;</code>
      */
-    const INVALID_ITEM_ID = 40;
+    public const INVALID_ITEM_ID = 40;
     /**
      * First purchase date time cannot be greater than the last purchase date
      * time.
      *
      * Generated from protobuf enum <code>FIRST_PURCHASE_TIME_GREATER_THAN_LAST_PURCHASE_TIME = 42;</code>
      */
-    const FIRST_PURCHASE_TIME_GREATER_THAN_LAST_PURCHASE_TIME = 42;
+    public const FIRST_PURCHASE_TIME_GREATER_THAN_LAST_PURCHASE_TIME = 42;
     /**
      * Provided lifecycle stage is invalid.
      *
      * Generated from protobuf enum <code>INVALID_LIFECYCLE_STAGE = 43;</code>
      */
-    const INVALID_LIFECYCLE_STAGE = 43;
+    public const INVALID_LIFECYCLE_STAGE = 43;
     /**
      * The event value of the Customer Match user attribute is invalid.
      *
      * Generated from protobuf enum <code>INVALID_EVENT_VALUE = 44;</code>
      */
-    const INVALID_EVENT_VALUE = 44;
+    public const INVALID_EVENT_VALUE = 44;
     /**
      * All the fields are not present in the EventAttribute of the Customer
      * Match.
      *
      * Generated from protobuf enum <code>EVENT_ATTRIBUTE_ALL_FIELDS_ARE_REQUIRED = 45;</code>
      */
-    const EVENT_ATTRIBUTE_ALL_FIELDS_ARE_REQUIRED = 45;
+    public const EVENT_ATTRIBUTE_ALL_FIELDS_ARE_REQUIRED = 45;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INVALID_USER_LIST_ID => 'INVALID_USER_LIST_ID',
@@ -318,7 +318,7 @@ class OfflineUserDataJobError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -326,10 +326,10 @@ class OfflineUserDataJobError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

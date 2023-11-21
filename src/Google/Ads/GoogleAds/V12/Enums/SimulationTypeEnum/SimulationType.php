@@ -18,63 +18,63 @@ class SimulationType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The simulation is for a CPC bid.
      *
      * Generated from protobuf enum <code>CPC_BID = 2;</code>
      */
-    const CPC_BID = 2;
+    public const CPC_BID = 2;
     /**
      * The simulation is for a CPV bid.
      *
      * Generated from protobuf enum <code>CPV_BID = 3;</code>
      */
-    const CPV_BID = 3;
+    public const CPV_BID = 3;
     /**
      * The simulation is for a CPA target.
      *
      * Generated from protobuf enum <code>TARGET_CPA = 4;</code>
      */
-    const TARGET_CPA = 4;
+    public const TARGET_CPA = 4;
     /**
      * The simulation is for a bid modifier.
      *
      * Generated from protobuf enum <code>BID_MODIFIER = 5;</code>
      */
-    const BID_MODIFIER = 5;
+    public const BID_MODIFIER = 5;
     /**
      * The simulation is for a ROAS target.
      *
      * Generated from protobuf enum <code>TARGET_ROAS = 6;</code>
      */
-    const TARGET_ROAS = 6;
+    public const TARGET_ROAS = 6;
     /**
      * The simulation is for a percent CPC bid.
      *
      * Generated from protobuf enum <code>PERCENT_CPC_BID = 7;</code>
      */
-    const PERCENT_CPC_BID = 7;
+    public const PERCENT_CPC_BID = 7;
     /**
      * The simulation is for an impression share target.
      *
      * Generated from protobuf enum <code>TARGET_IMPRESSION_SHARE = 8;</code>
      */
-    const TARGET_IMPRESSION_SHARE = 8;
+    public const TARGET_IMPRESSION_SHARE = 8;
     /**
      * The simulation is for a budget.
      *
      * Generated from protobuf enum <code>BUDGET = 9;</code>
      */
-    const BUDGET = 9;
+    public const BUDGET = 9;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CPC_BID => 'CPC_BID',
@@ -91,7 +91,7 @@ class SimulationType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -99,10 +99,10 @@ class SimulationType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

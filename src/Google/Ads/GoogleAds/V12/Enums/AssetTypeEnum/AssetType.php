@@ -18,171 +18,171 @@ class AssetType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * YouTube video asset.
      *
      * Generated from protobuf enum <code>YOUTUBE_VIDEO = 2;</code>
      */
-    const YOUTUBE_VIDEO = 2;
+    public const YOUTUBE_VIDEO = 2;
     /**
      * Media bundle asset.
      *
      * Generated from protobuf enum <code>MEDIA_BUNDLE = 3;</code>
      */
-    const MEDIA_BUNDLE = 3;
+    public const MEDIA_BUNDLE = 3;
     /**
      * Image asset.
      *
      * Generated from protobuf enum <code>IMAGE = 4;</code>
      */
-    const IMAGE = 4;
+    public const IMAGE = 4;
     /**
      * Text asset.
      *
      * Generated from protobuf enum <code>TEXT = 5;</code>
      */
-    const TEXT = 5;
+    public const TEXT = 5;
     /**
      * Lead form asset.
      *
      * Generated from protobuf enum <code>LEAD_FORM = 6;</code>
      */
-    const LEAD_FORM = 6;
+    public const LEAD_FORM = 6;
     /**
      * Book on Google asset.
      *
      * Generated from protobuf enum <code>BOOK_ON_GOOGLE = 7;</code>
      */
-    const BOOK_ON_GOOGLE = 7;
+    public const BOOK_ON_GOOGLE = 7;
     /**
      * Promotion asset.
      *
      * Generated from protobuf enum <code>PROMOTION = 8;</code>
      */
-    const PROMOTION = 8;
+    public const PROMOTION = 8;
     /**
      * Callout asset.
      *
      * Generated from protobuf enum <code>CALLOUT = 9;</code>
      */
-    const CALLOUT = 9;
+    public const CALLOUT = 9;
     /**
      * Structured Snippet asset.
      *
      * Generated from protobuf enum <code>STRUCTURED_SNIPPET = 10;</code>
      */
-    const STRUCTURED_SNIPPET = 10;
+    public const STRUCTURED_SNIPPET = 10;
     /**
      * Sitelink asset.
      *
      * Generated from protobuf enum <code>SITELINK = 11;</code>
      */
-    const SITELINK = 11;
+    public const SITELINK = 11;
     /**
      * Page Feed asset.
      *
      * Generated from protobuf enum <code>PAGE_FEED = 12;</code>
      */
-    const PAGE_FEED = 12;
+    public const PAGE_FEED = 12;
     /**
      * Dynamic Education asset.
      *
      * Generated from protobuf enum <code>DYNAMIC_EDUCATION = 13;</code>
      */
-    const DYNAMIC_EDUCATION = 13;
+    public const DYNAMIC_EDUCATION = 13;
     /**
      * Mobile app asset.
      *
      * Generated from protobuf enum <code>MOBILE_APP = 14;</code>
      */
-    const MOBILE_APP = 14;
+    public const MOBILE_APP = 14;
     /**
      * Hotel callout asset.
      *
      * Generated from protobuf enum <code>HOTEL_CALLOUT = 15;</code>
      */
-    const HOTEL_CALLOUT = 15;
+    public const HOTEL_CALLOUT = 15;
     /**
      * Call asset.
      *
      * Generated from protobuf enum <code>CALL = 16;</code>
      */
-    const CALL = 16;
+    public const CALL = 16;
     /**
      * Price asset.
      *
      * Generated from protobuf enum <code>PRICE = 17;</code>
      */
-    const PRICE = 17;
+    public const PRICE = 17;
     /**
      * Call to action asset.
      *
      * Generated from protobuf enum <code>CALL_TO_ACTION = 18;</code>
      */
-    const CALL_TO_ACTION = 18;
+    public const CALL_TO_ACTION = 18;
     /**
      * Dynamic real estate asset.
      *
      * Generated from protobuf enum <code>DYNAMIC_REAL_ESTATE = 19;</code>
      */
-    const DYNAMIC_REAL_ESTATE = 19;
+    public const DYNAMIC_REAL_ESTATE = 19;
     /**
      * Dynamic custom asset.
      *
      * Generated from protobuf enum <code>DYNAMIC_CUSTOM = 20;</code>
      */
-    const DYNAMIC_CUSTOM = 20;
+    public const DYNAMIC_CUSTOM = 20;
     /**
      * Dynamic hotels and rentals asset.
      *
      * Generated from protobuf enum <code>DYNAMIC_HOTELS_AND_RENTALS = 21;</code>
      */
-    const DYNAMIC_HOTELS_AND_RENTALS = 21;
+    public const DYNAMIC_HOTELS_AND_RENTALS = 21;
     /**
      * Dynamic flights asset.
      *
      * Generated from protobuf enum <code>DYNAMIC_FLIGHTS = 22;</code>
      */
-    const DYNAMIC_FLIGHTS = 22;
+    public const DYNAMIC_FLIGHTS = 22;
     /**
      * Discovery Carousel Card asset.
      *
      * Generated from protobuf enum <code>DISCOVERY_CAROUSEL_CARD = 23;</code>
      */
-    const DISCOVERY_CAROUSEL_CARD = 23;
+    public const DISCOVERY_CAROUSEL_CARD = 23;
     /**
      * Dynamic travel asset.
      *
      * Generated from protobuf enum <code>DYNAMIC_TRAVEL = 24;</code>
      */
-    const DYNAMIC_TRAVEL = 24;
+    public const DYNAMIC_TRAVEL = 24;
     /**
      * Dynamic local asset.
      *
      * Generated from protobuf enum <code>DYNAMIC_LOCAL = 25;</code>
      */
-    const DYNAMIC_LOCAL = 25;
+    public const DYNAMIC_LOCAL = 25;
     /**
      * Dynamic jobs asset.
      *
      * Generated from protobuf enum <code>DYNAMIC_JOBS = 26;</code>
      */
-    const DYNAMIC_JOBS = 26;
+    public const DYNAMIC_JOBS = 26;
     /**
      * Location asset.
      *
      * Generated from protobuf enum <code>LOCATION = 27;</code>
      */
-    const LOCATION = 27;
+    public const LOCATION = 27;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::YOUTUBE_VIDEO => 'YOUTUBE_VIDEO',
@@ -217,7 +217,7 @@ class AssetType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -225,10 +225,10 @@ class AssetType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

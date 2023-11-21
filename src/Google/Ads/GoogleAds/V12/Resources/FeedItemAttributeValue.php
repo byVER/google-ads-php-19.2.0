@@ -153,7 +153,7 @@ class FeedItemAttributeValue extends \Google\Protobuf\Internal\Message
      */
     public function getFeedAttributeId()
     {
-        return isset($this->feed_attribute_id) ? $this->feed_attribute_id : 0;
+        return $this->feed_attribute_id ?? 0;
     }
 
     public function hasFeedAttributeId()
@@ -190,7 +190,7 @@ class FeedItemAttributeValue extends \Google\Protobuf\Internal\Message
      */
     public function getIntegerValue()
     {
-        return isset($this->integer_value) ? $this->integer_value : 0;
+        return $this->integer_value ?? 0;
     }
 
     public function hasIntegerValue()
@@ -228,7 +228,7 @@ class FeedItemAttributeValue extends \Google\Protobuf\Internal\Message
      */
     public function getBooleanValue()
     {
-        return isset($this->boolean_value) ? $this->boolean_value : false;
+        return $this->boolean_value ?? false;
     }
 
     public function hasBooleanValue()
@@ -269,7 +269,7 @@ class FeedItemAttributeValue extends \Google\Protobuf\Internal\Message
      */
     public function getStringValue()
     {
-        return isset($this->string_value) ? $this->string_value : '';
+        return $this->string_value ?? '';
     }
 
     public function hasStringValue()
@@ -310,7 +310,7 @@ class FeedItemAttributeValue extends \Google\Protobuf\Internal\Message
      */
     public function getDoubleValue()
     {
-        return isset($this->double_value) ? $this->double_value : 0.0;
+        return $this->double_value ?? 0.0;
     }
 
     public function hasDoubleValue()

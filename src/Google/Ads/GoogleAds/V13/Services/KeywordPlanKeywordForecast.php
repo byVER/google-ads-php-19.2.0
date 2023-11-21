@@ -56,7 +56,7 @@ class KeywordPlanKeywordForecast extends \Google\Protobuf\Internal\Message
      */
     public function getKeywordPlanAdGroupKeyword()
     {
-        return isset($this->keyword_plan_ad_group_keyword) ? $this->keyword_plan_ad_group_keyword : '';
+        return $this->keyword_plan_ad_group_keyword ?? '';
     }
 
     public function hasKeywordPlanAdGroupKeyword()

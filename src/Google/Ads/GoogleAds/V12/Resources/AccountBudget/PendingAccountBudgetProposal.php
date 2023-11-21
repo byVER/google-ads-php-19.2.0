@@ -117,7 +117,7 @@ class PendingAccountBudgetProposal extends \Google\Protobuf\Internal\Message
      */
     public function getAccountBudgetProposal()
     {
-        return isset($this->account_budget_proposal) ? $this->account_budget_proposal : '';
+        return $this->account_budget_proposal ?? '';
     }
 
     public function hasAccountBudgetProposal()
@@ -169,7 +169,7 @@ class PendingAccountBudgetProposal extends \Google\Protobuf\Internal\Message
      */
     public function setProposalType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AccountBudgetProposalTypeEnum\AccountBudgetProposalType::class);
+        GPBUtil::checkEnum($var);
         $this->proposal_type = $var;
 
         return $this;
@@ -183,7 +183,7 @@ class PendingAccountBudgetProposal extends \Google\Protobuf\Internal\Message
      */
     public function getName()
     {
-        return isset($this->name) ? $this->name : '';
+        return $this->name ?? '';
     }
 
     public function hasName()
@@ -219,7 +219,7 @@ class PendingAccountBudgetProposal extends \Google\Protobuf\Internal\Message
      */
     public function getStartDateTime()
     {
-        return isset($this->start_date_time) ? $this->start_date_time : '';
+        return $this->start_date_time ?? '';
     }
 
     public function hasStartDateTime()
@@ -256,7 +256,7 @@ class PendingAccountBudgetProposal extends \Google\Protobuf\Internal\Message
      */
     public function getPurchaseOrderNumber()
     {
-        return isset($this->purchase_order_number) ? $this->purchase_order_number : '';
+        return $this->purchase_order_number ?? '';
     }
 
     public function hasPurchaseOrderNumber()
@@ -293,7 +293,7 @@ class PendingAccountBudgetProposal extends \Google\Protobuf\Internal\Message
      */
     public function getNotes()
     {
-        return isset($this->notes) ? $this->notes : '';
+        return $this->notes ?? '';
     }
 
     public function hasNotes()
@@ -330,7 +330,7 @@ class PendingAccountBudgetProposal extends \Google\Protobuf\Internal\Message
      */
     public function getCreationDateTime()
     {
-        return isset($this->creation_date_time) ? $this->creation_date_time : '';
+        return $this->creation_date_time ?? '';
     }
 
     public function hasCreationDateTime()
@@ -415,7 +415,7 @@ class PendingAccountBudgetProposal extends \Google\Protobuf\Internal\Message
      */
     public function setEndTimeType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\TimeTypeEnum\TimeType::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(6, $var);
 
         return $this;
@@ -479,7 +479,7 @@ class PendingAccountBudgetProposal extends \Google\Protobuf\Internal\Message
      */
     public function setSpendingLimitType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\SpendingLimitTypeEnum\SpendingLimitType::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(8, $var);
 
         return $this;

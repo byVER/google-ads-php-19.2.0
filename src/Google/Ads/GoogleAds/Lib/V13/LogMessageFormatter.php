@@ -29,8 +29,8 @@ final class LogMessageFormatter
     use ArrayTrait;
     use GoogleAdsMetadataTrait;
 
-    private $statusMetadataExtractor;
-    private $infoRedactor;
+    private \Google\Ads\GoogleAds\Lib\V13\StatusMetadataExtractor $statusMetadataExtractor;
+    private \Google\Ads\GoogleAds\Lib\V13\InfoRedactor $infoRedactor;
 
     public function __construct(
         StatusMetadataExtractor $statusMetadataExtractor = null,
@@ -95,7 +95,7 @@ final class LogMessageFormatter
             self::extractCustomerId($argument),
             $this->getFirstHeaderValue(self::$REQUEST_ID_HEADER_KEY, $status->metadata),
             $status->code !== 0,
-            !empty($errorMessageList) ? json_encode($errorMessageList) : 'None'
+            !empty($errorMessageList) ? json_encode($errorMessageList, JSON_THROW_ON_ERROR) : 'None'
         );
     }
 

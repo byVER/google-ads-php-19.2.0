@@ -68,7 +68,7 @@ class MediaFileServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.MediaFileService/MutateMediaFiles',
         $argument,
-        ['\Google\Ads\GoogleAds\V13\Services\MutateMediaFilesResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V13\Services\MutateMediaFilesResponse::class, 'decode'],
         $metadata, $options);
     }
 

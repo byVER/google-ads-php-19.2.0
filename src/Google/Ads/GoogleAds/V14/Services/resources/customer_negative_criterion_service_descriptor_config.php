@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.CustomerNegativeCriterionService' => [
             'MutateCustomerNegativeCriteria' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCustomerNegativeCriteriaResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCustomerNegativeCriteriaResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

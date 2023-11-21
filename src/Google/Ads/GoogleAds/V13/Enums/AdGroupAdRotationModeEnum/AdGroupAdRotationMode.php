@@ -18,28 +18,28 @@ class AdGroupAdRotationMode
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received value is not known in this version.
      * This is a response-only value.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Optimize ad group ads based on clicks or conversions.
      *
      * Generated from protobuf enum <code>OPTIMIZE = 2;</code>
      */
-    const OPTIMIZE = 2;
+    public const OPTIMIZE = 2;
     /**
      * Rotate evenly forever.
      *
      * Generated from protobuf enum <code>ROTATE_FOREVER = 3;</code>
      */
-    const ROTATE_FOREVER = 3;
+    public const ROTATE_FOREVER = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::OPTIMIZE => 'OPTIMIZE',
@@ -50,7 +50,7 @@ class AdGroupAdRotationMode
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -58,10 +58,10 @@ class AdGroupAdRotationMode
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

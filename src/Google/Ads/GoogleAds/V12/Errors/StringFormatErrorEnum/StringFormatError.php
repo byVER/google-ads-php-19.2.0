@@ -18,27 +18,27 @@ class StringFormatError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The input string value contains disallowed characters.
      *
      * Generated from protobuf enum <code>ILLEGAL_CHARS = 2;</code>
      */
-    const ILLEGAL_CHARS = 2;
+    public const ILLEGAL_CHARS = 2;
     /**
      * The input string value is invalid for the associated field.
      *
      * Generated from protobuf enum <code>INVALID_FORMAT = 3;</code>
      */
-    const INVALID_FORMAT = 3;
+    public const INVALID_FORMAT = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ILLEGAL_CHARS => 'ILLEGAL_CHARS',
@@ -49,7 +49,7 @@ class StringFormatError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -57,10 +57,10 @@ class StringFormatError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

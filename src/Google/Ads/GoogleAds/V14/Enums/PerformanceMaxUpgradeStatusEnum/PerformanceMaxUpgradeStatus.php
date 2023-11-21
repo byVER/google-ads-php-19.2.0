@@ -18,40 +18,40 @@ class PerformanceMaxUpgradeStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The campaign is eligible for upgrade to a Performance Max campaign.
      *
      * Generated from protobuf enum <code>UPGRADE_ELIBIGLE = 2;</code>
      */
-    const UPGRADE_ELIBIGLE = 2;
+    public const UPGRADE_ELIBIGLE = 2;
     /**
      * The upgrade to a Performance Max campaign is in progress.
      *
      * Generated from protobuf enum <code>UPGRADE_IN_PROGRESS = 3;</code>
      */
-    const UPGRADE_IN_PROGRESS = 3;
+    public const UPGRADE_IN_PROGRESS = 3;
     /**
      * The upgrade to a Performance Max campaign is complete.
      *
      * Generated from protobuf enum <code>UPGRADE_COMPLETE = 4;</code>
      */
-    const UPGRADE_COMPLETE = 4;
+    public const UPGRADE_COMPLETE = 4;
     /**
      * The upgrade to a Performance Max campaign failed.
      * The campaign will still serve as it was before upgrade was attempted.
      *
      * Generated from protobuf enum <code>UPGRADE_FAILED = 5;</code>
      */
-    const UPGRADE_FAILED = 5;
+    public const UPGRADE_FAILED = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::UPGRADE_ELIBIGLE => 'UPGRADE_ELIBIGLE',
@@ -64,7 +64,7 @@ class PerformanceMaxUpgradeStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -72,10 +72,10 @@ class PerformanceMaxUpgradeStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

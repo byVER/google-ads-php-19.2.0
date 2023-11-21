@@ -138,7 +138,7 @@ class CampaignCriterionSimulation extends \Google\Protobuf\Internal\Message
      */
     public function getCampaignId()
     {
-        return isset($this->campaign_id) ? $this->campaign_id : 0;
+        return $this->campaign_id ?? 0;
     }
 
     public function hasCampaignId()
@@ -174,7 +174,7 @@ class CampaignCriterionSimulation extends \Google\Protobuf\Internal\Message
      */
     public function getCriterionId()
     {
-        return isset($this->criterion_id) ? $this->criterion_id : 0;
+        return $this->criterion_id ?? 0;
     }
 
     public function hasCriterionId()
@@ -222,7 +222,7 @@ class CampaignCriterionSimulation extends \Google\Protobuf\Internal\Message
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\SimulationTypeEnum\SimulationType::class);
+        GPBUtil::checkEnum($var);
         $this->type = $var;
 
         return $this;
@@ -248,7 +248,7 @@ class CampaignCriterionSimulation extends \Google\Protobuf\Internal\Message
      */
     public function setModificationMethod($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\SimulationModificationMethodEnum\SimulationModificationMethod::class);
+        GPBUtil::checkEnum($var);
         $this->modification_method = $var;
 
         return $this;
@@ -263,7 +263,7 @@ class CampaignCriterionSimulation extends \Google\Protobuf\Internal\Message
      */
     public function getStartDate()
     {
-        return isset($this->start_date) ? $this->start_date : '';
+        return $this->start_date ?? '';
     }
 
     public function hasStartDate()
@@ -301,7 +301,7 @@ class CampaignCriterionSimulation extends \Google\Protobuf\Internal\Message
      */
     public function getEndDate()
     {
-        return isset($this->end_date) ? $this->end_date : '';
+        return $this->end_date ?? '';
     }
 
     public function hasEndDate()

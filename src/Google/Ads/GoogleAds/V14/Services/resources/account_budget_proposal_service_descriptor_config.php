@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.AccountBudgetProposalService' => [
             'MutateAccountBudgetProposal' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateAccountBudgetProposalResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateAccountBudgetProposalResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

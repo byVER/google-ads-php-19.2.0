@@ -191,7 +191,7 @@ class ListInvoicesRequest extends \Google\Protobuf\Internal\Message
      */
     public function setIssueMonth($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\MonthOfYearEnum\MonthOfYear::class);
+        GPBUtil::checkEnum($var);
         $this->issue_month = $var;
 
         return $this;

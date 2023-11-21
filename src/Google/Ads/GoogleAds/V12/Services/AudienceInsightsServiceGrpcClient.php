@@ -56,7 +56,7 @@ class AudienceInsightsServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.AudienceInsightsService/GenerateInsightsFinderReport',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\GenerateInsightsFinderReportResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\GenerateInsightsFinderReportResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -81,7 +81,7 @@ class AudienceInsightsServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.AudienceInsightsService/ListAudienceInsightsAttributes',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\ListAudienceInsightsAttributesResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\ListAudienceInsightsAttributesResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -106,7 +106,7 @@ class AudienceInsightsServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.AudienceInsightsService/ListInsightsEligibleDates',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\ListInsightsEligibleDatesResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\ListInsightsEligibleDatesResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -134,7 +134,7 @@ class AudienceInsightsServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.AudienceInsightsService/GenerateAudienceCompositionInsights',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\GenerateAudienceCompositionInsightsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\GenerateAudienceCompositionInsightsResponse::class, 'decode'],
         $metadata, $options);
     }
 

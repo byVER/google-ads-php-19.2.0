@@ -111,7 +111,7 @@ class DistanceView extends \Google\Protobuf\Internal\Message
      */
     public function setDistanceBucket($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\DistanceBucketEnum\DistanceBucket::class);
+        GPBUtil::checkEnum($var);
         $this->distance_bucket = $var;
 
         return $this;
@@ -125,7 +125,7 @@ class DistanceView extends \Google\Protobuf\Internal\Message
      */
     public function getMetricSystem()
     {
-        return isset($this->metric_system) ? $this->metric_system : false;
+        return $this->metric_system ?? false;
     }
 
     public function hasMetricSystem()

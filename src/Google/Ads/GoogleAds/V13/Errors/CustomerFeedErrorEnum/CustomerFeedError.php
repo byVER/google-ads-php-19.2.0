@@ -18,58 +18,58 @@ class CustomerFeedError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * An active feed already exists for this customer and place holder type.
      *
      * Generated from protobuf enum <code>FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 2;</code>
      */
-    const FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 2;
+    public const FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 2;
     /**
      * The specified feed is removed.
      *
      * Generated from protobuf enum <code>CANNOT_CREATE_FOR_REMOVED_FEED = 3;</code>
      */
-    const CANNOT_CREATE_FOR_REMOVED_FEED = 3;
+    public const CANNOT_CREATE_FOR_REMOVED_FEED = 3;
     /**
      * The CustomerFeed already exists. Update should be used to modify the
      * existing CustomerFeed.
      *
      * Generated from protobuf enum <code>CANNOT_CREATE_ALREADY_EXISTING_CUSTOMER_FEED = 4;</code>
      */
-    const CANNOT_CREATE_ALREADY_EXISTING_CUSTOMER_FEED = 4;
+    public const CANNOT_CREATE_ALREADY_EXISTING_CUSTOMER_FEED = 4;
     /**
      * Cannot update removed customer feed.
      *
      * Generated from protobuf enum <code>CANNOT_MODIFY_REMOVED_CUSTOMER_FEED = 5;</code>
      */
-    const CANNOT_MODIFY_REMOVED_CUSTOMER_FEED = 5;
+    public const CANNOT_MODIFY_REMOVED_CUSTOMER_FEED = 5;
     /**
      * Invalid placeholder type.
      *
      * Generated from protobuf enum <code>INVALID_PLACEHOLDER_TYPE = 6;</code>
      */
-    const INVALID_PLACEHOLDER_TYPE = 6;
+    public const INVALID_PLACEHOLDER_TYPE = 6;
     /**
      * Feed mapping for this placeholder type does not exist.
      *
      * Generated from protobuf enum <code>MISSING_FEEDMAPPING_FOR_PLACEHOLDER_TYPE = 7;</code>
      */
-    const MISSING_FEEDMAPPING_FOR_PLACEHOLDER_TYPE = 7;
+    public const MISSING_FEEDMAPPING_FOR_PLACEHOLDER_TYPE = 7;
     /**
      * Placeholder not allowed at the account level.
      *
      * Generated from protobuf enum <code>PLACEHOLDER_TYPE_NOT_ALLOWED_ON_CUSTOMER_FEED = 8;</code>
      */
-    const PLACEHOLDER_TYPE_NOT_ALLOWED_ON_CUSTOMER_FEED = 8;
+    public const PLACEHOLDER_TYPE_NOT_ALLOWED_ON_CUSTOMER_FEED = 8;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE => 'FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE',
@@ -85,7 +85,7 @@ class CustomerFeedError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -93,10 +93,10 @@ class CustomerFeedError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

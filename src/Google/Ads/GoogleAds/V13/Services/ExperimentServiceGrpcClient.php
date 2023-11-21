@@ -54,7 +54,7 @@ class ExperimentServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.ExperimentService/MutateExperiments',
         $argument,
-        ['\Google\Ads\GoogleAds\V13\Services\MutateExperimentsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V13\Services\MutateExperimentsResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -80,7 +80,7 @@ class ExperimentServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.ExperimentService/EndExperiment',
         $argument,
-        ['\Google\Protobuf\GPBEmpty', 'decode'],
+        ['\\' . \Google\Protobuf\GPBEmpty::class, 'decode'],
         $metadata, $options);
     }
 
@@ -105,7 +105,7 @@ class ExperimentServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.ExperimentService/ListExperimentAsyncErrors',
         $argument,
-        ['\Google\Ads\GoogleAds\V13\Services\ListExperimentAsyncErrorsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V13\Services\ListExperimentAsyncErrorsResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -130,7 +130,7 @@ class ExperimentServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.ExperimentService/GraduateExperiment',
         $argument,
-        ['\Google\Protobuf\GPBEmpty', 'decode'],
+        ['\\' . \Google\Protobuf\GPBEmpty::class, 'decode'],
         $metadata, $options);
     }
 
@@ -168,7 +168,7 @@ class ExperimentServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.ExperimentService/ScheduleExperiment',
         $argument,
-        ['\Google\LongRunning\Operation', 'decode'],
+        ['\\' . \Google\LongRunning\Operation::class, 'decode'],
         $metadata, $options);
     }
 
@@ -198,7 +198,7 @@ class ExperimentServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.ExperimentService/PromoteExperiment',
         $argument,
-        ['\Google\LongRunning\Operation', 'decode'],
+        ['\\' . \Google\LongRunning\Operation::class, 'decode'],
         $metadata, $options);
     }
 

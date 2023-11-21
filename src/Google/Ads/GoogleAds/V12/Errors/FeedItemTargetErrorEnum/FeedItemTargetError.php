@@ -18,65 +18,65 @@ class FeedItemTargetError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * On CREATE, the FeedItemTarget must have a populated field in the oneof
      * target.
      *
      * Generated from protobuf enum <code>MUST_SET_TARGET_ONEOF_ON_CREATE = 2;</code>
      */
-    const MUST_SET_TARGET_ONEOF_ON_CREATE = 2;
+    public const MUST_SET_TARGET_ONEOF_ON_CREATE = 2;
     /**
      * The specified feed item target already exists, so it cannot be added.
      *
      * Generated from protobuf enum <code>FEED_ITEM_TARGET_ALREADY_EXISTS = 3;</code>
      */
-    const FEED_ITEM_TARGET_ALREADY_EXISTS = 3;
+    public const FEED_ITEM_TARGET_ALREADY_EXISTS = 3;
     /**
      * The schedules for a given feed item cannot overlap.
      *
      * Generated from protobuf enum <code>FEED_ITEM_SCHEDULES_CANNOT_OVERLAP = 4;</code>
      */
-    const FEED_ITEM_SCHEDULES_CANNOT_OVERLAP = 4;
+    public const FEED_ITEM_SCHEDULES_CANNOT_OVERLAP = 4;
     /**
      * Too many targets of a given type were added for a single feed item.
      *
      * Generated from protobuf enum <code>TARGET_LIMIT_EXCEEDED_FOR_GIVEN_TYPE = 5;</code>
      */
-    const TARGET_LIMIT_EXCEEDED_FOR_GIVEN_TYPE = 5;
+    public const TARGET_LIMIT_EXCEEDED_FOR_GIVEN_TYPE = 5;
     /**
      * Too many AdSchedules are enabled for the feed item for the given day.
      *
      * Generated from protobuf enum <code>TOO_MANY_SCHEDULES_PER_DAY = 6;</code>
      */
-    const TOO_MANY_SCHEDULES_PER_DAY = 6;
+    public const TOO_MANY_SCHEDULES_PER_DAY = 6;
     /**
      * A feed item may either have an enabled campaign target or an enabled ad
      * group target.
      *
      * Generated from protobuf enum <code>CANNOT_HAVE_ENABLED_CAMPAIGN_AND_ENABLED_AD_GROUP_TARGETS = 7;</code>
      */
-    const CANNOT_HAVE_ENABLED_CAMPAIGN_AND_ENABLED_AD_GROUP_TARGETS = 7;
+    public const CANNOT_HAVE_ENABLED_CAMPAIGN_AND_ENABLED_AD_GROUP_TARGETS = 7;
     /**
      * Duplicate ad schedules aren't allowed.
      *
      * Generated from protobuf enum <code>DUPLICATE_AD_SCHEDULE = 8;</code>
      */
-    const DUPLICATE_AD_SCHEDULE = 8;
+    public const DUPLICATE_AD_SCHEDULE = 8;
     /**
      * Duplicate keywords aren't allowed.
      *
      * Generated from protobuf enum <code>DUPLICATE_KEYWORD = 9;</code>
      */
-    const DUPLICATE_KEYWORD = 9;
+    public const DUPLICATE_KEYWORD = 9;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::MUST_SET_TARGET_ONEOF_ON_CREATE => 'MUST_SET_TARGET_ONEOF_ON_CREATE',
@@ -93,7 +93,7 @@ class FeedItemTargetError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -101,10 +101,10 @@ class FeedItemTargetError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

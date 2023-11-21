@@ -127,7 +127,7 @@ class OfflineConversionClientSummary extends \Google\Protobuf\Internal\Message
      */
     public function setClient($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\OfflineEventUploadClientEnum\OfflineEventUploadClient::class);
+        GPBUtil::checkEnum($var);
         $this->client = $var;
 
         return $this;
@@ -155,7 +155,7 @@ class OfflineConversionClientSummary extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\OfflineConversionDiagnosticStatusEnum\OfflineConversionDiagnosticStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;

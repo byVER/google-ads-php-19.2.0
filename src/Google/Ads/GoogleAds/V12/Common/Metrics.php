@@ -1776,7 +1776,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAbsoluteTopImpressionPercentage()
     {
-        return isset($this->absolute_top_impression_percentage) ? $this->absolute_top_impression_percentage : 0.0;
+        return $this->absolute_top_impression_percentage ?? 0.0;
     }
 
     public function hasAbsoluteTopImpressionPercentage()
@@ -1813,7 +1813,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getActiveViewCpm()
     {
-        return isset($this->active_view_cpm) ? $this->active_view_cpm : 0.0;
+        return $this->active_view_cpm ?? 0.0;
     }
 
     public function hasActiveViewCpm()
@@ -1850,7 +1850,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getActiveViewCtr()
     {
-        return isset($this->active_view_ctr) ? $this->active_view_ctr : 0.0;
+        return $this->active_view_ctr ?? 0.0;
     }
 
     public function hasActiveViewCtr()
@@ -1888,7 +1888,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getActiveViewImpressions()
     {
-        return isset($this->active_view_impressions) ? $this->active_view_impressions : 0;
+        return $this->active_view_impressions ?? 0;
     }
 
     public function hasActiveViewImpressions()
@@ -1926,7 +1926,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getActiveViewMeasurability()
     {
-        return isset($this->active_view_measurability) ? $this->active_view_measurability : 0.0;
+        return $this->active_view_measurability ?? 0.0;
     }
 
     public function hasActiveViewMeasurability()
@@ -1964,7 +1964,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getActiveViewMeasurableCostMicros()
     {
-        return isset($this->active_view_measurable_cost_micros) ? $this->active_view_measurable_cost_micros : 0;
+        return $this->active_view_measurable_cost_micros ?? 0;
     }
 
     public function hasActiveViewMeasurableCostMicros()
@@ -2002,7 +2002,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getActiveViewMeasurableImpressions()
     {
-        return isset($this->active_view_measurable_impressions) ? $this->active_view_measurable_impressions : 0;
+        return $this->active_view_measurable_impressions ?? 0;
     }
 
     public function hasActiveViewMeasurableImpressions()
@@ -2040,7 +2040,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getActiveViewViewability()
     {
-        return isset($this->active_view_viewability) ? $this->active_view_viewability : 0.0;
+        return $this->active_view_viewability ?? 0.0;
     }
 
     public function hasActiveViewViewability()
@@ -2078,7 +2078,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromInteractionsRate()
     {
-        return isset($this->all_conversions_from_interactions_rate) ? $this->all_conversions_from_interactions_rate : 0.0;
+        return $this->all_conversions_from_interactions_rate ?? 0.0;
     }
 
     public function hasAllConversionsFromInteractionsRate()
@@ -2115,7 +2115,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsValue()
     {
-        return isset($this->all_conversions_value) ? $this->all_conversions_value : 0.0;
+        return $this->all_conversions_value ?? 0.0;
     }
 
     public function hasAllConversionsValue()
@@ -2184,7 +2184,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversions()
     {
-        return isset($this->all_conversions) ? $this->all_conversions : 0.0;
+        return $this->all_conversions ?? 0.0;
     }
 
     public function hasAllConversions()
@@ -2256,7 +2256,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsValuePerCost()
     {
-        return isset($this->all_conversions_value_per_cost) ? $this->all_conversions_value_per_cost : 0.0;
+        return $this->all_conversions_value_per_cost ?? 0.0;
     }
 
     public function hasAllConversionsValuePerCost()
@@ -2296,7 +2296,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromClickToCall()
     {
-        return isset($this->all_conversions_from_click_to_call) ? $this->all_conversions_from_click_to_call : 0.0;
+        return $this->all_conversions_from_click_to_call ?? 0.0;
     }
 
     public function hasAllConversionsFromClickToCall()
@@ -2337,7 +2337,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromDirections()
     {
-        return isset($this->all_conversions_from_directions) ? $this->all_conversions_from_directions : 0.0;
+        return $this->all_conversions_from_directions ?? 0.0;
     }
 
     public function hasAllConversionsFromDirections()
@@ -2376,7 +2376,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromInteractionsValuePerInteraction()
     {
-        return isset($this->all_conversions_from_interactions_value_per_interaction) ? $this->all_conversions_from_interactions_value_per_interaction : 0.0;
+        return $this->all_conversions_from_interactions_value_per_interaction ?? 0.0;
     }
 
     public function hasAllConversionsFromInteractionsValuePerInteraction()
@@ -2415,7 +2415,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromMenu()
     {
-        return isset($this->all_conversions_from_menu) ? $this->all_conversions_from_menu : 0.0;
+        return $this->all_conversions_from_menu ?? 0.0;
     }
 
     public function hasAllConversionsFromMenu()
@@ -2454,7 +2454,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromOrder()
     {
-        return isset($this->all_conversions_from_order) ? $this->all_conversions_from_order : 0.0;
+        return $this->all_conversions_from_order ?? 0.0;
     }
 
     public function hasAllConversionsFromOrder()
@@ -2493,7 +2493,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromOtherEngagement()
     {
-        return isset($this->all_conversions_from_other_engagement) ? $this->all_conversions_from_other_engagement : 0.0;
+        return $this->all_conversions_from_other_engagement ?? 0.0;
     }
 
     public function hasAllConversionsFromOtherEngagement()
@@ -2532,7 +2532,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromStoreVisit()
     {
-        return isset($this->all_conversions_from_store_visit) ? $this->all_conversions_from_store_visit : 0.0;
+        return $this->all_conversions_from_store_visit ?? 0.0;
     }
 
     public function hasAllConversionsFromStoreVisit()
@@ -2571,7 +2571,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromStoreWebsite()
     {
-        return isset($this->all_conversions_from_store_website) ? $this->all_conversions_from_store_website : 0.0;
+        return $this->all_conversions_from_store_website ?? 0.0;
     }
 
     public function hasAllConversionsFromStoreWebsite()
@@ -2614,7 +2614,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAuctionInsightSearchAbsoluteTopImpressionPercentage()
     {
-        return isset($this->auction_insight_search_absolute_top_impression_percentage) ? $this->auction_insight_search_absolute_top_impression_percentage : 0.0;
+        return $this->auction_insight_search_absolute_top_impression_percentage ?? 0.0;
     }
 
     public function hasAuctionInsightSearchAbsoluteTopImpressionPercentage()
@@ -2659,7 +2659,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAuctionInsightSearchImpressionShare()
     {
-        return isset($this->auction_insight_search_impression_share) ? $this->auction_insight_search_impression_share : 0.0;
+        return $this->auction_insight_search_impression_share ?? 0.0;
     }
 
     public function hasAuctionInsightSearchImpressionShare()
@@ -2704,7 +2704,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAuctionInsightSearchOutrankingShare()
     {
-        return isset($this->auction_insight_search_outranking_share) ? $this->auction_insight_search_outranking_share : 0.0;
+        return $this->auction_insight_search_outranking_share ?? 0.0;
     }
 
     public function hasAuctionInsightSearchOutrankingShare()
@@ -2748,7 +2748,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAuctionInsightSearchOverlapRate()
     {
-        return isset($this->auction_insight_search_overlap_rate) ? $this->auction_insight_search_overlap_rate : 0.0;
+        return $this->auction_insight_search_overlap_rate ?? 0.0;
     }
 
     public function hasAuctionInsightSearchOverlapRate()
@@ -2790,7 +2790,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAuctionInsightSearchPositionAboveRate()
     {
-        return isset($this->auction_insight_search_position_above_rate) ? $this->auction_insight_search_position_above_rate : 0.0;
+        return $this->auction_insight_search_position_above_rate ?? 0.0;
     }
 
     public function hasAuctionInsightSearchPositionAboveRate()
@@ -2833,7 +2833,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAuctionInsightSearchTopImpressionPercentage()
     {
-        return isset($this->auction_insight_search_top_impression_percentage) ? $this->auction_insight_search_top_impression_percentage : 0.0;
+        return $this->auction_insight_search_top_impression_percentage ?? 0.0;
     }
 
     public function hasAuctionInsightSearchTopImpressionPercentage()
@@ -2874,7 +2874,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAverageCost()
     {
-        return isset($this->average_cost) ? $this->average_cost : 0.0;
+        return $this->average_cost ?? 0.0;
     }
 
     public function hasAverageCost()
@@ -2912,7 +2912,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAverageCpc()
     {
-        return isset($this->average_cpc) ? $this->average_cpc : 0.0;
+        return $this->average_cpc ?? 0.0;
     }
 
     public function hasAverageCpc()
@@ -2951,7 +2951,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAverageCpe()
     {
-        return isset($this->average_cpe) ? $this->average_cpe : 0.0;
+        return $this->average_cpe ?? 0.0;
     }
 
     public function hasAverageCpe()
@@ -2989,7 +2989,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAverageCpm()
     {
-        return isset($this->average_cpm) ? $this->average_cpm : 0.0;
+        return $this->average_cpm ?? 0.0;
     }
 
     public function hasAverageCpm()
@@ -3027,7 +3027,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAverageCpv()
     {
-        return isset($this->average_cpv) ? $this->average_cpv : 0.0;
+        return $this->average_cpv ?? 0.0;
     }
 
     public function hasAverageCpv()
@@ -3065,7 +3065,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAveragePageViews()
     {
-        return isset($this->average_page_views) ? $this->average_page_views : 0.0;
+        return $this->average_page_views ?? 0.0;
     }
 
     public function hasAveragePageViews()
@@ -3102,7 +3102,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAverageTimeOnSite()
     {
-        return isset($this->average_time_on_site) ? $this->average_time_on_site : 0.0;
+        return $this->average_time_on_site ?? 0.0;
     }
 
     public function hasAverageTimeOnSite()
@@ -3139,7 +3139,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getBenchmarkAverageMaxCpc()
     {
-        return isset($this->benchmark_average_max_cpc) ? $this->benchmark_average_max_cpc : 0.0;
+        return $this->benchmark_average_max_cpc ?? 0.0;
     }
 
     public function hasBenchmarkAverageMaxCpc()
@@ -3175,7 +3175,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getBiddableAppInstallConversions()
     {
-        return isset($this->biddable_app_install_conversions) ? $this->biddable_app_install_conversions : 0.0;
+        return $this->biddable_app_install_conversions ?? 0.0;
     }
 
     public function hasBiddableAppInstallConversions()
@@ -3211,7 +3211,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getBiddableAppPostInstallConversions()
     {
-        return isset($this->biddable_app_post_install_conversions) ? $this->biddable_app_post_install_conversions : 0.0;
+        return $this->biddable_app_post_install_conversions ?? 0.0;
     }
 
     public function hasBiddableAppPostInstallConversions()
@@ -3248,7 +3248,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getBenchmarkCtr()
     {
-        return isset($this->benchmark_ctr) ? $this->benchmark_ctr : 0.0;
+        return $this->benchmark_ctr ?? 0.0;
     }
 
     public function hasBenchmarkCtr()
@@ -3286,7 +3286,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getBounceRate()
     {
-        return isset($this->bounce_rate) ? $this->bounce_rate : 0.0;
+        return $this->bounce_rate ?? 0.0;
     }
 
     public function hasBounceRate()
@@ -3323,7 +3323,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getClicks()
     {
-        return isset($this->clicks) ? $this->clicks : 0;
+        return $this->clicks ?? 0;
     }
 
     public function hasClicks()
@@ -3361,7 +3361,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCombinedClicks()
     {
-        return isset($this->combined_clicks) ? $this->combined_clicks : 0;
+        return $this->combined_clicks ?? 0;
     }
 
     public function hasCombinedClicks()
@@ -3402,7 +3402,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCombinedClicksPerQuery()
     {
-        return isset($this->combined_clicks_per_query) ? $this->combined_clicks_per_query : 0.0;
+        return $this->combined_clicks_per_query ?? 0.0;
     }
 
     public function hasCombinedClicksPerQuery()
@@ -3443,7 +3443,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCombinedQueries()
     {
-        return isset($this->combined_queries) ? $this->combined_queries : 0;
+        return $this->combined_queries ?? 0;
     }
 
     public function hasCombinedQueries()
@@ -3484,7 +3484,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getContentBudgetLostImpressionShare()
     {
-        return isset($this->content_budget_lost_impression_share) ? $this->content_budget_lost_impression_share : 0.0;
+        return $this->content_budget_lost_impression_share ?? 0.0;
     }
 
     public function hasContentBudgetLostImpressionShare()
@@ -3526,7 +3526,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getContentImpressionShare()
     {
-        return isset($this->content_impression_share) ? $this->content_impression_share : 0.0;
+        return $this->content_impression_share ?? 0.0;
     }
 
     public function hasContentImpressionShare()
@@ -3569,7 +3569,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getConversionLastReceivedRequestDateTime()
     {
-        return isset($this->conversion_last_received_request_date_time) ? $this->conversion_last_received_request_date_time : '';
+        return $this->conversion_last_received_request_date_time ?? '';
     }
 
     public function hasConversionLastReceivedRequestDateTime()
@@ -3610,7 +3610,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getConversionLastConversionDate()
     {
-        return isset($this->conversion_last_conversion_date) ? $this->conversion_last_conversion_date : '';
+        return $this->conversion_last_conversion_date ?? '';
     }
 
     public function hasConversionLastConversionDate()
@@ -3650,7 +3650,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getContentRankLostImpressionShare()
     {
-        return isset($this->content_rank_lost_impression_share) ? $this->content_rank_lost_impression_share : 0.0;
+        return $this->content_rank_lost_impression_share ?? 0.0;
     }
 
     public function hasContentRankLostImpressionShare()
@@ -3693,7 +3693,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getConversionsFromInteractionsRate()
     {
-        return isset($this->conversions_from_interactions_rate) ? $this->conversions_from_interactions_rate : 0.0;
+        return $this->conversions_from_interactions_rate ?? 0.0;
     }
 
     public function hasConversionsFromInteractionsRate()
@@ -3736,7 +3736,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getConversionsValue()
     {
-        return isset($this->conversions_value) ? $this->conversions_value : 0.0;
+        return $this->conversions_value ?? 0.0;
     }
 
     public function hasConversionsValue()
@@ -3816,7 +3816,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getConversionsValuePerCost()
     {
-        return isset($this->conversions_value_per_cost) ? $this->conversions_value_per_cost : 0.0;
+        return $this->conversions_value_per_cost ?? 0.0;
     }
 
     public function hasConversionsValuePerCost()
@@ -3859,7 +3859,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getConversionsFromInteractionsValuePerInteraction()
     {
-        return isset($this->conversions_from_interactions_value_per_interaction) ? $this->conversions_from_interactions_value_per_interaction : 0.0;
+        return $this->conversions_from_interactions_value_per_interaction ?? 0.0;
     }
 
     public function hasConversionsFromInteractionsValuePerInteraction()
@@ -3902,7 +3902,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getConversions()
     {
-        return isset($this->conversions) ? $this->conversions : 0.0;
+        return $this->conversions ?? 0.0;
     }
 
     public function hasConversions()
@@ -3980,7 +3980,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCostMicros()
     {
-        return isset($this->cost_micros) ? $this->cost_micros : 0;
+        return $this->cost_micros ?? 0;
     }
 
     public function hasCostMicros()
@@ -4017,7 +4017,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCostPerAllConversions()
     {
-        return isset($this->cost_per_all_conversions) ? $this->cost_per_all_conversions : 0.0;
+        return $this->cost_per_all_conversions ?? 0.0;
     }
 
     public function hasCostPerAllConversions()
@@ -4056,7 +4056,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCostPerConversion()
     {
-        return isset($this->cost_per_conversion) ? $this->cost_per_conversion : 0.0;
+        return $this->cost_per_conversion ?? 0.0;
     }
 
     public function hasCostPerConversion()
@@ -4099,7 +4099,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCostPerCurrentModelAttributedConversion()
     {
-        return isset($this->cost_per_current_model_attributed_conversion) ? $this->cost_per_current_model_attributed_conversion : 0.0;
+        return $this->cost_per_current_model_attributed_conversion ?? 0.0;
     }
 
     public function hasCostPerCurrentModelAttributedConversion()
@@ -4141,7 +4141,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCrossDeviceConversions()
     {
-        return isset($this->cross_device_conversions) ? $this->cross_device_conversions : 0.0;
+        return $this->cross_device_conversions ?? 0.0;
     }
 
     public function hasCrossDeviceConversions()
@@ -4180,7 +4180,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCtr()
     {
-        return isset($this->ctr) ? $this->ctr : 0.0;
+        return $this->ctr ?? 0.0;
     }
 
     public function hasCtr()
@@ -4221,7 +4221,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCurrentModelAttributedConversions()
     {
-        return isset($this->current_model_attributed_conversions) ? $this->current_model_attributed_conversions : 0.0;
+        return $this->current_model_attributed_conversions ?? 0.0;
     }
 
     public function hasCurrentModelAttributedConversions()
@@ -4266,7 +4266,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCurrentModelAttributedConversionsFromInteractionsRate()
     {
-        return isset($this->current_model_attributed_conversions_from_interactions_rate) ? $this->current_model_attributed_conversions_from_interactions_rate : 0.0;
+        return $this->current_model_attributed_conversions_from_interactions_rate ?? 0.0;
     }
 
     public function hasCurrentModelAttributedConversionsFromInteractionsRate()
@@ -4311,7 +4311,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCurrentModelAttributedConversionsFromInteractionsValuePerInteraction()
     {
-        return isset($this->current_model_attributed_conversions_from_interactions_value_per_interaction) ? $this->current_model_attributed_conversions_from_interactions_value_per_interaction : 0.0;
+        return $this->current_model_attributed_conversions_from_interactions_value_per_interaction ?? 0.0;
     }
 
     public function hasCurrentModelAttributedConversionsFromInteractionsValuePerInteraction()
@@ -4354,7 +4354,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCurrentModelAttributedConversionsValue()
     {
-        return isset($this->current_model_attributed_conversions_value) ? $this->current_model_attributed_conversions_value : 0.0;
+        return $this->current_model_attributed_conversions_value ?? 0.0;
     }
 
     public function hasCurrentModelAttributedConversionsValue()
@@ -4397,7 +4397,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getCurrentModelAttributedConversionsValuePerCost()
     {
-        return isset($this->current_model_attributed_conversions_value_per_cost) ? $this->current_model_attributed_conversions_value_per_cost : 0.0;
+        return $this->current_model_attributed_conversions_value_per_cost ?? 0.0;
     }
 
     public function hasCurrentModelAttributedConversionsValuePerCost()
@@ -4438,7 +4438,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getEngagementRate()
     {
-        return isset($this->engagement_rate) ? $this->engagement_rate : 0.0;
+        return $this->engagement_rate ?? 0.0;
     }
 
     public function hasEngagementRate()
@@ -4477,7 +4477,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getEngagements()
     {
-        return isset($this->engagements) ? $this->engagements : 0;
+        return $this->engagements ?? 0;
     }
 
     public function hasEngagements()
@@ -4515,7 +4515,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getHotelAverageLeadValueMicros()
     {
-        return isset($this->hotel_average_lead_value_micros) ? $this->hotel_average_lead_value_micros : 0.0;
+        return $this->hotel_average_lead_value_micros ?? 0.0;
     }
 
     public function hasHotelAverageLeadValueMicros()
@@ -4552,7 +4552,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getHotelCommissionRateMicros()
     {
-        return isset($this->hotel_commission_rate_micros) ? $this->hotel_commission_rate_micros : 0;
+        return $this->hotel_commission_rate_micros ?? 0;
     }
 
     public function hasHotelCommissionRateMicros()
@@ -4590,7 +4590,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getHotelExpectedCommissionCost()
     {
-        return isset($this->hotel_expected_commission_cost) ? $this->hotel_expected_commission_cost : 0.0;
+        return $this->hotel_expected_commission_cost ?? 0.0;
     }
 
     public function hasHotelExpectedCommissionCost()
@@ -4628,7 +4628,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getHotelPriceDifferencePercentage()
     {
-        return isset($this->hotel_price_difference_percentage) ? $this->hotel_price_difference_percentage : 0.0;
+        return $this->hotel_price_difference_percentage ?? 0.0;
     }
 
     public function hasHotelPriceDifferencePercentage()
@@ -4666,7 +4666,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getHotelEligibleImpressions()
     {
-        return isset($this->hotel_eligible_impressions) ? $this->hotel_eligible_impressions : 0;
+        return $this->hotel_eligible_impressions ?? 0;
     }
 
     public function hasHotelEligibleImpressions()
@@ -4715,7 +4715,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function setHistoricalCreativeQualityScore($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\QualityScoreBucketEnum\QualityScoreBucket::class);
+        GPBUtil::checkEnum($var);
         $this->historical_creative_quality_score = $var;
 
         return $this;
@@ -4741,7 +4741,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function setHistoricalLandingPageQualityScore($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\QualityScoreBucketEnum\QualityScoreBucket::class);
+        GPBUtil::checkEnum($var);
         $this->historical_landing_page_quality_score = $var;
 
         return $this;
@@ -4755,7 +4755,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getHistoricalQualityScore()
     {
-        return isset($this->historical_quality_score) ? $this->historical_quality_score : 0;
+        return $this->historical_quality_score ?? 0;
     }
 
     public function hasHistoricalQualityScore()
@@ -4803,7 +4803,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function setHistoricalSearchPredictedCtr($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\QualityScoreBucketEnum\QualityScoreBucket::class);
+        GPBUtil::checkEnum($var);
         $this->historical_search_predicted_ctr = $var;
 
         return $this;
@@ -4817,7 +4817,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getGmailForwards()
     {
-        return isset($this->gmail_forwards) ? $this->gmail_forwards : 0;
+        return $this->gmail_forwards ?? 0;
     }
 
     public function hasGmailForwards()
@@ -4854,7 +4854,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getGmailSaves()
     {
-        return isset($this->gmail_saves) ? $this->gmail_saves : 0;
+        return $this->gmail_saves ?? 0;
     }
 
     public function hasGmailSaves()
@@ -4892,7 +4892,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getGmailSecondaryClicks()
     {
-        return isset($this->gmail_secondary_clicks) ? $this->gmail_secondary_clicks : 0;
+        return $this->gmail_secondary_clicks ?? 0;
     }
 
     public function hasGmailSecondaryClicks()
@@ -4930,7 +4930,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getImpressionsFromStoreReach()
     {
-        return isset($this->impressions_from_store_reach) ? $this->impressions_from_store_reach : 0;
+        return $this->impressions_from_store_reach ?? 0;
     }
 
     public function hasImpressionsFromStoreReach()
@@ -4968,7 +4968,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getImpressions()
     {
-        return isset($this->impressions) ? $this->impressions : 0;
+        return $this->impressions ?? 0;
     }
 
     public function hasImpressions()
@@ -5007,7 +5007,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getInteractionRate()
     {
-        return isset($this->interaction_rate) ? $this->interaction_rate : 0.0;
+        return $this->interaction_rate ?? 0.0;
     }
 
     public function hasInteractionRate()
@@ -5047,7 +5047,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getInteractions()
     {
-        return isset($this->interactions) ? $this->interactions : 0;
+        return $this->interactions ?? 0;
     }
 
     public function hasInteractions()
@@ -5112,7 +5112,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getInvalidClickRate()
     {
-        return isset($this->invalid_click_rate) ? $this->invalid_click_rate : 0.0;
+        return $this->invalid_click_rate ?? 0.0;
     }
 
     public function hasInvalidClickRate()
@@ -5149,7 +5149,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getInvalidClicks()
     {
-        return isset($this->invalid_clicks) ? $this->invalid_clicks : 0;
+        return $this->invalid_clicks ?? 0;
     }
 
     public function hasInvalidClicks()
@@ -5186,7 +5186,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getMessageChats()
     {
-        return isset($this->message_chats) ? $this->message_chats : 0;
+        return $this->message_chats ?? 0;
     }
 
     public function hasMessageChats()
@@ -5223,7 +5223,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getMessageImpressions()
     {
-        return isset($this->message_impressions) ? $this->message_impressions : 0;
+        return $this->message_impressions ?? 0;
     }
 
     public function hasMessageImpressions()
@@ -5263,7 +5263,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getMessageChatRate()
     {
-        return isset($this->message_chat_rate) ? $this->message_chat_rate : 0.0;
+        return $this->message_chat_rate ?? 0.0;
     }
 
     public function hasMessageChatRate()
@@ -5303,7 +5303,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getMobileFriendlyClicksPercentage()
     {
-        return isset($this->mobile_friendly_clicks_percentage) ? $this->mobile_friendly_clicks_percentage : 0.0;
+        return $this->mobile_friendly_clicks_percentage ?? 0.0;
     }
 
     public function hasMobileFriendlyClicksPercentage()
@@ -5339,7 +5339,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getOptimizationScoreUplift()
     {
-        return isset($this->optimization_score_uplift) ? $this->optimization_score_uplift : 0.0;
+        return $this->optimization_score_uplift ?? 0.0;
     }
 
     public function hasOptimizationScoreUplift()
@@ -5380,7 +5380,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getOptimizationScoreUrl()
     {
-        return isset($this->optimization_score_url) ? $this->optimization_score_url : '';
+        return $this->optimization_score_url ?? '';
     }
 
     public function hasOptimizationScoreUrl()
@@ -5423,7 +5423,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getOrganicClicks()
     {
-        return isset($this->organic_clicks) ? $this->organic_clicks : 0;
+        return $this->organic_clicks ?? 0;
     }
 
     public function hasOrganicClicks()
@@ -5464,7 +5464,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getOrganicClicksPerQuery()
     {
-        return isset($this->organic_clicks_per_query) ? $this->organic_clicks_per_query : 0.0;
+        return $this->organic_clicks_per_query ?? 0.0;
     }
 
     public function hasOrganicClicksPerQuery()
@@ -5505,7 +5505,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getOrganicImpressions()
     {
-        return isset($this->organic_impressions) ? $this->organic_impressions : 0;
+        return $this->organic_impressions ?? 0;
     }
 
     public function hasOrganicImpressions()
@@ -5546,7 +5546,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getOrganicImpressionsPerQuery()
     {
-        return isset($this->organic_impressions_per_query) ? $this->organic_impressions_per_query : 0.0;
+        return $this->organic_impressions_per_query ?? 0.0;
     }
 
     public function hasOrganicImpressionsPerQuery()
@@ -5587,7 +5587,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getOrganicQueries()
     {
-        return isset($this->organic_queries) ? $this->organic_queries : 0;
+        return $this->organic_queries ?? 0;
     }
 
     public function hasOrganicQueries()
@@ -5626,7 +5626,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getPercentNewVisitors()
     {
-        return isset($this->percent_new_visitors) ? $this->percent_new_visitors : 0.0;
+        return $this->percent_new_visitors ?? 0.0;
     }
 
     public function hasPercentNewVisitors()
@@ -5663,7 +5663,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getPhoneCalls()
     {
-        return isset($this->phone_calls) ? $this->phone_calls : 0;
+        return $this->phone_calls ?? 0;
     }
 
     public function hasPhoneCalls()
@@ -5699,7 +5699,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getPhoneImpressions()
     {
-        return isset($this->phone_impressions) ? $this->phone_impressions : 0;
+        return $this->phone_impressions ?? 0;
     }
 
     public function hasPhoneImpressions()
@@ -5736,7 +5736,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getPhoneThroughRate()
     {
-        return isset($this->phone_through_rate) ? $this->phone_through_rate : 0.0;
+        return $this->phone_through_rate ?? 0.0;
     }
 
     public function hasPhoneThroughRate()
@@ -5775,7 +5775,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getRelativeCtr()
     {
-        return isset($this->relative_ctr) ? $this->relative_ctr : 0.0;
+        return $this->relative_ctr ?? 0.0;
     }
 
     public function hasRelativeCtr()
@@ -5816,7 +5816,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchAbsoluteTopImpressionShare()
     {
-        return isset($this->search_absolute_top_impression_share) ? $this->search_absolute_top_impression_share : 0.0;
+        return $this->search_absolute_top_impression_share ?? 0.0;
     }
 
     public function hasSearchAbsoluteTopImpressionShare()
@@ -5858,7 +5858,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchBudgetLostAbsoluteTopImpressionShare()
     {
-        return isset($this->search_budget_lost_absolute_top_impression_share) ? $this->search_budget_lost_absolute_top_impression_share : 0.0;
+        return $this->search_budget_lost_absolute_top_impression_share ?? 0.0;
     }
 
     public function hasSearchBudgetLostAbsoluteTopImpressionShare()
@@ -5900,7 +5900,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchBudgetLostImpressionShare()
     {
-        return isset($this->search_budget_lost_impression_share) ? $this->search_budget_lost_impression_share : 0.0;
+        return $this->search_budget_lost_impression_share ?? 0.0;
     }
 
     public function hasSearchBudgetLostImpressionShare()
@@ -5942,7 +5942,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchBudgetLostTopImpressionShare()
     {
-        return isset($this->search_budget_lost_top_impression_share) ? $this->search_budget_lost_top_impression_share : 0.0;
+        return $this->search_budget_lost_top_impression_share ?? 0.0;
     }
 
     public function hasSearchBudgetLostTopImpressionShare()
@@ -5984,7 +5984,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchClickShare()
     {
-        return isset($this->search_click_share) ? $this->search_click_share : 0.0;
+        return $this->search_click_share ?? 0.0;
     }
 
     public function hasSearchClickShare()
@@ -6028,7 +6028,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchExactMatchImpressionShare()
     {
-        return isset($this->search_exact_match_impression_share) ? $this->search_exact_match_impression_share : 0.0;
+        return $this->search_exact_match_impression_share ?? 0.0;
     }
 
     public function hasSearchExactMatchImpressionShare()
@@ -6072,7 +6072,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchImpressionShare()
     {
-        return isset($this->search_impression_share) ? $this->search_impression_share : 0.0;
+        return $this->search_impression_share ?? 0.0;
     }
 
     public function hasSearchImpressionShare()
@@ -6114,7 +6114,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchRankLostAbsoluteTopImpressionShare()
     {
-        return isset($this->search_rank_lost_absolute_top_impression_share) ? $this->search_rank_lost_absolute_top_impression_share : 0.0;
+        return $this->search_rank_lost_absolute_top_impression_share ?? 0.0;
     }
 
     public function hasSearchRankLostAbsoluteTopImpressionShare()
@@ -6156,7 +6156,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchRankLostImpressionShare()
     {
-        return isset($this->search_rank_lost_impression_share) ? $this->search_rank_lost_impression_share : 0.0;
+        return $this->search_rank_lost_impression_share ?? 0.0;
     }
 
     public function hasSearchRankLostImpressionShare()
@@ -6198,7 +6198,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchRankLostTopImpressionShare()
     {
-        return isset($this->search_rank_lost_top_impression_share) ? $this->search_rank_lost_top_impression_share : 0.0;
+        return $this->search_rank_lost_top_impression_share ?? 0.0;
     }
 
     public function hasSearchRankLostTopImpressionShare()
@@ -6241,7 +6241,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSearchTopImpressionShare()
     {
-        return isset($this->search_top_impression_share) ? $this->search_top_impression_share : 0.0;
+        return $this->search_top_impression_share ?? 0.0;
     }
 
     public function hasSearchTopImpressionShare()
@@ -6282,7 +6282,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getSpeedScore()
     {
-        return isset($this->speed_score) ? $this->speed_score : 0;
+        return $this->speed_score ?? 0;
     }
 
     public function hasSpeedScore()
@@ -6320,7 +6320,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getTopImpressionPercentage()
     {
-        return isset($this->top_impression_percentage) ? $this->top_impression_percentage : 0.0;
+        return $this->top_impression_percentage ?? 0.0;
     }
 
     public function hasTopImpressionPercentage()
@@ -6358,7 +6358,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getValidAcceleratedMobilePagesClicksPercentage()
     {
-        return isset($this->valid_accelerated_mobile_pages_clicks_percentage) ? $this->valid_accelerated_mobile_pages_clicks_percentage : 0.0;
+        return $this->valid_accelerated_mobile_pages_clicks_percentage ?? 0.0;
     }
 
     public function hasValidAcceleratedMobilePagesClicksPercentage()
@@ -6395,7 +6395,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getValuePerAllConversions()
     {
-        return isset($this->value_per_all_conversions) ? $this->value_per_all_conversions : 0.0;
+        return $this->value_per_all_conversions ?? 0.0;
     }
 
     public function hasValuePerAllConversions()
@@ -6434,7 +6434,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getValuePerAllConversionsByConversionDate()
     {
-        return isset($this->value_per_all_conversions_by_conversion_date) ? $this->value_per_all_conversions_by_conversion_date : 0.0;
+        return $this->value_per_all_conversions_by_conversion_date ?? 0.0;
     }
 
     public function hasValuePerAllConversionsByConversionDate()
@@ -6476,7 +6476,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getValuePerConversion()
     {
-        return isset($this->value_per_conversion) ? $this->value_per_conversion : 0.0;
+        return $this->value_per_conversion ?? 0.0;
     }
 
     public function hasValuePerConversion()
@@ -6521,7 +6521,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getValuePerConversionsByConversionDate()
     {
-        return isset($this->value_per_conversions_by_conversion_date) ? $this->value_per_conversions_by_conversion_date : 0.0;
+        return $this->value_per_conversions_by_conversion_date ?? 0.0;
     }
 
     public function hasValuePerConversionsByConversionDate()
@@ -6567,7 +6567,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getValuePerCurrentModelAttributedConversion()
     {
-        return isset($this->value_per_current_model_attributed_conversion) ? $this->value_per_current_model_attributed_conversion : 0.0;
+        return $this->value_per_current_model_attributed_conversion ?? 0.0;
     }
 
     public function hasValuePerCurrentModelAttributedConversion()
@@ -6607,7 +6607,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getVideoQuartileP100Rate()
     {
-        return isset($this->video_quartile_p100_rate) ? $this->video_quartile_p100_rate : 0.0;
+        return $this->video_quartile_p100_rate ?? 0.0;
     }
 
     public function hasVideoQuartileP100Rate()
@@ -6643,7 +6643,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getVideoQuartileP25Rate()
     {
-        return isset($this->video_quartile_p25_rate) ? $this->video_quartile_p25_rate : 0.0;
+        return $this->video_quartile_p25_rate ?? 0.0;
     }
 
     public function hasVideoQuartileP25Rate()
@@ -6679,7 +6679,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getVideoQuartileP50Rate()
     {
-        return isset($this->video_quartile_p50_rate) ? $this->video_quartile_p50_rate : 0.0;
+        return $this->video_quartile_p50_rate ?? 0.0;
     }
 
     public function hasVideoQuartileP50Rate()
@@ -6715,7 +6715,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getVideoQuartileP75Rate()
     {
-        return isset($this->video_quartile_p75_rate) ? $this->video_quartile_p75_rate : 0.0;
+        return $this->video_quartile_p75_rate ?? 0.0;
     }
 
     public function hasVideoQuartileP75Rate()
@@ -6753,7 +6753,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getVideoViewRate()
     {
-        return isset($this->video_view_rate) ? $this->video_view_rate : 0.0;
+        return $this->video_view_rate ?? 0.0;
     }
 
     public function hasVideoViewRate()
@@ -6791,7 +6791,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getVideoViews()
     {
-        return isset($this->video_views) ? $this->video_views : 0;
+        return $this->video_views ?? 0;
     }
 
     public function hasVideoViews()
@@ -6830,7 +6830,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getViewThroughConversions()
     {
-        return isset($this->view_through_conversions) ? $this->view_through_conversions : 0;
+        return $this->view_through_conversions ?? 0;
     }
 
     public function hasViewThroughConversions()
@@ -6981,7 +6981,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromLocationAssetClickToCall()
     {
-        return isset($this->all_conversions_from_location_asset_click_to_call) ? $this->all_conversions_from_location_asset_click_to_call : 0.0;
+        return $this->all_conversions_from_location_asset_click_to_call ?? 0.0;
     }
 
     public function hasAllConversionsFromLocationAssetClickToCall()
@@ -7021,7 +7021,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromLocationAssetDirections()
     {
-        return isset($this->all_conversions_from_location_asset_directions) ? $this->all_conversions_from_location_asset_directions : 0.0;
+        return $this->all_conversions_from_location_asset_directions ?? 0.0;
     }
 
     public function hasAllConversionsFromLocationAssetDirections()
@@ -7061,7 +7061,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromLocationAssetMenu()
     {
-        return isset($this->all_conversions_from_location_asset_menu) ? $this->all_conversions_from_location_asset_menu : 0.0;
+        return $this->all_conversions_from_location_asset_menu ?? 0.0;
     }
 
     public function hasAllConversionsFromLocationAssetMenu()
@@ -7101,7 +7101,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromLocationAssetOrder()
     {
-        return isset($this->all_conversions_from_location_asset_order) ? $this->all_conversions_from_location_asset_order : 0.0;
+        return $this->all_conversions_from_location_asset_order ?? 0.0;
     }
 
     public function hasAllConversionsFromLocationAssetOrder()
@@ -7141,7 +7141,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromLocationAssetOtherEngagement()
     {
-        return isset($this->all_conversions_from_location_asset_other_engagement) ? $this->all_conversions_from_location_asset_other_engagement : 0.0;
+        return $this->all_conversions_from_location_asset_other_engagement ?? 0.0;
     }
 
     public function hasAllConversionsFromLocationAssetOtherEngagement()
@@ -7181,7 +7181,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromLocationAssetStoreVisits()
     {
-        return isset($this->all_conversions_from_location_asset_store_visits) ? $this->all_conversions_from_location_asset_store_visits : 0.0;
+        return $this->all_conversions_from_location_asset_store_visits ?? 0.0;
     }
 
     public function hasAllConversionsFromLocationAssetStoreVisits()
@@ -7221,7 +7221,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getAllConversionsFromLocationAssetWebsite()
     {
-        return isset($this->all_conversions_from_location_asset_website) ? $this->all_conversions_from_location_asset_website : 0.0;
+        return $this->all_conversions_from_location_asset_website ?? 0.0;
     }
 
     public function hasAllConversionsFromLocationAssetWebsite()
@@ -7261,7 +7261,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getEligibleImpressionsFromLocationAssetStoreReach()
     {
-        return isset($this->eligible_impressions_from_location_asset_store_reach) ? $this->eligible_impressions_from_location_asset_store_reach : 0;
+        return $this->eligible_impressions_from_location_asset_store_reach ?? 0;
     }
 
     public function hasEligibleImpressionsFromLocationAssetStoreReach()
@@ -7300,7 +7300,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getViewThroughConversionsFromLocationAssetClickToCall()
     {
-        return isset($this->view_through_conversions_from_location_asset_click_to_call) ? $this->view_through_conversions_from_location_asset_click_to_call : 0.0;
+        return $this->view_through_conversions_from_location_asset_click_to_call ?? 0.0;
     }
 
     public function hasViewThroughConversionsFromLocationAssetClickToCall()
@@ -7338,7 +7338,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getViewThroughConversionsFromLocationAssetDirections()
     {
-        return isset($this->view_through_conversions_from_location_asset_directions) ? $this->view_through_conversions_from_location_asset_directions : 0.0;
+        return $this->view_through_conversions_from_location_asset_directions ?? 0.0;
     }
 
     public function hasViewThroughConversionsFromLocationAssetDirections()
@@ -7376,7 +7376,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getViewThroughConversionsFromLocationAssetMenu()
     {
-        return isset($this->view_through_conversions_from_location_asset_menu) ? $this->view_through_conversions_from_location_asset_menu : 0.0;
+        return $this->view_through_conversions_from_location_asset_menu ?? 0.0;
     }
 
     public function hasViewThroughConversionsFromLocationAssetMenu()
@@ -7414,7 +7414,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getViewThroughConversionsFromLocationAssetOrder()
     {
-        return isset($this->view_through_conversions_from_location_asset_order) ? $this->view_through_conversions_from_location_asset_order : 0.0;
+        return $this->view_through_conversions_from_location_asset_order ?? 0.0;
     }
 
     public function hasViewThroughConversionsFromLocationAssetOrder()
@@ -7452,7 +7452,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getViewThroughConversionsFromLocationAssetOtherEngagement()
     {
-        return isset($this->view_through_conversions_from_location_asset_other_engagement) ? $this->view_through_conversions_from_location_asset_other_engagement : 0.0;
+        return $this->view_through_conversions_from_location_asset_other_engagement ?? 0.0;
     }
 
     public function hasViewThroughConversionsFromLocationAssetOtherEngagement()
@@ -7490,7 +7490,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getViewThroughConversionsFromLocationAssetStoreVisits()
     {
-        return isset($this->view_through_conversions_from_location_asset_store_visits) ? $this->view_through_conversions_from_location_asset_store_visits : 0.0;
+        return $this->view_through_conversions_from_location_asset_store_visits ?? 0.0;
     }
 
     public function hasViewThroughConversionsFromLocationAssetStoreVisits()
@@ -7528,7 +7528,7 @@ class Metrics extends \Google\Protobuf\Internal\Message
      */
     public function getViewThroughConversionsFromLocationAssetWebsite()
     {
-        return isset($this->view_through_conversions_from_location_asset_website) ? $this->view_through_conversions_from_location_asset_website : 0.0;
+        return $this->view_through_conversions_from_location_asset_website ?? 0.0;
     }
 
     public function hasViewThroughConversionsFromLocationAssetWebsite()

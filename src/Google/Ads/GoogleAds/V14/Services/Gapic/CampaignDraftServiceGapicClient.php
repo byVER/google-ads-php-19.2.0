@@ -85,27 +85,27 @@ class CampaignDraftServiceGapicClient
     use GapicClientTrait;
 
     /** The name of the service. */
-    const SERVICE_NAME = 'google.ads.googleads.v14.services.CampaignDraftService';
+    public const SERVICE_NAME = 'google.ads.googleads.v14.services.CampaignDraftService';
 
     /** The default address of the service. */
-    const SERVICE_ADDRESS = 'googleads.googleapis.com';
+    public const SERVICE_ADDRESS = 'googleads.googleapis.com';
 
     /** The default port of the service. */
-    const DEFAULT_SERVICE_PORT = 443;
+    public const DEFAULT_SERVICE_PORT = 443;
 
     /** The name of the code generator, to be included in the agent header. */
-    const CODEGEN_NAME = 'gapic';
+    public const CODEGEN_NAME = 'gapic';
 
     /** The default scopes required by the service. */
     public static $serviceScopes = [
         'https://www.googleapis.com/auth/adwords',
     ];
 
-    private static $campaignNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignNameTemplate = null;
 
-    private static $campaignDraftNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignDraftNameTemplate = null;
 
-    private static $pathTemplateMap;
+    private static ?array $pathTemplateMap = null;
 
     private $operationsClient;
 
@@ -259,7 +259,7 @@ class CampaignDraftServiceGapicClient
      */
     public function resumeOperation($operationName, $methodName = null)
     {
-        $options = isset($this->descriptors[$methodName]['longRunning']) ? $this->descriptors[$methodName]['longRunning'] : [];
+        $options = $this->descriptors[$methodName]['longRunning'] ?? [];
         $operation = new OperationResponse($operationName, $this->getOperationsClient(), $options);
         $operation->reload();
         return $operation;

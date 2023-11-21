@@ -58,7 +58,7 @@ class CustomInterestServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v14.services.CustomInterestService/MutateCustomInterests',
         $argument,
-        ['\Google\Ads\GoogleAds\V14\Services\MutateCustomInterestsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V14\Services\MutateCustomInterestsResponse::class, 'decode'],
         $metadata, $options);
     }
 

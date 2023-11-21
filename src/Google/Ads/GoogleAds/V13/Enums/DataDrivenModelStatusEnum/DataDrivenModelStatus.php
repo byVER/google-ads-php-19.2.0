@@ -18,19 +18,19 @@ class DataDrivenModelStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The data driven model is available.
      *
      * Generated from protobuf enum <code>AVAILABLE = 2;</code>
      */
-    const AVAILABLE = 2;
+    public const AVAILABLE = 2;
     /**
      * The data driven model is stale. It hasn't been updated for at least 7
      * days. It is still being used, but will become expired if it does not get
@@ -38,7 +38,7 @@ class DataDrivenModelStatus
      *
      * Generated from protobuf enum <code>STALE = 3;</code>
      */
-    const STALE = 3;
+    public const STALE = 3;
     /**
      * The data driven model expired. It hasn't been updated for at least 30
      * days and cannot be used. Most commonly this is because there hasn't been
@@ -46,7 +46,7 @@ class DataDrivenModelStatus
      *
      * Generated from protobuf enum <code>EXPIRED = 4;</code>
      */
-    const EXPIRED = 4;
+    public const EXPIRED = 4;
     /**
      * The data driven model has never been generated. Most commonly this is
      * because there has never been the required number of events in any 30-day
@@ -54,9 +54,9 @@ class DataDrivenModelStatus
      *
      * Generated from protobuf enum <code>NEVER_GENERATED = 5;</code>
      */
-    const NEVER_GENERATED = 5;
+    public const NEVER_GENERATED = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::AVAILABLE => 'AVAILABLE',
@@ -69,7 +69,7 @@ class DataDrivenModelStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -77,10 +77,10 @@ class DataDrivenModelStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

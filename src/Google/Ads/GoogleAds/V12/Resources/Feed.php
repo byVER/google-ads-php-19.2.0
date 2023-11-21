@@ -146,7 +146,7 @@ class Feed extends \Google\Protobuf\Internal\Message
      */
     public function getId()
     {
-        return isset($this->id) ? $this->id : 0;
+        return $this->id ?? 0;
     }
 
     public function hasId()
@@ -183,7 +183,7 @@ class Feed extends \Google\Protobuf\Internal\Message
      */
     public function getName()
     {
-        return isset($this->name) ? $this->name : '';
+        return $this->name ?? '';
     }
 
     public function hasName()
@@ -291,7 +291,7 @@ class Feed extends \Google\Protobuf\Internal\Message
      */
     public function setOrigin($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FeedOriginEnum\FeedOrigin::class);
+        GPBUtil::checkEnum($var);
         $this->origin = $var;
 
         return $this;
@@ -319,7 +319,7 @@ class Feed extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FeedStatusEnum\FeedStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;

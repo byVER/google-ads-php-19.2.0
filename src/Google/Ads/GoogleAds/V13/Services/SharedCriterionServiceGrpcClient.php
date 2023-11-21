@@ -67,7 +67,7 @@ class SharedCriterionServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.SharedCriterionService/MutateSharedCriteria',
         $argument,
-        ['\Google\Ads\GoogleAds\V13\Services\MutateSharedCriteriaResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V13\Services\MutateSharedCriteriaResponse::class, 'decode'],
         $metadata, $options);
     }
 

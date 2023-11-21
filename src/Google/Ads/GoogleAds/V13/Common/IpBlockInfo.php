@@ -49,7 +49,7 @@ class IpBlockInfo extends \Google\Protobuf\Internal\Message
      */
     public function getIpAddress()
     {
-        return isset($this->ip_address) ? $this->ip_address : '';
+        return $this->ip_address ?? '';
     }
 
     public function hasIpAddress()

@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.AudienceInsightsService' => [
             'GenerateAudienceCompositionInsights' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\GenerateAudienceCompositionInsightsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\GenerateAudienceCompositionInsightsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',
@@ -17,7 +17,7 @@ return [
             ],
             'GenerateInsightsFinderReport' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\GenerateInsightsFinderReportResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\GenerateInsightsFinderReportResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',
@@ -29,7 +29,7 @@ return [
             ],
             'ListAudienceInsightsAttributes' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\ListAudienceInsightsAttributesResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\ListAudienceInsightsAttributesResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',
@@ -41,7 +41,7 @@ return [
             ],
             'ListInsightsEligibleDates' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\ListInsightsEligibleDatesResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\ListInsightsEligibleDatesResponse::class,
             ],
         ],
     ],

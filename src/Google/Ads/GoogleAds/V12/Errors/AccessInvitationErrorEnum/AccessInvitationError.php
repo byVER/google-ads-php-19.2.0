@@ -18,64 +18,64 @@ class AccessInvitationError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The email address is invalid for sending an invitation.
      *
      * Generated from protobuf enum <code>INVALID_EMAIL_ADDRESS = 2;</code>
      */
-    const INVALID_EMAIL_ADDRESS = 2;
+    public const INVALID_EMAIL_ADDRESS = 2;
     /**
      * Email address already has access to this customer.
      *
      * Generated from protobuf enum <code>EMAIL_ADDRESS_ALREADY_HAS_ACCESS = 3;</code>
      */
-    const EMAIL_ADDRESS_ALREADY_HAS_ACCESS = 3;
+    public const EMAIL_ADDRESS_ALREADY_HAS_ACCESS = 3;
     /**
      * Invalid invitation status for the operation.
      *
      * Generated from protobuf enum <code>INVALID_INVITATION_STATUS = 4;</code>
      */
-    const INVALID_INVITATION_STATUS = 4;
+    public const INVALID_INVITATION_STATUS = 4;
     /**
      * Email address cannot be like abc+foo&#64;google.com.
      *
      * Generated from protobuf enum <code>GOOGLE_CONSUMER_ACCOUNT_NOT_ALLOWED = 5;</code>
      */
-    const GOOGLE_CONSUMER_ACCOUNT_NOT_ALLOWED = 5;
+    public const GOOGLE_CONSUMER_ACCOUNT_NOT_ALLOWED = 5;
     /**
      * Invalid invitation ID.
      *
      * Generated from protobuf enum <code>INVALID_INVITATION_ID = 6;</code>
      */
-    const INVALID_INVITATION_ID = 6;
+    public const INVALID_INVITATION_ID = 6;
     /**
      * Email address already has a pending invitation.
      *
      * Generated from protobuf enum <code>EMAIL_ADDRESS_ALREADY_HAS_PENDING_INVITATION = 7;</code>
      */
-    const EMAIL_ADDRESS_ALREADY_HAS_PENDING_INVITATION = 7;
+    public const EMAIL_ADDRESS_ALREADY_HAS_PENDING_INVITATION = 7;
     /**
      * Pending invitation limit exceeded for the customer.
      *
      * Generated from protobuf enum <code>PENDING_INVITATIONS_LIMIT_EXCEEDED = 8;</code>
      */
-    const PENDING_INVITATIONS_LIMIT_EXCEEDED = 8;
+    public const PENDING_INVITATIONS_LIMIT_EXCEEDED = 8;
     /**
      * Email address doesn't conform to the email domain policy. See
      * https://support.google.com/google-ads/answer/2375456
      *
      * Generated from protobuf enum <code>EMAIL_DOMAIN_POLICY_VIOLATED = 9;</code>
      */
-    const EMAIL_DOMAIN_POLICY_VIOLATED = 9;
+    public const EMAIL_DOMAIN_POLICY_VIOLATED = 9;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INVALID_EMAIL_ADDRESS => 'INVALID_EMAIL_ADDRESS',
@@ -92,7 +92,7 @@ class AccessInvitationError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -100,10 +100,10 @@ class AccessInvitationError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

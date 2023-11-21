@@ -64,7 +64,7 @@ class ConversionActionServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v14.services.ConversionActionService/MutateConversionActions',
         $argument,
-        ['\Google\Ads\GoogleAds\V14\Services\MutateConversionActionsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V14\Services\MutateConversionActionsResponse::class, 'decode'],
         $metadata, $options);
     }
 

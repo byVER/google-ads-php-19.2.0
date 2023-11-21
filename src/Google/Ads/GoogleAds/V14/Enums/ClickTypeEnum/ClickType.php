@@ -18,339 +18,339 @@ class ClickType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * App engagement ad deep link.
      *
      * Generated from protobuf enum <code>APP_DEEPLINK = 2;</code>
      */
-    const APP_DEEPLINK = 2;
+    public const APP_DEEPLINK = 2;
     /**
      * Breadcrumbs.
      *
      * Generated from protobuf enum <code>BREADCRUMBS = 3;</code>
      */
-    const BREADCRUMBS = 3;
+    public const BREADCRUMBS = 3;
     /**
      * Broadband Plan.
      *
      * Generated from protobuf enum <code>BROADBAND_PLAN = 4;</code>
      */
-    const BROADBAND_PLAN = 4;
+    public const BROADBAND_PLAN = 4;
     /**
      * Manually dialed phone calls.
      *
      * Generated from protobuf enum <code>CALL_TRACKING = 5;</code>
      */
-    const CALL_TRACKING = 5;
+    public const CALL_TRACKING = 5;
     /**
      * Phone calls.
      *
      * Generated from protobuf enum <code>CALLS = 6;</code>
      */
-    const CALLS = 6;
+    public const CALLS = 6;
     /**
      * Click on engagement ad.
      *
      * Generated from protobuf enum <code>CLICK_ON_ENGAGEMENT_AD = 7;</code>
      */
-    const CLICK_ON_ENGAGEMENT_AD = 7;
+    public const CLICK_ON_ENGAGEMENT_AD = 7;
     /**
      * Driving direction.
      *
      * Generated from protobuf enum <code>GET_DIRECTIONS = 8;</code>
      */
-    const GET_DIRECTIONS = 8;
+    public const GET_DIRECTIONS = 8;
     /**
      * Get location details.
      *
      * Generated from protobuf enum <code>LOCATION_EXPANSION = 9;</code>
      */
-    const LOCATION_EXPANSION = 9;
+    public const LOCATION_EXPANSION = 9;
     /**
      * Call.
      *
      * Generated from protobuf enum <code>LOCATION_FORMAT_CALL = 10;</code>
      */
-    const LOCATION_FORMAT_CALL = 10;
+    public const LOCATION_FORMAT_CALL = 10;
     /**
      * Directions.
      *
      * Generated from protobuf enum <code>LOCATION_FORMAT_DIRECTIONS = 11;</code>
      */
-    const LOCATION_FORMAT_DIRECTIONS = 11;
+    public const LOCATION_FORMAT_DIRECTIONS = 11;
     /**
      * Image(s).
      *
      * Generated from protobuf enum <code>LOCATION_FORMAT_IMAGE = 12;</code>
      */
-    const LOCATION_FORMAT_IMAGE = 12;
+    public const LOCATION_FORMAT_IMAGE = 12;
     /**
      * Go to landing page.
      *
      * Generated from protobuf enum <code>LOCATION_FORMAT_LANDING_PAGE = 13;</code>
      */
-    const LOCATION_FORMAT_LANDING_PAGE = 13;
+    public const LOCATION_FORMAT_LANDING_PAGE = 13;
     /**
      * Map.
      *
      * Generated from protobuf enum <code>LOCATION_FORMAT_MAP = 14;</code>
      */
-    const LOCATION_FORMAT_MAP = 14;
+    public const LOCATION_FORMAT_MAP = 14;
     /**
      * Go to store info.
      *
      * Generated from protobuf enum <code>LOCATION_FORMAT_STORE_INFO = 15;</code>
      */
-    const LOCATION_FORMAT_STORE_INFO = 15;
+    public const LOCATION_FORMAT_STORE_INFO = 15;
     /**
      * Text.
      *
      * Generated from protobuf enum <code>LOCATION_FORMAT_TEXT = 16;</code>
      */
-    const LOCATION_FORMAT_TEXT = 16;
+    public const LOCATION_FORMAT_TEXT = 16;
     /**
      * Mobile phone calls.
      *
      * Generated from protobuf enum <code>MOBILE_CALL_TRACKING = 17;</code>
      */
-    const MOBILE_CALL_TRACKING = 17;
+    public const MOBILE_CALL_TRACKING = 17;
     /**
      * Print offer.
      *
      * Generated from protobuf enum <code>OFFER_PRINTS = 18;</code>
      */
-    const OFFER_PRINTS = 18;
+    public const OFFER_PRINTS = 18;
     /**
      * Other.
      *
      * Generated from protobuf enum <code>OTHER = 19;</code>
      */
-    const OTHER = 19;
+    public const OTHER = 19;
     /**
      * Product plusbox offer.
      *
      * Generated from protobuf enum <code>PRODUCT_EXTENSION_CLICKS = 20;</code>
      */
-    const PRODUCT_EXTENSION_CLICKS = 20;
+    public const PRODUCT_EXTENSION_CLICKS = 20;
     /**
      * Shopping - Product - Online.
      *
      * Generated from protobuf enum <code>PRODUCT_LISTING_AD_CLICKS = 21;</code>
      */
-    const PRODUCT_LISTING_AD_CLICKS = 21;
+    public const PRODUCT_LISTING_AD_CLICKS = 21;
     /**
      * Sitelink.
      *
      * Generated from protobuf enum <code>SITELINKS = 22;</code>
      */
-    const SITELINKS = 22;
+    public const SITELINKS = 22;
     /**
      * Show nearby locations.
      *
      * Generated from protobuf enum <code>STORE_LOCATOR = 23;</code>
      */
-    const STORE_LOCATOR = 23;
+    public const STORE_LOCATOR = 23;
     /**
      * Headline.
      *
      * Generated from protobuf enum <code>URL_CLICKS = 25;</code>
      */
-    const URL_CLICKS = 25;
+    public const URL_CLICKS = 25;
     /**
      * App store.
      *
      * Generated from protobuf enum <code>VIDEO_APP_STORE_CLICKS = 26;</code>
      */
-    const VIDEO_APP_STORE_CLICKS = 26;
+    public const VIDEO_APP_STORE_CLICKS = 26;
     /**
      * Call-to-Action overlay.
      *
      * Generated from protobuf enum <code>VIDEO_CALL_TO_ACTION_CLICKS = 27;</code>
      */
-    const VIDEO_CALL_TO_ACTION_CLICKS = 27;
+    public const VIDEO_CALL_TO_ACTION_CLICKS = 27;
     /**
      * Cards.
      *
      * Generated from protobuf enum <code>VIDEO_CARD_ACTION_HEADLINE_CLICKS = 28;</code>
      */
-    const VIDEO_CARD_ACTION_HEADLINE_CLICKS = 28;
+    public const VIDEO_CARD_ACTION_HEADLINE_CLICKS = 28;
     /**
      * End cap.
      *
      * Generated from protobuf enum <code>VIDEO_END_CAP_CLICKS = 29;</code>
      */
-    const VIDEO_END_CAP_CLICKS = 29;
+    public const VIDEO_END_CAP_CLICKS = 29;
     /**
      * Website.
      *
      * Generated from protobuf enum <code>VIDEO_WEBSITE_CLICKS = 30;</code>
      */
-    const VIDEO_WEBSITE_CLICKS = 30;
+    public const VIDEO_WEBSITE_CLICKS = 30;
     /**
      * Visual Sitelinks.
      *
      * Generated from protobuf enum <code>VISUAL_SITELINKS = 31;</code>
      */
-    const VISUAL_SITELINKS = 31;
+    public const VISUAL_SITELINKS = 31;
     /**
      * Wireless Plan.
      *
      * Generated from protobuf enum <code>WIRELESS_PLAN = 32;</code>
      */
-    const WIRELESS_PLAN = 32;
+    public const WIRELESS_PLAN = 32;
     /**
      * Shopping - Product - Local.
      *
      * Generated from protobuf enum <code>PRODUCT_LISTING_AD_LOCAL = 33;</code>
      */
-    const PRODUCT_LISTING_AD_LOCAL = 33;
+    public const PRODUCT_LISTING_AD_LOCAL = 33;
     /**
      * Shopping - Product - MultiChannel Local.
      *
      * Generated from protobuf enum <code>PRODUCT_LISTING_AD_MULTICHANNEL_LOCAL = 34;</code>
      */
-    const PRODUCT_LISTING_AD_MULTICHANNEL_LOCAL = 34;
+    public const PRODUCT_LISTING_AD_MULTICHANNEL_LOCAL = 34;
     /**
      * Shopping - Product - MultiChannel Online.
      *
      * Generated from protobuf enum <code>PRODUCT_LISTING_AD_MULTICHANNEL_ONLINE = 35;</code>
      */
-    const PRODUCT_LISTING_AD_MULTICHANNEL_ONLINE = 35;
+    public const PRODUCT_LISTING_AD_MULTICHANNEL_ONLINE = 35;
     /**
      * Shopping - Product - Coupon.
      *
      * Generated from protobuf enum <code>PRODUCT_LISTING_ADS_COUPON = 36;</code>
      */
-    const PRODUCT_LISTING_ADS_COUPON = 36;
+    public const PRODUCT_LISTING_ADS_COUPON = 36;
     /**
      * Shopping - Product - Sell on Google.
      *
      * Generated from protobuf enum <code>PRODUCT_LISTING_AD_TRANSACTABLE = 37;</code>
      */
-    const PRODUCT_LISTING_AD_TRANSACTABLE = 37;
+    public const PRODUCT_LISTING_AD_TRANSACTABLE = 37;
     /**
      * Shopping - Product - App engagement ad deep link.
      *
      * Generated from protobuf enum <code>PRODUCT_AD_APP_DEEPLINK = 38;</code>
      */
-    const PRODUCT_AD_APP_DEEPLINK = 38;
+    public const PRODUCT_AD_APP_DEEPLINK = 38;
     /**
      * Shopping - Showcase - Category.
      *
      * Generated from protobuf enum <code>SHOWCASE_AD_CATEGORY_LINK = 39;</code>
      */
-    const SHOWCASE_AD_CATEGORY_LINK = 39;
+    public const SHOWCASE_AD_CATEGORY_LINK = 39;
     /**
      * Shopping - Showcase - Local storefront.
      *
      * Generated from protobuf enum <code>SHOWCASE_AD_LOCAL_STOREFRONT_LINK = 40;</code>
      */
-    const SHOWCASE_AD_LOCAL_STOREFRONT_LINK = 40;
+    public const SHOWCASE_AD_LOCAL_STOREFRONT_LINK = 40;
     /**
      * Shopping - Showcase - Online product.
      *
      * Generated from protobuf enum <code>SHOWCASE_AD_ONLINE_PRODUCT_LINK = 42;</code>
      */
-    const SHOWCASE_AD_ONLINE_PRODUCT_LINK = 42;
+    public const SHOWCASE_AD_ONLINE_PRODUCT_LINK = 42;
     /**
      * Shopping - Showcase - Local product.
      *
      * Generated from protobuf enum <code>SHOWCASE_AD_LOCAL_PRODUCT_LINK = 43;</code>
      */
-    const SHOWCASE_AD_LOCAL_PRODUCT_LINK = 43;
+    public const SHOWCASE_AD_LOCAL_PRODUCT_LINK = 43;
     /**
      * Promotion Extension.
      *
      * Generated from protobuf enum <code>PROMOTION_EXTENSION = 44;</code>
      */
-    const PROMOTION_EXTENSION = 44;
+    public const PROMOTION_EXTENSION = 44;
     /**
      * Ad Headline.
      *
      * Generated from protobuf enum <code>SWIPEABLE_GALLERY_AD_HEADLINE = 45;</code>
      */
-    const SWIPEABLE_GALLERY_AD_HEADLINE = 45;
+    public const SWIPEABLE_GALLERY_AD_HEADLINE = 45;
     /**
      * Swipes.
      *
      * Generated from protobuf enum <code>SWIPEABLE_GALLERY_AD_SWIPES = 46;</code>
      */
-    const SWIPEABLE_GALLERY_AD_SWIPES = 46;
+    public const SWIPEABLE_GALLERY_AD_SWIPES = 46;
     /**
      * See More.
      *
      * Generated from protobuf enum <code>SWIPEABLE_GALLERY_AD_SEE_MORE = 47;</code>
      */
-    const SWIPEABLE_GALLERY_AD_SEE_MORE = 47;
+    public const SWIPEABLE_GALLERY_AD_SEE_MORE = 47;
     /**
      * Sitelink 1.
      *
      * Generated from protobuf enum <code>SWIPEABLE_GALLERY_AD_SITELINK_ONE = 48;</code>
      */
-    const SWIPEABLE_GALLERY_AD_SITELINK_ONE = 48;
+    public const SWIPEABLE_GALLERY_AD_SITELINK_ONE = 48;
     /**
      * Sitelink 2.
      *
      * Generated from protobuf enum <code>SWIPEABLE_GALLERY_AD_SITELINK_TWO = 49;</code>
      */
-    const SWIPEABLE_GALLERY_AD_SITELINK_TWO = 49;
+    public const SWIPEABLE_GALLERY_AD_SITELINK_TWO = 49;
     /**
      * Sitelink 3.
      *
      * Generated from protobuf enum <code>SWIPEABLE_GALLERY_AD_SITELINK_THREE = 50;</code>
      */
-    const SWIPEABLE_GALLERY_AD_SITELINK_THREE = 50;
+    public const SWIPEABLE_GALLERY_AD_SITELINK_THREE = 50;
     /**
      * Sitelink 4.
      *
      * Generated from protobuf enum <code>SWIPEABLE_GALLERY_AD_SITELINK_FOUR = 51;</code>
      */
-    const SWIPEABLE_GALLERY_AD_SITELINK_FOUR = 51;
+    public const SWIPEABLE_GALLERY_AD_SITELINK_FOUR = 51;
     /**
      * Sitelink 5.
      *
      * Generated from protobuf enum <code>SWIPEABLE_GALLERY_AD_SITELINK_FIVE = 52;</code>
      */
-    const SWIPEABLE_GALLERY_AD_SITELINK_FIVE = 52;
+    public const SWIPEABLE_GALLERY_AD_SITELINK_FIVE = 52;
     /**
      * Hotel price.
      *
      * Generated from protobuf enum <code>HOTEL_PRICE = 53;</code>
      */
-    const HOTEL_PRICE = 53;
+    public const HOTEL_PRICE = 53;
     /**
      * Price Extension.
      *
      * Generated from protobuf enum <code>PRICE_EXTENSION = 54;</code>
      */
-    const PRICE_EXTENSION = 54;
+    public const PRICE_EXTENSION = 54;
     /**
      * Book on Google hotel room selection.
      *
      * Generated from protobuf enum <code>HOTEL_BOOK_ON_GOOGLE_ROOM_SELECTION = 55;</code>
      */
-    const HOTEL_BOOK_ON_GOOGLE_ROOM_SELECTION = 55;
+    public const HOTEL_BOOK_ON_GOOGLE_ROOM_SELECTION = 55;
     /**
      * Shopping - Comparison Listing.
      *
      * Generated from protobuf enum <code>SHOPPING_COMPARISON_LISTING = 56;</code>
      */
-    const SHOPPING_COMPARISON_LISTING = 56;
+    public const SHOPPING_COMPARISON_LISTING = 56;
     /**
      * Cross-network. From Performance Max and Discovery Campaigns.
      *
      * Generated from protobuf enum <code>CROSS_NETWORK = 57;</code>
      */
-    const CROSS_NETWORK = 57;
+    public const CROSS_NETWORK = 57;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::APP_DEEPLINK => 'APP_DEEPLINK',
@@ -413,7 +413,7 @@ class ClickType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -421,10 +421,10 @@ class ClickType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

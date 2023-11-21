@@ -18,32 +18,32 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The request contained more than 2000 conversions.
      *
      * Generated from protobuf enum <code>TOO_MANY_CONVERSIONS_IN_REQUEST = 2;</code>
      */
-    const TOO_MANY_CONVERSIONS_IN_REQUEST = 2;
+    public const TOO_MANY_CONVERSIONS_IN_REQUEST = 2;
     /**
      * The specified gclid could not be decoded.
      *
      * Generated from protobuf enum <code>UNPARSEABLE_GCLID = 3;</code>
      */
-    const UNPARSEABLE_GCLID = 3;
+    public const UNPARSEABLE_GCLID = 3;
     /**
      * The specified conversion_date_time is before the event time
      * associated with the given identifier or iOS URL parameter.
      *
      * Generated from protobuf enum <code>CONVERSION_PRECEDES_EVENT = 42;</code>
      */
-    const CONVERSION_PRECEDES_EVENT = 42;
+    public const CONVERSION_PRECEDES_EVENT = 42;
     /**
      * The click associated with the given identifier or iOS URL parameter is
      * either too old to be imported or occurred outside of the click through
@@ -51,7 +51,7 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>EXPIRED_EVENT = 43;</code>
      */
-    const EXPIRED_EVENT = 43;
+    public const EXPIRED_EVENT = 43;
     /**
      * The click associated with the given identifier or iOS URL parameter
      * occurred too recently. Try uploading again after 6 hours have
@@ -59,7 +59,7 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>TOO_RECENT_EVENT = 44;</code>
      */
-    const TOO_RECENT_EVENT = 44;
+    public const TOO_RECENT_EVENT = 44;
     /**
      * The click associated with the given identifier or iOS URL parameter could
      * not be found in the system. This can happen if the identifier or iOS URL
@@ -67,21 +67,21 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>EVENT_NOT_FOUND = 45;</code>
      */
-    const EVENT_NOT_FOUND = 45;
+    public const EVENT_NOT_FOUND = 45;
     /**
      * The click associated with the given identifier or iOS URL parameter is
      * owned by a customer account that the uploading customer does not manage.
      *
      * Generated from protobuf enum <code>UNAUTHORIZED_CUSTOMER = 8;</code>
      */
-    const UNAUTHORIZED_CUSTOMER = 8;
+    public const UNAUTHORIZED_CUSTOMER = 8;
     /**
      * No upload eligible conversion action that matches the provided
      * information can be found for the customer.
      *
      * Generated from protobuf enum <code>INVALID_CONVERSION_ACTION = 9;</code>
      */
-    const INVALID_CONVERSION_ACTION = 9;
+    public const INVALID_CONVERSION_ACTION = 9;
     /**
      * The specified conversion action was created too recently.
      * Try the upload again after 4-6 hours have passed since the
@@ -89,21 +89,21 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>TOO_RECENT_CONVERSION_ACTION = 10;</code>
      */
-    const TOO_RECENT_CONVERSION_ACTION = 10;
+    public const TOO_RECENT_CONVERSION_ACTION = 10;
     /**
      * The click associated with the given identifier does not contain
      * conversion tracking information.
      *
      * Generated from protobuf enum <code>CONVERSION_TRACKING_NOT_ENABLED_AT_IMPRESSION_TIME = 11;</code>
      */
-    const CONVERSION_TRACKING_NOT_ENABLED_AT_IMPRESSION_TIME = 11;
+    public const CONVERSION_TRACKING_NOT_ENABLED_AT_IMPRESSION_TIME = 11;
     /**
      * The specified conversion action does not use an external attribution
      * model, but external_attribution_data was set.
      *
      * Generated from protobuf enum <code>EXTERNAL_ATTRIBUTION_DATA_SET_FOR_NON_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 12;</code>
      */
-    const EXTERNAL_ATTRIBUTION_DATA_SET_FOR_NON_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 12;
+    public const EXTERNAL_ATTRIBUTION_DATA_SET_FOR_NON_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 12;
     /**
      * The specified conversion action uses an external attribution model, but
      * external_attribution_data or one of its contained fields was not set.
@@ -112,61 +112,61 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>EXTERNAL_ATTRIBUTION_DATA_NOT_SET_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 13;</code>
      */
-    const EXTERNAL_ATTRIBUTION_DATA_NOT_SET_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 13;
+    public const EXTERNAL_ATTRIBUTION_DATA_NOT_SET_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 13;
     /**
      * Order IDs are not supported for conversion actions which use an external
      * attribution model.
      *
      * Generated from protobuf enum <code>ORDER_ID_NOT_PERMITTED_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 14;</code>
      */
-    const ORDER_ID_NOT_PERMITTED_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 14;
+    public const ORDER_ID_NOT_PERMITTED_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION = 14;
     /**
      * A conversion with the same order id and conversion action combination
      * already exists in our system.
      *
      * Generated from protobuf enum <code>ORDER_ID_ALREADY_IN_USE = 15;</code>
      */
-    const ORDER_ID_ALREADY_IN_USE = 15;
+    public const ORDER_ID_ALREADY_IN_USE = 15;
     /**
      * The request contained two or more conversions with the same order id and
      * conversion action combination.
      *
      * Generated from protobuf enum <code>DUPLICATE_ORDER_ID = 16;</code>
      */
-    const DUPLICATE_ORDER_ID = 16;
+    public const DUPLICATE_ORDER_ID = 16;
     /**
      * The call occurred too recently. Try uploading again after 12 hours
      * have passed since the call occurred.
      *
      * Generated from protobuf enum <code>TOO_RECENT_CALL = 17;</code>
      */
-    const TOO_RECENT_CALL = 17;
+    public const TOO_RECENT_CALL = 17;
     /**
      * The click that initiated the call is too old for this conversion to be
      * imported.
      *
      * Generated from protobuf enum <code>EXPIRED_CALL = 18;</code>
      */
-    const EXPIRED_CALL = 18;
+    public const EXPIRED_CALL = 18;
     /**
      * The call or the click leading to the call was not found.
      *
      * Generated from protobuf enum <code>CALL_NOT_FOUND = 19;</code>
      */
-    const CALL_NOT_FOUND = 19;
+    public const CALL_NOT_FOUND = 19;
     /**
      * The specified conversion_date_time is before the call_start_date_time.
      *
      * Generated from protobuf enum <code>CONVERSION_PRECEDES_CALL = 20;</code>
      */
-    const CONVERSION_PRECEDES_CALL = 20;
+    public const CONVERSION_PRECEDES_CALL = 20;
     /**
      * The click associated with the call does not contain conversion tracking
      * information.
      *
      * Generated from protobuf enum <code>CONVERSION_TRACKING_NOT_ENABLED_AT_CALL_TIME = 21;</code>
      */
-    const CONVERSION_TRACKING_NOT_ENABLED_AT_CALL_TIME = 21;
+    public const CONVERSION_TRACKING_NOT_ENABLED_AT_CALL_TIME = 21;
     /**
      * The caller's phone number cannot be parsed. It should be formatted either
      * as E.164 "+16502531234", International "+64 3-331 6005" or US national
@@ -174,21 +174,21 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>UNPARSEABLE_CALLERS_PHONE_NUMBER = 22;</code>
      */
-    const UNPARSEABLE_CALLERS_PHONE_NUMBER = 22;
+    public const UNPARSEABLE_CALLERS_PHONE_NUMBER = 22;
     /**
      * A conversion with this timestamp already exists for this click. To upload
      * another conversion, use a different timestamp.
      *
      * Generated from protobuf enum <code>CLICK_CONVERSION_ALREADY_EXISTS = 23;</code>
      */
-    const CLICK_CONVERSION_ALREADY_EXISTS = 23;
+    public const CLICK_CONVERSION_ALREADY_EXISTS = 23;
     /**
      * A conversion with this timestamp already exists for this call. To upload
      * another conversion, use a different timestamp.
      *
      * Generated from protobuf enum <code>CALL_CONVERSION_ALREADY_EXISTS = 24;</code>
      */
-    const CALL_CONVERSION_ALREADY_EXISTS = 24;
+    public const CALL_CONVERSION_ALREADY_EXISTS = 24;
     /**
      * This conversion has the same click and timestamp as another conversion in
      * the request. To upload another conversion for this click, use a
@@ -196,7 +196,7 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>DUPLICATE_CLICK_CONVERSION_IN_REQUEST = 25;</code>
      */
-    const DUPLICATE_CLICK_CONVERSION_IN_REQUEST = 25;
+    public const DUPLICATE_CLICK_CONVERSION_IN_REQUEST = 25;
     /**
      * This conversion has the same call and timestamp as another conversion in
      * the request. To upload another conversion for this call, use a
@@ -204,34 +204,34 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>DUPLICATE_CALL_CONVERSION_IN_REQUEST = 26;</code>
      */
-    const DUPLICATE_CALL_CONVERSION_IN_REQUEST = 26;
+    public const DUPLICATE_CALL_CONVERSION_IN_REQUEST = 26;
     /**
      * The custom variable is not enabled.
      *
      * Generated from protobuf enum <code>CUSTOM_VARIABLE_NOT_ENABLED = 28;</code>
      */
-    const CUSTOM_VARIABLE_NOT_ENABLED = 28;
+    public const CUSTOM_VARIABLE_NOT_ENABLED = 28;
     /**
      * The value of the custom variable contains personally identifiable
      * information (PII), such as an email address or phone number.
      *
      * Generated from protobuf enum <code>CUSTOM_VARIABLE_VALUE_CONTAINS_PII = 29;</code>
      */
-    const CUSTOM_VARIABLE_VALUE_CONTAINS_PII = 29;
+    public const CUSTOM_VARIABLE_VALUE_CONTAINS_PII = 29;
     /**
      * The click associated with the given identifier or iOS URL parameter isn't
      * from the account where conversion tracking is set up.
      *
      * Generated from protobuf enum <code>INVALID_CUSTOMER_FOR_CLICK = 30;</code>
      */
-    const INVALID_CUSTOMER_FOR_CLICK = 30;
+    public const INVALID_CUSTOMER_FOR_CLICK = 30;
     /**
      * The click associated with the given call isn't from the account where
      * conversion tracking is set up.
      *
      * Generated from protobuf enum <code>INVALID_CUSTOMER_FOR_CALL = 31;</code>
      */
-    const INVALID_CUSTOMER_FOR_CALL = 31;
+    public const INVALID_CUSTOMER_FOR_CALL = 31;
     /**
      * The conversion can't be uploaded because the conversion source didn't
      * comply with the App Tracking Transparency (ATT) policy or the person who
@@ -239,60 +239,60 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>CONVERSION_NOT_COMPLIANT_WITH_ATT_POLICY = 32;</code>
      */
-    const CONVERSION_NOT_COMPLIANT_WITH_ATT_POLICY = 32;
+    public const CONVERSION_NOT_COMPLIANT_WITH_ATT_POLICY = 32;
     /**
      * No click was found for the provided user identifiers. This may be because
      * the conversion did not come from a Google Ads campaign.
      *
      * Generated from protobuf enum <code>CLICK_NOT_FOUND = 33;</code>
      */
-    const CLICK_NOT_FOUND = 33;
+    public const CLICK_NOT_FOUND = 33;
     /**
      * The provided user identifier is not a SHA-256 hash. It is either unhashed
      * or hashed using a different hash function.
      *
      * Generated from protobuf enum <code>INVALID_USER_IDENTIFIER = 34;</code>
      */
-    const INVALID_USER_IDENTIFIER = 34;
+    public const INVALID_USER_IDENTIFIER = 34;
     /**
      * Conversion actions which use an external attribution model cannot be used
      * with UserIdentifier.
      *
      * Generated from protobuf enum <code>EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION_NOT_PERMITTED_WITH_USER_IDENTIFIER = 35;</code>
      */
-    const EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION_NOT_PERMITTED_WITH_USER_IDENTIFIER = 35;
+    public const EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION_NOT_PERMITTED_WITH_USER_IDENTIFIER = 35;
     /**
      * The provided user identifier is not supported. ConversionUploadService
      * only supports hashed_email and hashed_phone_number.
      *
      * Generated from protobuf enum <code>UNSUPPORTED_USER_IDENTIFIER = 36;</code>
      */
-    const UNSUPPORTED_USER_IDENTIFIER = 36;
+    public const UNSUPPORTED_USER_IDENTIFIER = 36;
     /**
      * gbraid and wbraid are both set in the request. Only one is allowed.
      *
      * Generated from protobuf enum <code>GBRAID_WBRAID_BOTH_SET = 38;</code>
      */
-    const GBRAID_WBRAID_BOTH_SET = 38;
+    public const GBRAID_WBRAID_BOTH_SET = 38;
     /**
      * The specified wbraid could not be decoded.
      *
      * Generated from protobuf enum <code>UNPARSEABLE_WBRAID = 39;</code>
      */
-    const UNPARSEABLE_WBRAID = 39;
+    public const UNPARSEABLE_WBRAID = 39;
     /**
      * The specified gbraid could not be decoded.
      *
      * Generated from protobuf enum <code>UNPARSEABLE_GBRAID = 40;</code>
      */
-    const UNPARSEABLE_GBRAID = 40;
+    public const UNPARSEABLE_GBRAID = 40;
     /**
      * Conversion actions which use the one-per-click counting type cannot be
      * used with gbraid or wbraid.
      *
      * Generated from protobuf enum <code>ONE_PER_CLICK_CONVERSION_ACTION_NOT_PERMITTED_WITH_BRAID = 46;</code>
      */
-    const ONE_PER_CLICK_CONVERSION_ACTION_NOT_PERMITTED_WITH_BRAID = 46;
+    public const ONE_PER_CLICK_CONVERSION_ACTION_NOT_PERMITTED_WITH_BRAID = 46;
     /**
      * Per our customer data policies, enhanced conversions have been prohibited
      * in your account. If you have any questions, contact your Google
@@ -300,23 +300,23 @@ class ConversionUploadError
      *
      * Generated from protobuf enum <code>CUSTOMER_DATA_POLICY_PROHIBITS_ENHANCED_CONVERSIONS = 47;</code>
      */
-    const CUSTOMER_DATA_POLICY_PROHIBITS_ENHANCED_CONVERSIONS = 47;
+    public const CUSTOMER_DATA_POLICY_PROHIBITS_ENHANCED_CONVERSIONS = 47;
     /**
      * The customer has not accepted the customer data terms in the conversion
      * settings page.
      *
      * Generated from protobuf enum <code>CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS = 48;</code>
      */
-    const CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS = 48;
+    public const CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS = 48;
     /**
      * The order_id contains personally identifiable information (PII), such as
      * an email address or phone number.
      *
      * Generated from protobuf enum <code>ORDER_ID_CONTAINS_PII = 49;</code>
      */
-    const ORDER_ID_CONTAINS_PII = 49;
+    public const ORDER_ID_CONTAINS_PII = 49;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::TOO_MANY_CONVERSIONS_IN_REQUEST => 'TOO_MANY_CONVERSIONS_IN_REQUEST',
@@ -366,7 +366,7 @@ class ConversionUploadError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -374,10 +374,10 @@ class ConversionUploadError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

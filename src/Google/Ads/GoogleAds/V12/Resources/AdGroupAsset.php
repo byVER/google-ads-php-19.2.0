@@ -183,7 +183,7 @@ class AdGroupAsset extends \Google\Protobuf\Internal\Message
      */
     public function setFieldType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AssetFieldTypeEnum\AssetFieldType::class);
+        GPBUtil::checkEnum($var);
         $this->field_type = $var;
 
         return $this;
@@ -209,7 +209,7 @@ class AdGroupAsset extends \Google\Protobuf\Internal\Message
      */
     public function setSource($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AssetSourceEnum\AssetSource::class);
+        GPBUtil::checkEnum($var);
         $this->source = $var;
 
         return $this;
@@ -235,7 +235,7 @@ class AdGroupAsset extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AssetLinkStatusEnum\AssetLinkStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;

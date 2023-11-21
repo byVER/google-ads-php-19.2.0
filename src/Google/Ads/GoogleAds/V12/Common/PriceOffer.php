@@ -85,7 +85,7 @@ class PriceOffer extends \Google\Protobuf\Internal\Message
      */
     public function getHeader()
     {
-        return isset($this->header) ? $this->header : '';
+        return $this->header ?? '';
     }
 
     public function hasHeader()
@@ -121,7 +121,7 @@ class PriceOffer extends \Google\Protobuf\Internal\Message
      */
     public function getDescription()
     {
-        return isset($this->description) ? $this->description : '';
+        return $this->description ?? '';
     }
 
     public function hasDescription()
@@ -205,7 +205,7 @@ class PriceOffer extends \Google\Protobuf\Internal\Message
      */
     public function setUnit($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\PriceExtensionPriceUnitEnum\PriceExtensionPriceUnit::class);
+        GPBUtil::checkEnum($var);
         $this->unit = $var;
 
         return $this;

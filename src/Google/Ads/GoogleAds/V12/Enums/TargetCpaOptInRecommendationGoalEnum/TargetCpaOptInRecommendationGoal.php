@@ -18,40 +18,40 @@ class TargetCpaOptInRecommendationGoal
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Recommendation to set Target CPA to maintain the same cost.
      *
      * Generated from protobuf enum <code>SAME_COST = 2;</code>
      */
-    const SAME_COST = 2;
+    public const SAME_COST = 2;
     /**
      * Recommendation to set Target CPA to maintain the same conversions.
      *
      * Generated from protobuf enum <code>SAME_CONVERSIONS = 3;</code>
      */
-    const SAME_CONVERSIONS = 3;
+    public const SAME_CONVERSIONS = 3;
     /**
      * Recommendation to set Target CPA to maintain the same CPA.
      *
      * Generated from protobuf enum <code>SAME_CPA = 4;</code>
      */
-    const SAME_CPA = 4;
+    public const SAME_CPA = 4;
     /**
      * Recommendation to set Target CPA to a value that is as close as possible
      * to, yet lower than, the actual CPA (computed for past 28 days).
      *
      * Generated from protobuf enum <code>CLOSEST_CPA = 5;</code>
      */
-    const CLOSEST_CPA = 5;
+    public const CLOSEST_CPA = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::SAME_COST => 'SAME_COST',
@@ -64,7 +64,7 @@ class TargetCpaOptInRecommendationGoal
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -72,10 +72,10 @@ class TargetCpaOptInRecommendationGoal
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -18,51 +18,51 @@ class PlacementType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Websites(for example, 'www.flowers4sale.com').
      *
      * Generated from protobuf enum <code>WEBSITE = 2;</code>
      */
-    const WEBSITE = 2;
+    public const WEBSITE = 2;
     /**
      * Mobile application categories(for example, 'Games').
      *
      * Generated from protobuf enum <code>MOBILE_APP_CATEGORY = 3;</code>
      */
-    const MOBILE_APP_CATEGORY = 3;
+    public const MOBILE_APP_CATEGORY = 3;
     /**
      * mobile applications(for example, 'mobileapp::2-com.whatsthewordanswers').
      *
      * Generated from protobuf enum <code>MOBILE_APPLICATION = 4;</code>
      */
-    const MOBILE_APPLICATION = 4;
+    public const MOBILE_APPLICATION = 4;
     /**
      * YouTube videos(for example, 'youtube.com/video/wtLJPvx7-ys').
      *
      * Generated from protobuf enum <code>YOUTUBE_VIDEO = 5;</code>
      */
-    const YOUTUBE_VIDEO = 5;
+    public const YOUTUBE_VIDEO = 5;
     /**
      * YouTube channels(for example, 'youtube.com::L8ZULXASCc1I_oaOT0NaOQ').
      *
      * Generated from protobuf enum <code>YOUTUBE_CHANNEL = 6;</code>
      */
-    const YOUTUBE_CHANNEL = 6;
+    public const YOUTUBE_CHANNEL = 6;
     /**
      * Surfaces owned and operated by Google(for example, 'tv.google.com').
      *
      * Generated from protobuf enum <code>GOOGLE_PRODUCTS = 7;</code>
      */
-    const GOOGLE_PRODUCTS = 7;
+    public const GOOGLE_PRODUCTS = 7;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::WEBSITE => 'WEBSITE',
@@ -77,7 +77,7 @@ class PlacementType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -85,10 +85,10 @@ class PlacementType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

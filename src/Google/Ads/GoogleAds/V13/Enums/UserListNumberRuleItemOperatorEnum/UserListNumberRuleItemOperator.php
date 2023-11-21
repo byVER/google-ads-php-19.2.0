@@ -18,51 +18,51 @@ class UserListNumberRuleItemOperator
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Greater than.
      *
      * Generated from protobuf enum <code>GREATER_THAN = 2;</code>
      */
-    const GREATER_THAN = 2;
+    public const GREATER_THAN = 2;
     /**
      * Greater than or equal.
      *
      * Generated from protobuf enum <code>GREATER_THAN_OR_EQUAL = 3;</code>
      */
-    const GREATER_THAN_OR_EQUAL = 3;
+    public const GREATER_THAN_OR_EQUAL = 3;
     /**
      * Equals.
      *
      * Generated from protobuf enum <code>EQUALS = 4;</code>
      */
-    const EQUALS = 4;
+    public const EQUALS = 4;
     /**
      * Not equals.
      *
      * Generated from protobuf enum <code>NOT_EQUALS = 5;</code>
      */
-    const NOT_EQUALS = 5;
+    public const NOT_EQUALS = 5;
     /**
      * Less than.
      *
      * Generated from protobuf enum <code>LESS_THAN = 6;</code>
      */
-    const LESS_THAN = 6;
+    public const LESS_THAN = 6;
     /**
      * Less than or equal.
      *
      * Generated from protobuf enum <code>LESS_THAN_OR_EQUAL = 7;</code>
      */
-    const LESS_THAN_OR_EQUAL = 7;
+    public const LESS_THAN_OR_EQUAL = 7;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::GREATER_THAN => 'GREATER_THAN',
@@ -77,7 +77,7 @@ class UserListNumberRuleItemOperator
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -85,10 +85,10 @@ class UserListNumberRuleItemOperator
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

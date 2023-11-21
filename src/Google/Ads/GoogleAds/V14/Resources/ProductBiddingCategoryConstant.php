@@ -145,7 +145,7 @@ class ProductBiddingCategoryConstant extends \Google\Protobuf\Internal\Message
      */
     public function getId()
     {
-        return isset($this->id) ? $this->id : 0;
+        return $this->id ?? 0;
     }
 
     public function hasId()
@@ -184,7 +184,7 @@ class ProductBiddingCategoryConstant extends \Google\Protobuf\Internal\Message
      */
     public function getCountryCode()
     {
-        return isset($this->country_code) ? $this->country_code : '';
+        return $this->country_code ?? '';
     }
 
     public function hasCountryCode()
@@ -221,7 +221,7 @@ class ProductBiddingCategoryConstant extends \Google\Protobuf\Internal\Message
      */
     public function getProductBiddingCategoryConstantParent()
     {
-        return isset($this->product_bidding_category_constant_parent) ? $this->product_bidding_category_constant_parent : '';
+        return $this->product_bidding_category_constant_parent ?? '';
     }
 
     public function hasProductBiddingCategoryConstantParent()
@@ -269,7 +269,7 @@ class ProductBiddingCategoryConstant extends \Google\Protobuf\Internal\Message
      */
     public function setLevel($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\ProductBiddingCategoryLevelEnum\ProductBiddingCategoryLevel::class);
+        GPBUtil::checkEnum($var);
         $this->level = $var;
 
         return $this;
@@ -295,7 +295,7 @@ class ProductBiddingCategoryConstant extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\ProductBiddingCategoryStatusEnum\ProductBiddingCategoryStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;
@@ -309,7 +309,7 @@ class ProductBiddingCategoryConstant extends \Google\Protobuf\Internal\Message
      */
     public function getLanguageCode()
     {
-        return isset($this->language_code) ? $this->language_code : '';
+        return $this->language_code ?? '';
     }
 
     public function hasLanguageCode()
@@ -346,7 +346,7 @@ class ProductBiddingCategoryConstant extends \Google\Protobuf\Internal\Message
      */
     public function getLocalizedName()
     {
-        return isset($this->localized_name) ? $this->localized_name : '';
+        return $this->localized_name ?? '';
     }
 
     public function hasLocalizedName()

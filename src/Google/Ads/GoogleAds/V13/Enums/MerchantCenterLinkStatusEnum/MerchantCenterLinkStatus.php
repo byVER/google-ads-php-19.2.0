@@ -19,28 +19,28 @@ class MerchantCenterLinkStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The link is enabled.
      *
      * Generated from protobuf enum <code>ENABLED = 2;</code>
      */
-    const ENABLED = 2;
+    public const ENABLED = 2;
     /**
      * The link has no effect. It was proposed by the Merchant Center Account
      * owner and hasn't been confirmed by the customer.
      *
      * Generated from protobuf enum <code>PENDING = 3;</code>
      */
-    const PENDING = 3;
+    public const PENDING = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ENABLED => 'ENABLED',
@@ -51,7 +51,7 @@ class MerchantCenterLinkStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -59,10 +59,10 @@ class MerchantCenterLinkStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

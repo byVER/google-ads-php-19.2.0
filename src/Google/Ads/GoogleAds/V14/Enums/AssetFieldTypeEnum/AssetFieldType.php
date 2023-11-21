@@ -18,179 +18,179 @@ class AssetFieldType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The asset is linked for use as a headline.
      *
      * Generated from protobuf enum <code>HEADLINE = 2;</code>
      */
-    const HEADLINE = 2;
+    public const HEADLINE = 2;
     /**
      * The asset is linked for use as a description.
      *
      * Generated from protobuf enum <code>DESCRIPTION = 3;</code>
      */
-    const DESCRIPTION = 3;
+    public const DESCRIPTION = 3;
     /**
      * The asset is linked for use as mandatory ad text.
      *
      * Generated from protobuf enum <code>MANDATORY_AD_TEXT = 4;</code>
      */
-    const MANDATORY_AD_TEXT = 4;
+    public const MANDATORY_AD_TEXT = 4;
     /**
      * The asset is linked for use as a marketing image.
      *
      * Generated from protobuf enum <code>MARKETING_IMAGE = 5;</code>
      */
-    const MARKETING_IMAGE = 5;
+    public const MARKETING_IMAGE = 5;
     /**
      * The asset is linked for use as a media bundle.
      *
      * Generated from protobuf enum <code>MEDIA_BUNDLE = 6;</code>
      */
-    const MEDIA_BUNDLE = 6;
+    public const MEDIA_BUNDLE = 6;
     /**
      * The asset is linked for use as a YouTube video.
      *
      * Generated from protobuf enum <code>YOUTUBE_VIDEO = 7;</code>
      */
-    const YOUTUBE_VIDEO = 7;
+    public const YOUTUBE_VIDEO = 7;
     /**
      * The asset is linked to indicate that a hotels campaign is "Book on
      * Google" enabled.
      *
      * Generated from protobuf enum <code>BOOK_ON_GOOGLE = 8;</code>
      */
-    const BOOK_ON_GOOGLE = 8;
+    public const BOOK_ON_GOOGLE = 8;
     /**
      * The asset is linked for use as a Lead Form extension.
      *
      * Generated from protobuf enum <code>LEAD_FORM = 9;</code>
      */
-    const LEAD_FORM = 9;
+    public const LEAD_FORM = 9;
     /**
      * The asset is linked for use as a Promotion extension.
      *
      * Generated from protobuf enum <code>PROMOTION = 10;</code>
      */
-    const PROMOTION = 10;
+    public const PROMOTION = 10;
     /**
      * The asset is linked for use as a Callout extension.
      *
      * Generated from protobuf enum <code>CALLOUT = 11;</code>
      */
-    const CALLOUT = 11;
+    public const CALLOUT = 11;
     /**
      * The asset is linked for use as a Structured Snippet extension.
      *
      * Generated from protobuf enum <code>STRUCTURED_SNIPPET = 12;</code>
      */
-    const STRUCTURED_SNIPPET = 12;
+    public const STRUCTURED_SNIPPET = 12;
     /**
      * The asset is linked for use as a Sitelink.
      *
      * Generated from protobuf enum <code>SITELINK = 13;</code>
      */
-    const SITELINK = 13;
+    public const SITELINK = 13;
     /**
      * The asset is linked for use as a Mobile App extension.
      *
      * Generated from protobuf enum <code>MOBILE_APP = 14;</code>
      */
-    const MOBILE_APP = 14;
+    public const MOBILE_APP = 14;
     /**
      * The asset is linked for use as a Hotel Callout extension.
      *
      * Generated from protobuf enum <code>HOTEL_CALLOUT = 15;</code>
      */
-    const HOTEL_CALLOUT = 15;
+    public const HOTEL_CALLOUT = 15;
     /**
      * The asset is linked for use as a Call extension.
      *
      * Generated from protobuf enum <code>CALL = 16;</code>
      */
-    const CALL = 16;
+    public const CALL = 16;
     /**
      * The asset is linked for use as a Price extension.
      *
      * Generated from protobuf enum <code>PRICE = 24;</code>
      */
-    const PRICE = 24;
+    public const PRICE = 24;
     /**
      * The asset is linked for use as a long headline.
      *
      * Generated from protobuf enum <code>LONG_HEADLINE = 17;</code>
      */
-    const LONG_HEADLINE = 17;
+    public const LONG_HEADLINE = 17;
     /**
      * The asset is linked for use as a business name.
      *
      * Generated from protobuf enum <code>BUSINESS_NAME = 18;</code>
      */
-    const BUSINESS_NAME = 18;
+    public const BUSINESS_NAME = 18;
     /**
      * The asset is linked for use as a square marketing image.
      *
      * Generated from protobuf enum <code>SQUARE_MARKETING_IMAGE = 19;</code>
      */
-    const SQUARE_MARKETING_IMAGE = 19;
+    public const SQUARE_MARKETING_IMAGE = 19;
     /**
      * The asset is linked for use as a portrait marketing image.
      *
      * Generated from protobuf enum <code>PORTRAIT_MARKETING_IMAGE = 20;</code>
      */
-    const PORTRAIT_MARKETING_IMAGE = 20;
+    public const PORTRAIT_MARKETING_IMAGE = 20;
     /**
      * The asset is linked for use as a logo.
      *
      * Generated from protobuf enum <code>LOGO = 21;</code>
      */
-    const LOGO = 21;
+    public const LOGO = 21;
     /**
      * The asset is linked for use as a landscape logo.
      *
      * Generated from protobuf enum <code>LANDSCAPE_LOGO = 22;</code>
      */
-    const LANDSCAPE_LOGO = 22;
+    public const LANDSCAPE_LOGO = 22;
     /**
      * The asset is linked for use as a non YouTube logo.
      *
      * Generated from protobuf enum <code>VIDEO = 23;</code>
      */
-    const VIDEO = 23;
+    public const VIDEO = 23;
     /**
      * The asset is linked for use to select a call-to-action.
      *
      * Generated from protobuf enum <code>CALL_TO_ACTION_SELECTION = 25;</code>
      */
-    const CALL_TO_ACTION_SELECTION = 25;
+    public const CALL_TO_ACTION_SELECTION = 25;
     /**
      * The asset is linked for use to select an ad image.
      *
      * Generated from protobuf enum <code>AD_IMAGE = 26;</code>
      */
-    const AD_IMAGE = 26;
+    public const AD_IMAGE = 26;
     /**
      * The asset is linked for use as a business logo.
      *
      * Generated from protobuf enum <code>BUSINESS_LOGO = 27;</code>
      */
-    const BUSINESS_LOGO = 27;
+    public const BUSINESS_LOGO = 27;
     /**
      * The asset is linked for use as a hotel property in a Performance Max for
      * travel goals campaign.
      *
      * Generated from protobuf enum <code>HOTEL_PROPERTY = 28;</code>
      */
-    const HOTEL_PROPERTY = 28;
+    public const HOTEL_PROPERTY = 28;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::HEADLINE => 'HEADLINE',
@@ -226,7 +226,7 @@ class AssetFieldType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -234,10 +234,10 @@ class AssetFieldType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

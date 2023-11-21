@@ -97,7 +97,7 @@ class PriceFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\PriceExtensionTypeEnum\PriceExtensionType::class);
+        GPBUtil::checkEnum($var);
         $this->type = $var;
 
         return $this;
@@ -123,7 +123,7 @@ class PriceFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function setPriceQualifier($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\PriceExtensionPriceQualifierEnum\PriceExtensionPriceQualifier::class);
+        GPBUtil::checkEnum($var);
         $this->price_qualifier = $var;
 
         return $this;
@@ -137,7 +137,7 @@ class PriceFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getTrackingUrlTemplate()
     {
-        return isset($this->tracking_url_template) ? $this->tracking_url_template : '';
+        return $this->tracking_url_template ?? '';
     }
 
     public function hasTrackingUrlTemplate()
@@ -173,7 +173,7 @@ class PriceFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getLanguageCode()
     {
-        return isset($this->language_code) ? $this->language_code : '';
+        return $this->language_code ?? '';
     }
 
     public function hasLanguageCode()
@@ -235,7 +235,7 @@ class PriceFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getFinalUrlSuffix()
     {
-        return isset($this->final_url_suffix) ? $this->final_url_suffix : '';
+        return $this->final_url_suffix ?? '';
     }
 
     public function hasFinalUrlSuffix()

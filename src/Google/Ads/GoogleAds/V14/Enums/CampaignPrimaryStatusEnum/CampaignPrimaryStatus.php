@@ -21,72 +21,72 @@ class CampaignPrimaryStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The campaign is eligible to serve.
      *
      * Generated from protobuf enum <code>ELIGIBLE = 2;</code>
      */
-    const ELIGIBLE = 2;
+    public const ELIGIBLE = 2;
     /**
      * The user-specified campaign status is paused.
      *
      * Generated from protobuf enum <code>PAUSED = 3;</code>
      */
-    const PAUSED = 3;
+    public const PAUSED = 3;
     /**
      * The user-specified campaign status is removed.
      *
      * Generated from protobuf enum <code>REMOVED = 4;</code>
      */
-    const REMOVED = 4;
+    public const REMOVED = 4;
     /**
      * The user-specified time for this campaign to end has passed.
      *
      * Generated from protobuf enum <code>ENDED = 5;</code>
      */
-    const ENDED = 5;
+    public const ENDED = 5;
     /**
      * The campaign may serve in the future.
      *
      * Generated from protobuf enum <code>PENDING = 6;</code>
      */
-    const PENDING = 6;
+    public const PENDING = 6;
     /**
      * The campaign or its associated entities have incorrect user-specified
      * settings.
      *
      * Generated from protobuf enum <code>MISCONFIGURED = 7;</code>
      */
-    const MISCONFIGURED = 7;
+    public const MISCONFIGURED = 7;
     /**
      * The campaign or its associated entities are limited by user-specified
      * settings.
      *
      * Generated from protobuf enum <code>LIMITED = 8;</code>
      */
-    const LIMITED = 8;
+    public const LIMITED = 8;
     /**
      * The automated bidding system is adjusting to user-specified changes to
      * the campaign or associated entities.
      *
      * Generated from protobuf enum <code>LEARNING = 9;</code>
      */
-    const LEARNING = 9;
+    public const LEARNING = 9;
     /**
      * The campaign is not eligible to serve.
      *
      * Generated from protobuf enum <code>NOT_ELIGIBLE = 10;</code>
      */
-    const NOT_ELIGIBLE = 10;
+    public const NOT_ELIGIBLE = 10;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ELIGIBLE => 'ELIGIBLE',
@@ -104,7 +104,7 @@ class CampaignPrimaryStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -112,10 +112,10 @@ class CampaignPrimaryStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

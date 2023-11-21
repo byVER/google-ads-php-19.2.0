@@ -80,7 +80,7 @@ class AdGroupCriterionServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.AdGroupCriterionService/MutateAdGroupCriteria',
         $argument,
-        ['\Google\Ads\GoogleAds\V13\Services\MutateAdGroupCriteriaResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V13\Services\MutateAdGroupCriteriaResponse::class, 'decode'],
         $metadata, $options);
     }
 

@@ -303,7 +303,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getId()
     {
-        return isset($this->id) ? $this->id : 0;
+        return $this->id ?? 0;
     }
 
     public function hasId()
@@ -349,7 +349,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getName()
     {
-        return isset($this->name) ? $this->name : '';
+        return $this->name ?? '';
     }
 
     public function hasName()
@@ -393,7 +393,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getAmountMicros()
     {
-        return isset($this->amount_micros) ? $this->amount_micros : 0;
+        return $this->amount_micros ?? 0;
     }
 
     public function hasAmountMicros()
@@ -433,7 +433,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getTotalAmountMicros()
     {
-        return isset($this->total_amount_micros) ? $this->total_amount_micros : 0;
+        return $this->total_amount_micros ?? 0;
     }
 
     public function hasTotalAmountMicros()
@@ -483,7 +483,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\BudgetStatusEnum\BudgetStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;
@@ -513,7 +513,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function setDeliveryMethod($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\BudgetDeliveryMethodEnum\BudgetDeliveryMethod::class);
+        GPBUtil::checkEnum($var);
         $this->delivery_method = $var;
 
         return $this;
@@ -537,7 +537,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getExplicitlyShared()
     {
-        return isset($this->explicitly_shared) ? $this->explicitly_shared : false;
+        return $this->explicitly_shared ?? false;
     }
 
     public function hasExplicitlyShared()
@@ -584,7 +584,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getReferenceCount()
     {
-        return isset($this->reference_count) ? $this->reference_count : 0;
+        return $this->reference_count ?? 0;
     }
 
     public function hasReferenceCount()
@@ -622,7 +622,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getHasRecommendedBudget()
     {
-        return isset($this->has_recommended_budget) ? $this->has_recommended_budget : false;
+        return $this->has_recommended_budget ?? false;
     }
 
     public function hasHasRecommendedBudget()
@@ -663,7 +663,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getRecommendedBudgetAmountMicros()
     {
-        return isset($this->recommended_budget_amount_micros) ? $this->recommended_budget_amount_micros : 0;
+        return $this->recommended_budget_amount_micros ?? 0;
     }
 
     public function hasRecommendedBudgetAmountMicros()
@@ -715,7 +715,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function setPeriod($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\BudgetPeriodEnum\BudgetPeriod::class);
+        GPBUtil::checkEnum($var);
         $this->period = $var;
 
         return $this;
@@ -730,7 +730,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getRecommendedBudgetEstimatedChangeWeeklyClicks()
     {
-        return isset($this->recommended_budget_estimated_change_weekly_clicks) ? $this->recommended_budget_estimated_change_weekly_clicks : 0;
+        return $this->recommended_budget_estimated_change_weekly_clicks ?? 0;
     }
 
     public function hasRecommendedBudgetEstimatedChangeWeeklyClicks()
@@ -769,7 +769,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getRecommendedBudgetEstimatedChangeWeeklyCostMicros()
     {
-        return isset($this->recommended_budget_estimated_change_weekly_cost_micros) ? $this->recommended_budget_estimated_change_weekly_cost_micros : 0;
+        return $this->recommended_budget_estimated_change_weekly_cost_micros ?? 0;
     }
 
     public function hasRecommendedBudgetEstimatedChangeWeeklyCostMicros()
@@ -809,7 +809,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getRecommendedBudgetEstimatedChangeWeeklyInteractions()
     {
-        return isset($this->recommended_budget_estimated_change_weekly_interactions) ? $this->recommended_budget_estimated_change_weekly_interactions : 0;
+        return $this->recommended_budget_estimated_change_weekly_interactions ?? 0;
     }
 
     public function hasRecommendedBudgetEstimatedChangeWeeklyInteractions()
@@ -848,7 +848,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function getRecommendedBudgetEstimatedChangeWeeklyViews()
     {
-        return isset($this->recommended_budget_estimated_change_weekly_views) ? $this->recommended_budget_estimated_change_weekly_views : 0;
+        return $this->recommended_budget_estimated_change_weekly_views ?? 0;
     }
 
     public function hasRecommendedBudgetEstimatedChangeWeeklyViews()
@@ -897,7 +897,7 @@ class CampaignBudget extends \Google\Protobuf\Internal\Message
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\BudgetTypeEnum\BudgetType::class);
+        GPBUtil::checkEnum($var);
         $this->type = $var;
 
         return $this;

@@ -18,39 +18,39 @@ class SharedSetError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The customer cannot create this type of shared set.
      *
      * Generated from protobuf enum <code>CUSTOMER_CANNOT_CREATE_SHARED_SET_OF_THIS_TYPE = 2;</code>
      */
-    const CUSTOMER_CANNOT_CREATE_SHARED_SET_OF_THIS_TYPE = 2;
+    public const CUSTOMER_CANNOT_CREATE_SHARED_SET_OF_THIS_TYPE = 2;
     /**
      * A shared set with this name already exists.
      *
      * Generated from protobuf enum <code>DUPLICATE_NAME = 3;</code>
      */
-    const DUPLICATE_NAME = 3;
+    public const DUPLICATE_NAME = 3;
     /**
      * Removed shared sets cannot be mutated.
      *
      * Generated from protobuf enum <code>SHARED_SET_REMOVED = 4;</code>
      */
-    const SHARED_SET_REMOVED = 4;
+    public const SHARED_SET_REMOVED = 4;
     /**
      * The shared set cannot be removed because it is in use.
      *
      * Generated from protobuf enum <code>SHARED_SET_IN_USE = 5;</code>
      */
-    const SHARED_SET_IN_USE = 5;
+    public const SHARED_SET_IN_USE = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CUSTOMER_CANNOT_CREATE_SHARED_SET_OF_THIS_TYPE => 'CUSTOMER_CANNOT_CREATE_SHARED_SET_OF_THIS_TYPE',
@@ -63,7 +63,7 @@ class SharedSetError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -71,10 +71,10 @@ class SharedSetError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

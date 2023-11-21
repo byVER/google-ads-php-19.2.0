@@ -18,75 +18,75 @@ class OperationAccessDeniedError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Unauthorized invocation of a service's method (get, mutate, etc.)
      *
      * Generated from protobuf enum <code>ACTION_NOT_PERMITTED = 2;</code>
      */
-    const ACTION_NOT_PERMITTED = 2;
+    public const ACTION_NOT_PERMITTED = 2;
     /**
      * Unauthorized CREATE operation in invoking a service's mutate method.
      *
      * Generated from protobuf enum <code>CREATE_OPERATION_NOT_PERMITTED = 3;</code>
      */
-    const CREATE_OPERATION_NOT_PERMITTED = 3;
+    public const CREATE_OPERATION_NOT_PERMITTED = 3;
     /**
      * Unauthorized REMOVE operation in invoking a service's mutate method.
      *
      * Generated from protobuf enum <code>REMOVE_OPERATION_NOT_PERMITTED = 4;</code>
      */
-    const REMOVE_OPERATION_NOT_PERMITTED = 4;
+    public const REMOVE_OPERATION_NOT_PERMITTED = 4;
     /**
      * Unauthorized UPDATE operation in invoking a service's mutate method.
      *
      * Generated from protobuf enum <code>UPDATE_OPERATION_NOT_PERMITTED = 5;</code>
      */
-    const UPDATE_OPERATION_NOT_PERMITTED = 5;
+    public const UPDATE_OPERATION_NOT_PERMITTED = 5;
     /**
      * A mutate action is not allowed on this resource, from this client.
      *
      * Generated from protobuf enum <code>MUTATE_ACTION_NOT_PERMITTED_FOR_CLIENT = 6;</code>
      */
-    const MUTATE_ACTION_NOT_PERMITTED_FOR_CLIENT = 6;
+    public const MUTATE_ACTION_NOT_PERMITTED_FOR_CLIENT = 6;
     /**
      * This operation is not permitted on this campaign type
      *
      * Generated from protobuf enum <code>OPERATION_NOT_PERMITTED_FOR_CAMPAIGN_TYPE = 7;</code>
      */
-    const OPERATION_NOT_PERMITTED_FOR_CAMPAIGN_TYPE = 7;
+    public const OPERATION_NOT_PERMITTED_FOR_CAMPAIGN_TYPE = 7;
     /**
      * A CREATE operation may not set status to REMOVED.
      *
      * Generated from protobuf enum <code>CREATE_AS_REMOVED_NOT_PERMITTED = 8;</code>
      */
-    const CREATE_AS_REMOVED_NOT_PERMITTED = 8;
+    public const CREATE_AS_REMOVED_NOT_PERMITTED = 8;
     /**
      * This operation is not allowed because the resource is removed.
      *
      * Generated from protobuf enum <code>OPERATION_NOT_PERMITTED_FOR_REMOVED_RESOURCE = 9;</code>
      */
-    const OPERATION_NOT_PERMITTED_FOR_REMOVED_RESOURCE = 9;
+    public const OPERATION_NOT_PERMITTED_FOR_REMOVED_RESOURCE = 9;
     /**
      * This operation is not permitted on this ad group type.
      *
      * Generated from protobuf enum <code>OPERATION_NOT_PERMITTED_FOR_AD_GROUP_TYPE = 10;</code>
      */
-    const OPERATION_NOT_PERMITTED_FOR_AD_GROUP_TYPE = 10;
+    public const OPERATION_NOT_PERMITTED_FOR_AD_GROUP_TYPE = 10;
     /**
      * The mutate is not allowed for this customer.
      *
      * Generated from protobuf enum <code>MUTATE_NOT_PERMITTED_FOR_CUSTOMER = 11;</code>
      */
-    const MUTATE_NOT_PERMITTED_FOR_CUSTOMER = 11;
+    public const MUTATE_NOT_PERMITTED_FOR_CUSTOMER = 11;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ACTION_NOT_PERMITTED => 'ACTION_NOT_PERMITTED',
@@ -105,7 +105,7 @@ class OperationAccessDeniedError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -113,10 +113,10 @@ class OperationAccessDeniedError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

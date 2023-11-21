@@ -18,34 +18,34 @@ class UserDataError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Customer is not allowed to perform operations related to Customer Match.
      *
      * Generated from protobuf enum <code>OPERATIONS_FOR_CUSTOMER_MATCH_NOT_ALLOWED = 2;</code>
      */
-    const OPERATIONS_FOR_CUSTOMER_MATCH_NOT_ALLOWED = 2;
+    public const OPERATIONS_FOR_CUSTOMER_MATCH_NOT_ALLOWED = 2;
     /**
      * Maximum number of user identifiers allowed for each request is 100 and
      * for each operation is 20.
      *
      * Generated from protobuf enum <code>TOO_MANY_USER_IDENTIFIERS = 3;</code>
      */
-    const TOO_MANY_USER_IDENTIFIERS = 3;
+    public const TOO_MANY_USER_IDENTIFIERS = 3;
     /**
      * Current user list is not applicable for the given customer.
      *
      * Generated from protobuf enum <code>USER_LIST_NOT_APPLICABLE = 4;</code>
      */
-    const USER_LIST_NOT_APPLICABLE = 4;
+    public const USER_LIST_NOT_APPLICABLE = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::OPERATIONS_FOR_CUSTOMER_MATCH_NOT_ALLOWED => 'OPERATIONS_FOR_CUSTOMER_MATCH_NOT_ALLOWED',
@@ -57,7 +57,7 @@ class UserDataError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -65,10 +65,10 @@ class UserDataError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

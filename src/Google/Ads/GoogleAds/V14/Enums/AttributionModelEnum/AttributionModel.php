@@ -19,46 +19,46 @@ class AttributionModel
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Uses external attribution.
      *
      * Generated from protobuf enum <code>EXTERNAL = 100;</code>
      */
-    const EXTERNAL = 100;
+    public const EXTERNAL = 100;
     /**
      * Attributes all credit for a conversion to its last click.
      *
      * Generated from protobuf enum <code>GOOGLE_ADS_LAST_CLICK = 101;</code>
      */
-    const GOOGLE_ADS_LAST_CLICK = 101;
+    public const GOOGLE_ADS_LAST_CLICK = 101;
     /**
      * Attributes all credit for a conversion to its first click using Google
      * Search attribution.
      *
      * Generated from protobuf enum <code>GOOGLE_SEARCH_ATTRIBUTION_FIRST_CLICK = 102;</code>
      */
-    const GOOGLE_SEARCH_ATTRIBUTION_FIRST_CLICK = 102;
+    public const GOOGLE_SEARCH_ATTRIBUTION_FIRST_CLICK = 102;
     /**
      * Attributes credit for a conversion equally across all of its clicks using
      * Google Search attribution.
      *
      * Generated from protobuf enum <code>GOOGLE_SEARCH_ATTRIBUTION_LINEAR = 103;</code>
      */
-    const GOOGLE_SEARCH_ATTRIBUTION_LINEAR = 103;
+    public const GOOGLE_SEARCH_ATTRIBUTION_LINEAR = 103;
     /**
      * Attributes exponentially more credit for a conversion to its more recent
      * clicks using Google Search attribution (half-life is 1 week).
      *
      * Generated from protobuf enum <code>GOOGLE_SEARCH_ATTRIBUTION_TIME_DECAY = 104;</code>
      */
-    const GOOGLE_SEARCH_ATTRIBUTION_TIME_DECAY = 104;
+    public const GOOGLE_SEARCH_ATTRIBUTION_TIME_DECAY = 104;
     /**
      * Attributes 40% of the credit for a conversion to its first and last
      * clicks. Remaining 20% is evenly distributed across all other clicks. This
@@ -66,16 +66,16 @@ class AttributionModel
      *
      * Generated from protobuf enum <code>GOOGLE_SEARCH_ATTRIBUTION_POSITION_BASED = 105;</code>
      */
-    const GOOGLE_SEARCH_ATTRIBUTION_POSITION_BASED = 105;
+    public const GOOGLE_SEARCH_ATTRIBUTION_POSITION_BASED = 105;
     /**
      * Flexible model that uses machine learning to determine the appropriate
      * distribution of credit among clicks using Google Search attribution.
      *
      * Generated from protobuf enum <code>GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN = 106;</code>
      */
-    const GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN = 106;
+    public const GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN = 106;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::EXTERNAL => 'EXTERNAL',
@@ -91,7 +91,7 @@ class AttributionModel
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -99,10 +99,10 @@ class AttributionModel
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

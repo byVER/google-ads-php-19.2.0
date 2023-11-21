@@ -18,34 +18,34 @@ class AdSharingError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Error resulting in attempting to add an Ad to an AdGroup that already
      * contains the Ad.
      *
      * Generated from protobuf enum <code>AD_GROUP_ALREADY_CONTAINS_AD = 2;</code>
      */
-    const AD_GROUP_ALREADY_CONTAINS_AD = 2;
+    public const AD_GROUP_ALREADY_CONTAINS_AD = 2;
     /**
      * Ad is not compatible with the AdGroup it is being shared with.
      *
      * Generated from protobuf enum <code>INCOMPATIBLE_AD_UNDER_AD_GROUP = 3;</code>
      */
-    const INCOMPATIBLE_AD_UNDER_AD_GROUP = 3;
+    public const INCOMPATIBLE_AD_UNDER_AD_GROUP = 3;
     /**
      * Cannot add AdGroupAd on inactive Ad.
      *
      * Generated from protobuf enum <code>CANNOT_SHARE_INACTIVE_AD = 4;</code>
      */
-    const CANNOT_SHARE_INACTIVE_AD = 4;
+    public const CANNOT_SHARE_INACTIVE_AD = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::AD_GROUP_ALREADY_CONTAINS_AD => 'AD_GROUP_ALREADY_CONTAINS_AD',
@@ -57,7 +57,7 @@ class AdSharingError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -65,10 +65,10 @@ class AdSharingError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

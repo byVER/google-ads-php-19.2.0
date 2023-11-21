@@ -18,73 +18,73 @@ class CustomerManagerLinkError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * No pending invitation.
      *
      * Generated from protobuf enum <code>NO_PENDING_INVITE = 2;</code>
      */
-    const NO_PENDING_INVITE = 2;
+    public const NO_PENDING_INVITE = 2;
     /**
      * Attempt to operate on the same client more than once in the same call.
      *
      * Generated from protobuf enum <code>SAME_CLIENT_MORE_THAN_ONCE_PER_CALL = 3;</code>
      */
-    const SAME_CLIENT_MORE_THAN_ONCE_PER_CALL = 3;
+    public const SAME_CLIENT_MORE_THAN_ONCE_PER_CALL = 3;
     /**
      * Manager account has the maximum number of linked accounts.
      *
      * Generated from protobuf enum <code>MANAGER_HAS_MAX_NUMBER_OF_LINKED_ACCOUNTS = 4;</code>
      */
-    const MANAGER_HAS_MAX_NUMBER_OF_LINKED_ACCOUNTS = 4;
+    public const MANAGER_HAS_MAX_NUMBER_OF_LINKED_ACCOUNTS = 4;
     /**
      * If no active user on account it cannot be unlinked from its manager.
      *
      * Generated from protobuf enum <code>CANNOT_UNLINK_ACCOUNT_WITHOUT_ACTIVE_USER = 5;</code>
      */
-    const CANNOT_UNLINK_ACCOUNT_WITHOUT_ACTIVE_USER = 5;
+    public const CANNOT_UNLINK_ACCOUNT_WITHOUT_ACTIVE_USER = 5;
     /**
      * Account should have at least one active owner on it before being
      * unlinked.
      *
      * Generated from protobuf enum <code>CANNOT_REMOVE_LAST_CLIENT_ACCOUNT_OWNER = 6;</code>
      */
-    const CANNOT_REMOVE_LAST_CLIENT_ACCOUNT_OWNER = 6;
+    public const CANNOT_REMOVE_LAST_CLIENT_ACCOUNT_OWNER = 6;
     /**
      * Only account owners may change their permission role.
      *
      * Generated from protobuf enum <code>CANNOT_CHANGE_ROLE_BY_NON_ACCOUNT_OWNER = 7;</code>
      */
-    const CANNOT_CHANGE_ROLE_BY_NON_ACCOUNT_OWNER = 7;
+    public const CANNOT_CHANGE_ROLE_BY_NON_ACCOUNT_OWNER = 7;
     /**
      * When a client's link to its manager is not active, the link role cannot
      * be changed.
      *
      * Generated from protobuf enum <code>CANNOT_CHANGE_ROLE_FOR_NON_ACTIVE_LINK_ACCOUNT = 8;</code>
      */
-    const CANNOT_CHANGE_ROLE_FOR_NON_ACTIVE_LINK_ACCOUNT = 8;
+    public const CANNOT_CHANGE_ROLE_FOR_NON_ACTIVE_LINK_ACCOUNT = 8;
     /**
      * Attempt to link a child to a parent that contains or will contain
      * duplicate children.
      *
      * Generated from protobuf enum <code>DUPLICATE_CHILD_FOUND = 9;</code>
      */
-    const DUPLICATE_CHILD_FOUND = 9;
+    public const DUPLICATE_CHILD_FOUND = 9;
     /**
      * The authorized customer is a test account. It can add no more than the
      * allowed number of accounts
      *
      * Generated from protobuf enum <code>TEST_ACCOUNT_LINKS_TOO_MANY_CHILD_ACCOUNTS = 10;</code>
      */
-    const TEST_ACCOUNT_LINKS_TOO_MANY_CHILD_ACCOUNTS = 10;
+    public const TEST_ACCOUNT_LINKS_TOO_MANY_CHILD_ACCOUNTS = 10;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::NO_PENDING_INVITE => 'NO_PENDING_INVITE',
@@ -102,7 +102,7 @@ class CustomerManagerLinkError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -110,10 +110,10 @@ class CustomerManagerLinkError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

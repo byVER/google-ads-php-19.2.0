@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.AdGroupCriterionCustomizerService' => [
             'MutateAdGroupCriterionCustomizers' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateAdGroupCriterionCustomizersResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateAdGroupCriterionCustomizersResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

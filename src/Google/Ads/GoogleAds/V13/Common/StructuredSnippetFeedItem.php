@@ -58,7 +58,7 @@ class StructuredSnippetFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getHeader()
     {
-        return isset($this->header) ? $this->header : '';
+        return $this->header ?? '';
     }
 
     public function hasHeader()

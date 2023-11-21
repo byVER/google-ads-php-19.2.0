@@ -113,7 +113,7 @@ class GenerateKeywordForecastMetricsRequest extends \Google\Protobuf\Internal\Me
      */
     public function getCurrencyCode()
     {
-        return isset($this->currency_code) ? $this->currency_code : '';
+        return $this->currency_code ?? '';
     }
 
     public function hasCurrencyCode()

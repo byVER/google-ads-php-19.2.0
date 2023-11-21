@@ -18,75 +18,75 @@ class DateError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Given field values do not correspond to a valid date.
      *
      * Generated from protobuf enum <code>INVALID_FIELD_VALUES_IN_DATE = 2;</code>
      */
-    const INVALID_FIELD_VALUES_IN_DATE = 2;
+    public const INVALID_FIELD_VALUES_IN_DATE = 2;
     /**
      * Given field values do not correspond to a valid date time.
      *
      * Generated from protobuf enum <code>INVALID_FIELD_VALUES_IN_DATE_TIME = 3;</code>
      */
-    const INVALID_FIELD_VALUES_IN_DATE_TIME = 3;
+    public const INVALID_FIELD_VALUES_IN_DATE_TIME = 3;
     /**
      * The string date's format should be yyyy-mm-dd.
      *
      * Generated from protobuf enum <code>INVALID_STRING_DATE = 4;</code>
      */
-    const INVALID_STRING_DATE = 4;
+    public const INVALID_STRING_DATE = 4;
     /**
      * The string date time's format should be yyyy-mm-dd hh:mm:ss.ssssss.
      *
      * Generated from protobuf enum <code>INVALID_STRING_DATE_TIME_MICROS = 6;</code>
      */
-    const INVALID_STRING_DATE_TIME_MICROS = 6;
+    public const INVALID_STRING_DATE_TIME_MICROS = 6;
     /**
      * The string date time's format should be yyyy-mm-dd hh:mm:ss.
      *
      * Generated from protobuf enum <code>INVALID_STRING_DATE_TIME_SECONDS = 11;</code>
      */
-    const INVALID_STRING_DATE_TIME_SECONDS = 11;
+    public const INVALID_STRING_DATE_TIME_SECONDS = 11;
     /**
      * The string date time's format should be yyyy-mm-dd hh:mm:ss+|-hh:mm.
      *
      * Generated from protobuf enum <code>INVALID_STRING_DATE_TIME_SECONDS_WITH_OFFSET = 12;</code>
      */
-    const INVALID_STRING_DATE_TIME_SECONDS_WITH_OFFSET = 12;
+    public const INVALID_STRING_DATE_TIME_SECONDS_WITH_OFFSET = 12;
     /**
      * Date is before allowed minimum.
      *
      * Generated from protobuf enum <code>EARLIER_THAN_MINIMUM_DATE = 7;</code>
      */
-    const EARLIER_THAN_MINIMUM_DATE = 7;
+    public const EARLIER_THAN_MINIMUM_DATE = 7;
     /**
      * Date is after allowed maximum.
      *
      * Generated from protobuf enum <code>LATER_THAN_MAXIMUM_DATE = 8;</code>
      */
-    const LATER_THAN_MAXIMUM_DATE = 8;
+    public const LATER_THAN_MAXIMUM_DATE = 8;
     /**
      * Date range bounds are not in order.
      *
      * Generated from protobuf enum <code>DATE_RANGE_MINIMUM_DATE_LATER_THAN_MAXIMUM_DATE = 9;</code>
      */
-    const DATE_RANGE_MINIMUM_DATE_LATER_THAN_MAXIMUM_DATE = 9;
+    public const DATE_RANGE_MINIMUM_DATE_LATER_THAN_MAXIMUM_DATE = 9;
     /**
      * Both dates in range are null.
      *
      * Generated from protobuf enum <code>DATE_RANGE_MINIMUM_AND_MAXIMUM_DATES_BOTH_NULL = 10;</code>
      */
-    const DATE_RANGE_MINIMUM_AND_MAXIMUM_DATES_BOTH_NULL = 10;
+    public const DATE_RANGE_MINIMUM_AND_MAXIMUM_DATES_BOTH_NULL = 10;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INVALID_FIELD_VALUES_IN_DATE => 'INVALID_FIELD_VALUES_IN_DATE',
@@ -105,7 +105,7 @@ class DateError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -113,10 +113,10 @@ class DateError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

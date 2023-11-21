@@ -65,7 +65,7 @@ class FeedAttributeOperation extends \Google\Protobuf\Internal\Message
      */
     public function setOperator($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Resources\FeedAttributeOperation\Operator::class);
+        GPBUtil::checkEnum($var);
         $this->operator = $var;
 
         return $this;

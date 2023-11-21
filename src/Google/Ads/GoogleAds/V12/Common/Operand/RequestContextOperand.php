@@ -57,7 +57,7 @@ class RequestContextOperand extends \Google\Protobuf\Internal\Message
      */
     public function setContextType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\MatchingFunctionContextTypeEnum\MatchingFunctionContextType::class);
+        GPBUtil::checkEnum($var);
         $this->context_type = $var;
 
         return $this;

@@ -78,183 +78,183 @@ class BatchJobServiceGapicClient
     use GapicClientTrait;
 
     /** The name of the service. */
-    const SERVICE_NAME = 'google.ads.googleads.v14.services.BatchJobService';
+    public const SERVICE_NAME = 'google.ads.googleads.v14.services.BatchJobService';
 
     /** The default address of the service. */
-    const SERVICE_ADDRESS = 'googleads.googleapis.com';
+    public const SERVICE_ADDRESS = 'googleads.googleapis.com';
 
     /** The default port of the service. */
-    const DEFAULT_SERVICE_PORT = 443;
+    public const DEFAULT_SERVICE_PORT = 443;
 
     /** The name of the code generator, to be included in the agent header. */
-    const CODEGEN_NAME = 'gapic';
+    public const CODEGEN_NAME = 'gapic';
 
     /** The default scopes required by the service. */
     public static $serviceScopes = [
         'https://www.googleapis.com/auth/adwords',
     ];
 
-    private static $accessibleBiddingStrategyNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $accessibleBiddingStrategyNameTemplate = null;
 
-    private static $adNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adNameTemplate = null;
 
-    private static $adGroupNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupNameTemplate = null;
 
-    private static $adGroupAdNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupAdNameTemplate = null;
 
-    private static $adGroupAdLabelNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupAdLabelNameTemplate = null;
 
-    private static $adGroupAssetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupAssetNameTemplate = null;
 
-    private static $adGroupBidModifierNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupBidModifierNameTemplate = null;
 
-    private static $adGroupCriterionNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupCriterionNameTemplate = null;
 
-    private static $adGroupCriterionCustomizerNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupCriterionCustomizerNameTemplate = null;
 
-    private static $adGroupCriterionLabelNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupCriterionLabelNameTemplate = null;
 
-    private static $adGroupCustomizerNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupCustomizerNameTemplate = null;
 
-    private static $adGroupExtensionSettingNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupExtensionSettingNameTemplate = null;
 
-    private static $adGroupFeedNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupFeedNameTemplate = null;
 
-    private static $adGroupLabelNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupLabelNameTemplate = null;
 
-    private static $adParameterNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adParameterNameTemplate = null;
 
-    private static $assetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $assetNameTemplate = null;
 
-    private static $assetGroupNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $assetGroupNameTemplate = null;
 
-    private static $assetGroupAssetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $assetGroupAssetNameTemplate = null;
 
-    private static $assetGroupListingGroupFilterNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $assetGroupListingGroupFilterNameTemplate = null;
 
-    private static $assetGroupSignalNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $assetGroupSignalNameTemplate = null;
 
-    private static $assetSetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $assetSetNameTemplate = null;
 
-    private static $assetSetAssetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $assetSetAssetNameTemplate = null;
 
-    private static $audienceNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $audienceNameTemplate = null;
 
-    private static $batchJobNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $batchJobNameTemplate = null;
 
-    private static $biddingDataExclusionNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $biddingDataExclusionNameTemplate = null;
 
-    private static $biddingSeasonalityAdjustmentNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $biddingSeasonalityAdjustmentNameTemplate = null;
 
-    private static $biddingStrategyNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $biddingStrategyNameTemplate = null;
 
-    private static $campaignNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignNameTemplate = null;
 
-    private static $campaignAssetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignAssetNameTemplate = null;
 
-    private static $campaignAssetSetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignAssetSetNameTemplate = null;
 
-    private static $campaignBidModifierNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignBidModifierNameTemplate = null;
 
-    private static $campaignBudgetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignBudgetNameTemplate = null;
 
-    private static $campaignConversionGoalNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignConversionGoalNameTemplate = null;
 
-    private static $campaignCriterionNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignCriterionNameTemplate = null;
 
-    private static $campaignCustomizerNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignCustomizerNameTemplate = null;
 
-    private static $campaignDraftNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignDraftNameTemplate = null;
 
-    private static $campaignExtensionSettingNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignExtensionSettingNameTemplate = null;
 
-    private static $campaignFeedNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignFeedNameTemplate = null;
 
-    private static $campaignGroupNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignGroupNameTemplate = null;
 
-    private static $campaignLabelNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignLabelNameTemplate = null;
 
-    private static $campaignSharedSetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $campaignSharedSetNameTemplate = null;
 
-    private static $conversionActionNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $conversionActionNameTemplate = null;
 
-    private static $conversionCustomVariableNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $conversionCustomVariableNameTemplate = null;
 
-    private static $conversionGoalCampaignConfigNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $conversionGoalCampaignConfigNameTemplate = null;
 
-    private static $conversionValueRuleNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $conversionValueRuleNameTemplate = null;
 
-    private static $conversionValueRuleSetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $conversionValueRuleSetNameTemplate = null;
 
-    private static $customConversionGoalNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $customConversionGoalNameTemplate = null;
 
-    private static $customerNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $customerNameTemplate = null;
 
-    private static $customerAssetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $customerAssetNameTemplate = null;
 
-    private static $customerConversionGoalNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $customerConversionGoalNameTemplate = null;
 
-    private static $customerCustomizerNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $customerCustomizerNameTemplate = null;
 
-    private static $customerExtensionSettingNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $customerExtensionSettingNameTemplate = null;
 
-    private static $customerFeedNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $customerFeedNameTemplate = null;
 
-    private static $customerLabelNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $customerLabelNameTemplate = null;
 
-    private static $customerNegativeCriterionNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $customerNegativeCriterionNameTemplate = null;
 
-    private static $customizerAttributeNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $customizerAttributeNameTemplate = null;
 
-    private static $experimentNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $experimentNameTemplate = null;
 
-    private static $experimentArmNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $experimentArmNameTemplate = null;
 
-    private static $extensionFeedItemNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $extensionFeedItemNameTemplate = null;
 
-    private static $feedNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $feedNameTemplate = null;
 
-    private static $feedItemNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $feedItemNameTemplate = null;
 
-    private static $feedItemSetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $feedItemSetNameTemplate = null;
 
-    private static $feedItemSetLinkNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $feedItemSetLinkNameTemplate = null;
 
-    private static $feedItemTargetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $feedItemTargetNameTemplate = null;
 
-    private static $feedMappingNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $feedMappingNameTemplate = null;
 
-    private static $geoTargetConstantNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $geoTargetConstantNameTemplate = null;
 
-    private static $keywordPlanNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $keywordPlanNameTemplate = null;
 
-    private static $keywordPlanAdGroupNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $keywordPlanAdGroupNameTemplate = null;
 
-    private static $keywordPlanAdGroupKeywordNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $keywordPlanAdGroupKeywordNameTemplate = null;
 
-    private static $keywordPlanCampaignNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $keywordPlanCampaignNameTemplate = null;
 
-    private static $keywordPlanCampaignKeywordNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $keywordPlanCampaignKeywordNameTemplate = null;
 
-    private static $labelNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $labelNameTemplate = null;
 
-    private static $languageConstantNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $languageConstantNameTemplate = null;
 
-    private static $mediaFileNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $mediaFileNameTemplate = null;
 
-    private static $remarketingActionNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $remarketingActionNameTemplate = null;
 
-    private static $sharedCriterionNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $sharedCriterionNameTemplate = null;
 
-    private static $sharedSetNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $sharedSetNameTemplate = null;
 
-    private static $smartCampaignSettingNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $smartCampaignSettingNameTemplate = null;
 
-    private static $userInterestNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $userInterestNameTemplate = null;
 
-    private static $userListNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $userListNameTemplate = null;
 
-    private static $pathTemplateMap;
+    private static ?array $pathTemplateMap = null;
 
     private $operationsClient;
 
@@ -2677,7 +2677,7 @@ class BatchJobServiceGapicClient
      */
     public function resumeOperation($operationName, $methodName = null)
     {
-        $options = isset($this->descriptors[$methodName]['longRunning']) ? $this->descriptors[$methodName]['longRunning'] : [];
+        $options = $this->descriptors[$methodName]['longRunning'] ?? [];
         $operation = new OperationResponse($operationName, $this->getOperationsClient(), $options);
         $operation->reload();
         return $operation;

@@ -18,58 +18,58 @@ class SmartCampaignError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The business location id is invalid.
      *
      * Generated from protobuf enum <code>INVALID_BUSINESS_LOCATION_ID = 2;</code>
      */
-    const INVALID_BUSINESS_LOCATION_ID = 2;
+    public const INVALID_BUSINESS_LOCATION_ID = 2;
     /**
      * The SmartCampaignSetting resource is only applicable for campaigns
      * with advertising channel type SMART.
      *
      * Generated from protobuf enum <code>INVALID_CAMPAIGN = 3;</code>
      */
-    const INVALID_CAMPAIGN = 3;
+    public const INVALID_CAMPAIGN = 3;
     /**
      * The business name or business location id is required.
      *
      * Generated from protobuf enum <code>BUSINESS_NAME_OR_BUSINESS_LOCATION_ID_MISSING = 4;</code>
      */
-    const BUSINESS_NAME_OR_BUSINESS_LOCATION_ID_MISSING = 4;
+    public const BUSINESS_NAME_OR_BUSINESS_LOCATION_ID_MISSING = 4;
     /**
      * A Smart campaign suggestion request field is required.
      *
      * Generated from protobuf enum <code>REQUIRED_SUGGESTION_FIELD_MISSING = 5;</code>
      */
-    const REQUIRED_SUGGESTION_FIELD_MISSING = 5;
+    public const REQUIRED_SUGGESTION_FIELD_MISSING = 5;
     /**
      * A location list or proximity is required.
      *
      * Generated from protobuf enum <code>GEO_TARGETS_REQUIRED = 6;</code>
      */
-    const GEO_TARGETS_REQUIRED = 6;
+    public const GEO_TARGETS_REQUIRED = 6;
     /**
      * The locale could not be determined.
      *
      * Generated from protobuf enum <code>CANNOT_DETERMINE_SUGGESTION_LOCALE = 7;</code>
      */
-    const CANNOT_DETERMINE_SUGGESTION_LOCALE = 7;
+    public const CANNOT_DETERMINE_SUGGESTION_LOCALE = 7;
     /**
      * The final URL could not be crawled.
      *
      * Generated from protobuf enum <code>FINAL_URL_NOT_CRAWLABLE = 8;</code>
      */
-    const FINAL_URL_NOT_CRAWLABLE = 8;
+    public const FINAL_URL_NOT_CRAWLABLE = 8;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INVALID_BUSINESS_LOCATION_ID => 'INVALID_BUSINESS_LOCATION_ID',
@@ -85,7 +85,7 @@ class SmartCampaignError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -93,10 +93,10 @@ class SmartCampaignError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

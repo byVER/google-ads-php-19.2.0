@@ -18,81 +18,81 @@ class ResourceLimitType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents an unclassified operation unknown
      * in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Number of ENABLED and PAUSED campaigns per customer.
      *
      * Generated from protobuf enum <code>CAMPAIGNS_PER_CUSTOMER = 2;</code>
      */
-    const CAMPAIGNS_PER_CUSTOMER = 2;
+    public const CAMPAIGNS_PER_CUSTOMER = 2;
     /**
      * Number of ENABLED and PAUSED base campaigns per customer.
      *
      * Generated from protobuf enum <code>BASE_CAMPAIGNS_PER_CUSTOMER = 3;</code>
      */
-    const BASE_CAMPAIGNS_PER_CUSTOMER = 3;
+    public const BASE_CAMPAIGNS_PER_CUSTOMER = 3;
     /**
      * Number of ENABLED and PAUSED experiment campaigns per customer.
      *
      * Generated from protobuf enum <code>EXPERIMENT_CAMPAIGNS_PER_CUSTOMER = 105;</code>
      */
-    const EXPERIMENT_CAMPAIGNS_PER_CUSTOMER = 105;
+    public const EXPERIMENT_CAMPAIGNS_PER_CUSTOMER = 105;
     /**
      * Number of ENABLED and PAUSED Hotel campaigns per customer.
      *
      * Generated from protobuf enum <code>HOTEL_CAMPAIGNS_PER_CUSTOMER = 4;</code>
      */
-    const HOTEL_CAMPAIGNS_PER_CUSTOMER = 4;
+    public const HOTEL_CAMPAIGNS_PER_CUSTOMER = 4;
     /**
      * Number of ENABLED and PAUSED Smart Shopping campaigns per customer.
      *
      * Generated from protobuf enum <code>SMART_SHOPPING_CAMPAIGNS_PER_CUSTOMER = 5;</code>
      */
-    const SMART_SHOPPING_CAMPAIGNS_PER_CUSTOMER = 5;
+    public const SMART_SHOPPING_CAMPAIGNS_PER_CUSTOMER = 5;
     /**
      * Number of ENABLED ad groups per campaign.
      *
      * Generated from protobuf enum <code>AD_GROUPS_PER_CAMPAIGN = 6;</code>
      */
-    const AD_GROUPS_PER_CAMPAIGN = 6;
+    public const AD_GROUPS_PER_CAMPAIGN = 6;
     /**
      * Number of ENABLED ad groups per Shopping campaign.
      *
      * Generated from protobuf enum <code>AD_GROUPS_PER_SHOPPING_CAMPAIGN = 8;</code>
      */
-    const AD_GROUPS_PER_SHOPPING_CAMPAIGN = 8;
+    public const AD_GROUPS_PER_SHOPPING_CAMPAIGN = 8;
     /**
      * Number of ENABLED ad groups per Hotel campaign.
      *
      * Generated from protobuf enum <code>AD_GROUPS_PER_HOTEL_CAMPAIGN = 9;</code>
      */
-    const AD_GROUPS_PER_HOTEL_CAMPAIGN = 9;
+    public const AD_GROUPS_PER_HOTEL_CAMPAIGN = 9;
     /**
      * Number of ENABLED reporting ad groups per local campaign.
      *
      * Generated from protobuf enum <code>REPORTING_AD_GROUPS_PER_LOCAL_CAMPAIGN = 10;</code>
      */
-    const REPORTING_AD_GROUPS_PER_LOCAL_CAMPAIGN = 10;
+    public const REPORTING_AD_GROUPS_PER_LOCAL_CAMPAIGN = 10;
     /**
      * Number of ENABLED reporting ad groups per App campaign. It includes app
      * campaign and app campaign for engagement.
      *
      * Generated from protobuf enum <code>REPORTING_AD_GROUPS_PER_APP_CAMPAIGN = 11;</code>
      */
-    const REPORTING_AD_GROUPS_PER_APP_CAMPAIGN = 11;
+    public const REPORTING_AD_GROUPS_PER_APP_CAMPAIGN = 11;
     /**
      * Number of ENABLED managed ad groups per smart campaign.
      *
      * Generated from protobuf enum <code>MANAGED_AD_GROUPS_PER_SMART_CAMPAIGN = 52;</code>
      */
-    const MANAGED_AD_GROUPS_PER_SMART_CAMPAIGN = 52;
+    public const MANAGED_AD_GROUPS_PER_SMART_CAMPAIGN = 52;
     /**
      * Number of ENABLED ad group criteria per customer.
      * An ad group criterion is considered as ENABLED if:
@@ -102,20 +102,20 @@ class ResourceLimitType
      *
      * Generated from protobuf enum <code>AD_GROUP_CRITERIA_PER_CUSTOMER = 12;</code>
      */
-    const AD_GROUP_CRITERIA_PER_CUSTOMER = 12;
+    public const AD_GROUP_CRITERIA_PER_CUSTOMER = 12;
     /**
      * Number of ad group criteria across all base campaigns for a customer.
      *
      * Generated from protobuf enum <code>BASE_AD_GROUP_CRITERIA_PER_CUSTOMER = 13;</code>
      */
-    const BASE_AD_GROUP_CRITERIA_PER_CUSTOMER = 13;
+    public const BASE_AD_GROUP_CRITERIA_PER_CUSTOMER = 13;
     /**
      * Number of ad group criteria across all experiment campaigns for a
      * customer.
      *
      * Generated from protobuf enum <code>EXPERIMENT_AD_GROUP_CRITERIA_PER_CUSTOMER = 107;</code>
      */
-    const EXPERIMENT_AD_GROUP_CRITERIA_PER_CUSTOMER = 107;
+    public const EXPERIMENT_AD_GROUP_CRITERIA_PER_CUSTOMER = 107;
     /**
      * Number of ENABLED ad group criteria per campaign.
      * An ad group criterion is considered as ENABLED if:
@@ -124,102 +124,102 @@ class ResourceLimitType
      *
      * Generated from protobuf enum <code>AD_GROUP_CRITERIA_PER_CAMPAIGN = 14;</code>
      */
-    const AD_GROUP_CRITERIA_PER_CAMPAIGN = 14;
+    public const AD_GROUP_CRITERIA_PER_CAMPAIGN = 14;
     /**
      * Number of ENABLED campaign criteria per customer.
      *
      * Generated from protobuf enum <code>CAMPAIGN_CRITERIA_PER_CUSTOMER = 15;</code>
      */
-    const CAMPAIGN_CRITERIA_PER_CUSTOMER = 15;
+    public const CAMPAIGN_CRITERIA_PER_CUSTOMER = 15;
     /**
      * Number of ENABLED campaign criteria across all base campaigns for a
      * customer.
      *
      * Generated from protobuf enum <code>BASE_CAMPAIGN_CRITERIA_PER_CUSTOMER = 16;</code>
      */
-    const BASE_CAMPAIGN_CRITERIA_PER_CUSTOMER = 16;
+    public const BASE_CAMPAIGN_CRITERIA_PER_CUSTOMER = 16;
     /**
      * Number of ENABLED campaign criteria across all experiment campaigns for a
      * customer.
      *
      * Generated from protobuf enum <code>EXPERIMENT_CAMPAIGN_CRITERIA_PER_CUSTOMER = 108;</code>
      */
-    const EXPERIMENT_CAMPAIGN_CRITERIA_PER_CUSTOMER = 108;
+    public const EXPERIMENT_CAMPAIGN_CRITERIA_PER_CUSTOMER = 108;
     /**
      * Number of ENABLED webpage criteria per customer, including
      * campaign level and ad group level.
      *
      * Generated from protobuf enum <code>WEBPAGE_CRITERIA_PER_CUSTOMER = 17;</code>
      */
-    const WEBPAGE_CRITERIA_PER_CUSTOMER = 17;
+    public const WEBPAGE_CRITERIA_PER_CUSTOMER = 17;
     /**
      * Number of ENABLED webpage criteria across all base campaigns for
      * a customer.
      *
      * Generated from protobuf enum <code>BASE_WEBPAGE_CRITERIA_PER_CUSTOMER = 18;</code>
      */
-    const BASE_WEBPAGE_CRITERIA_PER_CUSTOMER = 18;
+    public const BASE_WEBPAGE_CRITERIA_PER_CUSTOMER = 18;
     /**
      * Meximum number of ENABLED webpage criteria across all experiment
      * campaigns for a customer.
      *
      * Generated from protobuf enum <code>EXPERIMENT_WEBPAGE_CRITERIA_PER_CUSTOMER = 19;</code>
      */
-    const EXPERIMENT_WEBPAGE_CRITERIA_PER_CUSTOMER = 19;
+    public const EXPERIMENT_WEBPAGE_CRITERIA_PER_CUSTOMER = 19;
     /**
      * Number of combined audience criteria per ad group.
      *
      * Generated from protobuf enum <code>COMBINED_AUDIENCE_CRITERIA_PER_AD_GROUP = 20;</code>
      */
-    const COMBINED_AUDIENCE_CRITERIA_PER_AD_GROUP = 20;
+    public const COMBINED_AUDIENCE_CRITERIA_PER_AD_GROUP = 20;
     /**
      * Limit for placement criterion type group in customer negative criterion.
      *
      * Generated from protobuf enum <code>CUSTOMER_NEGATIVE_PLACEMENT_CRITERIA_PER_CUSTOMER = 21;</code>
      */
-    const CUSTOMER_NEGATIVE_PLACEMENT_CRITERIA_PER_CUSTOMER = 21;
+    public const CUSTOMER_NEGATIVE_PLACEMENT_CRITERIA_PER_CUSTOMER = 21;
     /**
      * Limit for YouTube TV channels in customer negative criterion.
      *
      * Generated from protobuf enum <code>CUSTOMER_NEGATIVE_YOUTUBE_CHANNEL_CRITERIA_PER_CUSTOMER = 22;</code>
      */
-    const CUSTOMER_NEGATIVE_YOUTUBE_CHANNEL_CRITERIA_PER_CUSTOMER = 22;
+    public const CUSTOMER_NEGATIVE_YOUTUBE_CHANNEL_CRITERIA_PER_CUSTOMER = 22;
     /**
      * Number of ENABLED criteria per ad group.
      *
      * Generated from protobuf enum <code>CRITERIA_PER_AD_GROUP = 23;</code>
      */
-    const CRITERIA_PER_AD_GROUP = 23;
+    public const CRITERIA_PER_AD_GROUP = 23;
     /**
      * Number of listing group criteria per ad group.
      *
      * Generated from protobuf enum <code>LISTING_GROUPS_PER_AD_GROUP = 24;</code>
      */
-    const LISTING_GROUPS_PER_AD_GROUP = 24;
+    public const LISTING_GROUPS_PER_AD_GROUP = 24;
     /**
      * Number of ENABLED explicitly shared budgets per customer.
      *
      * Generated from protobuf enum <code>EXPLICITLY_SHARED_BUDGETS_PER_CUSTOMER = 25;</code>
      */
-    const EXPLICITLY_SHARED_BUDGETS_PER_CUSTOMER = 25;
+    public const EXPLICITLY_SHARED_BUDGETS_PER_CUSTOMER = 25;
     /**
      * Number of ENABLED implicitly shared budgets per customer.
      *
      * Generated from protobuf enum <code>IMPLICITLY_SHARED_BUDGETS_PER_CUSTOMER = 26;</code>
      */
-    const IMPLICITLY_SHARED_BUDGETS_PER_CUSTOMER = 26;
+    public const IMPLICITLY_SHARED_BUDGETS_PER_CUSTOMER = 26;
     /**
      * Number of combined audience criteria per campaign.
      *
      * Generated from protobuf enum <code>COMBINED_AUDIENCE_CRITERIA_PER_CAMPAIGN = 27;</code>
      */
-    const COMBINED_AUDIENCE_CRITERIA_PER_CAMPAIGN = 27;
+    public const COMBINED_AUDIENCE_CRITERIA_PER_CAMPAIGN = 27;
     /**
      * Number of negative keywords per campaign.
      *
      * Generated from protobuf enum <code>NEGATIVE_KEYWORDS_PER_CAMPAIGN = 28;</code>
      */
-    const NEGATIVE_KEYWORDS_PER_CAMPAIGN = 28;
+    public const NEGATIVE_KEYWORDS_PER_CAMPAIGN = 28;
     /**
      * Number of excluded campaign criteria in placement dimension, for example,
      * placement, mobile application, YouTube channel, etc. The API criterion
@@ -228,568 +228,568 @@ class ResourceLimitType
      *
      * Generated from protobuf enum <code>NEGATIVE_PLACEMENTS_PER_CAMPAIGN = 29;</code>
      */
-    const NEGATIVE_PLACEMENTS_PER_CAMPAIGN = 29;
+    public const NEGATIVE_PLACEMENTS_PER_CAMPAIGN = 29;
     /**
      * Number of geo targets per campaign.
      *
      * Generated from protobuf enum <code>GEO_TARGETS_PER_CAMPAIGN = 30;</code>
      */
-    const GEO_TARGETS_PER_CAMPAIGN = 30;
+    public const GEO_TARGETS_PER_CAMPAIGN = 30;
     /**
      * Number of negative IP blocks per campaign.
      *
      * Generated from protobuf enum <code>NEGATIVE_IP_BLOCKS_PER_CAMPAIGN = 32;</code>
      */
-    const NEGATIVE_IP_BLOCKS_PER_CAMPAIGN = 32;
+    public const NEGATIVE_IP_BLOCKS_PER_CAMPAIGN = 32;
     /**
      * Number of proximity targets per campaign.
      *
      * Generated from protobuf enum <code>PROXIMITIES_PER_CAMPAIGN = 33;</code>
      */
-    const PROXIMITIES_PER_CAMPAIGN = 33;
+    public const PROXIMITIES_PER_CAMPAIGN = 33;
     /**
      * Number of listing scopes per Shopping campaign.
      *
      * Generated from protobuf enum <code>LISTING_SCOPES_PER_SHOPPING_CAMPAIGN = 34;</code>
      */
-    const LISTING_SCOPES_PER_SHOPPING_CAMPAIGN = 34;
+    public const LISTING_SCOPES_PER_SHOPPING_CAMPAIGN = 34;
     /**
      * Number of listing scopes per non-Shopping campaign.
      *
      * Generated from protobuf enum <code>LISTING_SCOPES_PER_NON_SHOPPING_CAMPAIGN = 35;</code>
      */
-    const LISTING_SCOPES_PER_NON_SHOPPING_CAMPAIGN = 35;
+    public const LISTING_SCOPES_PER_NON_SHOPPING_CAMPAIGN = 35;
     /**
      * Number of criteria per negative keyword shared set.
      *
      * Generated from protobuf enum <code>NEGATIVE_KEYWORDS_PER_SHARED_SET = 36;</code>
      */
-    const NEGATIVE_KEYWORDS_PER_SHARED_SET = 36;
+    public const NEGATIVE_KEYWORDS_PER_SHARED_SET = 36;
     /**
      * Number of criteria per negative placement shared set.
      *
      * Generated from protobuf enum <code>NEGATIVE_PLACEMENTS_PER_SHARED_SET = 37;</code>
      */
-    const NEGATIVE_PLACEMENTS_PER_SHARED_SET = 37;
+    public const NEGATIVE_PLACEMENTS_PER_SHARED_SET = 37;
     /**
      * Default number of shared sets allowed per type per customer.
      *
      * Generated from protobuf enum <code>SHARED_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT = 40;</code>
      */
-    const SHARED_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT = 40;
+    public const SHARED_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT = 40;
     /**
      * Number of shared sets of negative placement list type for a
      * manager customer.
      *
      * Generated from protobuf enum <code>SHARED_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER = 41;</code>
      */
-    const SHARED_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER = 41;
+    public const SHARED_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER = 41;
     /**
      * Number of hotel_advance_booking_window bid modifiers per ad group.
      *
      * Generated from protobuf enum <code>HOTEL_ADVANCE_BOOKING_WINDOW_BID_MODIFIERS_PER_AD_GROUP = 44;</code>
      */
-    const HOTEL_ADVANCE_BOOKING_WINDOW_BID_MODIFIERS_PER_AD_GROUP = 44;
+    public const HOTEL_ADVANCE_BOOKING_WINDOW_BID_MODIFIERS_PER_AD_GROUP = 44;
     /**
      * Number of ENABLED shared bidding strategies per customer.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGIES_PER_CUSTOMER = 45;</code>
      */
-    const BIDDING_STRATEGIES_PER_CUSTOMER = 45;
+    public const BIDDING_STRATEGIES_PER_CUSTOMER = 45;
     /**
      * Number of open basic user lists per customer.
      *
      * Generated from protobuf enum <code>BASIC_USER_LISTS_PER_CUSTOMER = 47;</code>
      */
-    const BASIC_USER_LISTS_PER_CUSTOMER = 47;
+    public const BASIC_USER_LISTS_PER_CUSTOMER = 47;
     /**
      * Number of open logical user lists per customer.
      *
      * Generated from protobuf enum <code>LOGICAL_USER_LISTS_PER_CUSTOMER = 48;</code>
      */
-    const LOGICAL_USER_LISTS_PER_CUSTOMER = 48;
+    public const LOGICAL_USER_LISTS_PER_CUSTOMER = 48;
     /**
      * Number of open rule based user lists per customer.
      *
      * Generated from protobuf enum <code>RULE_BASED_USER_LISTS_PER_CUSTOMER = 153;</code>
      */
-    const RULE_BASED_USER_LISTS_PER_CUSTOMER = 153;
+    public const RULE_BASED_USER_LISTS_PER_CUSTOMER = 153;
     /**
      * Number of ENABLED and PAUSED ad group ads across all base campaigns for a
      * customer.
      *
      * Generated from protobuf enum <code>BASE_AD_GROUP_ADS_PER_CUSTOMER = 53;</code>
      */
-    const BASE_AD_GROUP_ADS_PER_CUSTOMER = 53;
+    public const BASE_AD_GROUP_ADS_PER_CUSTOMER = 53;
     /**
      * Number of ENABLED and PAUSED ad group ads across all experiment campaigns
      * for a customer.
      *
      * Generated from protobuf enum <code>EXPERIMENT_AD_GROUP_ADS_PER_CUSTOMER = 54;</code>
      */
-    const EXPERIMENT_AD_GROUP_ADS_PER_CUSTOMER = 54;
+    public const EXPERIMENT_AD_GROUP_ADS_PER_CUSTOMER = 54;
     /**
      * Number of ENABLED and PAUSED ad group ads per campaign.
      *
      * Generated from protobuf enum <code>AD_GROUP_ADS_PER_CAMPAIGN = 55;</code>
      */
-    const AD_GROUP_ADS_PER_CAMPAIGN = 55;
+    public const AD_GROUP_ADS_PER_CAMPAIGN = 55;
     /**
      * Number of ENABLED ads per ad group that do not fall in to other buckets.
      * Includes text and many other types.
      *
      * Generated from protobuf enum <code>TEXT_AND_OTHER_ADS_PER_AD_GROUP = 56;</code>
      */
-    const TEXT_AND_OTHER_ADS_PER_AD_GROUP = 56;
+    public const TEXT_AND_OTHER_ADS_PER_AD_GROUP = 56;
     /**
      * Number of ENABLED image ads per ad group.
      *
      * Generated from protobuf enum <code>IMAGE_ADS_PER_AD_GROUP = 57;</code>
      */
-    const IMAGE_ADS_PER_AD_GROUP = 57;
+    public const IMAGE_ADS_PER_AD_GROUP = 57;
     /**
      * Number of ENABLED shopping smart ads per ad group.
      *
      * Generated from protobuf enum <code>SHOPPING_SMART_ADS_PER_AD_GROUP = 58;</code>
      */
-    const SHOPPING_SMART_ADS_PER_AD_GROUP = 58;
+    public const SHOPPING_SMART_ADS_PER_AD_GROUP = 58;
     /**
      * Number of ENABLED responsive search ads per ad group.
      *
      * Generated from protobuf enum <code>RESPONSIVE_SEARCH_ADS_PER_AD_GROUP = 59;</code>
      */
-    const RESPONSIVE_SEARCH_ADS_PER_AD_GROUP = 59;
+    public const RESPONSIVE_SEARCH_ADS_PER_AD_GROUP = 59;
     /**
      * Number of ENABLED app ads per ad group.
      *
      * Generated from protobuf enum <code>APP_ADS_PER_AD_GROUP = 60;</code>
      */
-    const APP_ADS_PER_AD_GROUP = 60;
+    public const APP_ADS_PER_AD_GROUP = 60;
     /**
      * Number of ENABLED app engagement ads per ad group.
      *
      * Generated from protobuf enum <code>APP_ENGAGEMENT_ADS_PER_AD_GROUP = 61;</code>
      */
-    const APP_ENGAGEMENT_ADS_PER_AD_GROUP = 61;
+    public const APP_ENGAGEMENT_ADS_PER_AD_GROUP = 61;
     /**
      * Number of ENABLED local ads per ad group.
      *
      * Generated from protobuf enum <code>LOCAL_ADS_PER_AD_GROUP = 62;</code>
      */
-    const LOCAL_ADS_PER_AD_GROUP = 62;
+    public const LOCAL_ADS_PER_AD_GROUP = 62;
     /**
      * Number of ENABLED video ads per ad group.
      *
      * Generated from protobuf enum <code>VIDEO_ADS_PER_AD_GROUP = 63;</code>
      */
-    const VIDEO_ADS_PER_AD_GROUP = 63;
+    public const VIDEO_ADS_PER_AD_GROUP = 63;
     /**
      * Number of ENABLED lead form CampaignAssets per campaign.
      *
      * Generated from protobuf enum <code>LEAD_FORM_CAMPAIGN_ASSETS_PER_CAMPAIGN = 143;</code>
      */
-    const LEAD_FORM_CAMPAIGN_ASSETS_PER_CAMPAIGN = 143;
+    public const LEAD_FORM_CAMPAIGN_ASSETS_PER_CAMPAIGN = 143;
     /**
      * Number of ENABLED promotion CustomerAssets per customer.
      *
      * Generated from protobuf enum <code>PROMOTION_CUSTOMER_ASSETS_PER_CUSTOMER = 79;</code>
      */
-    const PROMOTION_CUSTOMER_ASSETS_PER_CUSTOMER = 79;
+    public const PROMOTION_CUSTOMER_ASSETS_PER_CUSTOMER = 79;
     /**
      * Number of ENABLED promotion CampaignAssets per campaign.
      *
      * Generated from protobuf enum <code>PROMOTION_CAMPAIGN_ASSETS_PER_CAMPAIGN = 80;</code>
      */
-    const PROMOTION_CAMPAIGN_ASSETS_PER_CAMPAIGN = 80;
+    public const PROMOTION_CAMPAIGN_ASSETS_PER_CAMPAIGN = 80;
     /**
      * Number of ENABLED promotion AdGroupAssets per ad group.
      *
      * Generated from protobuf enum <code>PROMOTION_AD_GROUP_ASSETS_PER_AD_GROUP = 81;</code>
      */
-    const PROMOTION_AD_GROUP_ASSETS_PER_AD_GROUP = 81;
+    public const PROMOTION_AD_GROUP_ASSETS_PER_AD_GROUP = 81;
     /**
      * Number of ENABLED callout CustomerAssets per customer.
      *
      * Generated from protobuf enum <code>CALLOUT_CUSTOMER_ASSETS_PER_CUSTOMER = 134;</code>
      */
-    const CALLOUT_CUSTOMER_ASSETS_PER_CUSTOMER = 134;
+    public const CALLOUT_CUSTOMER_ASSETS_PER_CUSTOMER = 134;
     /**
      * Number of ENABLED callout CampaignAssets per campaign.
      *
      * Generated from protobuf enum <code>CALLOUT_CAMPAIGN_ASSETS_PER_CAMPAIGN = 135;</code>
      */
-    const CALLOUT_CAMPAIGN_ASSETS_PER_CAMPAIGN = 135;
+    public const CALLOUT_CAMPAIGN_ASSETS_PER_CAMPAIGN = 135;
     /**
      * Number of ENABLED callout AdGroupAssets per ad group.
      *
      * Generated from protobuf enum <code>CALLOUT_AD_GROUP_ASSETS_PER_AD_GROUP = 136;</code>
      */
-    const CALLOUT_AD_GROUP_ASSETS_PER_AD_GROUP = 136;
+    public const CALLOUT_AD_GROUP_ASSETS_PER_AD_GROUP = 136;
     /**
      * Number of ENABLED sitelink CustomerAssets per customer.
      *
      * Generated from protobuf enum <code>SITELINK_CUSTOMER_ASSETS_PER_CUSTOMER = 137;</code>
      */
-    const SITELINK_CUSTOMER_ASSETS_PER_CUSTOMER = 137;
+    public const SITELINK_CUSTOMER_ASSETS_PER_CUSTOMER = 137;
     /**
      * Number of ENABLED sitelink CampaignAssets per campaign.
      *
      * Generated from protobuf enum <code>SITELINK_CAMPAIGN_ASSETS_PER_CAMPAIGN = 138;</code>
      */
-    const SITELINK_CAMPAIGN_ASSETS_PER_CAMPAIGN = 138;
+    public const SITELINK_CAMPAIGN_ASSETS_PER_CAMPAIGN = 138;
     /**
      * Number of ENABLED sitelink AdGroupAssets per ad group.
      *
      * Generated from protobuf enum <code>SITELINK_AD_GROUP_ASSETS_PER_AD_GROUP = 139;</code>
      */
-    const SITELINK_AD_GROUP_ASSETS_PER_AD_GROUP = 139;
+    public const SITELINK_AD_GROUP_ASSETS_PER_AD_GROUP = 139;
     /**
      * Number of ENABLED structured snippet CustomerAssets per customer.
      *
      * Generated from protobuf enum <code>STRUCTURED_SNIPPET_CUSTOMER_ASSETS_PER_CUSTOMER = 140;</code>
      */
-    const STRUCTURED_SNIPPET_CUSTOMER_ASSETS_PER_CUSTOMER = 140;
+    public const STRUCTURED_SNIPPET_CUSTOMER_ASSETS_PER_CUSTOMER = 140;
     /**
      * Number of ENABLED structured snippet CampaignAssets per campaign.
      *
      * Generated from protobuf enum <code>STRUCTURED_SNIPPET_CAMPAIGN_ASSETS_PER_CAMPAIGN = 141;</code>
      */
-    const STRUCTURED_SNIPPET_CAMPAIGN_ASSETS_PER_CAMPAIGN = 141;
+    public const STRUCTURED_SNIPPET_CAMPAIGN_ASSETS_PER_CAMPAIGN = 141;
     /**
      * Number of ENABLED structured snippet AdGroupAssets per ad group.
      *
      * Generated from protobuf enum <code>STRUCTURED_SNIPPET_AD_GROUP_ASSETS_PER_AD_GROUP = 142;</code>
      */
-    const STRUCTURED_SNIPPET_AD_GROUP_ASSETS_PER_AD_GROUP = 142;
+    public const STRUCTURED_SNIPPET_AD_GROUP_ASSETS_PER_AD_GROUP = 142;
     /**
      * Number of ENABLED mobile app CustomerAssets per customer.
      *
      * Generated from protobuf enum <code>MOBILE_APP_CUSTOMER_ASSETS_PER_CUSTOMER = 144;</code>
      */
-    const MOBILE_APP_CUSTOMER_ASSETS_PER_CUSTOMER = 144;
+    public const MOBILE_APP_CUSTOMER_ASSETS_PER_CUSTOMER = 144;
     /**
      * Number of ENABLED mobile app CampaignAssets per campaign.
      *
      * Generated from protobuf enum <code>MOBILE_APP_CAMPAIGN_ASSETS_PER_CAMPAIGN = 145;</code>
      */
-    const MOBILE_APP_CAMPAIGN_ASSETS_PER_CAMPAIGN = 145;
+    public const MOBILE_APP_CAMPAIGN_ASSETS_PER_CAMPAIGN = 145;
     /**
      * Number of ENABLED mobile app AdGroupAssets per ad group.
      *
      * Generated from protobuf enum <code>MOBILE_APP_AD_GROUP_ASSETS_PER_AD_GROUP = 146;</code>
      */
-    const MOBILE_APP_AD_GROUP_ASSETS_PER_AD_GROUP = 146;
+    public const MOBILE_APP_AD_GROUP_ASSETS_PER_AD_GROUP = 146;
     /**
      * Number of ENABLED hotel callout CustomerAssets per customer.
      *
      * Generated from protobuf enum <code>HOTEL_CALLOUT_CUSTOMER_ASSETS_PER_CUSTOMER = 147;</code>
      */
-    const HOTEL_CALLOUT_CUSTOMER_ASSETS_PER_CUSTOMER = 147;
+    public const HOTEL_CALLOUT_CUSTOMER_ASSETS_PER_CUSTOMER = 147;
     /**
      * Number of ENABLED hotel callout CampaignAssets per campaign.
      *
      * Generated from protobuf enum <code>HOTEL_CALLOUT_CAMPAIGN_ASSETS_PER_CAMPAIGN = 148;</code>
      */
-    const HOTEL_CALLOUT_CAMPAIGN_ASSETS_PER_CAMPAIGN = 148;
+    public const HOTEL_CALLOUT_CAMPAIGN_ASSETS_PER_CAMPAIGN = 148;
     /**
      * Number of ENABLED hotel callout AdGroupAssets per ad group.
      *
      * Generated from protobuf enum <code>HOTEL_CALLOUT_AD_GROUP_ASSETS_PER_AD_GROUP = 149;</code>
      */
-    const HOTEL_CALLOUT_AD_GROUP_ASSETS_PER_AD_GROUP = 149;
+    public const HOTEL_CALLOUT_AD_GROUP_ASSETS_PER_AD_GROUP = 149;
     /**
      * Number of ENABLED call CustomerAssets per customer.
      *
      * Generated from protobuf enum <code>CALL_CUSTOMER_ASSETS_PER_CUSTOMER = 150;</code>
      */
-    const CALL_CUSTOMER_ASSETS_PER_CUSTOMER = 150;
+    public const CALL_CUSTOMER_ASSETS_PER_CUSTOMER = 150;
     /**
      * Number of ENABLED call CampaignAssets per campaign.
      *
      * Generated from protobuf enum <code>CALL_CAMPAIGN_ASSETS_PER_CAMPAIGN = 151;</code>
      */
-    const CALL_CAMPAIGN_ASSETS_PER_CAMPAIGN = 151;
+    public const CALL_CAMPAIGN_ASSETS_PER_CAMPAIGN = 151;
     /**
      * Number of ENABLED call AdGroupAssets per ad group.
      *
      * Generated from protobuf enum <code>CALL_AD_GROUP_ASSETS_PER_AD_GROUP = 152;</code>
      */
-    const CALL_AD_GROUP_ASSETS_PER_AD_GROUP = 152;
+    public const CALL_AD_GROUP_ASSETS_PER_AD_GROUP = 152;
     /**
      * Number of ENABLED price CustomerAssets per customer.
      *
      * Generated from protobuf enum <code>PRICE_CUSTOMER_ASSETS_PER_CUSTOMER = 154;</code>
      */
-    const PRICE_CUSTOMER_ASSETS_PER_CUSTOMER = 154;
+    public const PRICE_CUSTOMER_ASSETS_PER_CUSTOMER = 154;
     /**
      * Number of ENABLED price CampaignAssets per campaign.
      *
      * Generated from protobuf enum <code>PRICE_CAMPAIGN_ASSETS_PER_CAMPAIGN = 155;</code>
      */
-    const PRICE_CAMPAIGN_ASSETS_PER_CAMPAIGN = 155;
+    public const PRICE_CAMPAIGN_ASSETS_PER_CAMPAIGN = 155;
     /**
      * Number of ENABLED price AdGroupAssets per ad group.
      *
      * Generated from protobuf enum <code>PRICE_AD_GROUP_ASSETS_PER_AD_GROUP = 156;</code>
      */
-    const PRICE_AD_GROUP_ASSETS_PER_AD_GROUP = 156;
+    public const PRICE_AD_GROUP_ASSETS_PER_AD_GROUP = 156;
     /**
      * Number of ENABLED ad image CampaignAssets per campaign.
      *
      * Generated from protobuf enum <code>AD_IMAGE_CAMPAIGN_ASSETS_PER_CAMPAIGN = 175;</code>
      */
-    const AD_IMAGE_CAMPAIGN_ASSETS_PER_CAMPAIGN = 175;
+    public const AD_IMAGE_CAMPAIGN_ASSETS_PER_CAMPAIGN = 175;
     /**
      * Number of ENABLED ad image AdGroupAssets per ad group.
      *
      * Generated from protobuf enum <code>AD_IMAGE_AD_GROUP_ASSETS_PER_AD_GROUP = 176;</code>
      */
-    const AD_IMAGE_AD_GROUP_ASSETS_PER_AD_GROUP = 176;
+    public const AD_IMAGE_AD_GROUP_ASSETS_PER_AD_GROUP = 176;
     /**
      * Number of ENABLED page feed asset sets per customer.
      *
      * Generated from protobuf enum <code>PAGE_FEED_ASSET_SETS_PER_CUSTOMER = 157;</code>
      */
-    const PAGE_FEED_ASSET_SETS_PER_CUSTOMER = 157;
+    public const PAGE_FEED_ASSET_SETS_PER_CUSTOMER = 157;
     /**
      * Number of ENABLED dynamic education feed asset sets per customer.
      *
      * Generated from protobuf enum <code>DYNAMIC_EDUCATION_FEED_ASSET_SETS_PER_CUSTOMER = 158;</code>
      */
-    const DYNAMIC_EDUCATION_FEED_ASSET_SETS_PER_CUSTOMER = 158;
+    public const DYNAMIC_EDUCATION_FEED_ASSET_SETS_PER_CUSTOMER = 158;
     /**
      * Number of ENABLED assets per page feed asset set.
      *
      * Generated from protobuf enum <code>ASSETS_PER_PAGE_FEED_ASSET_SET = 159;</code>
      */
-    const ASSETS_PER_PAGE_FEED_ASSET_SET = 159;
+    public const ASSETS_PER_PAGE_FEED_ASSET_SET = 159;
     /**
      * Number of ENABLED assets per dynamic education asset set.
      *
      * Generated from protobuf enum <code>ASSETS_PER_DYNAMIC_EDUCATION_FEED_ASSET_SET = 160;</code>
      */
-    const ASSETS_PER_DYNAMIC_EDUCATION_FEED_ASSET_SET = 160;
+    public const ASSETS_PER_DYNAMIC_EDUCATION_FEED_ASSET_SET = 160;
     /**
      * Number of ENABLED dynamic real estate asset sets per customer.
      *
      * Generated from protobuf enum <code>DYNAMIC_REAL_ESTATE_ASSET_SETS_PER_CUSTOMER = 161;</code>
      */
-    const DYNAMIC_REAL_ESTATE_ASSET_SETS_PER_CUSTOMER = 161;
+    public const DYNAMIC_REAL_ESTATE_ASSET_SETS_PER_CUSTOMER = 161;
     /**
      * Number of ENABLED assets per dynamic real estate asset set.
      *
      * Generated from protobuf enum <code>ASSETS_PER_DYNAMIC_REAL_ESTATE_ASSET_SET = 162;</code>
      */
-    const ASSETS_PER_DYNAMIC_REAL_ESTATE_ASSET_SET = 162;
+    public const ASSETS_PER_DYNAMIC_REAL_ESTATE_ASSET_SET = 162;
     /**
      * Number of ENABLED dynamic custom asset sets per customer.
      *
      * Generated from protobuf enum <code>DYNAMIC_CUSTOM_ASSET_SETS_PER_CUSTOMER = 163;</code>
      */
-    const DYNAMIC_CUSTOM_ASSET_SETS_PER_CUSTOMER = 163;
+    public const DYNAMIC_CUSTOM_ASSET_SETS_PER_CUSTOMER = 163;
     /**
      * Number of ENABLED assets per dynamic custom asset set.
      *
      * Generated from protobuf enum <code>ASSETS_PER_DYNAMIC_CUSTOM_ASSET_SET = 164;</code>
      */
-    const ASSETS_PER_DYNAMIC_CUSTOM_ASSET_SET = 164;
+    public const ASSETS_PER_DYNAMIC_CUSTOM_ASSET_SET = 164;
     /**
      * Number of ENABLED dynamic hotels and rentals asset sets per
      * customer.
      *
      * Generated from protobuf enum <code>DYNAMIC_HOTELS_AND_RENTALS_ASSET_SETS_PER_CUSTOMER = 165;</code>
      */
-    const DYNAMIC_HOTELS_AND_RENTALS_ASSET_SETS_PER_CUSTOMER = 165;
+    public const DYNAMIC_HOTELS_AND_RENTALS_ASSET_SETS_PER_CUSTOMER = 165;
     /**
      * Number of ENABLED assets per dynamic hotels and rentals asset set.
      *
      * Generated from protobuf enum <code>ASSETS_PER_DYNAMIC_HOTELS_AND_RENTALS_ASSET_SET = 166;</code>
      */
-    const ASSETS_PER_DYNAMIC_HOTELS_AND_RENTALS_ASSET_SET = 166;
+    public const ASSETS_PER_DYNAMIC_HOTELS_AND_RENTALS_ASSET_SET = 166;
     /**
      * Number of ENABLED dynamic local asset sets per customer.
      *
      * Generated from protobuf enum <code>DYNAMIC_LOCAL_ASSET_SETS_PER_CUSTOMER = 167;</code>
      */
-    const DYNAMIC_LOCAL_ASSET_SETS_PER_CUSTOMER = 167;
+    public const DYNAMIC_LOCAL_ASSET_SETS_PER_CUSTOMER = 167;
     /**
      * Number of ENABLED assets per dynamic local asset set.
      *
      * Generated from protobuf enum <code>ASSETS_PER_DYNAMIC_LOCAL_ASSET_SET = 168;</code>
      */
-    const ASSETS_PER_DYNAMIC_LOCAL_ASSET_SET = 168;
+    public const ASSETS_PER_DYNAMIC_LOCAL_ASSET_SET = 168;
     /**
      * Number of ENABLED dynamic flights asset sets per customer.
      *
      * Generated from protobuf enum <code>DYNAMIC_FLIGHTS_ASSET_SETS_PER_CUSTOMER = 169;</code>
      */
-    const DYNAMIC_FLIGHTS_ASSET_SETS_PER_CUSTOMER = 169;
+    public const DYNAMIC_FLIGHTS_ASSET_SETS_PER_CUSTOMER = 169;
     /**
      * Number of ENABLED assets per dynamic flights asset set.
      *
      * Generated from protobuf enum <code>ASSETS_PER_DYNAMIC_FLIGHTS_ASSET_SET = 170;</code>
      */
-    const ASSETS_PER_DYNAMIC_FLIGHTS_ASSET_SET = 170;
+    public const ASSETS_PER_DYNAMIC_FLIGHTS_ASSET_SET = 170;
     /**
      * Number of ENABLED dynamic travel asset sets per customer.
      *
      * Generated from protobuf enum <code>DYNAMIC_TRAVEL_ASSET_SETS_PER_CUSTOMER = 171;</code>
      */
-    const DYNAMIC_TRAVEL_ASSET_SETS_PER_CUSTOMER = 171;
+    public const DYNAMIC_TRAVEL_ASSET_SETS_PER_CUSTOMER = 171;
     /**
      * Number of ENABLED assets per dynamic travel asset set.
      *
      * Generated from protobuf enum <code>ASSETS_PER_DYNAMIC_TRAVEL_ASSET_SET = 172;</code>
      */
-    const ASSETS_PER_DYNAMIC_TRAVEL_ASSET_SET = 172;
+    public const ASSETS_PER_DYNAMIC_TRAVEL_ASSET_SET = 172;
     /**
      * Number of ENABLED dynamic jobs asset sets per customer.
      *
      * Generated from protobuf enum <code>DYNAMIC_JOBS_ASSET_SETS_PER_CUSTOMER = 173;</code>
      */
-    const DYNAMIC_JOBS_ASSET_SETS_PER_CUSTOMER = 173;
+    public const DYNAMIC_JOBS_ASSET_SETS_PER_CUSTOMER = 173;
     /**
      * Number of ENABLED assets per dynamic jobs asset set.
      *
      * Generated from protobuf enum <code>ASSETS_PER_DYNAMIC_JOBS_ASSET_SET = 174;</code>
      */
-    const ASSETS_PER_DYNAMIC_JOBS_ASSET_SET = 174;
+    public const ASSETS_PER_DYNAMIC_JOBS_ASSET_SET = 174;
     /**
      * Number of versions per ad.
      *
      * Generated from protobuf enum <code>VERSIONS_PER_AD = 82;</code>
      */
-    const VERSIONS_PER_AD = 82;
+    public const VERSIONS_PER_AD = 82;
     /**
      * Number of ENABLED user feeds per customer.
      *
      * Generated from protobuf enum <code>USER_FEEDS_PER_CUSTOMER = 90;</code>
      */
-    const USER_FEEDS_PER_CUSTOMER = 90;
+    public const USER_FEEDS_PER_CUSTOMER = 90;
     /**
      * Number of ENABLED system feeds per customer.
      *
      * Generated from protobuf enum <code>SYSTEM_FEEDS_PER_CUSTOMER = 91;</code>
      */
-    const SYSTEM_FEEDS_PER_CUSTOMER = 91;
+    public const SYSTEM_FEEDS_PER_CUSTOMER = 91;
     /**
      * Number of feed attributes per feed.
      *
      * Generated from protobuf enum <code>FEED_ATTRIBUTES_PER_FEED = 92;</code>
      */
-    const FEED_ATTRIBUTES_PER_FEED = 92;
+    public const FEED_ATTRIBUTES_PER_FEED = 92;
     /**
      * Number of ENABLED feed items per customer.
      *
      * Generated from protobuf enum <code>FEED_ITEMS_PER_CUSTOMER = 94;</code>
      */
-    const FEED_ITEMS_PER_CUSTOMER = 94;
+    public const FEED_ITEMS_PER_CUSTOMER = 94;
     /**
      * Number of ENABLED campaign feeds per customer.
      *
      * Generated from protobuf enum <code>CAMPAIGN_FEEDS_PER_CUSTOMER = 95;</code>
      */
-    const CAMPAIGN_FEEDS_PER_CUSTOMER = 95;
+    public const CAMPAIGN_FEEDS_PER_CUSTOMER = 95;
     /**
      * Number of ENABLED campaign feeds across all base campaigns for a
      * customer.
      *
      * Generated from protobuf enum <code>BASE_CAMPAIGN_FEEDS_PER_CUSTOMER = 96;</code>
      */
-    const BASE_CAMPAIGN_FEEDS_PER_CUSTOMER = 96;
+    public const BASE_CAMPAIGN_FEEDS_PER_CUSTOMER = 96;
     /**
      * Number of ENABLED campaign feeds across all experiment campaigns for a
      * customer.
      *
      * Generated from protobuf enum <code>EXPERIMENT_CAMPAIGN_FEEDS_PER_CUSTOMER = 109;</code>
      */
-    const EXPERIMENT_CAMPAIGN_FEEDS_PER_CUSTOMER = 109;
+    public const EXPERIMENT_CAMPAIGN_FEEDS_PER_CUSTOMER = 109;
     /**
      * Number of ENABLED ad group feeds per customer.
      *
      * Generated from protobuf enum <code>AD_GROUP_FEEDS_PER_CUSTOMER = 97;</code>
      */
-    const AD_GROUP_FEEDS_PER_CUSTOMER = 97;
+    public const AD_GROUP_FEEDS_PER_CUSTOMER = 97;
     /**
      * Number of ENABLED ad group feeds across all base campaigns for a
      * customer.
      *
      * Generated from protobuf enum <code>BASE_AD_GROUP_FEEDS_PER_CUSTOMER = 98;</code>
      */
-    const BASE_AD_GROUP_FEEDS_PER_CUSTOMER = 98;
+    public const BASE_AD_GROUP_FEEDS_PER_CUSTOMER = 98;
     /**
      * Number of ENABLED ad group feeds across all experiment campaigns for a
      * customer.
      *
      * Generated from protobuf enum <code>EXPERIMENT_AD_GROUP_FEEDS_PER_CUSTOMER = 110;</code>
      */
-    const EXPERIMENT_AD_GROUP_FEEDS_PER_CUSTOMER = 110;
+    public const EXPERIMENT_AD_GROUP_FEEDS_PER_CUSTOMER = 110;
     /**
      * Number of ENABLED ad group feeds per campaign.
      *
      * Generated from protobuf enum <code>AD_GROUP_FEEDS_PER_CAMPAIGN = 99;</code>
      */
-    const AD_GROUP_FEEDS_PER_CAMPAIGN = 99;
+    public const AD_GROUP_FEEDS_PER_CAMPAIGN = 99;
     /**
      * Number of ENABLED feed items per customer.
      *
      * Generated from protobuf enum <code>FEED_ITEM_SETS_PER_CUSTOMER = 100;</code>
      */
-    const FEED_ITEM_SETS_PER_CUSTOMER = 100;
+    public const FEED_ITEM_SETS_PER_CUSTOMER = 100;
     /**
      * Number of feed items per feed item set.
      *
      * Generated from protobuf enum <code>FEED_ITEMS_PER_FEED_ITEM_SET = 101;</code>
      */
-    const FEED_ITEMS_PER_FEED_ITEM_SET = 101;
+    public const FEED_ITEMS_PER_FEED_ITEM_SET = 101;
     /**
      * Number of ENABLED campaign experiments per customer.
      *
      * Generated from protobuf enum <code>CAMPAIGN_EXPERIMENTS_PER_CUSTOMER = 112;</code>
      */
-    const CAMPAIGN_EXPERIMENTS_PER_CUSTOMER = 112;
+    public const CAMPAIGN_EXPERIMENTS_PER_CUSTOMER = 112;
     /**
      * Number of video experiment arms per experiment.
      *
      * Generated from protobuf enum <code>EXPERIMENT_ARMS_PER_VIDEO_EXPERIMENT = 113;</code>
      */
-    const EXPERIMENT_ARMS_PER_VIDEO_EXPERIMENT = 113;
+    public const EXPERIMENT_ARMS_PER_VIDEO_EXPERIMENT = 113;
     /**
      * Number of owned labels per customer.
      *
      * Generated from protobuf enum <code>OWNED_LABELS_PER_CUSTOMER = 115;</code>
      */
-    const OWNED_LABELS_PER_CUSTOMER = 115;
+    public const OWNED_LABELS_PER_CUSTOMER = 115;
     /**
      * Number of applied labels per campaign.
      *
      * Generated from protobuf enum <code>LABELS_PER_CAMPAIGN = 117;</code>
      */
-    const LABELS_PER_CAMPAIGN = 117;
+    public const LABELS_PER_CAMPAIGN = 117;
     /**
      * Number of applied labels per ad group.
      *
      * Generated from protobuf enum <code>LABELS_PER_AD_GROUP = 118;</code>
      */
-    const LABELS_PER_AD_GROUP = 118;
+    public const LABELS_PER_AD_GROUP = 118;
     /**
      * Number of applied labels per ad group ad.
      *
      * Generated from protobuf enum <code>LABELS_PER_AD_GROUP_AD = 119;</code>
      */
-    const LABELS_PER_AD_GROUP_AD = 119;
+    public const LABELS_PER_AD_GROUP_AD = 119;
     /**
      * Number of applied labels per ad group criterion.
      *
      * Generated from protobuf enum <code>LABELS_PER_AD_GROUP_CRITERION = 120;</code>
      */
-    const LABELS_PER_AD_GROUP_CRITERION = 120;
+    public const LABELS_PER_AD_GROUP_CRITERION = 120;
     /**
      * Number of customers with a single label applied.
      *
      * Generated from protobuf enum <code>TARGET_CUSTOMERS_PER_LABEL = 121;</code>
      */
-    const TARGET_CUSTOMERS_PER_LABEL = 121;
+    public const TARGET_CUSTOMERS_PER_LABEL = 121;
     /**
      * Number of ENABLED keyword plans per user per customer.
      * The limit is applied per <user, customer> pair because by default a plan
@@ -798,58 +798,58 @@ class ResourceLimitType
      *
      * Generated from protobuf enum <code>KEYWORD_PLANS_PER_USER_PER_CUSTOMER = 122;</code>
      */
-    const KEYWORD_PLANS_PER_USER_PER_CUSTOMER = 122;
+    public const KEYWORD_PLANS_PER_USER_PER_CUSTOMER = 122;
     /**
      * Number of keyword plan ad group keywords per keyword plan.
      *
      * Generated from protobuf enum <code>KEYWORD_PLAN_AD_GROUP_KEYWORDS_PER_KEYWORD_PLAN = 123;</code>
      */
-    const KEYWORD_PLAN_AD_GROUP_KEYWORDS_PER_KEYWORD_PLAN = 123;
+    public const KEYWORD_PLAN_AD_GROUP_KEYWORDS_PER_KEYWORD_PLAN = 123;
     /**
      * Number of keyword plan ad groups per keyword plan.
      *
      * Generated from protobuf enum <code>KEYWORD_PLAN_AD_GROUPS_PER_KEYWORD_PLAN = 124;</code>
      */
-    const KEYWORD_PLAN_AD_GROUPS_PER_KEYWORD_PLAN = 124;
+    public const KEYWORD_PLAN_AD_GROUPS_PER_KEYWORD_PLAN = 124;
     /**
      * Number of keyword plan negative keywords (both campaign and ad group) per
      * keyword plan.
      *
      * Generated from protobuf enum <code>KEYWORD_PLAN_NEGATIVE_KEYWORDS_PER_KEYWORD_PLAN = 125;</code>
      */
-    const KEYWORD_PLAN_NEGATIVE_KEYWORDS_PER_KEYWORD_PLAN = 125;
+    public const KEYWORD_PLAN_NEGATIVE_KEYWORDS_PER_KEYWORD_PLAN = 125;
     /**
      * Number of keyword plan campaigns per keyword plan.
      *
      * Generated from protobuf enum <code>KEYWORD_PLAN_CAMPAIGNS_PER_KEYWORD_PLAN = 126;</code>
      */
-    const KEYWORD_PLAN_CAMPAIGNS_PER_KEYWORD_PLAN = 126;
+    public const KEYWORD_PLAN_CAMPAIGNS_PER_KEYWORD_PLAN = 126;
     /**
      * Number of ENABLED conversion actions per customer.
      *
      * Generated from protobuf enum <code>CONVERSION_ACTIONS_PER_CUSTOMER = 128;</code>
      */
-    const CONVERSION_ACTIONS_PER_CUSTOMER = 128;
+    public const CONVERSION_ACTIONS_PER_CUSTOMER = 128;
     /**
      * Number of operations in a single batch job.
      *
      * Generated from protobuf enum <code>BATCH_JOB_OPERATIONS_PER_JOB = 130;</code>
      */
-    const BATCH_JOB_OPERATIONS_PER_JOB = 130;
+    public const BATCH_JOB_OPERATIONS_PER_JOB = 130;
     /**
      * Number of PENDING or ENABLED batch jobs per customer.
      *
      * Generated from protobuf enum <code>BATCH_JOBS_PER_CUSTOMER = 131;</code>
      */
-    const BATCH_JOBS_PER_CUSTOMER = 131;
+    public const BATCH_JOBS_PER_CUSTOMER = 131;
     /**
      * Number of hotel check-in date range bid modifiers per ad agroup.
      *
      * Generated from protobuf enum <code>HOTEL_CHECK_IN_DATE_RANGE_BID_MODIFIERS_PER_AD_GROUP = 132;</code>
      */
-    const HOTEL_CHECK_IN_DATE_RANGE_BID_MODIFIERS_PER_AD_GROUP = 132;
+    public const HOTEL_CHECK_IN_DATE_RANGE_BID_MODIFIERS_PER_AD_GROUP = 132;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CAMPAIGNS_PER_CUSTOMER => 'CAMPAIGNS_PER_CUSTOMER',
@@ -990,7 +990,7 @@ class ResourceLimitType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -998,10 +998,10 @@ class ResourceLimitType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

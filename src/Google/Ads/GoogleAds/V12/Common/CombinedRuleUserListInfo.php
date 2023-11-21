@@ -167,7 +167,7 @@ class CombinedRuleUserListInfo extends \Google\Protobuf\Internal\Message
      */
     public function setRuleOperator($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\UserListCombinedRuleOperatorEnum\UserListCombinedRuleOperator::class);
+        GPBUtil::checkEnum($var);
         $this->rule_operator = $var;
 
         return $this;

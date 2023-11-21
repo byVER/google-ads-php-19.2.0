@@ -18,55 +18,55 @@ class AudienceError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * An audience with this name already exists.
      *
      * Generated from protobuf enum <code>NAME_ALREADY_IN_USE = 2;</code>
      */
-    const NAME_ALREADY_IN_USE = 2;
+    public const NAME_ALREADY_IN_USE = 2;
     /**
      * A dimension within the audience definition is not valid.
      *
      * Generated from protobuf enum <code>DIMENSION_INVALID = 3;</code>
      */
-    const DIMENSION_INVALID = 3;
+    public const DIMENSION_INVALID = 3;
     /**
      * One of the audience segment added is not found.
      *
      * Generated from protobuf enum <code>AUDIENCE_SEGMENT_NOT_FOUND = 4;</code>
      */
-    const AUDIENCE_SEGMENT_NOT_FOUND = 4;
+    public const AUDIENCE_SEGMENT_NOT_FOUND = 4;
     /**
      * One of the audience segment type is not supported.
      *
      * Generated from protobuf enum <code>AUDIENCE_SEGMENT_TYPE_NOT_SUPPORTED = 5;</code>
      */
-    const AUDIENCE_SEGMENT_TYPE_NOT_SUPPORTED = 5;
+    public const AUDIENCE_SEGMENT_TYPE_NOT_SUPPORTED = 5;
     /**
      * The same segment already exists in this audience.
      *
      * Generated from protobuf enum <code>DUPLICATE_AUDIENCE_SEGMENT = 6;</code>
      */
-    const DUPLICATE_AUDIENCE_SEGMENT = 6;
+    public const DUPLICATE_AUDIENCE_SEGMENT = 6;
     /**
      * Audience can't have more than allowed number segments.
      *
      * Generated from protobuf enum <code>TOO_MANY_SEGMENTS = 7;</code>
      */
-    const TOO_MANY_SEGMENTS = 7;
+    public const TOO_MANY_SEGMENTS = 7;
     /**
      * Audience can't have multiple dimensions of same type.
      *
      * Generated from protobuf enum <code>TOO_MANY_DIMENSIONS_OF_SAME_TYPE = 8;</code>
      */
-    const TOO_MANY_DIMENSIONS_OF_SAME_TYPE = 8;
+    public const TOO_MANY_DIMENSIONS_OF_SAME_TYPE = 8;
     /**
      * The audience cannot be removed, because it is currently used in an
      * ad group criterion or asset group signal in an (enabled or paused)
@@ -74,9 +74,9 @@ class AudienceError
      *
      * Generated from protobuf enum <code>IN_USE = 9;</code>
      */
-    const IN_USE = 9;
+    public const IN_USE = 9;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::NAME_ALREADY_IN_USE => 'NAME_ALREADY_IN_USE',
@@ -93,7 +93,7 @@ class AudienceError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -101,10 +101,10 @@ class AudienceError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

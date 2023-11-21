@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.CampaignAssetService' => [
             'MutateCampaignAssets' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCampaignAssetsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCampaignAssetsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

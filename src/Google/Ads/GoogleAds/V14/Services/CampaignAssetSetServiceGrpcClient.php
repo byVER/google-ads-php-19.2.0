@@ -46,7 +46,7 @@ class CampaignAssetSetServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v14.services.CampaignAssetSetService/MutateCampaignAssetSets',
         $argument,
-        ['\Google\Ads\GoogleAds\V14\Services\MutateCampaignAssetSetsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V14\Services\MutateCampaignAssetSetsResponse::class, 'decode'],
         $metadata, $options);
     }
 

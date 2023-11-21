@@ -18,19 +18,19 @@ class AccountBudgetProposalStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The proposal is pending approval.
      *
      * Generated from protobuf enum <code>PENDING = 2;</code>
      */
-    const PENDING = 2;
+    public const PENDING = 2;
     /**
      * The proposal has been approved but the corresponding billing setup
      * has not.  This can occur for proposals that set up the first budget
@@ -39,28 +39,28 @@ class AccountBudgetProposalStatus
      *
      * Generated from protobuf enum <code>APPROVED_HELD = 3;</code>
      */
-    const APPROVED_HELD = 3;
+    public const APPROVED_HELD = 3;
     /**
      * The proposal has been approved.
      *
      * Generated from protobuf enum <code>APPROVED = 4;</code>
      */
-    const APPROVED = 4;
+    public const APPROVED = 4;
     /**
      * The proposal has been cancelled by the user.
      *
      * Generated from protobuf enum <code>CANCELLED = 5;</code>
      */
-    const CANCELLED = 5;
+    public const CANCELLED = 5;
     /**
      * The proposal has been rejected by the user, for example, by rejecting an
      * acceptance email.
      *
      * Generated from protobuf enum <code>REJECTED = 6;</code>
      */
-    const REJECTED = 6;
+    public const REJECTED = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::PENDING => 'PENDING',
@@ -74,7 +74,7 @@ class AccountBudgetProposalStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -82,10 +82,10 @@ class AccountBudgetProposalStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

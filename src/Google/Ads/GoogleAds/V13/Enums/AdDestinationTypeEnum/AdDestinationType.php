@@ -18,81 +18,81 @@ class AdDestinationType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Ads that don't intend to drive users off from ads to other destinations
      *
      * Generated from protobuf enum <code>NOT_APPLICABLE = 2;</code>
      */
-    const NOT_APPLICABLE = 2;
+    public const NOT_APPLICABLE = 2;
     /**
      * Website
      *
      * Generated from protobuf enum <code>WEBSITE = 3;</code>
      */
-    const WEBSITE = 3;
+    public const WEBSITE = 3;
     /**
      * App Deep Link
      *
      * Generated from protobuf enum <code>APP_DEEP_LINK = 4;</code>
      */
-    const APP_DEEP_LINK = 4;
+    public const APP_DEEP_LINK = 4;
     /**
      * iOS App Store or Play Store
      *
      * Generated from protobuf enum <code>APP_STORE = 5;</code>
      */
-    const APP_STORE = 5;
+    public const APP_STORE = 5;
     /**
      * Call Dialer
      *
      * Generated from protobuf enum <code>PHONE_CALL = 6;</code>
      */
-    const PHONE_CALL = 6;
+    public const PHONE_CALL = 6;
     /**
      * Map App
      *
      * Generated from protobuf enum <code>MAP_DIRECTIONS = 7;</code>
      */
-    const MAP_DIRECTIONS = 7;
+    public const MAP_DIRECTIONS = 7;
     /**
      * Location Dedicated Page
      *
      * Generated from protobuf enum <code>LOCATION_LISTING = 8;</code>
      */
-    const LOCATION_LISTING = 8;
+    public const LOCATION_LISTING = 8;
     /**
      * Text Message
      *
      * Generated from protobuf enum <code>MESSAGE = 9;</code>
      */
-    const MESSAGE = 9;
+    public const MESSAGE = 9;
     /**
      * Lead Generation Form
      *
      * Generated from protobuf enum <code>LEAD_FORM = 10;</code>
      */
-    const LEAD_FORM = 10;
+    public const LEAD_FORM = 10;
     /**
      * YouTube
      *
      * Generated from protobuf enum <code>YOUTUBE = 11;</code>
      */
-    const YOUTUBE = 11;
+    public const YOUTUBE = 11;
     /**
      * Ad Destination for Conversions with keys unknown
      *
      * Generated from protobuf enum <code>UNMODELED_FOR_CONVERSIONS = 12;</code>
      */
-    const UNMODELED_FOR_CONVERSIONS = 12;
+    public const UNMODELED_FOR_CONVERSIONS = 12;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::NOT_APPLICABLE => 'NOT_APPLICABLE',
@@ -112,7 +112,7 @@ class AdDestinationType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -120,10 +120,10 @@ class AdDestinationType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

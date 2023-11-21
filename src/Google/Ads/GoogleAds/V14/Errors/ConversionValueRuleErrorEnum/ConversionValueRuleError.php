@@ -18,20 +18,20 @@ class ConversionValueRuleError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The value rule's geo location condition contains invalid geo target
      * constant(s), for example, there's no matching geo target.
      *
      * Generated from protobuf enum <code>INVALID_GEO_TARGET_CONSTANT = 2;</code>
      */
-    const INVALID_GEO_TARGET_CONSTANT = 2;
+    public const INVALID_GEO_TARGET_CONSTANT = 2;
     /**
      * The value rule's geo location condition contains conflicting included and
      * excluded geo targets. Specifically, some of the excluded geo target(s)
@@ -40,61 +40,61 @@ class ConversionValueRuleError
      *
      * Generated from protobuf enum <code>CONFLICTING_INCLUDED_AND_EXCLUDED_GEO_TARGET = 3;</code>
      */
-    const CONFLICTING_INCLUDED_AND_EXCLUDED_GEO_TARGET = 3;
+    public const CONFLICTING_INCLUDED_AND_EXCLUDED_GEO_TARGET = 3;
     /**
      * User specified conflicting conditions for two value rules in the same
      * value rule set.
      *
      * Generated from protobuf enum <code>CONFLICTING_CONDITIONS = 4;</code>
      */
-    const CONFLICTING_CONDITIONS = 4;
+    public const CONFLICTING_CONDITIONS = 4;
     /**
      * The value rule cannot be removed because it's still included in some
      * value rule set.
      *
      * Generated from protobuf enum <code>CANNOT_REMOVE_IF_INCLUDED_IN_VALUE_RULE_SET = 5;</code>
      */
-    const CANNOT_REMOVE_IF_INCLUDED_IN_VALUE_RULE_SET = 5;
+    public const CANNOT_REMOVE_IF_INCLUDED_IN_VALUE_RULE_SET = 5;
     /**
      * The value rule contains a condition that's not allowed by the value rule
      * set including this value rule.
      *
      * Generated from protobuf enum <code>CONDITION_NOT_ALLOWED = 6;</code>
      */
-    const CONDITION_NOT_ALLOWED = 6;
+    public const CONDITION_NOT_ALLOWED = 6;
     /**
      * The value rule contains a field that should be unset.
      *
      * Generated from protobuf enum <code>FIELD_MUST_BE_UNSET = 7;</code>
      */
-    const FIELD_MUST_BE_UNSET = 7;
+    public const FIELD_MUST_BE_UNSET = 7;
     /**
      * Pausing the value rule requires pausing the value rule set because the
      * value rule is (one of) the last enabled in the value rule set.
      *
      * Generated from protobuf enum <code>CANNOT_PAUSE_UNLESS_VALUE_RULE_SET_IS_PAUSED = 8;</code>
      */
-    const CANNOT_PAUSE_UNLESS_VALUE_RULE_SET_IS_PAUSED = 8;
+    public const CANNOT_PAUSE_UNLESS_VALUE_RULE_SET_IS_PAUSED = 8;
     /**
      * The value rule's geo location condition contains untargetable geo target
      * constant(s).
      *
      * Generated from protobuf enum <code>UNTARGETABLE_GEO_TARGET = 9;</code>
      */
-    const UNTARGETABLE_GEO_TARGET = 9;
+    public const UNTARGETABLE_GEO_TARGET = 9;
     /**
      * The value rule's audience condition contains invalid user list(s). In
      * another word, there's no matching user list.
      *
      * Generated from protobuf enum <code>INVALID_AUDIENCE_USER_LIST = 10;</code>
      */
-    const INVALID_AUDIENCE_USER_LIST = 10;
+    public const INVALID_AUDIENCE_USER_LIST = 10;
     /**
      * The value rule's audience condition contains inaccessible user list(s).
      *
      * Generated from protobuf enum <code>INACCESSIBLE_USER_LIST = 11;</code>
      */
-    const INACCESSIBLE_USER_LIST = 11;
+    public const INACCESSIBLE_USER_LIST = 11;
     /**
      * The value rule's audience condition contains invalid user_interest(s).
      * This might be because there is no matching user interest, or the user
@@ -102,15 +102,15 @@ class ConversionValueRuleError
      *
      * Generated from protobuf enum <code>INVALID_AUDIENCE_USER_INTEREST = 12;</code>
      */
-    const INVALID_AUDIENCE_USER_INTEREST = 12;
+    public const INVALID_AUDIENCE_USER_INTEREST = 12;
     /**
      * When a value rule is created, it shouldn't have REMOVED status.
      *
      * Generated from protobuf enum <code>CANNOT_ADD_RULE_WITH_STATUS_REMOVED = 13;</code>
      */
-    const CANNOT_ADD_RULE_WITH_STATUS_REMOVED = 13;
+    public const CANNOT_ADD_RULE_WITH_STATUS_REMOVED = 13;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INVALID_GEO_TARGET_CONSTANT => 'INVALID_GEO_TARGET_CONSTANT',
@@ -131,7 +131,7 @@ class ConversionValueRuleError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -139,10 +139,10 @@ class ConversionValueRuleError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

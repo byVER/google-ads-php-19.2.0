@@ -18,54 +18,54 @@ class PolicyTopicEntryType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received value is not known in this version.
      * This is a response-only value.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The resource will not be served.
      *
      * Generated from protobuf enum <code>PROHIBITED = 2;</code>
      */
-    const PROHIBITED = 2;
+    public const PROHIBITED = 2;
     /**
      * The resource will not be served under some circumstances.
      *
      * Generated from protobuf enum <code>LIMITED = 4;</code>
      */
-    const LIMITED = 4;
+    public const LIMITED = 4;
     /**
      * The resource cannot serve at all because of the current targeting
      * criteria.
      *
      * Generated from protobuf enum <code>FULLY_LIMITED = 8;</code>
      */
-    const FULLY_LIMITED = 8;
+    public const FULLY_LIMITED = 8;
     /**
      * May be of interest, but does not limit how the resource is served.
      *
      * Generated from protobuf enum <code>DESCRIPTIVE = 5;</code>
      */
-    const DESCRIPTIVE = 5;
+    public const DESCRIPTIVE = 5;
     /**
      * Could increase coverage beyond normal.
      *
      * Generated from protobuf enum <code>BROADENING = 6;</code>
      */
-    const BROADENING = 6;
+    public const BROADENING = 6;
     /**
      * Constrained for all targeted countries, but may serve in other countries
      * through area of interest.
      *
      * Generated from protobuf enum <code>AREA_OF_INTEREST_ONLY = 7;</code>
      */
-    const AREA_OF_INTEREST_ONLY = 7;
+    public const AREA_OF_INTEREST_ONLY = 7;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::PROHIBITED => 'PROHIBITED',
@@ -80,7 +80,7 @@ class PolicyTopicEntryType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -88,10 +88,10 @@ class PolicyTopicEntryType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

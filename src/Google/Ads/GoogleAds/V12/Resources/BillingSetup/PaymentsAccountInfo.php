@@ -100,7 +100,7 @@ class PaymentsAccountInfo extends \Google\Protobuf\Internal\Message
      */
     public function getPaymentsAccountId()
     {
-        return isset($this->payments_account_id) ? $this->payments_account_id : '';
+        return $this->payments_account_id ?? '';
     }
 
     public function hasPaymentsAccountId()
@@ -142,7 +142,7 @@ class PaymentsAccountInfo extends \Google\Protobuf\Internal\Message
      */
     public function getPaymentsAccountName()
     {
-        return isset($this->payments_account_name) ? $this->payments_account_name : '';
+        return $this->payments_account_name ?? '';
     }
 
     public function hasPaymentsAccountName()
@@ -184,7 +184,7 @@ class PaymentsAccountInfo extends \Google\Protobuf\Internal\Message
      */
     public function getPaymentsProfileId()
     {
-        return isset($this->payments_profile_id) ? $this->payments_profile_id : '';
+        return $this->payments_profile_id ?? '';
     }
 
     public function hasPaymentsProfileId()
@@ -223,7 +223,7 @@ class PaymentsAccountInfo extends \Google\Protobuf\Internal\Message
      */
     public function getPaymentsProfileName()
     {
-        return isset($this->payments_profile_name) ? $this->payments_profile_name : '';
+        return $this->payments_profile_name ?? '';
     }
 
     public function hasPaymentsProfileName()
@@ -260,7 +260,7 @@ class PaymentsAccountInfo extends \Google\Protobuf\Internal\Message
      */
     public function getSecondaryPaymentsProfileId()
     {
-        return isset($this->secondary_payments_profile_id) ? $this->secondary_payments_profile_id : '';
+        return $this->secondary_payments_profile_id ?? '';
     }
 
     public function hasSecondaryPaymentsProfileId()

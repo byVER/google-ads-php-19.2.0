@@ -18,27 +18,27 @@ class MerchantCenterError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Merchant ID is either not found or not linked to the Google Ads customer.
      *
      * Generated from protobuf enum <code>MERCHANT_ID_CANNOT_BE_ACCESSED = 2;</code>
      */
-    const MERCHANT_ID_CANNOT_BE_ACCESSED = 2;
+    public const MERCHANT_ID_CANNOT_BE_ACCESSED = 2;
     /**
      * Customer not allowlisted for Shopping in Performance Max Campaign.
      *
      * Generated from protobuf enum <code>CUSTOMER_NOT_ALLOWED_FOR_SHOPPING_PERFORMANCE_MAX = 3;</code>
      */
-    const CUSTOMER_NOT_ALLOWED_FOR_SHOPPING_PERFORMANCE_MAX = 3;
+    public const CUSTOMER_NOT_ALLOWED_FOR_SHOPPING_PERFORMANCE_MAX = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::MERCHANT_ID_CANNOT_BE_ACCESSED => 'MERCHANT_ID_CANNOT_BE_ACCESSED',
@@ -49,7 +49,7 @@ class MerchantCenterError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -57,10 +57,10 @@ class MerchantCenterError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

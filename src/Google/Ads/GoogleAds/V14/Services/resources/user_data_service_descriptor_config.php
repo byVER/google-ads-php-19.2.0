@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.UserDataService' => [
             'UploadUserData' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\UploadUserDataResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\UploadUserDataResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

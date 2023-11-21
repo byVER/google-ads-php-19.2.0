@@ -18,34 +18,34 @@ class DisplayAdFormatSetting
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Text, image and native formats.
      *
      * Generated from protobuf enum <code>ALL_FORMATS = 2;</code>
      */
-    const ALL_FORMATS = 2;
+    public const ALL_FORMATS = 2;
     /**
      * Text and image formats.
      *
      * Generated from protobuf enum <code>NON_NATIVE = 3;</code>
      */
-    const NON_NATIVE = 3;
+    public const NON_NATIVE = 3;
     /**
      * Native format, for example, the format rendering is controlled by the
      * publisher and not by Google.
      *
      * Generated from protobuf enum <code>NATIVE = 4;</code>
      */
-    const NATIVE = 4;
+    public const NATIVE = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ALL_FORMATS => 'ALL_FORMATS',
@@ -57,7 +57,7 @@ class DisplayAdFormatSetting
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -65,10 +65,10 @@ class DisplayAdFormatSetting
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

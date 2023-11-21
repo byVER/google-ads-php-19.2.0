@@ -18,26 +18,26 @@ class ChangeStatusError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The requested start date is too old.
      *
      * Generated from protobuf enum <code>START_DATE_TOO_OLD = 3;</code>
      */
-    const START_DATE_TOO_OLD = 3;
+    public const START_DATE_TOO_OLD = 3;
     /**
      * The change_status search request must specify a finite range filter
      * on last_change_date_time.
      *
      * Generated from protobuf enum <code>CHANGE_DATE_RANGE_INFINITE = 4;</code>
      */
-    const CHANGE_DATE_RANGE_INFINITE = 4;
+    public const CHANGE_DATE_RANGE_INFINITE = 4;
     /**
      * The change status search request has specified invalid date time filters
      * that can never logically produce any valid results (for example, start
@@ -45,22 +45,22 @@ class ChangeStatusError
      *
      * Generated from protobuf enum <code>CHANGE_DATE_RANGE_NEGATIVE = 5;</code>
      */
-    const CHANGE_DATE_RANGE_NEGATIVE = 5;
+    public const CHANGE_DATE_RANGE_NEGATIVE = 5;
     /**
      * The change_status search request must specify a LIMIT.
      *
      * Generated from protobuf enum <code>LIMIT_NOT_SPECIFIED = 6;</code>
      */
-    const LIMIT_NOT_SPECIFIED = 6;
+    public const LIMIT_NOT_SPECIFIED = 6;
     /**
      * The LIMIT specified by change_status request should be less than or equal
      * to 10K.
      *
      * Generated from protobuf enum <code>INVALID_LIMIT_CLAUSE = 7;</code>
      */
-    const INVALID_LIMIT_CLAUSE = 7;
+    public const INVALID_LIMIT_CLAUSE = 7;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::START_DATE_TOO_OLD => 'START_DATE_TOO_OLD',
@@ -74,7 +74,7 @@ class ChangeStatusError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -82,10 +82,10 @@ class ChangeStatusError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

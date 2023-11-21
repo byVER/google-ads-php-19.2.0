@@ -67,7 +67,7 @@ class FeedMappingServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v14.services.FeedMappingService/MutateFeedMappings',
         $argument,
-        ['\Google\Ads\GoogleAds\V14\Services\MutateFeedMappingsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V14\Services\MutateFeedMappingsResponse::class, 'decode'],
         $metadata, $options);
     }
 

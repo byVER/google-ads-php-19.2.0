@@ -96,7 +96,7 @@ class FeedItemValidationError extends \Google\Protobuf\Internal\Message
      */
     public function setValidationError($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Errors\FeedItemValidationErrorEnum\FeedItemValidationError::class);
+        GPBUtil::checkEnum($var);
         $this->validation_error = $var;
 
         return $this;
@@ -110,7 +110,7 @@ class FeedItemValidationError extends \Google\Protobuf\Internal\Message
      */
     public function getDescription()
     {
-        return isset($this->description) ? $this->description : '';
+        return $this->description ?? '';
     }
 
     public function hasDescription()
@@ -179,7 +179,7 @@ class FeedItemValidationError extends \Google\Protobuf\Internal\Message
      */
     public function getExtraInfo()
     {
-        return isset($this->extra_info) ? $this->extra_info : '';
+        return $this->extra_info ?? '';
     }
 
     public function hasExtraInfo()

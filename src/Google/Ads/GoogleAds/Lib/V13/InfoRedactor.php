@@ -52,11 +52,11 @@ class InfoRedactor
     /**
      * @var array the list of customer user access invitation' fields containing email addresses.
      */
-    private static $CUSTOMER_USER_ACCESS_INVITATION_EMAIL_FIELDS;
+    private static array $CUSTOMER_USER_ACCESS_INVITATION_EMAIL_FIELDS;
     /** @var array the list of change event's fields containing email addresses. */
-    private static $CHANGE_EVENT_EMAIL_FIELDS;
+    private static array $CHANGE_EVENT_EMAIL_FIELDS;
     /** @var array the list of feed placeholder's fields containing email addresses. */
-    private static $FEED_EMAIL_FIELDS;
+    private static array $FEED_EMAIL_FIELDS;
     /** @var array the map of header keys to redacted values. */
     private static $HEADER_KEYS_TO_REDACTED_VALUES;
 

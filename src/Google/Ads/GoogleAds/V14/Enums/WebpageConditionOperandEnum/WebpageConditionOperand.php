@@ -18,45 +18,45 @@ class WebpageConditionOperand
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Operand denoting a webpage URL targeting condition.
      *
      * Generated from protobuf enum <code>URL = 2;</code>
      */
-    const URL = 2;
+    public const URL = 2;
     /**
      * Operand denoting a webpage category targeting condition.
      *
      * Generated from protobuf enum <code>CATEGORY = 3;</code>
      */
-    const CATEGORY = 3;
+    public const CATEGORY = 3;
     /**
      * Operand denoting a webpage title targeting condition.
      *
      * Generated from protobuf enum <code>PAGE_TITLE = 4;</code>
      */
-    const PAGE_TITLE = 4;
+    public const PAGE_TITLE = 4;
     /**
      * Operand denoting a webpage content targeting condition.
      *
      * Generated from protobuf enum <code>PAGE_CONTENT = 5;</code>
      */
-    const PAGE_CONTENT = 5;
+    public const PAGE_CONTENT = 5;
     /**
      * Operand denoting a webpage custom label targeting condition.
      *
      * Generated from protobuf enum <code>CUSTOM_LABEL = 6;</code>
      */
-    const CUSTOM_LABEL = 6;
+    public const CUSTOM_LABEL = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::URL => 'URL',
@@ -70,7 +70,7 @@ class WebpageConditionOperand
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -78,10 +78,10 @@ class WebpageConditionOperand
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

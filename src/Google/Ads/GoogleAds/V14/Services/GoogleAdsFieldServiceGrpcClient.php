@@ -53,7 +53,7 @@ class GoogleAdsFieldServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v14.services.GoogleAdsFieldService/GetGoogleAdsField',
         $argument,
-        ['\Google\Ads\GoogleAds\V14\Resources\GoogleAdsField', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V14\Resources\GoogleAdsField::class, 'decode'],
         $metadata, $options);
     }
 
@@ -77,7 +77,7 @@ class GoogleAdsFieldServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v14.services.GoogleAdsFieldService/SearchGoogleAdsFields',
         $argument,
-        ['\Google\Ads\GoogleAds\V14\Services\SearchGoogleAdsFieldsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V14\Services\SearchGoogleAdsFieldsResponse::class, 'decode'],
         $metadata, $options);
     }
 

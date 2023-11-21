@@ -321,7 +321,7 @@ class DiscoveryMultiAssetAdInfo extends \Google\Protobuf\Internal\Message
      */
     public function getBusinessName()
     {
-        return isset($this->business_name) ? $this->business_name : '';
+        return $this->business_name ?? '';
     }
 
     public function hasBusinessName()
@@ -357,7 +357,7 @@ class DiscoveryMultiAssetAdInfo extends \Google\Protobuf\Internal\Message
      */
     public function getCallToActionText()
     {
-        return isset($this->call_to_action_text) ? $this->call_to_action_text : '';
+        return $this->call_to_action_text ?? '';
     }
 
     public function hasCallToActionText()
@@ -393,7 +393,7 @@ class DiscoveryMultiAssetAdInfo extends \Google\Protobuf\Internal\Message
      */
     public function getLeadFormOnly()
     {
-        return isset($this->lead_form_only) ? $this->lead_form_only : false;
+        return $this->lead_form_only ?? false;
     }
 
     public function hasLeadFormOnly()

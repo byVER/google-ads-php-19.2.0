@@ -18,61 +18,61 @@ class SitelinkPlaceholderField
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Data Type: STRING. The link text for your sitelink.
      *
      * Generated from protobuf enum <code>TEXT = 2;</code>
      */
-    const TEXT = 2;
+    public const TEXT = 2;
     /**
      * Data Type: STRING. First line of the sitelink description.
      *
      * Generated from protobuf enum <code>LINE_1 = 3;</code>
      */
-    const LINE_1 = 3;
+    public const LINE_1 = 3;
     /**
      * Data Type: STRING. Second line of the sitelink description.
      *
      * Generated from protobuf enum <code>LINE_2 = 4;</code>
      */
-    const LINE_2 = 4;
+    public const LINE_2 = 4;
     /**
      * Data Type: URL_LIST. Final URLs for the sitelink when using Upgraded
      * URLs.
      *
      * Generated from protobuf enum <code>FINAL_URLS = 5;</code>
      */
-    const FINAL_URLS = 5;
+    public const FINAL_URLS = 5;
     /**
      * Data Type: URL_LIST. Final Mobile URLs for the sitelink when using
      * Upgraded URLs.
      *
      * Generated from protobuf enum <code>FINAL_MOBILE_URLS = 6;</code>
      */
-    const FINAL_MOBILE_URLS = 6;
+    public const FINAL_MOBILE_URLS = 6;
     /**
      * Data Type: URL. Tracking template for the sitelink when using Upgraded
      * URLs.
      *
      * Generated from protobuf enum <code>TRACKING_URL = 7;</code>
      */
-    const TRACKING_URL = 7;
+    public const TRACKING_URL = 7;
     /**
      * Data Type: STRING. Final URL suffix for sitelink when using parallel
      * tracking.
      *
      * Generated from protobuf enum <code>FINAL_URL_SUFFIX = 8;</code>
      */
-    const FINAL_URL_SUFFIX = 8;
+    public const FINAL_URL_SUFFIX = 8;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::TEXT => 'TEXT',
@@ -88,7 +88,7 @@ class SitelinkPlaceholderField
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -96,10 +96,10 @@ class SitelinkPlaceholderField
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

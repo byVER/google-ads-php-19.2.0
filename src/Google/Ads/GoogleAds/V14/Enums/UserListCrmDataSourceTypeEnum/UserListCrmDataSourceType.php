@@ -18,33 +18,33 @@ class UserListCrmDataSourceType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The uploaded data is first-party data.
      *
      * Generated from protobuf enum <code>FIRST_PARTY = 2;</code>
      */
-    const FIRST_PARTY = 2;
+    public const FIRST_PARTY = 2;
     /**
      * The uploaded data is from a third-party credit bureau.
      *
      * Generated from protobuf enum <code>THIRD_PARTY_CREDIT_BUREAU = 3;</code>
      */
-    const THIRD_PARTY_CREDIT_BUREAU = 3;
+    public const THIRD_PARTY_CREDIT_BUREAU = 3;
     /**
      * The uploaded data is from a third-party voter file.
      *
      * Generated from protobuf enum <code>THIRD_PARTY_VOTER_FILE = 4;</code>
      */
-    const THIRD_PARTY_VOTER_FILE = 4;
+    public const THIRD_PARTY_VOTER_FILE = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::FIRST_PARTY => 'FIRST_PARTY',
@@ -56,7 +56,7 @@ class UserListCrmDataSourceType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -64,10 +64,10 @@ class UserListCrmDataSourceType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

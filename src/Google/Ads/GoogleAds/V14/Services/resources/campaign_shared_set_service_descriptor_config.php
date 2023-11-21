@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.CampaignSharedSetService' => [
             'MutateCampaignSharedSets' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCampaignSharedSetsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCampaignSharedSetsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

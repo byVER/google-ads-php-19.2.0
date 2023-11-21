@@ -18,203 +18,203 @@ class AdType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received value is not known in this version.
      * This is a response-only value.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The ad is a text ad.
      *
      * Generated from protobuf enum <code>TEXT_AD = 2;</code>
      */
-    const TEXT_AD = 2;
+    public const TEXT_AD = 2;
     /**
      * The ad is an expanded text ad.
      *
      * Generated from protobuf enum <code>EXPANDED_TEXT_AD = 3;</code>
      */
-    const EXPANDED_TEXT_AD = 3;
+    public const EXPANDED_TEXT_AD = 3;
     /**
      * The ad is an expanded dynamic search ad.
      *
      * Generated from protobuf enum <code>EXPANDED_DYNAMIC_SEARCH_AD = 7;</code>
      */
-    const EXPANDED_DYNAMIC_SEARCH_AD = 7;
+    public const EXPANDED_DYNAMIC_SEARCH_AD = 7;
     /**
      * The ad is a hotel ad.
      *
      * Generated from protobuf enum <code>HOTEL_AD = 8;</code>
      */
-    const HOTEL_AD = 8;
+    public const HOTEL_AD = 8;
     /**
      * The ad is a Smart Shopping ad.
      *
      * Generated from protobuf enum <code>SHOPPING_SMART_AD = 9;</code>
      */
-    const SHOPPING_SMART_AD = 9;
+    public const SHOPPING_SMART_AD = 9;
     /**
      * The ad is a standard Shopping ad.
      *
      * Generated from protobuf enum <code>SHOPPING_PRODUCT_AD = 10;</code>
      */
-    const SHOPPING_PRODUCT_AD = 10;
+    public const SHOPPING_PRODUCT_AD = 10;
     /**
      * The ad is a video ad.
      *
      * Generated from protobuf enum <code>VIDEO_AD = 12;</code>
      */
-    const VIDEO_AD = 12;
+    public const VIDEO_AD = 12;
     /**
      * This ad is an Image ad.
      *
      * Generated from protobuf enum <code>IMAGE_AD = 14;</code>
      */
-    const IMAGE_AD = 14;
+    public const IMAGE_AD = 14;
     /**
      * The ad is a responsive search ad.
      *
      * Generated from protobuf enum <code>RESPONSIVE_SEARCH_AD = 15;</code>
      */
-    const RESPONSIVE_SEARCH_AD = 15;
+    public const RESPONSIVE_SEARCH_AD = 15;
     /**
      * The ad is a legacy responsive display ad.
      *
      * Generated from protobuf enum <code>LEGACY_RESPONSIVE_DISPLAY_AD = 16;</code>
      */
-    const LEGACY_RESPONSIVE_DISPLAY_AD = 16;
+    public const LEGACY_RESPONSIVE_DISPLAY_AD = 16;
     /**
      * The ad is an app ad.
      *
      * Generated from protobuf enum <code>APP_AD = 17;</code>
      */
-    const APP_AD = 17;
+    public const APP_AD = 17;
     /**
      * The ad is a legacy app install ad.
      *
      * Generated from protobuf enum <code>LEGACY_APP_INSTALL_AD = 18;</code>
      */
-    const LEGACY_APP_INSTALL_AD = 18;
+    public const LEGACY_APP_INSTALL_AD = 18;
     /**
      * The ad is a responsive display ad.
      *
      * Generated from protobuf enum <code>RESPONSIVE_DISPLAY_AD = 19;</code>
      */
-    const RESPONSIVE_DISPLAY_AD = 19;
+    public const RESPONSIVE_DISPLAY_AD = 19;
     /**
      * The ad is a local ad.
      *
      * Generated from protobuf enum <code>LOCAL_AD = 20;</code>
      */
-    const LOCAL_AD = 20;
+    public const LOCAL_AD = 20;
     /**
      * The ad is a display upload ad with the HTML5_UPLOAD_AD product type.
      *
      * Generated from protobuf enum <code>HTML5_UPLOAD_AD = 21;</code>
      */
-    const HTML5_UPLOAD_AD = 21;
+    public const HTML5_UPLOAD_AD = 21;
     /**
      * The ad is a display upload ad with one of the DYNAMIC_HTML5_* product
      * types.
      *
      * Generated from protobuf enum <code>DYNAMIC_HTML5_AD = 22;</code>
      */
-    const DYNAMIC_HTML5_AD = 22;
+    public const DYNAMIC_HTML5_AD = 22;
     /**
      * The ad is an app engagement ad.
      *
      * Generated from protobuf enum <code>APP_ENGAGEMENT_AD = 23;</code>
      */
-    const APP_ENGAGEMENT_AD = 23;
+    public const APP_ENGAGEMENT_AD = 23;
     /**
      * The ad is a Shopping Comparison Listing ad.
      *
      * Generated from protobuf enum <code>SHOPPING_COMPARISON_LISTING_AD = 24;</code>
      */
-    const SHOPPING_COMPARISON_LISTING_AD = 24;
+    public const SHOPPING_COMPARISON_LISTING_AD = 24;
     /**
      * Video bumper ad.
      *
      * Generated from protobuf enum <code>VIDEO_BUMPER_AD = 25;</code>
      */
-    const VIDEO_BUMPER_AD = 25;
+    public const VIDEO_BUMPER_AD = 25;
     /**
      * Video non-skippable in-stream ad.
      *
      * Generated from protobuf enum <code>VIDEO_NON_SKIPPABLE_IN_STREAM_AD = 26;</code>
      */
-    const VIDEO_NON_SKIPPABLE_IN_STREAM_AD = 26;
+    public const VIDEO_NON_SKIPPABLE_IN_STREAM_AD = 26;
     /**
      * Video outstream ad.
      *
      * Generated from protobuf enum <code>VIDEO_OUTSTREAM_AD = 27;</code>
      */
-    const VIDEO_OUTSTREAM_AD = 27;
+    public const VIDEO_OUTSTREAM_AD = 27;
     /**
      * Video TrueView in-stream ad.
      *
      * Generated from protobuf enum <code>VIDEO_TRUEVIEW_IN_STREAM_AD = 29;</code>
      */
-    const VIDEO_TRUEVIEW_IN_STREAM_AD = 29;
+    public const VIDEO_TRUEVIEW_IN_STREAM_AD = 29;
     /**
      * Video responsive ad.
      *
      * Generated from protobuf enum <code>VIDEO_RESPONSIVE_AD = 30;</code>
      */
-    const VIDEO_RESPONSIVE_AD = 30;
+    public const VIDEO_RESPONSIVE_AD = 30;
     /**
      * Smart campaign ad.
      *
      * Generated from protobuf enum <code>SMART_CAMPAIGN_AD = 31;</code>
      */
-    const SMART_CAMPAIGN_AD = 31;
+    public const SMART_CAMPAIGN_AD = 31;
     /**
      * Call ad.
      *
      * Generated from protobuf enum <code>CALL_AD = 32;</code>
      */
-    const CALL_AD = 32;
+    public const CALL_AD = 32;
     /**
      * Universal app pre-registration ad.
      *
      * Generated from protobuf enum <code>APP_PRE_REGISTRATION_AD = 33;</code>
      */
-    const APP_PRE_REGISTRATION_AD = 33;
+    public const APP_PRE_REGISTRATION_AD = 33;
     /**
      * In-feed video ad.
      *
      * Generated from protobuf enum <code>IN_FEED_VIDEO_AD = 34;</code>
      */
-    const IN_FEED_VIDEO_AD = 34;
+    public const IN_FEED_VIDEO_AD = 34;
     /**
      * Discovery multi asset ad.
      *
      * Generated from protobuf enum <code>DISCOVERY_MULTI_ASSET_AD = 35;</code>
      */
-    const DISCOVERY_MULTI_ASSET_AD = 35;
+    public const DISCOVERY_MULTI_ASSET_AD = 35;
     /**
      * Discovery carousel ad.
      *
      * Generated from protobuf enum <code>DISCOVERY_CAROUSEL_AD = 36;</code>
      */
-    const DISCOVERY_CAROUSEL_AD = 36;
+    public const DISCOVERY_CAROUSEL_AD = 36;
     /**
      * Travel ad.
      *
      * Generated from protobuf enum <code>TRAVEL_AD = 37;</code>
      */
-    const TRAVEL_AD = 37;
+    public const TRAVEL_AD = 37;
     /**
      * Discovery video responsive ad.
      *
      * Generated from protobuf enum <code>DISCOVERY_VIDEO_RESPONSIVE_AD = 38;</code>
      */
-    const DISCOVERY_VIDEO_RESPONSIVE_AD = 38;
+    public const DISCOVERY_VIDEO_RESPONSIVE_AD = 38;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::TEXT_AD => 'TEXT_AD',
@@ -254,7 +254,7 @@ class AdType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -262,10 +262,10 @@ class AdType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

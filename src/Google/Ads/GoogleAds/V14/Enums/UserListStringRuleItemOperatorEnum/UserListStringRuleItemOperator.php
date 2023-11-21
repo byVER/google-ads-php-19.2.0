@@ -18,63 +18,63 @@ class UserListStringRuleItemOperator
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Contains.
      *
      * Generated from protobuf enum <code>CONTAINS = 2;</code>
      */
-    const CONTAINS = 2;
+    public const CONTAINS = 2;
     /**
      * Equals.
      *
      * Generated from protobuf enum <code>EQUALS = 3;</code>
      */
-    const EQUALS = 3;
+    public const EQUALS = 3;
     /**
      * Starts with.
      *
      * Generated from protobuf enum <code>STARTS_WITH = 4;</code>
      */
-    const STARTS_WITH = 4;
+    public const STARTS_WITH = 4;
     /**
      * Ends with.
      *
      * Generated from protobuf enum <code>ENDS_WITH = 5;</code>
      */
-    const ENDS_WITH = 5;
+    public const ENDS_WITH = 5;
     /**
      * Not equals.
      *
      * Generated from protobuf enum <code>NOT_EQUALS = 6;</code>
      */
-    const NOT_EQUALS = 6;
+    public const NOT_EQUALS = 6;
     /**
      * Not contains.
      *
      * Generated from protobuf enum <code>NOT_CONTAINS = 7;</code>
      */
-    const NOT_CONTAINS = 7;
+    public const NOT_CONTAINS = 7;
     /**
      * Not starts with.
      *
      * Generated from protobuf enum <code>NOT_STARTS_WITH = 8;</code>
      */
-    const NOT_STARTS_WITH = 8;
+    public const NOT_STARTS_WITH = 8;
     /**
      * Not ends with.
      *
      * Generated from protobuf enum <code>NOT_ENDS_WITH = 9;</code>
      */
-    const NOT_ENDS_WITH = 9;
+    public const NOT_ENDS_WITH = 9;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CONTAINS => 'CONTAINS',
@@ -91,7 +91,7 @@ class UserListStringRuleItemOperator
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -99,10 +99,10 @@ class UserListStringRuleItemOperator
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

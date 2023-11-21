@@ -1699,7 +1699,7 @@ abstract class GoogleAdsServiceBaseClient
     public function __call($method, $args)
     {
         if (substr($method, -5) !== 'Async') {
-            trigger_error('Call to undefined method ' . __CLASS__ . "::$method()", E_USER_ERROR);
+            trigger_error('Call to undefined method ' . self::class . "::$method()", E_USER_ERROR);
         }
 
         array_unshift($args, substr($method, 0, -5));

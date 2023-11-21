@@ -104,7 +104,7 @@ class TextAdRecommendation extends \Google\Protobuf\Internal\Message
      */
     public function getCreationDate()
     {
-        return isset($this->creation_date) ? $this->creation_date : '';
+        return $this->creation_date ?? '';
     }
 
     public function hasCreationDate()
@@ -143,7 +143,7 @@ class TextAdRecommendation extends \Google\Protobuf\Internal\Message
      */
     public function getAutoApplyDate()
     {
-        return isset($this->auto_apply_date) ? $this->auto_apply_date : '';
+        return $this->auto_apply_date ?? '';
     }
 
     public function hasAutoApplyDate()

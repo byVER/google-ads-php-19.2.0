@@ -18,69 +18,69 @@ class CallToActionType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The call to action type is learn more.
      *
      * Generated from protobuf enum <code>LEARN_MORE = 2;</code>
      */
-    const LEARN_MORE = 2;
+    public const LEARN_MORE = 2;
     /**
      * The call to action type is get quote.
      *
      * Generated from protobuf enum <code>GET_QUOTE = 3;</code>
      */
-    const GET_QUOTE = 3;
+    public const GET_QUOTE = 3;
     /**
      * The call to action type is apply now.
      *
      * Generated from protobuf enum <code>APPLY_NOW = 4;</code>
      */
-    const APPLY_NOW = 4;
+    public const APPLY_NOW = 4;
     /**
      * The call to action type is sign up.
      *
      * Generated from protobuf enum <code>SIGN_UP = 5;</code>
      */
-    const SIGN_UP = 5;
+    public const SIGN_UP = 5;
     /**
      * The call to action type is contact us.
      *
      * Generated from protobuf enum <code>CONTACT_US = 6;</code>
      */
-    const CONTACT_US = 6;
+    public const CONTACT_US = 6;
     /**
      * The call to action type is subscribe.
      *
      * Generated from protobuf enum <code>SUBSCRIBE = 7;</code>
      */
-    const SUBSCRIBE = 7;
+    public const SUBSCRIBE = 7;
     /**
      * The call to action type is download.
      *
      * Generated from protobuf enum <code>DOWNLOAD = 8;</code>
      */
-    const DOWNLOAD = 8;
+    public const DOWNLOAD = 8;
     /**
      * The call to action type is book now.
      *
      * Generated from protobuf enum <code>BOOK_NOW = 9;</code>
      */
-    const BOOK_NOW = 9;
+    public const BOOK_NOW = 9;
     /**
      * The call to action type is shop now.
      *
      * Generated from protobuf enum <code>SHOP_NOW = 10;</code>
      */
-    const SHOP_NOW = 10;
+    public const SHOP_NOW = 10;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::LEARN_MORE => 'LEARN_MORE',
@@ -98,7 +98,7 @@ class CallToActionType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -106,10 +106,10 @@ class CallToActionType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

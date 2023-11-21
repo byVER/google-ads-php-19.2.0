@@ -18,13 +18,13 @@ class StructuredSnippetPlaceholderField
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Data Type: STRING. The category of snippet of your products/services.
      * Must match exactly one of the predefined structured snippets headers.
@@ -33,7 +33,7 @@ class StructuredSnippetPlaceholderField
      *
      * Generated from protobuf enum <code>HEADER = 2;</code>
      */
-    const HEADER = 2;
+    public const HEADER = 2;
     /**
      * Data Type: STRING_LIST. Text values that describe your products/services.
      * All text must be family safe. Special or non-ASCII characters are not
@@ -41,9 +41,9 @@ class StructuredSnippetPlaceholderField
      *
      * Generated from protobuf enum <code>SNIPPETS = 3;</code>
      */
-    const SNIPPETS = 3;
+    public const SNIPPETS = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::HEADER => 'HEADER',
@@ -54,7 +54,7 @@ class StructuredSnippetPlaceholderField
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -62,10 +62,10 @@ class StructuredSnippetPlaceholderField
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

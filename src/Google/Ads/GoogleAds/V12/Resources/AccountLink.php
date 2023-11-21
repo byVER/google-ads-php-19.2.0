@@ -118,7 +118,7 @@ class AccountLink extends \Google\Protobuf\Internal\Message
      */
     public function getAccountLinkId()
     {
-        return isset($this->account_link_id) ? $this->account_link_id : 0;
+        return $this->account_link_id ?? 0;
     }
 
     public function hasAccountLinkId()
@@ -167,7 +167,7 @@ class AccountLink extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AccountLinkStatusEnum\AccountLinkStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;
@@ -193,7 +193,7 @@ class AccountLink extends \Google\Protobuf\Internal\Message
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\LinkedAccountTypeEnum\LinkedAccountType::class);
+        GPBUtil::checkEnum($var);
         $this->type = $var;
 
         return $this;

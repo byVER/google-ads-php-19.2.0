@@ -70,7 +70,7 @@ class CustomerFeedServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.CustomerFeedService/MutateCustomerFeeds',
         $argument,
-        ['\Google\Ads\GoogleAds\V13\Services\MutateCustomerFeedsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V13\Services\MutateCustomerFeedsResponse::class, 'decode'],
         $metadata, $options);
     }
 

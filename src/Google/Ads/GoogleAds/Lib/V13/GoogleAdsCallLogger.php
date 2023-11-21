@@ -30,10 +30,10 @@ final class GoogleAdsCallLogger
 {
     use ArrayTrait;
 
-    private $logger;
+    private \Psr\Log\LoggerInterface $logger;
     private $filterLevel;
     private $endpoint;
-    private $logMessageFormatter;
+    private \Google\Ads\GoogleAds\Lib\V13\LogMessageFormatter $logMessageFormatter;
     private $context;
     // An associative array of all the log levels (based on the PSR-3 standard) to sequence numbers.
     // Sequence numbers are used to determine if a given log level is higher or lower than another,

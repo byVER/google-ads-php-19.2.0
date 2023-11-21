@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.CustomerLabelService' => [
             'MutateCustomerLabels' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCustomerLabelsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCustomerLabelsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

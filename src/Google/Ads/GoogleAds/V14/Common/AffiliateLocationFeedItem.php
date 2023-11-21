@@ -117,7 +117,7 @@ class AffiliateLocationFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getBusinessName()
     {
-        return isset($this->business_name) ? $this->business_name : '';
+        return $this->business_name ?? '';
     }
 
     public function hasBusinessName()
@@ -153,7 +153,7 @@ class AffiliateLocationFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getAddressLine1()
     {
-        return isset($this->address_line_1) ? $this->address_line_1 : '';
+        return $this->address_line_1 ?? '';
     }
 
     public function hasAddressLine1()
@@ -189,7 +189,7 @@ class AffiliateLocationFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getAddressLine2()
     {
-        return isset($this->address_line_2) ? $this->address_line_2 : '';
+        return $this->address_line_2 ?? '';
     }
 
     public function hasAddressLine2()
@@ -225,7 +225,7 @@ class AffiliateLocationFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getCity()
     {
-        return isset($this->city) ? $this->city : '';
+        return $this->city ?? '';
     }
 
     public function hasCity()
@@ -261,7 +261,7 @@ class AffiliateLocationFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getProvince()
     {
-        return isset($this->province) ? $this->province : '';
+        return $this->province ?? '';
     }
 
     public function hasProvince()
@@ -297,7 +297,7 @@ class AffiliateLocationFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getPostalCode()
     {
-        return isset($this->postal_code) ? $this->postal_code : '';
+        return $this->postal_code ?? '';
     }
 
     public function hasPostalCode()
@@ -333,7 +333,7 @@ class AffiliateLocationFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getCountryCode()
     {
-        return isset($this->country_code) ? $this->country_code : '';
+        return $this->country_code ?? '';
     }
 
     public function hasCountryCode()
@@ -369,7 +369,7 @@ class AffiliateLocationFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getPhoneNumber()
     {
-        return isset($this->phone_number) ? $this->phone_number : '';
+        return $this->phone_number ?? '';
     }
 
     public function hasPhoneNumber()
@@ -405,7 +405,7 @@ class AffiliateLocationFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getChainId()
     {
-        return isset($this->chain_id) ? $this->chain_id : 0;
+        return $this->chain_id ?? 0;
     }
 
     public function hasChainId()
@@ -441,7 +441,7 @@ class AffiliateLocationFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getChainName()
     {
-        return isset($this->chain_name) ? $this->chain_name : '';
+        return $this->chain_name ?? '';
     }
 
     public function hasChainName()

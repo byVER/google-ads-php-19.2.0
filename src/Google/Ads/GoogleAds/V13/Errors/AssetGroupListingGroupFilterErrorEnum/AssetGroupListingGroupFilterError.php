@@ -18,94 +18,94 @@ class AssetGroupListingGroupFilterError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Listing group tree is too deep.
      *
      * Generated from protobuf enum <code>TREE_TOO_DEEP = 2;</code>
      */
-    const TREE_TOO_DEEP = 2;
+    public const TREE_TOO_DEEP = 2;
     /**
      * Listing Group UNIT node cannot have children.
      *
      * Generated from protobuf enum <code>UNIT_CANNOT_HAVE_CHILDREN = 3;</code>
      */
-    const UNIT_CANNOT_HAVE_CHILDREN = 3;
+    public const UNIT_CANNOT_HAVE_CHILDREN = 3;
     /**
      * Listing Group SUBDIVISION node must have everything else child.
      *
      * Generated from protobuf enum <code>SUBDIVISION_MUST_HAVE_EVERYTHING_ELSE_CHILD = 4;</code>
      */
-    const SUBDIVISION_MUST_HAVE_EVERYTHING_ELSE_CHILD = 4;
+    public const SUBDIVISION_MUST_HAVE_EVERYTHING_ELSE_CHILD = 4;
     /**
      * Dimension type of Listing Group must be the same as that of its siblings.
      *
      * Generated from protobuf enum <code>DIFFERENT_DIMENSION_TYPE_BETWEEN_SIBLINGS = 5;</code>
      */
-    const DIFFERENT_DIMENSION_TYPE_BETWEEN_SIBLINGS = 5;
+    public const DIFFERENT_DIMENSION_TYPE_BETWEEN_SIBLINGS = 5;
     /**
      * The sibling Listing Groups target exactly the same dimension value.
      *
      * Generated from protobuf enum <code>SAME_DIMENSION_VALUE_BETWEEN_SIBLINGS = 6;</code>
      */
-    const SAME_DIMENSION_VALUE_BETWEEN_SIBLINGS = 6;
+    public const SAME_DIMENSION_VALUE_BETWEEN_SIBLINGS = 6;
     /**
      * The dimension type is the same as one of the ancestor Listing Groups.
      *
      * Generated from protobuf enum <code>SAME_DIMENSION_TYPE_BETWEEN_ANCESTORS = 7;</code>
      */
-    const SAME_DIMENSION_TYPE_BETWEEN_ANCESTORS = 7;
+    public const SAME_DIMENSION_TYPE_BETWEEN_ANCESTORS = 7;
     /**
      * Each Listing Group tree must have a single root.
      *
      * Generated from protobuf enum <code>MULTIPLE_ROOTS = 8;</code>
      */
-    const MULTIPLE_ROOTS = 8;
+    public const MULTIPLE_ROOTS = 8;
     /**
      * Invalid Listing Group dimension value.
      *
      * Generated from protobuf enum <code>INVALID_DIMENSION_VALUE = 9;</code>
      */
-    const INVALID_DIMENSION_VALUE = 9;
+    public const INVALID_DIMENSION_VALUE = 9;
     /**
      * Hierarchical dimension must refine a dimension of the same type.
      *
      * Generated from protobuf enum <code>MUST_REFINE_HIERARCHICAL_PARENT_TYPE = 10;</code>
      */
-    const MUST_REFINE_HIERARCHICAL_PARENT_TYPE = 10;
+    public const MUST_REFINE_HIERARCHICAL_PARENT_TYPE = 10;
     /**
      * Invalid Product Bidding Category.
      *
      * Generated from protobuf enum <code>INVALID_PRODUCT_BIDDING_CATEGORY = 11;</code>
      */
-    const INVALID_PRODUCT_BIDDING_CATEGORY = 11;
+    public const INVALID_PRODUCT_BIDDING_CATEGORY = 11;
     /**
      * Modifying case value is allowed only while updating the entire subtree at
      * the same time.
      *
      * Generated from protobuf enum <code>CHANGING_CASE_VALUE_WITH_CHILDREN = 12;</code>
      */
-    const CHANGING_CASE_VALUE_WITH_CHILDREN = 12;
+    public const CHANGING_CASE_VALUE_WITH_CHILDREN = 12;
     /**
      * Subdivision node has children which must be removed first.
      *
      * Generated from protobuf enum <code>SUBDIVISION_HAS_CHILDREN = 13;</code>
      */
-    const SUBDIVISION_HAS_CHILDREN = 13;
+    public const SUBDIVISION_HAS_CHILDREN = 13;
     /**
      * Dimension can't subdivide everything-else node in its own hierarchy.
      *
      * Generated from protobuf enum <code>CANNOT_REFINE_HIERARCHICAL_EVERYTHING_ELSE = 14;</code>
      */
-    const CANNOT_REFINE_HIERARCHICAL_EVERYTHING_ELSE = 14;
+    public const CANNOT_REFINE_HIERARCHICAL_EVERYTHING_ELSE = 14;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::TREE_TOO_DEEP => 'TREE_TOO_DEEP',
@@ -127,7 +127,7 @@ class AssetGroupListingGroupFilterError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -135,10 +135,10 @@ class AssetGroupListingGroupFilterError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

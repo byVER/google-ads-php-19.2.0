@@ -18,20 +18,20 @@ class SimulationModificationMethod
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The values in a simulation were applied to all children of a given
      * resource uniformly. Overrides on child resources were not respected.
      *
      * Generated from protobuf enum <code>UNIFORM = 2;</code>
      */
-    const UNIFORM = 2;
+    public const UNIFORM = 2;
     /**
      * The values in a simulation were applied to the given resource.
      * Overrides on child resources were respected, and traffic estimates
@@ -39,7 +39,7 @@ class SimulationModificationMethod
      *
      * Generated from protobuf enum <code>DEFAULT = 3;</code>
      */
-    const PBDEFAULT = 3;
+    public const PBDEFAULT = 3;
     /**
      * The values in a simulation were all scaled by the same factor.
      * For example, in a simulated TargetCpa campaign, the campaign target and
@@ -47,9 +47,9 @@ class SimulationModificationMethod
      *
      * Generated from protobuf enum <code>SCALING = 4;</code>
      */
-    const SCALING = 4;
+    public const SCALING = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::UNIFORM => 'UNIFORM',
@@ -61,7 +61,7 @@ class SimulationModificationMethod
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -69,12 +69,12 @@ class SimulationModificationMethod
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
-            $pbconst =  __CLASS__. '::PB' . strtoupper($name);
+            $pbconst =  self::class. '::PB' . strtoupper($name);
             if (!defined($pbconst)) {
                 throw new UnexpectedValueException(sprintf(
-                        'Enum %s has no value defined for name %s', __CLASS__, $name));
+                        'Enum %s has no value defined for name %s', self::class, $name));
             }
             return constant($pbconst);
         }

@@ -29,7 +29,7 @@ use Google\ApiCore\ServerStream;
  */
 class ServerStreamingGoogleAdsExceptionMiddleware extends GoogleAdsMiddlewareAbstract
 {
-    private $statusMetadataExtractor;
+    private \Google\Ads\GoogleAds\Lib\V14\StatusMetadataExtractor $statusMetadataExtractor;
 
     /**
      * Creates the `GoogleAdsException` middleware.
@@ -68,7 +68,7 @@ class ServerStreamingGoogleAdsExceptionMiddleware extends GoogleAdsMiddlewareAbs
         ) extends GoogleAdsServerStreamDecorator {
             use GoogleAdsExceptionTrait;
 
-            private $statusMetadataExtractor;
+            private \Google\Ads\GoogleAds\Lib\V14\StatusMetadataExtractor $statusMetadataExtractor;
 
             /**
              * @param ServerStream $serverStream the ServerStream to wrap

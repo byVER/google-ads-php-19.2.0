@@ -18,52 +18,52 @@ class MediaType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received value is not known in this version.
      * This is a response-only value.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Static image, used for image ad.
      *
      * Generated from protobuf enum <code>IMAGE = 2;</code>
      */
-    const IMAGE = 2;
+    public const IMAGE = 2;
     /**
      * Small image, used for map ad.
      *
      * Generated from protobuf enum <code>ICON = 3;</code>
      */
-    const ICON = 3;
+    public const ICON = 3;
     /**
      * ZIP file, used in fields of template ads.
      *
      * Generated from protobuf enum <code>MEDIA_BUNDLE = 4;</code>
      */
-    const MEDIA_BUNDLE = 4;
+    public const MEDIA_BUNDLE = 4;
     /**
      * Audio file.
      *
      * Generated from protobuf enum <code>AUDIO = 5;</code>
      */
-    const AUDIO = 5;
+    public const AUDIO = 5;
     /**
      * Video file.
      *
      * Generated from protobuf enum <code>VIDEO = 6;</code>
      */
-    const VIDEO = 6;
+    public const VIDEO = 6;
     /**
      * Animated image, such as animated GIF.
      *
      * Generated from protobuf enum <code>DYNAMIC_IMAGE = 7;</code>
      */
-    const DYNAMIC_IMAGE = 7;
+    public const DYNAMIC_IMAGE = 7;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::IMAGE => 'IMAGE',
@@ -78,7 +78,7 @@ class MediaType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -86,10 +86,10 @@ class MediaType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

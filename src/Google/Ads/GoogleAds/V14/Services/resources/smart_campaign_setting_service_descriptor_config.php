@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.SmartCampaignSettingService' => [
             'GetSmartCampaignStatus' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\GetSmartCampaignStatusResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\GetSmartCampaignStatusResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'resource_name',
@@ -17,7 +17,7 @@ return [
             ],
             'MutateSmartCampaignSettings' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateSmartCampaignSettingsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateSmartCampaignSettingsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

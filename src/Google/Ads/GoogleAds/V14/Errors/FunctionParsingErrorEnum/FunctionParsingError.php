@@ -18,81 +18,81 @@ class FunctionParsingError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Unexpected end of function string.
      *
      * Generated from protobuf enum <code>NO_MORE_INPUT = 2;</code>
      */
-    const NO_MORE_INPUT = 2;
+    public const NO_MORE_INPUT = 2;
     /**
      * Could not find an expected character.
      *
      * Generated from protobuf enum <code>EXPECTED_CHARACTER = 3;</code>
      */
-    const EXPECTED_CHARACTER = 3;
+    public const EXPECTED_CHARACTER = 3;
     /**
      * Unexpected separator character.
      *
      * Generated from protobuf enum <code>UNEXPECTED_SEPARATOR = 4;</code>
      */
-    const UNEXPECTED_SEPARATOR = 4;
+    public const UNEXPECTED_SEPARATOR = 4;
     /**
      * Unmatched left bracket or parenthesis.
      *
      * Generated from protobuf enum <code>UNMATCHED_LEFT_BRACKET = 5;</code>
      */
-    const UNMATCHED_LEFT_BRACKET = 5;
+    public const UNMATCHED_LEFT_BRACKET = 5;
     /**
      * Unmatched right bracket or parenthesis.
      *
      * Generated from protobuf enum <code>UNMATCHED_RIGHT_BRACKET = 6;</code>
      */
-    const UNMATCHED_RIGHT_BRACKET = 6;
+    public const UNMATCHED_RIGHT_BRACKET = 6;
     /**
      * Functions are nested too deeply.
      *
      * Generated from protobuf enum <code>TOO_MANY_NESTED_FUNCTIONS = 7;</code>
      */
-    const TOO_MANY_NESTED_FUNCTIONS = 7;
+    public const TOO_MANY_NESTED_FUNCTIONS = 7;
     /**
      * Missing right-hand-side operand.
      *
      * Generated from protobuf enum <code>MISSING_RIGHT_HAND_OPERAND = 8;</code>
      */
-    const MISSING_RIGHT_HAND_OPERAND = 8;
+    public const MISSING_RIGHT_HAND_OPERAND = 8;
     /**
      * Invalid operator/function name.
      *
      * Generated from protobuf enum <code>INVALID_OPERATOR_NAME = 9;</code>
      */
-    const INVALID_OPERATOR_NAME = 9;
+    public const INVALID_OPERATOR_NAME = 9;
     /**
      * Feed attribute operand's argument is not an integer.
      *
      * Generated from protobuf enum <code>FEED_ATTRIBUTE_OPERAND_ARGUMENT_NOT_INTEGER = 10;</code>
      */
-    const FEED_ATTRIBUTE_OPERAND_ARGUMENT_NOT_INTEGER = 10;
+    public const FEED_ATTRIBUTE_OPERAND_ARGUMENT_NOT_INTEGER = 10;
     /**
      * Missing function operands.
      *
      * Generated from protobuf enum <code>NO_OPERANDS = 11;</code>
      */
-    const NO_OPERANDS = 11;
+    public const NO_OPERANDS = 11;
     /**
      * Function had too many operands.
      *
      * Generated from protobuf enum <code>TOO_MANY_OPERANDS = 12;</code>
      */
-    const TOO_MANY_OPERANDS = 12;
+    public const TOO_MANY_OPERANDS = 12;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::NO_MORE_INPUT => 'NO_MORE_INPUT',
@@ -112,7 +112,7 @@ class FunctionParsingError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -120,10 +120,10 @@ class FunctionParsingError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

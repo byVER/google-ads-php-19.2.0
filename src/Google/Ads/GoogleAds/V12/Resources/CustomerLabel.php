@@ -104,7 +104,7 @@ class CustomerLabel extends \Google\Protobuf\Internal\Message
      */
     public function getCustomer()
     {
-        return isset($this->customer) ? $this->customer : '';
+        return $this->customer ?? '';
     }
 
     public function hasCustomer()
@@ -143,7 +143,7 @@ class CustomerLabel extends \Google\Protobuf\Internal\Message
      */
     public function getLabel()
     {
-        return isset($this->label) ? $this->label : '';
+        return $this->label ?? '';
     }
 
     public function hasLabel()

@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.AssetGroupSignalService' => [
             'MutateAssetGroupSignals' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateAssetGroupSignalsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateAssetGroupSignalsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

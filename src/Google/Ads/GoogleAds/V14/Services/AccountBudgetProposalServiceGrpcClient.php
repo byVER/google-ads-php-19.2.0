@@ -69,7 +69,7 @@ class AccountBudgetProposalServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v14.services.AccountBudgetProposalService/MutateAccountBudgetProposal',
         $argument,
-        ['\Google\Ads\GoogleAds\V14\Services\MutateAccountBudgetProposalResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V14\Services\MutateAccountBudgetProposalResponse::class, 'decode'],
         $metadata, $options);
     }
 

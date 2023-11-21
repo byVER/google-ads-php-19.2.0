@@ -68,31 +68,31 @@ class AdGroupAdServiceGapicClient
     use GapicClientTrait;
 
     /** The name of the service. */
-    const SERVICE_NAME = 'google.ads.googleads.v14.services.AdGroupAdService';
+    public const SERVICE_NAME = 'google.ads.googleads.v14.services.AdGroupAdService';
 
     /** The default address of the service. */
-    const SERVICE_ADDRESS = 'googleads.googleapis.com';
+    public const SERVICE_ADDRESS = 'googleads.googleapis.com';
 
     /** The default port of the service. */
-    const DEFAULT_SERVICE_PORT = 443;
+    public const DEFAULT_SERVICE_PORT = 443;
 
     /** The name of the code generator, to be included in the agent header. */
-    const CODEGEN_NAME = 'gapic';
+    public const CODEGEN_NAME = 'gapic';
 
     /** The default scopes required by the service. */
     public static $serviceScopes = [
         'https://www.googleapis.com/auth/adwords',
     ];
 
-    private static $adNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adNameTemplate = null;
 
-    private static $adGroupNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupNameTemplate = null;
 
-    private static $adGroupAdNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupAdNameTemplate = null;
 
-    private static $adGroupAdLabelNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $adGroupAdLabelNameTemplate = null;
 
-    private static $pathTemplateMap;
+    private static ?array $pathTemplateMap = null;
 
     private static function getClientDefaults()
     {

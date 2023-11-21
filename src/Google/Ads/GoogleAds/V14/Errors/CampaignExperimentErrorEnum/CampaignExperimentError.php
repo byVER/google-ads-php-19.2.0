@@ -18,19 +18,19 @@ class CampaignExperimentError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * An active campaign or experiment with this name already exists.
      *
      * Generated from protobuf enum <code>DUPLICATE_NAME = 2;</code>
      */
-    const DUPLICATE_NAME = 2;
+    public const DUPLICATE_NAME = 2;
     /**
      * Experiment cannot be updated from the current state to the
      * requested target state. For example, an experiment can only graduate
@@ -38,62 +38,62 @@ class CampaignExperimentError
      *
      * Generated from protobuf enum <code>INVALID_TRANSITION = 3;</code>
      */
-    const INVALID_TRANSITION = 3;
+    public const INVALID_TRANSITION = 3;
     /**
      * Cannot create an experiment from a campaign using an explicitly shared
      * budget.
      *
      * Generated from protobuf enum <code>CANNOT_CREATE_EXPERIMENT_WITH_SHARED_BUDGET = 4;</code>
      */
-    const CANNOT_CREATE_EXPERIMENT_WITH_SHARED_BUDGET = 4;
+    public const CANNOT_CREATE_EXPERIMENT_WITH_SHARED_BUDGET = 4;
     /**
      * Cannot create an experiment for a removed base campaign.
      *
      * Generated from protobuf enum <code>CANNOT_CREATE_EXPERIMENT_FOR_REMOVED_BASE_CAMPAIGN = 5;</code>
      */
-    const CANNOT_CREATE_EXPERIMENT_FOR_REMOVED_BASE_CAMPAIGN = 5;
+    public const CANNOT_CREATE_EXPERIMENT_FOR_REMOVED_BASE_CAMPAIGN = 5;
     /**
      * Cannot create an experiment from a draft, which has a status other than
      * proposed.
      *
      * Generated from protobuf enum <code>CANNOT_CREATE_EXPERIMENT_FOR_NON_PROPOSED_DRAFT = 6;</code>
      */
-    const CANNOT_CREATE_EXPERIMENT_FOR_NON_PROPOSED_DRAFT = 6;
+    public const CANNOT_CREATE_EXPERIMENT_FOR_NON_PROPOSED_DRAFT = 6;
     /**
      * This customer is not allowed to create an experiment.
      *
      * Generated from protobuf enum <code>CUSTOMER_CANNOT_CREATE_EXPERIMENT = 7;</code>
      */
-    const CUSTOMER_CANNOT_CREATE_EXPERIMENT = 7;
+    public const CUSTOMER_CANNOT_CREATE_EXPERIMENT = 7;
     /**
      * This campaign is not allowed to create an experiment.
      *
      * Generated from protobuf enum <code>CAMPAIGN_CANNOT_CREATE_EXPERIMENT = 8;</code>
      */
-    const CAMPAIGN_CANNOT_CREATE_EXPERIMENT = 8;
+    public const CAMPAIGN_CANNOT_CREATE_EXPERIMENT = 8;
     /**
      * Trying to set an experiment duration which overlaps with another
      * experiment.
      *
      * Generated from protobuf enum <code>EXPERIMENT_DURATIONS_MUST_NOT_OVERLAP = 9;</code>
      */
-    const EXPERIMENT_DURATIONS_MUST_NOT_OVERLAP = 9;
+    public const EXPERIMENT_DURATIONS_MUST_NOT_OVERLAP = 9;
     /**
      * All non-removed experiments must start and end within their campaign's
      * duration.
      *
      * Generated from protobuf enum <code>EXPERIMENT_DURATION_MUST_BE_WITHIN_CAMPAIGN_DURATION = 10;</code>
      */
-    const EXPERIMENT_DURATION_MUST_BE_WITHIN_CAMPAIGN_DURATION = 10;
+    public const EXPERIMENT_DURATION_MUST_BE_WITHIN_CAMPAIGN_DURATION = 10;
     /**
      * The experiment cannot be modified because its status is in a terminal
      * state, such as REMOVED.
      *
      * Generated from protobuf enum <code>CANNOT_MUTATE_EXPERIMENT_DUE_TO_STATUS = 11;</code>
      */
-    const CANNOT_MUTATE_EXPERIMENT_DUE_TO_STATUS = 11;
+    public const CANNOT_MUTATE_EXPERIMENT_DUE_TO_STATUS = 11;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::DUPLICATE_NAME => 'DUPLICATE_NAME',
@@ -112,7 +112,7 @@ class CampaignExperimentError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -120,10 +120,10 @@ class CampaignExperimentError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

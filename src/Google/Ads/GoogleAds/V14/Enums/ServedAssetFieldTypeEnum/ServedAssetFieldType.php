@@ -18,106 +18,106 @@ class ServedAssetFieldType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received value is not known in this version.
      * This is a response-only value.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The asset is used in headline 1.
      *
      * Generated from protobuf enum <code>HEADLINE_1 = 2;</code>
      */
-    const HEADLINE_1 = 2;
+    public const HEADLINE_1 = 2;
     /**
      * The asset is used in headline 2.
      *
      * Generated from protobuf enum <code>HEADLINE_2 = 3;</code>
      */
-    const HEADLINE_2 = 3;
+    public const HEADLINE_2 = 3;
     /**
      * The asset is used in headline 3.
      *
      * Generated from protobuf enum <code>HEADLINE_3 = 4;</code>
      */
-    const HEADLINE_3 = 4;
+    public const HEADLINE_3 = 4;
     /**
      * The asset is used in description 1.
      *
      * Generated from protobuf enum <code>DESCRIPTION_1 = 5;</code>
      */
-    const DESCRIPTION_1 = 5;
+    public const DESCRIPTION_1 = 5;
     /**
      * The asset is used in description 2.
      *
      * Generated from protobuf enum <code>DESCRIPTION_2 = 6;</code>
      */
-    const DESCRIPTION_2 = 6;
+    public const DESCRIPTION_2 = 6;
     /**
      * This asset is used as a sitelink.
      *
      * Generated from protobuf enum <code>SITELINK = 22;</code>
      */
-    const SITELINK = 22;
+    public const SITELINK = 22;
     /**
      * This asset is used as a call.
      *
      * Generated from protobuf enum <code>CALL = 23;</code>
      */
-    const CALL = 23;
+    public const CALL = 23;
     /**
      * This asset is used as a mobile app.
      *
      * Generated from protobuf enum <code>MOBILE_APP = 24;</code>
      */
-    const MOBILE_APP = 24;
+    public const MOBILE_APP = 24;
     /**
      * This asset is used as a callout.
      *
      * Generated from protobuf enum <code>CALLOUT = 25;</code>
      */
-    const CALLOUT = 25;
+    public const CALLOUT = 25;
     /**
      * This asset is used as a structured snippet.
      *
      * Generated from protobuf enum <code>STRUCTURED_SNIPPET = 26;</code>
      */
-    const STRUCTURED_SNIPPET = 26;
+    public const STRUCTURED_SNIPPET = 26;
     /**
      * This asset is used as a price.
      *
      * Generated from protobuf enum <code>PRICE = 27;</code>
      */
-    const PRICE = 27;
+    public const PRICE = 27;
     /**
      * This asset is used as a promotion.
      *
      * Generated from protobuf enum <code>PROMOTION = 28;</code>
      */
-    const PROMOTION = 28;
+    public const PROMOTION = 28;
     /**
      * This asset is used as an image.
      *
      * Generated from protobuf enum <code>AD_IMAGE = 29;</code>
      */
-    const AD_IMAGE = 29;
+    public const AD_IMAGE = 29;
     /**
      * The asset is used as a lead form.
      *
      * Generated from protobuf enum <code>LEAD_FORM = 30;</code>
      */
-    const LEAD_FORM = 30;
+    public const LEAD_FORM = 30;
     /**
      * The asset is used as a business logo.
      *
      * Generated from protobuf enum <code>BUSINESS_LOGO = 31;</code>
      */
-    const BUSINESS_LOGO = 31;
+    public const BUSINESS_LOGO = 31;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::HEADLINE_1 => 'HEADLINE_1',
@@ -141,7 +141,7 @@ class ServedAssetFieldType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -149,10 +149,10 @@ class ServedAssetFieldType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

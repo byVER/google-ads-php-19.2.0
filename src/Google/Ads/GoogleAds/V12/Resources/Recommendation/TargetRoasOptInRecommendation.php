@@ -62,7 +62,7 @@ class TargetRoasOptInRecommendation extends \Google\Protobuf\Internal\Message
      */
     public function getRecommendedTargetRoas()
     {
-        return isset($this->recommended_target_roas) ? $this->recommended_target_roas : 0.0;
+        return $this->recommended_target_roas ?? 0.0;
     }
 
     public function hasRecommendedTargetRoas()
@@ -102,7 +102,7 @@ class TargetRoasOptInRecommendation extends \Google\Protobuf\Internal\Message
      */
     public function getRequiredCampaignBudgetAmountMicros()
     {
-        return isset($this->required_campaign_budget_amount_micros) ? $this->required_campaign_budget_amount_micros : 0;
+        return $this->required_campaign_budget_amount_micros ?? 0;
     }
 
     public function hasRequiredCampaignBudgetAmountMicros()

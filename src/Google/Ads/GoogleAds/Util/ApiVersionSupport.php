@@ -30,7 +30,7 @@ class ApiVersionSupport
     /**
      * @var string the root path of the library
      */
-    private $rootPath = null;
+    private ?string $rootPath = null;
 
     /**
      * Constructor.

@@ -126,7 +126,7 @@ class FeedItemTarget extends \Google\Protobuf\Internal\Message
      */
     public function getFeedItem()
     {
-        return isset($this->feed_item) ? $this->feed_item : '';
+        return $this->feed_item ?? '';
     }
 
     public function hasFeedItem()
@@ -174,7 +174,7 @@ class FeedItemTarget extends \Google\Protobuf\Internal\Message
      */
     public function setFeedItemTargetType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FeedItemTargetTypeEnum\FeedItemTargetType::class);
+        GPBUtil::checkEnum($var);
         $this->feed_item_target_type = $var;
 
         return $this;
@@ -188,7 +188,7 @@ class FeedItemTarget extends \Google\Protobuf\Internal\Message
      */
     public function getFeedItemTargetId()
     {
-        return isset($this->feed_item_target_id) ? $this->feed_item_target_id : 0;
+        return $this->feed_item_target_id ?? 0;
     }
 
     public function hasFeedItemTargetId()
@@ -238,7 +238,7 @@ class FeedItemTarget extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FeedItemTargetStatusEnum\FeedItemTargetStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;
@@ -393,7 +393,7 @@ class FeedItemTarget extends \Google\Protobuf\Internal\Message
      */
     public function setDevice($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FeedItemTargetDeviceEnum\FeedItemTargetDevice::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(9, $var);
 
         return $this;

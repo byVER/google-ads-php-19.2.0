@@ -18,20 +18,20 @@ class DisplayUploadProductType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * HTML5 upload ad. This product type requires the upload_media_bundle
      * field in DisplayUploadAdInfo to be set.
      *
      * Generated from protobuf enum <code>HTML5_UPLOAD_AD = 2;</code>
      */
-    const HTML5_UPLOAD_AD = 2;
+    public const HTML5_UPLOAD_AD = 2;
     /**
      * Dynamic HTML5 education ad. This product type requires the
      * upload_media_bundle field in DisplayUploadAdInfo to be set. Can only be
@@ -39,7 +39,7 @@ class DisplayUploadProductType
      *
      * Generated from protobuf enum <code>DYNAMIC_HTML5_EDUCATION_AD = 3;</code>
      */
-    const DYNAMIC_HTML5_EDUCATION_AD = 3;
+    public const DYNAMIC_HTML5_EDUCATION_AD = 3;
     /**
      * Dynamic HTML5 flight ad. This product type requires the
      * upload_media_bundle field in DisplayUploadAdInfo to be set. Can only be
@@ -47,7 +47,7 @@ class DisplayUploadProductType
      *
      * Generated from protobuf enum <code>DYNAMIC_HTML5_FLIGHT_AD = 4;</code>
      */
-    const DYNAMIC_HTML5_FLIGHT_AD = 4;
+    public const DYNAMIC_HTML5_FLIGHT_AD = 4;
     /**
      * Dynamic HTML5 hotel and rental ad. This product type requires the
      * upload_media_bundle field in DisplayUploadAdInfo to be set. Can only be
@@ -55,7 +55,7 @@ class DisplayUploadProductType
      *
      * Generated from protobuf enum <code>DYNAMIC_HTML5_HOTEL_RENTAL_AD = 5;</code>
      */
-    const DYNAMIC_HTML5_HOTEL_RENTAL_AD = 5;
+    public const DYNAMIC_HTML5_HOTEL_RENTAL_AD = 5;
     /**
      * Dynamic HTML5 job ad. This product type requires the
      * upload_media_bundle field in DisplayUploadAdInfo to be set. Can only be
@@ -63,7 +63,7 @@ class DisplayUploadProductType
      *
      * Generated from protobuf enum <code>DYNAMIC_HTML5_JOB_AD = 6;</code>
      */
-    const DYNAMIC_HTML5_JOB_AD = 6;
+    public const DYNAMIC_HTML5_JOB_AD = 6;
     /**
      * Dynamic HTML5 local ad. This product type requires the
      * upload_media_bundle field in DisplayUploadAdInfo to be set. Can only be
@@ -71,7 +71,7 @@ class DisplayUploadProductType
      *
      * Generated from protobuf enum <code>DYNAMIC_HTML5_LOCAL_AD = 7;</code>
      */
-    const DYNAMIC_HTML5_LOCAL_AD = 7;
+    public const DYNAMIC_HTML5_LOCAL_AD = 7;
     /**
      * Dynamic HTML5 real estate ad. This product type requires the
      * upload_media_bundle field in DisplayUploadAdInfo to be set. Can only be
@@ -79,7 +79,7 @@ class DisplayUploadProductType
      *
      * Generated from protobuf enum <code>DYNAMIC_HTML5_REAL_ESTATE_AD = 8;</code>
      */
-    const DYNAMIC_HTML5_REAL_ESTATE_AD = 8;
+    public const DYNAMIC_HTML5_REAL_ESTATE_AD = 8;
     /**
      * Dynamic HTML5 custom ad. This product type requires the
      * upload_media_bundle field in DisplayUploadAdInfo to be set. Can only be
@@ -87,7 +87,7 @@ class DisplayUploadProductType
      *
      * Generated from protobuf enum <code>DYNAMIC_HTML5_CUSTOM_AD = 9;</code>
      */
-    const DYNAMIC_HTML5_CUSTOM_AD = 9;
+    public const DYNAMIC_HTML5_CUSTOM_AD = 9;
     /**
      * Dynamic HTML5 travel ad. This product type requires the
      * upload_media_bundle field in DisplayUploadAdInfo to be set. Can only be
@@ -95,7 +95,7 @@ class DisplayUploadProductType
      *
      * Generated from protobuf enum <code>DYNAMIC_HTML5_TRAVEL_AD = 10;</code>
      */
-    const DYNAMIC_HTML5_TRAVEL_AD = 10;
+    public const DYNAMIC_HTML5_TRAVEL_AD = 10;
     /**
      * Dynamic HTML5 hotel ad. This product type requires the
      * upload_media_bundle field in DisplayUploadAdInfo to be set. Can only be
@@ -103,9 +103,9 @@ class DisplayUploadProductType
      *
      * Generated from protobuf enum <code>DYNAMIC_HTML5_HOTEL_AD = 11;</code>
      */
-    const DYNAMIC_HTML5_HOTEL_AD = 11;
+    public const DYNAMIC_HTML5_HOTEL_AD = 11;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::HTML5_UPLOAD_AD => 'HTML5_UPLOAD_AD',
@@ -124,7 +124,7 @@ class DisplayUploadProductType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -132,10 +132,10 @@ class DisplayUploadProductType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

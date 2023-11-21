@@ -28,7 +28,7 @@ class GoogleAdsException extends ApiException
 {
     use GoogleAdsMetadataTrait;
 
-    private $googleAdsFailure;
+    private \Google\Ads\GoogleAds\V12\Errors\GoogleAdsFailure $googleAdsFailure;
 
     /**
      * Creates a `GoogleAdsException` instance with the specified parameters.

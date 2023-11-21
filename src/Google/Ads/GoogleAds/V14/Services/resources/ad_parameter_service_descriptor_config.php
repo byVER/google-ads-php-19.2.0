@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.AdParameterService' => [
             'MutateAdParameters' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateAdParametersResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateAdParametersResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

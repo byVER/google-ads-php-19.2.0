@@ -18,42 +18,42 @@ class HotelPriceBucket
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Uniquely lowest price. Partner has the lowest price, and no other
      * partners are within a small variance of that price.
      *
      * Generated from protobuf enum <code>LOWEST_UNIQUE = 2;</code>
      */
-    const LOWEST_UNIQUE = 2;
+    public const LOWEST_UNIQUE = 2;
     /**
      * Tied for lowest price. Partner is within a small variance of the lowest
      * price.
      *
      * Generated from protobuf enum <code>LOWEST_TIED = 3;</code>
      */
-    const LOWEST_TIED = 3;
+    public const LOWEST_TIED = 3;
     /**
      * Not lowest price. Partner is not within a small variance of the lowest
      * price.
      *
      * Generated from protobuf enum <code>NOT_LOWEST = 4;</code>
      */
-    const NOT_LOWEST = 4;
+    public const NOT_LOWEST = 4;
     /**
      * Partner was the only one shown.
      *
      * Generated from protobuf enum <code>ONLY_PARTNER_SHOWN = 5;</code>
      */
-    const ONLY_PARTNER_SHOWN = 5;
+    public const ONLY_PARTNER_SHOWN = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::LOWEST_UNIQUE => 'LOWEST_UNIQUE',
@@ -66,7 +66,7 @@ class HotelPriceBucket
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -74,10 +74,10 @@ class HotelPriceBucket
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

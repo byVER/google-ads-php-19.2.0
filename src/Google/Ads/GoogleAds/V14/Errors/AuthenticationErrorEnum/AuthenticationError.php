@@ -18,110 +18,110 @@ class AuthenticationError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Authentication of the request failed.
      *
      * Generated from protobuf enum <code>AUTHENTICATION_ERROR = 2;</code>
      */
-    const AUTHENTICATION_ERROR = 2;
+    public const AUTHENTICATION_ERROR = 2;
     /**
      * Client customer ID is not a number.
      *
      * Generated from protobuf enum <code>CLIENT_CUSTOMER_ID_INVALID = 5;</code>
      */
-    const CLIENT_CUSTOMER_ID_INVALID = 5;
+    public const CLIENT_CUSTOMER_ID_INVALID = 5;
     /**
      * No customer found for the provided customer ID.
      *
      * Generated from protobuf enum <code>CUSTOMER_NOT_FOUND = 8;</code>
      */
-    const CUSTOMER_NOT_FOUND = 8;
+    public const CUSTOMER_NOT_FOUND = 8;
     /**
      * Client's Google account is deleted.
      *
      * Generated from protobuf enum <code>GOOGLE_ACCOUNT_DELETED = 9;</code>
      */
-    const GOOGLE_ACCOUNT_DELETED = 9;
+    public const GOOGLE_ACCOUNT_DELETED = 9;
     /**
      * Google account login token in the cookie is invalid.
      *
      * Generated from protobuf enum <code>GOOGLE_ACCOUNT_COOKIE_INVALID = 10;</code>
      */
-    const GOOGLE_ACCOUNT_COOKIE_INVALID = 10;
+    public const GOOGLE_ACCOUNT_COOKIE_INVALID = 10;
     /**
      * A problem occurred during Google account authentication.
      *
      * Generated from protobuf enum <code>GOOGLE_ACCOUNT_AUTHENTICATION_FAILED = 25;</code>
      */
-    const GOOGLE_ACCOUNT_AUTHENTICATION_FAILED = 25;
+    public const GOOGLE_ACCOUNT_AUTHENTICATION_FAILED = 25;
     /**
      * The user in the Google account login token does not match the user ID in
      * the cookie.
      *
      * Generated from protobuf enum <code>GOOGLE_ACCOUNT_USER_AND_ADS_USER_MISMATCH = 12;</code>
      */
-    const GOOGLE_ACCOUNT_USER_AND_ADS_USER_MISMATCH = 12;
+    public const GOOGLE_ACCOUNT_USER_AND_ADS_USER_MISMATCH = 12;
     /**
      * Login cookie is required for authentication.
      *
      * Generated from protobuf enum <code>LOGIN_COOKIE_REQUIRED = 13;</code>
      */
-    const LOGIN_COOKIE_REQUIRED = 13;
+    public const LOGIN_COOKIE_REQUIRED = 13;
     /**
      * User in the cookie is not a valid Ads user.
      *
      * Generated from protobuf enum <code>NOT_ADS_USER = 14;</code>
      */
-    const NOT_ADS_USER = 14;
+    public const NOT_ADS_USER = 14;
     /**
      * OAuth token in the header is not valid.
      *
      * Generated from protobuf enum <code>OAUTH_TOKEN_INVALID = 15;</code>
      */
-    const OAUTH_TOKEN_INVALID = 15;
+    public const OAUTH_TOKEN_INVALID = 15;
     /**
      * OAuth token in the header has expired.
      *
      * Generated from protobuf enum <code>OAUTH_TOKEN_EXPIRED = 16;</code>
      */
-    const OAUTH_TOKEN_EXPIRED = 16;
+    public const OAUTH_TOKEN_EXPIRED = 16;
     /**
      * OAuth token in the header has been disabled.
      *
      * Generated from protobuf enum <code>OAUTH_TOKEN_DISABLED = 17;</code>
      */
-    const OAUTH_TOKEN_DISABLED = 17;
+    public const OAUTH_TOKEN_DISABLED = 17;
     /**
      * OAuth token in the header has been revoked.
      *
      * Generated from protobuf enum <code>OAUTH_TOKEN_REVOKED = 18;</code>
      */
-    const OAUTH_TOKEN_REVOKED = 18;
+    public const OAUTH_TOKEN_REVOKED = 18;
     /**
      * OAuth token HTTP header is malformed.
      *
      * Generated from protobuf enum <code>OAUTH_TOKEN_HEADER_INVALID = 19;</code>
      */
-    const OAUTH_TOKEN_HEADER_INVALID = 19;
+    public const OAUTH_TOKEN_HEADER_INVALID = 19;
     /**
      * Login cookie is not valid.
      *
      * Generated from protobuf enum <code>LOGIN_COOKIE_INVALID = 20;</code>
      */
-    const LOGIN_COOKIE_INVALID = 20;
+    public const LOGIN_COOKIE_INVALID = 20;
     /**
      * User ID in the header is not a valid ID.
      *
      * Generated from protobuf enum <code>USER_ID_INVALID = 22;</code>
      */
-    const USER_ID_INVALID = 22;
+    public const USER_ID_INVALID = 22;
     /**
      * An account administrator changed this account's authentication settings.
      * To access this Google Ads account, enable 2-Step Verification in your
@@ -129,7 +129,7 @@ class AuthenticationError
      *
      * Generated from protobuf enum <code>TWO_STEP_VERIFICATION_NOT_ENROLLED = 23;</code>
      */
-    const TWO_STEP_VERIFICATION_NOT_ENROLLED = 23;
+    public const TWO_STEP_VERIFICATION_NOT_ENROLLED = 23;
     /**
      * An account administrator changed this account's authentication settings.
      * To access this Google Ads account, enable Advanced Protection in your
@@ -137,29 +137,29 @@ class AuthenticationError
      *
      * Generated from protobuf enum <code>ADVANCED_PROTECTION_NOT_ENROLLED = 24;</code>
      */
-    const ADVANCED_PROTECTION_NOT_ENROLLED = 24;
+    public const ADVANCED_PROTECTION_NOT_ENROLLED = 24;
     /**
      * The Cloud organization associated with the project is not recognized.
      *
      * Generated from protobuf enum <code>ORGANIZATION_NOT_RECOGNIZED = 26;</code>
      */
-    const ORGANIZATION_NOT_RECOGNIZED = 26;
+    public const ORGANIZATION_NOT_RECOGNIZED = 26;
     /**
      * The Cloud organization associated with the project is not approved for
      * prod access.
      *
      * Generated from protobuf enum <code>ORGANIZATION_NOT_APPROVED = 27;</code>
      */
-    const ORGANIZATION_NOT_APPROVED = 27;
+    public const ORGANIZATION_NOT_APPROVED = 27;
     /**
      * The Cloud organization associated with the project is not associated with
      * the developer token.
      *
      * Generated from protobuf enum <code>ORGANIZATION_NOT_ASSOCIATED_WITH_DEVELOPER_TOKEN = 28;</code>
      */
-    const ORGANIZATION_NOT_ASSOCIATED_WITH_DEVELOPER_TOKEN = 28;
+    public const ORGANIZATION_NOT_ASSOCIATED_WITH_DEVELOPER_TOKEN = 28;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::AUTHENTICATION_ERROR => 'AUTHENTICATION_ERROR',
@@ -189,7 +189,7 @@ class AuthenticationError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -197,10 +197,10 @@ class AuthenticationError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

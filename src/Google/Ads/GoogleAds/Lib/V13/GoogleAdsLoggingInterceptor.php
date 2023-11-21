@@ -25,7 +25,7 @@ use Grpc\Interceptor;
  */
 class GoogleAdsLoggingInterceptor extends Interceptor
 {
-    private $callLogger;
+    private \Google\Ads\GoogleAds\Lib\V13\GoogleAdsCallLogger $callLogger;
 
     /**
      * Constructs the Google Ads logging interceptor.

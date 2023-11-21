@@ -18,84 +18,84 @@ class RealEstatePlaceholderField
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Data Type: STRING. Unique ID.
      *
      * Generated from protobuf enum <code>LISTING_ID = 2;</code>
      */
-    const LISTING_ID = 2;
+    public const LISTING_ID = 2;
     /**
      * Data Type: STRING. Main headline with listing name to be shown in dynamic
      * ad.
      *
      * Generated from protobuf enum <code>LISTING_NAME = 3;</code>
      */
-    const LISTING_NAME = 3;
+    public const LISTING_NAME = 3;
     /**
      * Data Type: STRING. City name to be shown in dynamic ad.
      *
      * Generated from protobuf enum <code>CITY_NAME = 4;</code>
      */
-    const CITY_NAME = 4;
+    public const CITY_NAME = 4;
     /**
      * Data Type: STRING. Description of listing to be shown in dynamic ad.
      *
      * Generated from protobuf enum <code>DESCRIPTION = 5;</code>
      */
-    const DESCRIPTION = 5;
+    public const DESCRIPTION = 5;
     /**
      * Data Type: STRING. Complete listing address, including postal code.
      *
      * Generated from protobuf enum <code>ADDRESS = 6;</code>
      */
-    const ADDRESS = 6;
+    public const ADDRESS = 6;
     /**
      * Data Type: STRING. Price to be shown in the ad.
      * Example: "100.00 USD"
      *
      * Generated from protobuf enum <code>PRICE = 7;</code>
      */
-    const PRICE = 7;
+    public const PRICE = 7;
     /**
      * Data Type: STRING. Formatted price to be shown in the ad.
      * Example: "Starting at $100.00 USD", "$80 - $100"
      *
      * Generated from protobuf enum <code>FORMATTED_PRICE = 8;</code>
      */
-    const FORMATTED_PRICE = 8;
+    public const FORMATTED_PRICE = 8;
     /**
      * Data Type: URL. Image to be displayed in the ad.
      *
      * Generated from protobuf enum <code>IMAGE_URL = 9;</code>
      */
-    const IMAGE_URL = 9;
+    public const IMAGE_URL = 9;
     /**
      * Data Type: STRING. Type of property (house, condo, apartment, etc.) used
      * to group like items together for recommendation engine.
      *
      * Generated from protobuf enum <code>PROPERTY_TYPE = 10;</code>
      */
-    const PROPERTY_TYPE = 10;
+    public const PROPERTY_TYPE = 10;
     /**
      * Data Type: STRING. Type of listing (resale, rental, foreclosure, etc.)
      * used to group like items together for recommendation engine.
      *
      * Generated from protobuf enum <code>LISTING_TYPE = 11;</code>
      */
-    const LISTING_TYPE = 11;
+    public const LISTING_TYPE = 11;
     /**
      * Data Type: STRING_LIST. Keywords used for product retrieval.
      *
      * Generated from protobuf enum <code>CONTEXTUAL_KEYWORDS = 12;</code>
      */
-    const CONTEXTUAL_KEYWORDS = 12;
+    public const CONTEXTUAL_KEYWORDS = 12;
     /**
      * Data Type: URL_LIST. Final URLs to be used in ad when using Upgraded
      * URLs; the more specific the better (for example, the individual URL of a
@@ -103,20 +103,20 @@ class RealEstatePlaceholderField
      *
      * Generated from protobuf enum <code>FINAL_URLS = 13;</code>
      */
-    const FINAL_URLS = 13;
+    public const FINAL_URLS = 13;
     /**
      * Data Type: URL_LIST. Final mobile URLs for the ad when using Upgraded
      * URLs.
      *
      * Generated from protobuf enum <code>FINAL_MOBILE_URLS = 14;</code>
      */
-    const FINAL_MOBILE_URLS = 14;
+    public const FINAL_MOBILE_URLS = 14;
     /**
      * Data Type: URL. Tracking template for the ad when using Upgraded URLs.
      *
      * Generated from protobuf enum <code>TRACKING_URL = 15;</code>
      */
-    const TRACKING_URL = 15;
+    public const TRACKING_URL = 15;
     /**
      * Data Type: STRING. Android app link. Must be formatted as:
      * android-app://{package_id}/{scheme}/{host_path}.
@@ -128,28 +128,28 @@ class RealEstatePlaceholderField
      *
      * Generated from protobuf enum <code>ANDROID_APP_LINK = 16;</code>
      */
-    const ANDROID_APP_LINK = 16;
+    public const ANDROID_APP_LINK = 16;
     /**
      * Data Type: STRING_LIST. List of recommended listing IDs to show together
      * with this item.
      *
      * Generated from protobuf enum <code>SIMILAR_LISTING_IDS = 17;</code>
      */
-    const SIMILAR_LISTING_IDS = 17;
+    public const SIMILAR_LISTING_IDS = 17;
     /**
      * Data Type: STRING. iOS app link.
      *
      * Generated from protobuf enum <code>IOS_APP_LINK = 18;</code>
      */
-    const IOS_APP_LINK = 18;
+    public const IOS_APP_LINK = 18;
     /**
      * Data Type: INT64. iOS app store ID.
      *
      * Generated from protobuf enum <code>IOS_APP_STORE_ID = 19;</code>
      */
-    const IOS_APP_STORE_ID = 19;
+    public const IOS_APP_STORE_ID = 19;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::LISTING_ID => 'LISTING_ID',
@@ -176,7 +176,7 @@ class RealEstatePlaceholderField
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -184,10 +184,10 @@ class RealEstatePlaceholderField
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

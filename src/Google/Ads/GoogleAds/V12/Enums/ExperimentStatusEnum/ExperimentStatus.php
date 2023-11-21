@@ -18,59 +18,59 @@ class ExperimentStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The experiment is enabled.
      *
      * Generated from protobuf enum <code>ENABLED = 2;</code>
      */
-    const ENABLED = 2;
+    public const ENABLED = 2;
     /**
      * The experiment has been removed.
      *
      * Generated from protobuf enum <code>REMOVED = 3;</code>
      */
-    const REMOVED = 3;
+    public const REMOVED = 3;
     /**
      * The experiment has been halted.
      * This status can be set from ENABLED status through API.
      *
      * Generated from protobuf enum <code>HALTED = 4;</code>
      */
-    const HALTED = 4;
+    public const HALTED = 4;
     /**
      * The experiment will be promoted out of experimental status.
      *
      * Generated from protobuf enum <code>PROMOTED = 5;</code>
      */
-    const PROMOTED = 5;
+    public const PROMOTED = 5;
     /**
      * Initial status of the experiment.
      *
      * Generated from protobuf enum <code>SETUP = 6;</code>
      */
-    const SETUP = 6;
+    public const SETUP = 6;
     /**
      * The experiment's campaigns are pending materialization.
      * This status can be set from SETUP status through API.
      *
      * Generated from protobuf enum <code>INITIATED = 7;</code>
      */
-    const INITIATED = 7;
+    public const INITIATED = 7;
     /**
      * The experiment has been graduated.
      *
      * Generated from protobuf enum <code>GRADUATED = 8;</code>
      */
-    const GRADUATED = 8;
+    public const GRADUATED = 8;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ENABLED => 'ENABLED',
@@ -86,7 +86,7 @@ class ExperimentStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -94,10 +94,10 @@ class ExperimentStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

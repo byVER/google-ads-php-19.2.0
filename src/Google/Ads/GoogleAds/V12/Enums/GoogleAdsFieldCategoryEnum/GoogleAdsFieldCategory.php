@@ -18,19 +18,19 @@ class GoogleAdsFieldCategory
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Unknown
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The described artifact is a resource.
      *
      * Generated from protobuf enum <code>RESOURCE = 2;</code>
      */
-    const RESOURCE = 2;
+    public const RESOURCE = 2;
     /**
      * The described artifact is a field and is an attribute of a resource.
      * Including a resource attribute field in a query may segment the query if
@@ -39,22 +39,22 @@ class GoogleAdsFieldCategory
      *
      * Generated from protobuf enum <code>ATTRIBUTE = 3;</code>
      */
-    const ATTRIBUTE = 3;
+    public const ATTRIBUTE = 3;
     /**
      * The described artifact is a field and always segments search queries.
      *
      * Generated from protobuf enum <code>SEGMENT = 5;</code>
      */
-    const SEGMENT = 5;
+    public const SEGMENT = 5;
     /**
      * The described artifact is a field and is a metric. It never segments
      * search queries.
      *
      * Generated from protobuf enum <code>METRIC = 6;</code>
      */
-    const METRIC = 6;
+    public const METRIC = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::RESOURCE => 'RESOURCE',
@@ -67,7 +67,7 @@ class GoogleAdsFieldCategory
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -75,10 +75,10 @@ class GoogleAdsFieldCategory
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

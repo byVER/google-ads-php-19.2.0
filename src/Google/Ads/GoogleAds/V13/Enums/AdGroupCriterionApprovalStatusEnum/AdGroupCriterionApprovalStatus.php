@@ -18,39 +18,39 @@ class AdGroupCriterionApprovalStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Approved.
      *
      * Generated from protobuf enum <code>APPROVED = 2;</code>
      */
-    const APPROVED = 2;
+    public const APPROVED = 2;
     /**
      * Disapproved.
      *
      * Generated from protobuf enum <code>DISAPPROVED = 3;</code>
      */
-    const DISAPPROVED = 3;
+    public const DISAPPROVED = 3;
     /**
      * Pending Review.
      *
      * Generated from protobuf enum <code>PENDING_REVIEW = 4;</code>
      */
-    const PENDING_REVIEW = 4;
+    public const PENDING_REVIEW = 4;
     /**
      * Under review.
      *
      * Generated from protobuf enum <code>UNDER_REVIEW = 5;</code>
      */
-    const UNDER_REVIEW = 5;
+    public const UNDER_REVIEW = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::APPROVED => 'APPROVED',
@@ -63,7 +63,7 @@ class AdGroupCriterionApprovalStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -71,10 +71,10 @@ class AdGroupCriterionApprovalStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

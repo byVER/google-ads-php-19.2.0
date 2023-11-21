@@ -87,7 +87,7 @@ class TargetCpaOptInRecommendationOption extends \Google\Protobuf\Internal\Messa
      */
     public function setGoal($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\TargetCpaOptInRecommendationGoalEnum\TargetCpaOptInRecommendationGoal::class);
+        GPBUtil::checkEnum($var);
         $this->goal = $var;
 
         return $this;
@@ -101,7 +101,7 @@ class TargetCpaOptInRecommendationOption extends \Google\Protobuf\Internal\Messa
      */
     public function getTargetCpaMicros()
     {
-        return isset($this->target_cpa_micros) ? $this->target_cpa_micros : 0;
+        return $this->target_cpa_micros ?? 0;
     }
 
     public function hasTargetCpaMicros()
@@ -140,7 +140,7 @@ class TargetCpaOptInRecommendationOption extends \Google\Protobuf\Internal\Messa
      */
     public function getRequiredCampaignBudgetAmountMicros()
     {
-        return isset($this->required_campaign_budget_amount_micros) ? $this->required_campaign_budget_amount_micros : 0;
+        return $this->required_campaign_budget_amount_micros ?? 0;
     }
 
     public function hasRequiredCampaignBudgetAmountMicros()

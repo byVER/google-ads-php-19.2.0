@@ -46,7 +46,7 @@ class ConversionValueRuleSetServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.ConversionValueRuleSetService/MutateConversionValueRuleSets',
         $argument,
-        ['\Google\Ads\GoogleAds\V13\Services\MutateConversionValueRuleSetsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V13\Services\MutateConversionValueRuleSetsResponse::class, 'decode'],
         $metadata, $options);
     }
 

@@ -19,27 +19,27 @@ class ApplyScope
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Unknown.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Apply at the customer scope.
      *
      * Generated from protobuf enum <code>CUSTOMER = 2;</code>
      */
-    const CUSTOMER = 2;
+    public const CUSTOMER = 2;
     /**
      * Apply at the campaign scope.
      *
      * Generated from protobuf enum <code>CAMPAIGN = 3;</code>
      */
-    const CAMPAIGN = 3;
+    public const CAMPAIGN = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CUSTOMER => 'CUSTOMER',
@@ -50,7 +50,7 @@ class ApplyScope
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -58,10 +58,10 @@ class ApplyScope
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

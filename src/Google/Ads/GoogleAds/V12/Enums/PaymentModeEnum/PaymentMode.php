@@ -18,19 +18,19 @@ class PaymentMode
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Pay per interaction.
      *
      * Generated from protobuf enum <code>CLICKS = 4;</code>
      */
-    const CLICKS = 4;
+    public const CLICKS = 4;
     /**
      * Pay per conversion value. This mode is only supported by campaigns with
      * AdvertisingChannelType.HOTEL, BiddingStrategyType.COMMISSION, and
@@ -38,7 +38,7 @@ class PaymentMode
      *
      * Generated from protobuf enum <code>CONVERSION_VALUE = 5;</code>
      */
-    const CONVERSION_VALUE = 5;
+    public const CONVERSION_VALUE = 5;
     /**
      * Pay per conversion. This mode is only supported by campaigns with
      * AdvertisingChannelType.DISPLAY (excluding
@@ -48,7 +48,7 @@ class PaymentMode
      *
      * Generated from protobuf enum <code>CONVERSIONS = 6;</code>
      */
-    const CONVERSIONS = 6;
+    public const CONVERSIONS = 6;
     /**
      * Pay per guest stay value. This mode is only supported by campaigns with
      * AdvertisingChannelType.HOTEL, BiddingStrategyType.COMMISSION, and
@@ -56,9 +56,9 @@ class PaymentMode
      *
      * Generated from protobuf enum <code>GUEST_STAY = 7;</code>
      */
-    const GUEST_STAY = 7;
+    public const GUEST_STAY = 7;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CLICKS => 'CLICKS',
@@ -71,7 +71,7 @@ class PaymentMode
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -79,10 +79,10 @@ class PaymentMode
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

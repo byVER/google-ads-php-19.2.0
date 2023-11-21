@@ -18,36 +18,36 @@ class DatabaseError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Multiple requests were attempting to modify the same resource at once.
      * Retry the request.
      *
      * Generated from protobuf enum <code>CONCURRENT_MODIFICATION = 2;</code>
      */
-    const CONCURRENT_MODIFICATION = 2;
+    public const CONCURRENT_MODIFICATION = 2;
     /**
      * The request conflicted with existing data. This error will usually be
      * replaced with a more specific error if the request is retried.
      *
      * Generated from protobuf enum <code>DATA_CONSTRAINT_VIOLATION = 3;</code>
      */
-    const DATA_CONSTRAINT_VIOLATION = 3;
+    public const DATA_CONSTRAINT_VIOLATION = 3;
     /**
      * The data written is too large. Split the request into smaller
      * requests.
      *
      * Generated from protobuf enum <code>REQUEST_TOO_LARGE = 4;</code>
      */
-    const REQUEST_TOO_LARGE = 4;
+    public const REQUEST_TOO_LARGE = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CONCURRENT_MODIFICATION => 'CONCURRENT_MODIFICATION',
@@ -59,7 +59,7 @@ class DatabaseError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -67,10 +67,10 @@ class DatabaseError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

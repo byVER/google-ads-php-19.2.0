@@ -18,47 +18,47 @@ class AssetSetLinkError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Advertising channel type cannot be attached to the asset set due to
      * channel-based restrictions.
      *
      * Generated from protobuf enum <code>INCOMPATIBLE_ADVERTISING_CHANNEL_TYPE = 2;</code>
      */
-    const INCOMPATIBLE_ADVERTISING_CHANNEL_TYPE = 2;
+    public const INCOMPATIBLE_ADVERTISING_CHANNEL_TYPE = 2;
     /**
      * For this asset set type, only one campaign to feed linkage is allowed.
      *
      * Generated from protobuf enum <code>DUPLICATE_FEED_LINK = 3;</code>
      */
-    const DUPLICATE_FEED_LINK = 3;
+    public const DUPLICATE_FEED_LINK = 3;
     /**
      * The asset set type and campaign type are incompatible.
      *
      * Generated from protobuf enum <code>INCOMPATIBLE_ASSET_SET_TYPE_WITH_CAMPAIGN_TYPE = 4;</code>
      */
-    const INCOMPATIBLE_ASSET_SET_TYPE_WITH_CAMPAIGN_TYPE = 4;
+    public const INCOMPATIBLE_ASSET_SET_TYPE_WITH_CAMPAIGN_TYPE = 4;
     /**
      * Cannot link duplicate asset sets to the same campaign.
      *
      * Generated from protobuf enum <code>DUPLICATE_ASSET_SET_LINK = 5;</code>
      */
-    const DUPLICATE_ASSET_SET_LINK = 5;
+    public const DUPLICATE_ASSET_SET_LINK = 5;
     /**
      * Cannot remove the asset set link. If a campaign is linked with only one
      * asset set and you attempt to unlink them, this error will be triggered.
      *
      * Generated from protobuf enum <code>ASSET_SET_LINK_CANNOT_BE_REMOVED = 6;</code>
      */
-    const ASSET_SET_LINK_CANNOT_BE_REMOVED = 6;
+    public const ASSET_SET_LINK_CANNOT_BE_REMOVED = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INCOMPATIBLE_ADVERTISING_CHANNEL_TYPE => 'INCOMPATIBLE_ADVERTISING_CHANNEL_TYPE',
@@ -72,7 +72,7 @@ class AssetSetLinkError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -80,10 +80,10 @@ class AssetSetLinkError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

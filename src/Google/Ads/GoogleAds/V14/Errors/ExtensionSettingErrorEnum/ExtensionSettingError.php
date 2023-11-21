@@ -18,334 +18,334 @@ class ExtensionSettingError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * A platform restriction was provided without input extensions or existing
      * extensions.
      *
      * Generated from protobuf enum <code>EXTENSIONS_REQUIRED = 2;</code>
      */
-    const EXTENSIONS_REQUIRED = 2;
+    public const EXTENSIONS_REQUIRED = 2;
     /**
      * The provided feed type does not correspond to the provided extensions.
      *
      * Generated from protobuf enum <code>FEED_TYPE_EXTENSION_TYPE_MISMATCH = 3;</code>
      */
-    const FEED_TYPE_EXTENSION_TYPE_MISMATCH = 3;
+    public const FEED_TYPE_EXTENSION_TYPE_MISMATCH = 3;
     /**
      * The provided feed type cannot be used.
      *
      * Generated from protobuf enum <code>INVALID_FEED_TYPE = 4;</code>
      */
-    const INVALID_FEED_TYPE = 4;
+    public const INVALID_FEED_TYPE = 4;
     /**
      * The provided feed type cannot be used at the customer level.
      *
      * Generated from protobuf enum <code>INVALID_FEED_TYPE_FOR_CUSTOMER_EXTENSION_SETTING = 5;</code>
      */
-    const INVALID_FEED_TYPE_FOR_CUSTOMER_EXTENSION_SETTING = 5;
+    public const INVALID_FEED_TYPE_FOR_CUSTOMER_EXTENSION_SETTING = 5;
     /**
      * Cannot change a feed item field on a CREATE operation.
      *
      * Generated from protobuf enum <code>CANNOT_CHANGE_FEED_ITEM_ON_CREATE = 6;</code>
      */
-    const CANNOT_CHANGE_FEED_ITEM_ON_CREATE = 6;
+    public const CANNOT_CHANGE_FEED_ITEM_ON_CREATE = 6;
     /**
      * Cannot update an extension that is not already in this setting.
      *
      * Generated from protobuf enum <code>CANNOT_UPDATE_NEWLY_CREATED_EXTENSION = 7;</code>
      */
-    const CANNOT_UPDATE_NEWLY_CREATED_EXTENSION = 7;
+    public const CANNOT_UPDATE_NEWLY_CREATED_EXTENSION = 7;
     /**
      * There is no existing AdGroupExtensionSetting for this type.
      *
      * Generated from protobuf enum <code>NO_EXISTING_AD_GROUP_EXTENSION_SETTING_FOR_TYPE = 8;</code>
      */
-    const NO_EXISTING_AD_GROUP_EXTENSION_SETTING_FOR_TYPE = 8;
+    public const NO_EXISTING_AD_GROUP_EXTENSION_SETTING_FOR_TYPE = 8;
     /**
      * There is no existing CampaignExtensionSetting for this type.
      *
      * Generated from protobuf enum <code>NO_EXISTING_CAMPAIGN_EXTENSION_SETTING_FOR_TYPE = 9;</code>
      */
-    const NO_EXISTING_CAMPAIGN_EXTENSION_SETTING_FOR_TYPE = 9;
+    public const NO_EXISTING_CAMPAIGN_EXTENSION_SETTING_FOR_TYPE = 9;
     /**
      * There is no existing CustomerExtensionSetting for this type.
      *
      * Generated from protobuf enum <code>NO_EXISTING_CUSTOMER_EXTENSION_SETTING_FOR_TYPE = 10;</code>
      */
-    const NO_EXISTING_CUSTOMER_EXTENSION_SETTING_FOR_TYPE = 10;
+    public const NO_EXISTING_CUSTOMER_EXTENSION_SETTING_FOR_TYPE = 10;
     /**
      * The AdGroupExtensionSetting already exists. UPDATE should be used to
      * modify the existing AdGroupExtensionSetting.
      *
      * Generated from protobuf enum <code>AD_GROUP_EXTENSION_SETTING_ALREADY_EXISTS = 11;</code>
      */
-    const AD_GROUP_EXTENSION_SETTING_ALREADY_EXISTS = 11;
+    public const AD_GROUP_EXTENSION_SETTING_ALREADY_EXISTS = 11;
     /**
      * The CampaignExtensionSetting already exists. UPDATE should be used to
      * modify the existing CampaignExtensionSetting.
      *
      * Generated from protobuf enum <code>CAMPAIGN_EXTENSION_SETTING_ALREADY_EXISTS = 12;</code>
      */
-    const CAMPAIGN_EXTENSION_SETTING_ALREADY_EXISTS = 12;
+    public const CAMPAIGN_EXTENSION_SETTING_ALREADY_EXISTS = 12;
     /**
      * The CustomerExtensionSetting already exists. UPDATE should be used to
      * modify the existing CustomerExtensionSetting.
      *
      * Generated from protobuf enum <code>CUSTOMER_EXTENSION_SETTING_ALREADY_EXISTS = 13;</code>
      */
-    const CUSTOMER_EXTENSION_SETTING_ALREADY_EXISTS = 13;
+    public const CUSTOMER_EXTENSION_SETTING_ALREADY_EXISTS = 13;
     /**
      * An active ad group feed already exists for this place holder type.
      *
      * Generated from protobuf enum <code>AD_GROUP_FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 14;</code>
      */
-    const AD_GROUP_FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 14;
+    public const AD_GROUP_FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 14;
     /**
      * An active campaign feed already exists for this place holder type.
      *
      * Generated from protobuf enum <code>CAMPAIGN_FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 15;</code>
      */
-    const CAMPAIGN_FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 15;
+    public const CAMPAIGN_FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 15;
     /**
      * An active customer feed already exists for this place holder type.
      *
      * Generated from protobuf enum <code>CUSTOMER_FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 16;</code>
      */
-    const CUSTOMER_FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 16;
+    public const CUSTOMER_FEED_ALREADY_EXISTS_FOR_PLACEHOLDER_TYPE = 16;
     /**
      * Value is not within the accepted range.
      *
      * Generated from protobuf enum <code>VALUE_OUT_OF_RANGE = 17;</code>
      */
-    const VALUE_OUT_OF_RANGE = 17;
+    public const VALUE_OUT_OF_RANGE = 17;
     /**
      * Cannot simultaneously set specified field with final urls.
      *
      * Generated from protobuf enum <code>CANNOT_SET_FIELD_WITH_FINAL_URLS = 18;</code>
      */
-    const CANNOT_SET_FIELD_WITH_FINAL_URLS = 18;
+    public const CANNOT_SET_FIELD_WITH_FINAL_URLS = 18;
     /**
      * Must set field with final urls.
      *
      * Generated from protobuf enum <code>FINAL_URLS_NOT_SET = 19;</code>
      */
-    const FINAL_URLS_NOT_SET = 19;
+    public const FINAL_URLS_NOT_SET = 19;
     /**
      * Phone number for a call extension is invalid.
      *
      * Generated from protobuf enum <code>INVALID_PHONE_NUMBER = 20;</code>
      */
-    const INVALID_PHONE_NUMBER = 20;
+    public const INVALID_PHONE_NUMBER = 20;
     /**
      * Phone number for a call extension is not supported for the given country
      * code.
      *
      * Generated from protobuf enum <code>PHONE_NUMBER_NOT_SUPPORTED_FOR_COUNTRY = 21;</code>
      */
-    const PHONE_NUMBER_NOT_SUPPORTED_FOR_COUNTRY = 21;
+    public const PHONE_NUMBER_NOT_SUPPORTED_FOR_COUNTRY = 21;
     /**
      * A carrier specific number in short format is not allowed for call
      * extensions.
      *
      * Generated from protobuf enum <code>CARRIER_SPECIFIC_SHORT_NUMBER_NOT_ALLOWED = 22;</code>
      */
-    const CARRIER_SPECIFIC_SHORT_NUMBER_NOT_ALLOWED = 22;
+    public const CARRIER_SPECIFIC_SHORT_NUMBER_NOT_ALLOWED = 22;
     /**
      * Premium rate numbers are not allowed for call extensions.
      *
      * Generated from protobuf enum <code>PREMIUM_RATE_NUMBER_NOT_ALLOWED = 23;</code>
      */
-    const PREMIUM_RATE_NUMBER_NOT_ALLOWED = 23;
+    public const PREMIUM_RATE_NUMBER_NOT_ALLOWED = 23;
     /**
      * Phone number type for a call extension is not allowed.
      *
      * Generated from protobuf enum <code>DISALLOWED_NUMBER_TYPE = 24;</code>
      */
-    const DISALLOWED_NUMBER_TYPE = 24;
+    public const DISALLOWED_NUMBER_TYPE = 24;
     /**
      * Phone number for a call extension does not meet domestic format
      * requirements.
      *
      * Generated from protobuf enum <code>INVALID_DOMESTIC_PHONE_NUMBER_FORMAT = 25;</code>
      */
-    const INVALID_DOMESTIC_PHONE_NUMBER_FORMAT = 25;
+    public const INVALID_DOMESTIC_PHONE_NUMBER_FORMAT = 25;
     /**
      * Vanity phone numbers (for example, those including letters) are not
      * allowed for call extensions.
      *
      * Generated from protobuf enum <code>VANITY_PHONE_NUMBER_NOT_ALLOWED = 26;</code>
      */
-    const VANITY_PHONE_NUMBER_NOT_ALLOWED = 26;
+    public const VANITY_PHONE_NUMBER_NOT_ALLOWED = 26;
     /**
      * Country code provided for a call extension is invalid.
      *
      * Generated from protobuf enum <code>INVALID_COUNTRY_CODE = 27;</code>
      */
-    const INVALID_COUNTRY_CODE = 27;
+    public const INVALID_COUNTRY_CODE = 27;
     /**
      * Call conversion type id provided for a call extension is invalid.
      *
      * Generated from protobuf enum <code>INVALID_CALL_CONVERSION_TYPE_ID = 28;</code>
      */
-    const INVALID_CALL_CONVERSION_TYPE_ID = 28;
+    public const INVALID_CALL_CONVERSION_TYPE_ID = 28;
     /**
      * For a call extension, the customer is not on the allow-list for call
      * tracking.
      *
      * Generated from protobuf enum <code>CUSTOMER_NOT_IN_ALLOWLIST_FOR_CALLTRACKING = 69;</code>
      */
-    const CUSTOMER_NOT_IN_ALLOWLIST_FOR_CALLTRACKING = 69;
+    public const CUSTOMER_NOT_IN_ALLOWLIST_FOR_CALLTRACKING = 69;
     /**
      * Call tracking is not supported for the given country for a call
      * extension.
      *
      * Generated from protobuf enum <code>CALLTRACKING_NOT_SUPPORTED_FOR_COUNTRY = 30;</code>
      */
-    const CALLTRACKING_NOT_SUPPORTED_FOR_COUNTRY = 30;
+    public const CALLTRACKING_NOT_SUPPORTED_FOR_COUNTRY = 30;
     /**
      * App id provided for an app extension is invalid.
      *
      * Generated from protobuf enum <code>INVALID_APP_ID = 31;</code>
      */
-    const INVALID_APP_ID = 31;
+    public const INVALID_APP_ID = 31;
     /**
      * Quotation marks present in the review text for a review extension.
      *
      * Generated from protobuf enum <code>QUOTES_IN_REVIEW_EXTENSION_SNIPPET = 32;</code>
      */
-    const QUOTES_IN_REVIEW_EXTENSION_SNIPPET = 32;
+    public const QUOTES_IN_REVIEW_EXTENSION_SNIPPET = 32;
     /**
      * Hyphen character present in the review text for a review extension.
      *
      * Generated from protobuf enum <code>HYPHENS_IN_REVIEW_EXTENSION_SNIPPET = 33;</code>
      */
-    const HYPHENS_IN_REVIEW_EXTENSION_SNIPPET = 33;
+    public const HYPHENS_IN_REVIEW_EXTENSION_SNIPPET = 33;
     /**
      * A blocked review source name or url was provided for a review
      * extension.
      *
      * Generated from protobuf enum <code>REVIEW_EXTENSION_SOURCE_NOT_ELIGIBLE = 34;</code>
      */
-    const REVIEW_EXTENSION_SOURCE_NOT_ELIGIBLE = 34;
+    public const REVIEW_EXTENSION_SOURCE_NOT_ELIGIBLE = 34;
     /**
      * Review source name should not be found in the review text.
      *
      * Generated from protobuf enum <code>SOURCE_NAME_IN_REVIEW_EXTENSION_TEXT = 35;</code>
      */
-    const SOURCE_NAME_IN_REVIEW_EXTENSION_TEXT = 35;
+    public const SOURCE_NAME_IN_REVIEW_EXTENSION_TEXT = 35;
     /**
      * Field must be set.
      *
      * Generated from protobuf enum <code>MISSING_FIELD = 36;</code>
      */
-    const MISSING_FIELD = 36;
+    public const MISSING_FIELD = 36;
     /**
      * Inconsistent currency codes.
      *
      * Generated from protobuf enum <code>INCONSISTENT_CURRENCY_CODES = 37;</code>
      */
-    const INCONSISTENT_CURRENCY_CODES = 37;
+    public const INCONSISTENT_CURRENCY_CODES = 37;
     /**
      * Price extension cannot have duplicated headers.
      *
      * Generated from protobuf enum <code>PRICE_EXTENSION_HAS_DUPLICATED_HEADERS = 38;</code>
      */
-    const PRICE_EXTENSION_HAS_DUPLICATED_HEADERS = 38;
+    public const PRICE_EXTENSION_HAS_DUPLICATED_HEADERS = 38;
     /**
      * Price item cannot have duplicated header and description.
      *
      * Generated from protobuf enum <code>PRICE_ITEM_HAS_DUPLICATED_HEADER_AND_DESCRIPTION = 39;</code>
      */
-    const PRICE_ITEM_HAS_DUPLICATED_HEADER_AND_DESCRIPTION = 39;
+    public const PRICE_ITEM_HAS_DUPLICATED_HEADER_AND_DESCRIPTION = 39;
     /**
      * Price extension has too few items
      *
      * Generated from protobuf enum <code>PRICE_EXTENSION_HAS_TOO_FEW_ITEMS = 40;</code>
      */
-    const PRICE_EXTENSION_HAS_TOO_FEW_ITEMS = 40;
+    public const PRICE_EXTENSION_HAS_TOO_FEW_ITEMS = 40;
     /**
      * Price extension has too many items
      *
      * Generated from protobuf enum <code>PRICE_EXTENSION_HAS_TOO_MANY_ITEMS = 41;</code>
      */
-    const PRICE_EXTENSION_HAS_TOO_MANY_ITEMS = 41;
+    public const PRICE_EXTENSION_HAS_TOO_MANY_ITEMS = 41;
     /**
      * The input value is not currently supported.
      *
      * Generated from protobuf enum <code>UNSUPPORTED_VALUE = 42;</code>
      */
-    const UNSUPPORTED_VALUE = 42;
+    public const UNSUPPORTED_VALUE = 42;
     /**
      * Unknown or unsupported device preference.
      *
      * Generated from protobuf enum <code>INVALID_DEVICE_PREFERENCE = 43;</code>
      */
-    const INVALID_DEVICE_PREFERENCE = 43;
+    public const INVALID_DEVICE_PREFERENCE = 43;
     /**
      * Invalid feed item schedule end time (for example, endHour = 24 and
      * endMinute != 0).
      *
      * Generated from protobuf enum <code>INVALID_SCHEDULE_END = 45;</code>
      */
-    const INVALID_SCHEDULE_END = 45;
+    public const INVALID_SCHEDULE_END = 45;
     /**
      * Date time zone does not match the account's time zone.
      *
      * Generated from protobuf enum <code>DATE_TIME_MUST_BE_IN_ACCOUNT_TIME_ZONE = 47;</code>
      */
-    const DATE_TIME_MUST_BE_IN_ACCOUNT_TIME_ZONE = 47;
+    public const DATE_TIME_MUST_BE_IN_ACCOUNT_TIME_ZONE = 47;
     /**
      * Overlapping feed item schedule times (for example, 7-10AM and 8-11AM) are
      * not allowed.
      *
      * Generated from protobuf enum <code>OVERLAPPING_SCHEDULES_NOT_ALLOWED = 48;</code>
      */
-    const OVERLAPPING_SCHEDULES_NOT_ALLOWED = 48;
+    public const OVERLAPPING_SCHEDULES_NOT_ALLOWED = 48;
     /**
      * Feed item schedule end time must be after start time.
      *
      * Generated from protobuf enum <code>SCHEDULE_END_NOT_AFTER_START = 49;</code>
      */
-    const SCHEDULE_END_NOT_AFTER_START = 49;
+    public const SCHEDULE_END_NOT_AFTER_START = 49;
     /**
      * There are too many feed item schedules per day.
      *
      * Generated from protobuf enum <code>TOO_MANY_SCHEDULES_PER_DAY = 50;</code>
      */
-    const TOO_MANY_SCHEDULES_PER_DAY = 50;
+    public const TOO_MANY_SCHEDULES_PER_DAY = 50;
     /**
      * Cannot edit the same extension feed item more than once in the same
      * request.
      *
      * Generated from protobuf enum <code>DUPLICATE_EXTENSION_FEED_ITEM_EDIT = 51;</code>
      */
-    const DUPLICATE_EXTENSION_FEED_ITEM_EDIT = 51;
+    public const DUPLICATE_EXTENSION_FEED_ITEM_EDIT = 51;
     /**
      * Invalid structured snippet header.
      *
      * Generated from protobuf enum <code>INVALID_SNIPPETS_HEADER = 52;</code>
      */
-    const INVALID_SNIPPETS_HEADER = 52;
+    public const INVALID_SNIPPETS_HEADER = 52;
     /**
      * Phone number with call tracking enabled is not supported for the
      * specified country.
      *
      * Generated from protobuf enum <code>PHONE_NUMBER_NOT_SUPPORTED_WITH_CALLTRACKING_FOR_COUNTRY = 53;</code>
      */
-    const PHONE_NUMBER_NOT_SUPPORTED_WITH_CALLTRACKING_FOR_COUNTRY = 53;
+    public const PHONE_NUMBER_NOT_SUPPORTED_WITH_CALLTRACKING_FOR_COUNTRY = 53;
     /**
      * The targeted adgroup must belong to the targeted campaign.
      *
      * Generated from protobuf enum <code>CAMPAIGN_TARGETING_MISMATCH = 54;</code>
      */
-    const CAMPAIGN_TARGETING_MISMATCH = 54;
+    public const CAMPAIGN_TARGETING_MISMATCH = 54;
     /**
      * The feed used by the ExtensionSetting is removed and cannot be operated
      * on. Remove the ExtensionSetting to allow a new one to be created using
@@ -353,13 +353,13 @@ class ExtensionSettingError
      *
      * Generated from protobuf enum <code>CANNOT_OPERATE_ON_REMOVED_FEED = 55;</code>
      */
-    const CANNOT_OPERATE_ON_REMOVED_FEED = 55;
+    public const CANNOT_OPERATE_ON_REMOVED_FEED = 55;
     /**
      * The ExtensionFeedItem type is required for this operation.
      *
      * Generated from protobuf enum <code>EXTENSION_TYPE_REQUIRED = 56;</code>
      */
-    const EXTENSION_TYPE_REQUIRED = 56;
+    public const EXTENSION_TYPE_REQUIRED = 56;
     /**
      * The matching function that links the extension feed to the customer,
      * campaign, or ad group is not compatible with the ExtensionSetting
@@ -367,55 +367,55 @@ class ExtensionSettingError
      *
      * Generated from protobuf enum <code>INCOMPATIBLE_UNDERLYING_MATCHING_FUNCTION = 57;</code>
      */
-    const INCOMPATIBLE_UNDERLYING_MATCHING_FUNCTION = 57;
+    public const INCOMPATIBLE_UNDERLYING_MATCHING_FUNCTION = 57;
     /**
      * Start date must be before end date.
      *
      * Generated from protobuf enum <code>START_DATE_AFTER_END_DATE = 58;</code>
      */
-    const START_DATE_AFTER_END_DATE = 58;
+    public const START_DATE_AFTER_END_DATE = 58;
     /**
      * Input price is not in a valid format.
      *
      * Generated from protobuf enum <code>INVALID_PRICE_FORMAT = 59;</code>
      */
-    const INVALID_PRICE_FORMAT = 59;
+    public const INVALID_PRICE_FORMAT = 59;
     /**
      * The promotion time is invalid.
      *
      * Generated from protobuf enum <code>PROMOTION_INVALID_TIME = 60;</code>
      */
-    const PROMOTION_INVALID_TIME = 60;
+    public const PROMOTION_INVALID_TIME = 60;
     /**
      * Cannot set both percent discount and money discount fields.
      *
      * Generated from protobuf enum <code>PROMOTION_CANNOT_SET_PERCENT_DISCOUNT_AND_MONEY_DISCOUNT = 61;</code>
      */
-    const PROMOTION_CANNOT_SET_PERCENT_DISCOUNT_AND_MONEY_DISCOUNT = 61;
+    public const PROMOTION_CANNOT_SET_PERCENT_DISCOUNT_AND_MONEY_DISCOUNT = 61;
     /**
      * Cannot set both promotion code and orders over amount fields.
      *
      * Generated from protobuf enum <code>PROMOTION_CANNOT_SET_PROMOTION_CODE_AND_ORDERS_OVER_AMOUNT = 62;</code>
      */
-    const PROMOTION_CANNOT_SET_PROMOTION_CODE_AND_ORDERS_OVER_AMOUNT = 62;
+    public const PROMOTION_CANNOT_SET_PROMOTION_CODE_AND_ORDERS_OVER_AMOUNT = 62;
     /**
      * This field has too many decimal places specified.
      *
      * Generated from protobuf enum <code>TOO_MANY_DECIMAL_PLACES_SPECIFIED = 63;</code>
      */
-    const TOO_MANY_DECIMAL_PLACES_SPECIFIED = 63;
+    public const TOO_MANY_DECIMAL_PLACES_SPECIFIED = 63;
     /**
      * The language code is not valid.
      *
      * Generated from protobuf enum <code>INVALID_LANGUAGE_CODE = 64;</code>
      */
-    const INVALID_LANGUAGE_CODE = 64;
+    public const INVALID_LANGUAGE_CODE = 64;
     /**
      * The language is not supported.
      *
      * Generated from protobuf enum <code>UNSUPPORTED_LANGUAGE = 65;</code>
      */
-    const UNSUPPORTED_LANGUAGE = 65;
+    public const UNSUPPORTED_LANGUAGE = 65;
     /**
      * Customer hasn't consented for call recording, which is required for
      * adding/updating call extensions. See
@@ -423,22 +423,22 @@ class ExtensionSettingError
      *
      * Generated from protobuf enum <code>CUSTOMER_CONSENT_FOR_CALL_RECORDING_REQUIRED = 66;</code>
      */
-    const CUSTOMER_CONSENT_FOR_CALL_RECORDING_REQUIRED = 66;
+    public const CUSTOMER_CONSENT_FOR_CALL_RECORDING_REQUIRED = 66;
     /**
      * The UPDATE operation does not specify any fields other than the resource
      * name in the update mask.
      *
      * Generated from protobuf enum <code>EXTENSION_SETTING_UPDATE_IS_A_NOOP = 67;</code>
      */
-    const EXTENSION_SETTING_UPDATE_IS_A_NOOP = 67;
+    public const EXTENSION_SETTING_UPDATE_IS_A_NOOP = 67;
     /**
      * The extension contains text which has been prohibited on policy grounds.
      *
      * Generated from protobuf enum <code>DISALLOWED_TEXT = 68;</code>
      */
-    const DISALLOWED_TEXT = 68;
+    public const DISALLOWED_TEXT = 68;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::EXTENSIONS_REQUIRED => 'EXTENSIONS_REQUIRED',
@@ -512,7 +512,7 @@ class ExtensionSettingError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -520,10 +520,10 @@ class ExtensionSettingError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

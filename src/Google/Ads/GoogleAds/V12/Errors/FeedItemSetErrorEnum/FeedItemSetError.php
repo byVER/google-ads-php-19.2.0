@@ -18,19 +18,19 @@ class FeedItemSetError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The given ID refers to a removed FeedItemSet.
      *
      * Generated from protobuf enum <code>FEED_ITEM_SET_REMOVED = 2;</code>
      */
-    const FEED_ITEM_SET_REMOVED = 2;
+    public const FEED_ITEM_SET_REMOVED = 2;
     /**
      * The dynamic filter of a feed item set cannot be cleared on UPDATE if it
      * exists. A set is either static or dynamic once added, and that cannot
@@ -38,7 +38,7 @@ class FeedItemSetError
      *
      * Generated from protobuf enum <code>CANNOT_CLEAR_DYNAMIC_FILTER = 3;</code>
      */
-    const CANNOT_CLEAR_DYNAMIC_FILTER = 3;
+    public const CANNOT_CLEAR_DYNAMIC_FILTER = 3;
     /**
      * The dynamic filter of a feed item set cannot be created on UPDATE if it
      * does not exist. A set is either static or dynamic once added, and that
@@ -46,19 +46,19 @@ class FeedItemSetError
      *
      * Generated from protobuf enum <code>CANNOT_CREATE_DYNAMIC_FILTER = 4;</code>
      */
-    const CANNOT_CREATE_DYNAMIC_FILTER = 4;
+    public const CANNOT_CREATE_DYNAMIC_FILTER = 4;
     /**
      * FeedItemSets can only be made for location or affiliate location feeds.
      *
      * Generated from protobuf enum <code>INVALID_FEED_TYPE = 5;</code>
      */
-    const INVALID_FEED_TYPE = 5;
+    public const INVALID_FEED_TYPE = 5;
     /**
      * FeedItemSets duplicate name. Name should be unique within an account.
      *
      * Generated from protobuf enum <code>DUPLICATE_NAME = 6;</code>
      */
-    const DUPLICATE_NAME = 6;
+    public const DUPLICATE_NAME = 6;
     /**
      * The feed type of the parent Feed is not compatible with the type of
      * dynamic filter being set. For example, you can only set
@@ -66,15 +66,15 @@ class FeedItemSetError
      *
      * Generated from protobuf enum <code>WRONG_DYNAMIC_FILTER_FOR_FEED_TYPE = 7;</code>
      */
-    const WRONG_DYNAMIC_FILTER_FOR_FEED_TYPE = 7;
+    public const WRONG_DYNAMIC_FILTER_FOR_FEED_TYPE = 7;
     /**
      * Chain ID specified for AffiliateLocationFeedData is invalid.
      *
      * Generated from protobuf enum <code>DYNAMIC_FILTER_INVALID_CHAIN_IDS = 8;</code>
      */
-    const DYNAMIC_FILTER_INVALID_CHAIN_IDS = 8;
+    public const DYNAMIC_FILTER_INVALID_CHAIN_IDS = 8;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::FEED_ITEM_SET_REMOVED => 'FEED_ITEM_SET_REMOVED',
@@ -90,7 +90,7 @@ class FeedItemSetError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -98,10 +98,10 @@ class FeedItemSetError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

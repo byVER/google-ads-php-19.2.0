@@ -54,7 +54,7 @@ class MerchantCenterLinkServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.MerchantCenterLinkService/ListMerchantCenterLinks',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\ListMerchantCenterLinksResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\ListMerchantCenterLinksResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -77,7 +77,7 @@ class MerchantCenterLinkServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.MerchantCenterLinkService/GetMerchantCenterLink',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Resources\MerchantCenterLink', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Resources\MerchantCenterLink::class, 'decode'],
         $metadata, $options);
     }
 
@@ -101,7 +101,7 @@ class MerchantCenterLinkServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.MerchantCenterLinkService/MutateMerchantCenterLink',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\MutateMerchantCenterLinkResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\MutateMerchantCenterLinkResponse::class, 'decode'],
         $metadata, $options);
     }
 

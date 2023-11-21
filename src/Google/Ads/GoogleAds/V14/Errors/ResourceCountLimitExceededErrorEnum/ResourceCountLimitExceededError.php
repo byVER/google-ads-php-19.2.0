@@ -18,13 +18,13 @@ class ResourceCountLimitExceededError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Indicates that this request would exceed the number of allowed resources
      * for the Google Ads account. The exact resource type and limit being
@@ -32,7 +32,7 @@ class ResourceCountLimitExceededError
      *
      * Generated from protobuf enum <code>ACCOUNT_LIMIT = 2;</code>
      */
-    const ACCOUNT_LIMIT = 2;
+    public const ACCOUNT_LIMIT = 2;
     /**
      * Indicates that this request would exceed the number of allowed resources
      * in a Campaign. The exact resource type and limit being checked can be
@@ -41,7 +41,7 @@ class ResourceCountLimitExceededError
      *
      * Generated from protobuf enum <code>CAMPAIGN_LIMIT = 3;</code>
      */
-    const CAMPAIGN_LIMIT = 3;
+    public const CAMPAIGN_LIMIT = 3;
     /**
      * Indicates that this request would exceed the number of allowed resources
      * in an ad group. The exact resource type and limit being checked can be
@@ -50,7 +50,7 @@ class ResourceCountLimitExceededError
      *
      * Generated from protobuf enum <code>ADGROUP_LIMIT = 4;</code>
      */
-    const ADGROUP_LIMIT = 4;
+    public const ADGROUP_LIMIT = 4;
     /**
      * Indicates that this request would exceed the number of allowed resources
      * in an ad group ad. The exact resource type and limit being checked can
@@ -60,7 +60,7 @@ class ResourceCountLimitExceededError
      *
      * Generated from protobuf enum <code>AD_GROUP_AD_LIMIT = 5;</code>
      */
-    const AD_GROUP_AD_LIMIT = 5;
+    public const AD_GROUP_AD_LIMIT = 5;
     /**
      * Indicates that this request would exceed the number of allowed resources
      * in an ad group criterion. The exact resource type and limit being checked
@@ -70,7 +70,7 @@ class ResourceCountLimitExceededError
      *
      * Generated from protobuf enum <code>AD_GROUP_CRITERION_LIMIT = 6;</code>
      */
-    const AD_GROUP_CRITERION_LIMIT = 6;
+    public const AD_GROUP_CRITERION_LIMIT = 6;
     /**
      * Indicates that this request would exceed the number of allowed resources
      * in this shared set. The exact resource type and limit being checked can
@@ -79,20 +79,20 @@ class ResourceCountLimitExceededError
      *
      * Generated from protobuf enum <code>SHARED_SET_LIMIT = 7;</code>
      */
-    const SHARED_SET_LIMIT = 7;
+    public const SHARED_SET_LIMIT = 7;
     /**
      * Exceeds a limit related to a matching function.
      *
      * Generated from protobuf enum <code>MATCHING_FUNCTION_LIMIT = 8;</code>
      */
-    const MATCHING_FUNCTION_LIMIT = 8;
+    public const MATCHING_FUNCTION_LIMIT = 8;
     /**
      * The response for this request would exceed the maximum number of rows
      * that can be returned.
      *
      * Generated from protobuf enum <code>RESPONSE_ROW_LIMIT_EXCEEDED = 9;</code>
      */
-    const RESPONSE_ROW_LIMIT_EXCEEDED = 9;
+    public const RESPONSE_ROW_LIMIT_EXCEEDED = 9;
     /**
      * This request would exceed a limit on the number of allowed resources.
      * The details of which type of limit was exceeded will eventually be
@@ -100,9 +100,9 @@ class ResourceCountLimitExceededError
      *
      * Generated from protobuf enum <code>RESOURCE_LIMIT = 10;</code>
      */
-    const RESOURCE_LIMIT = 10;
+    public const RESOURCE_LIMIT = 10;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ACCOUNT_LIMIT => 'ACCOUNT_LIMIT',
@@ -120,7 +120,7 @@ class ResourceCountLimitExceededError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -128,10 +128,10 @@ class ResourceCountLimitExceededError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

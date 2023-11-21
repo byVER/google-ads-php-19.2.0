@@ -18,75 +18,75 @@ class FeedItemError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Cannot convert the feed attribute value from string to its real type.
      *
      * Generated from protobuf enum <code>CANNOT_CONVERT_ATTRIBUTE_VALUE_FROM_STRING = 2;</code>
      */
-    const CANNOT_CONVERT_ATTRIBUTE_VALUE_FROM_STRING = 2;
+    public const CANNOT_CONVERT_ATTRIBUTE_VALUE_FROM_STRING = 2;
     /**
      * Cannot operate on removed feed item.
      *
      * Generated from protobuf enum <code>CANNOT_OPERATE_ON_REMOVED_FEED_ITEM = 3;</code>
      */
-    const CANNOT_OPERATE_ON_REMOVED_FEED_ITEM = 3;
+    public const CANNOT_OPERATE_ON_REMOVED_FEED_ITEM = 3;
     /**
      * Date time zone does not match the account's time zone.
      *
      * Generated from protobuf enum <code>DATE_TIME_MUST_BE_IN_ACCOUNT_TIME_ZONE = 4;</code>
      */
-    const DATE_TIME_MUST_BE_IN_ACCOUNT_TIME_ZONE = 4;
+    public const DATE_TIME_MUST_BE_IN_ACCOUNT_TIME_ZONE = 4;
     /**
      * Feed item with the key attributes could not be found.
      *
      * Generated from protobuf enum <code>KEY_ATTRIBUTES_NOT_FOUND = 5;</code>
      */
-    const KEY_ATTRIBUTES_NOT_FOUND = 5;
+    public const KEY_ATTRIBUTES_NOT_FOUND = 5;
     /**
      * Url feed attribute value is not valid.
      *
      * Generated from protobuf enum <code>INVALID_URL = 6;</code>
      */
-    const INVALID_URL = 6;
+    public const INVALID_URL = 6;
     /**
      * Some key attributes are missing.
      *
      * Generated from protobuf enum <code>MISSING_KEY_ATTRIBUTES = 7;</code>
      */
-    const MISSING_KEY_ATTRIBUTES = 7;
+    public const MISSING_KEY_ATTRIBUTES = 7;
     /**
      * Feed item has same key attributes as another feed item.
      *
      * Generated from protobuf enum <code>KEY_ATTRIBUTES_NOT_UNIQUE = 8;</code>
      */
-    const KEY_ATTRIBUTES_NOT_UNIQUE = 8;
+    public const KEY_ATTRIBUTES_NOT_UNIQUE = 8;
     /**
      * Cannot modify key attributes on an existing feed item.
      *
      * Generated from protobuf enum <code>CANNOT_MODIFY_KEY_ATTRIBUTE_VALUE = 9;</code>
      */
-    const CANNOT_MODIFY_KEY_ATTRIBUTE_VALUE = 9;
+    public const CANNOT_MODIFY_KEY_ATTRIBUTE_VALUE = 9;
     /**
      * The feed attribute value is too large.
      *
      * Generated from protobuf enum <code>SIZE_TOO_LARGE_FOR_MULTI_VALUE_ATTRIBUTE = 10;</code>
      */
-    const SIZE_TOO_LARGE_FOR_MULTI_VALUE_ATTRIBUTE = 10;
+    public const SIZE_TOO_LARGE_FOR_MULTI_VALUE_ATTRIBUTE = 10;
     /**
      * Feed is read only.
      *
      * Generated from protobuf enum <code>LEGACY_FEED_TYPE_READ_ONLY = 11;</code>
      */
-    const LEGACY_FEED_TYPE_READ_ONLY = 11;
+    public const LEGACY_FEED_TYPE_READ_ONLY = 11;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CANNOT_CONVERT_ATTRIBUTE_VALUE_FROM_STRING => 'CANNOT_CONVERT_ATTRIBUTE_VALUE_FROM_STRING',
@@ -105,7 +105,7 @@ class FeedItemError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -113,10 +113,10 @@ class FeedItemError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

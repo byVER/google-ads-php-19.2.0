@@ -18,46 +18,46 @@ class PolicyTopicEvidenceDestinationMismatchUrlType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received value is not known in this version.
      * This is a response-only value.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The display url.
      *
      * Generated from protobuf enum <code>DISPLAY_URL = 2;</code>
      */
-    const DISPLAY_URL = 2;
+    public const DISPLAY_URL = 2;
     /**
      * The final url.
      *
      * Generated from protobuf enum <code>FINAL_URL = 3;</code>
      */
-    const FINAL_URL = 3;
+    public const FINAL_URL = 3;
     /**
      * The final mobile url.
      *
      * Generated from protobuf enum <code>FINAL_MOBILE_URL = 4;</code>
      */
-    const FINAL_MOBILE_URL = 4;
+    public const FINAL_MOBILE_URL = 4;
     /**
      * The tracking url template, with substituted desktop url.
      *
      * Generated from protobuf enum <code>TRACKING_URL = 5;</code>
      */
-    const TRACKING_URL = 5;
+    public const TRACKING_URL = 5;
     /**
      * The tracking url template, with substituted mobile url.
      *
      * Generated from protobuf enum <code>MOBILE_TRACKING_URL = 6;</code>
      */
-    const MOBILE_TRACKING_URL = 6;
+    public const MOBILE_TRACKING_URL = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::DISPLAY_URL => 'DISPLAY_URL',
@@ -71,7 +71,7 @@ class PolicyTopicEvidenceDestinationMismatchUrlType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -79,10 +79,10 @@ class PolicyTopicEvidenceDestinationMismatchUrlType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -303,7 +303,7 @@ class ConversionValueRuleSet extends \Google\Protobuf\Internal\Message
      */
     public function setAttachmentType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\ValueRuleSetAttachmentTypeEnum\ValueRuleSetAttachmentType::class);
+        GPBUtil::checkEnum($var);
         $this->attachment_type = $var;
 
         return $this;
@@ -359,7 +359,7 @@ class ConversionValueRuleSet extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\ConversionValueRuleSetStatusEnum\ConversionValueRuleSetStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;

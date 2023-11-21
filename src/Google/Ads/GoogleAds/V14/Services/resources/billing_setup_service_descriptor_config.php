@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.BillingSetupService' => [
             'MutateBillingSetup' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateBillingSetupResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateBillingSetupResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

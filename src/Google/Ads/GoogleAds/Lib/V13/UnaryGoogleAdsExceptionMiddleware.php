@@ -30,7 +30,7 @@ class UnaryGoogleAdsExceptionMiddleware extends GoogleAdsMiddlewareAbstract
 {
     use GoogleAdsExceptionTrait;
 
-    private $statusMetadataExtractor;
+    private \Google\Ads\GoogleAds\Lib\V13\StatusMetadataExtractor $statusMetadataExtractor;
 
     /**
      * Creates the `GoogleAdsException` middleware.

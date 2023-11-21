@@ -18,34 +18,34 @@ class ConversionCustomVariableError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * A conversion custom variable with the specified name already exists.
      *
      * Generated from protobuf enum <code>DUPLICATE_NAME = 2;</code>
      */
-    const DUPLICATE_NAME = 2;
+    public const DUPLICATE_NAME = 2;
     /**
      * A conversion custom variable with the specified tag already exists.
      *
      * Generated from protobuf enum <code>DUPLICATE_TAG = 3;</code>
      */
-    const DUPLICATE_TAG = 3;
+    public const DUPLICATE_TAG = 3;
     /**
      * A conversion custom variable with the specified tag is reserved for other
      * uses.
      *
      * Generated from protobuf enum <code>RESERVED_TAG = 4;</code>
      */
-    const RESERVED_TAG = 4;
+    public const RESERVED_TAG = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::DUPLICATE_NAME => 'DUPLICATE_NAME',
@@ -57,7 +57,7 @@ class ConversionCustomVariableError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -65,10 +65,10 @@ class ConversionCustomVariableError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

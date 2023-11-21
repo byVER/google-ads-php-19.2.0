@@ -26,8 +26,8 @@ use Grpc\UnaryCall;
  */
 class GoogleAdsLoggingUnaryCall extends ForwardingUnaryCall
 {
-    private $googleAdsCallLogger;
-    private $lastRequestData;
+    private \Google\Ads\GoogleAds\Lib\V13\GoogleAdsCallLogger $googleAdsCallLogger;
+    private array $lastRequestData;
 
     /**
      * Constructs the LoggingUnaryCall using the inner call and logging intercepter.
@@ -51,7 +51,7 @@ class GoogleAdsLoggingUnaryCall extends ForwardingUnaryCall
      */
     public function wait()
     {
-        list($response, $status) = parent::wait();
+        [$response, $status] = parent::wait();
         $this->googleAdsCallLogger->log($this, $status, $this->lastRequestData, $response);
         return [$response, $status];
     }

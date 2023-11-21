@@ -19,177 +19,177 @@ class DistanceBucket
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * User was within 700m of the location.
      *
      * Generated from protobuf enum <code>WITHIN_700M = 2;</code>
      */
-    const WITHIN_700M = 2;
+    public const WITHIN_700M = 2;
     /**
      * User was within 1KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_1KM = 3;</code>
      */
-    const WITHIN_1KM = 3;
+    public const WITHIN_1KM = 3;
     /**
      * User was within 5KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_5KM = 4;</code>
      */
-    const WITHIN_5KM = 4;
+    public const WITHIN_5KM = 4;
     /**
      * User was within 10KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_10KM = 5;</code>
      */
-    const WITHIN_10KM = 5;
+    public const WITHIN_10KM = 5;
     /**
      * User was within 15KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_15KM = 6;</code>
      */
-    const WITHIN_15KM = 6;
+    public const WITHIN_15KM = 6;
     /**
      * User was within 20KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_20KM = 7;</code>
      */
-    const WITHIN_20KM = 7;
+    public const WITHIN_20KM = 7;
     /**
      * User was within 25KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_25KM = 8;</code>
      */
-    const WITHIN_25KM = 8;
+    public const WITHIN_25KM = 8;
     /**
      * User was within 30KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_30KM = 9;</code>
      */
-    const WITHIN_30KM = 9;
+    public const WITHIN_30KM = 9;
     /**
      * User was within 35KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_35KM = 10;</code>
      */
-    const WITHIN_35KM = 10;
+    public const WITHIN_35KM = 10;
     /**
      * User was within 40KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_40KM = 11;</code>
      */
-    const WITHIN_40KM = 11;
+    public const WITHIN_40KM = 11;
     /**
      * User was within 45KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_45KM = 12;</code>
      */
-    const WITHIN_45KM = 12;
+    public const WITHIN_45KM = 12;
     /**
      * User was within 50KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_50KM = 13;</code>
      */
-    const WITHIN_50KM = 13;
+    public const WITHIN_50KM = 13;
     /**
      * User was within 55KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_55KM = 14;</code>
      */
-    const WITHIN_55KM = 14;
+    public const WITHIN_55KM = 14;
     /**
      * User was within 60KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_60KM = 15;</code>
      */
-    const WITHIN_60KM = 15;
+    public const WITHIN_60KM = 15;
     /**
      * User was within 65KM of the location.
      *
      * Generated from protobuf enum <code>WITHIN_65KM = 16;</code>
      */
-    const WITHIN_65KM = 16;
+    public const WITHIN_65KM = 16;
     /**
      * User was beyond 65KM of the location.
      *
      * Generated from protobuf enum <code>BEYOND_65KM = 17;</code>
      */
-    const BEYOND_65KM = 17;
+    public const BEYOND_65KM = 17;
     /**
      * User was within 0.7 miles of the location.
      *
      * Generated from protobuf enum <code>WITHIN_0_7MILES = 18;</code>
      */
-    const WITHIN_0_7MILES = 18;
+    public const WITHIN_0_7MILES = 18;
     /**
      * User was within 1 mile of the location.
      *
      * Generated from protobuf enum <code>WITHIN_1MILE = 19;</code>
      */
-    const WITHIN_1MILE = 19;
+    public const WITHIN_1MILE = 19;
     /**
      * User was within 5 miles of the location.
      *
      * Generated from protobuf enum <code>WITHIN_5MILES = 20;</code>
      */
-    const WITHIN_5MILES = 20;
+    public const WITHIN_5MILES = 20;
     /**
      * User was within 10 miles of the location.
      *
      * Generated from protobuf enum <code>WITHIN_10MILES = 21;</code>
      */
-    const WITHIN_10MILES = 21;
+    public const WITHIN_10MILES = 21;
     /**
      * User was within 15 miles of the location.
      *
      * Generated from protobuf enum <code>WITHIN_15MILES = 22;</code>
      */
-    const WITHIN_15MILES = 22;
+    public const WITHIN_15MILES = 22;
     /**
      * User was within 20 miles of the location.
      *
      * Generated from protobuf enum <code>WITHIN_20MILES = 23;</code>
      */
-    const WITHIN_20MILES = 23;
+    public const WITHIN_20MILES = 23;
     /**
      * User was within 25 miles of the location.
      *
      * Generated from protobuf enum <code>WITHIN_25MILES = 24;</code>
      */
-    const WITHIN_25MILES = 24;
+    public const WITHIN_25MILES = 24;
     /**
      * User was within 30 miles of the location.
      *
      * Generated from protobuf enum <code>WITHIN_30MILES = 25;</code>
      */
-    const WITHIN_30MILES = 25;
+    public const WITHIN_30MILES = 25;
     /**
      * User was within 35 miles of the location.
      *
      * Generated from protobuf enum <code>WITHIN_35MILES = 26;</code>
      */
-    const WITHIN_35MILES = 26;
+    public const WITHIN_35MILES = 26;
     /**
      * User was within 40 miles of the location.
      *
      * Generated from protobuf enum <code>WITHIN_40MILES = 27;</code>
      */
-    const WITHIN_40MILES = 27;
+    public const WITHIN_40MILES = 27;
     /**
      * User was beyond 40 miles of the location.
      *
      * Generated from protobuf enum <code>BEYOND_40MILES = 28;</code>
      */
-    const BEYOND_40MILES = 28;
+    public const BEYOND_40MILES = 28;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::WITHIN_700M => 'WITHIN_700M',
@@ -225,7 +225,7 @@ class DistanceBucket
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -233,10 +233,10 @@ class DistanceBucket
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

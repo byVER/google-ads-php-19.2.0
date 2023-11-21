@@ -18,131 +18,131 @@ class ManagerLinkError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The manager and client have incompatible account types.
      *
      * Generated from protobuf enum <code>ACCOUNTS_NOT_COMPATIBLE_FOR_LINKING = 2;</code>
      */
-    const ACCOUNTS_NOT_COMPATIBLE_FOR_LINKING = 2;
+    public const ACCOUNTS_NOT_COMPATIBLE_FOR_LINKING = 2;
     /**
      * Client is already linked to too many managers.
      *
      * Generated from protobuf enum <code>TOO_MANY_MANAGERS = 3;</code>
      */
-    const TOO_MANY_MANAGERS = 3;
+    public const TOO_MANY_MANAGERS = 3;
     /**
      * Manager has too many pending invitations.
      *
      * Generated from protobuf enum <code>TOO_MANY_INVITES = 4;</code>
      */
-    const TOO_MANY_INVITES = 4;
+    public const TOO_MANY_INVITES = 4;
     /**
      * Client is already invited by this manager.
      *
      * Generated from protobuf enum <code>ALREADY_INVITED_BY_THIS_MANAGER = 5;</code>
      */
-    const ALREADY_INVITED_BY_THIS_MANAGER = 5;
+    public const ALREADY_INVITED_BY_THIS_MANAGER = 5;
     /**
      * The client is already managed by this manager.
      *
      * Generated from protobuf enum <code>ALREADY_MANAGED_BY_THIS_MANAGER = 6;</code>
      */
-    const ALREADY_MANAGED_BY_THIS_MANAGER = 6;
+    public const ALREADY_MANAGED_BY_THIS_MANAGER = 6;
     /**
      * Client is already managed in hierarchy.
      *
      * Generated from protobuf enum <code>ALREADY_MANAGED_IN_HIERARCHY = 7;</code>
      */
-    const ALREADY_MANAGED_IN_HIERARCHY = 7;
+    public const ALREADY_MANAGED_IN_HIERARCHY = 7;
     /**
      * Manager and sub-manager to be linked have duplicate client.
      *
      * Generated from protobuf enum <code>DUPLICATE_CHILD_FOUND = 8;</code>
      */
-    const DUPLICATE_CHILD_FOUND = 8;
+    public const DUPLICATE_CHILD_FOUND = 8;
     /**
      * Client has no active user that can access the client account.
      *
      * Generated from protobuf enum <code>CLIENT_HAS_NO_ADMIN_USER = 9;</code>
      */
-    const CLIENT_HAS_NO_ADMIN_USER = 9;
+    public const CLIENT_HAS_NO_ADMIN_USER = 9;
     /**
      * Adding this link would exceed the maximum hierarchy depth.
      *
      * Generated from protobuf enum <code>MAX_DEPTH_EXCEEDED = 10;</code>
      */
-    const MAX_DEPTH_EXCEEDED = 10;
+    public const MAX_DEPTH_EXCEEDED = 10;
     /**
      * Adding this link will create a cycle.
      *
      * Generated from protobuf enum <code>CYCLE_NOT_ALLOWED = 11;</code>
      */
-    const CYCLE_NOT_ALLOWED = 11;
+    public const CYCLE_NOT_ALLOWED = 11;
     /**
      * Manager account has the maximum number of linked clients.
      *
      * Generated from protobuf enum <code>TOO_MANY_ACCOUNTS = 12;</code>
      */
-    const TOO_MANY_ACCOUNTS = 12;
+    public const TOO_MANY_ACCOUNTS = 12;
     /**
      * Parent manager account has the maximum number of linked clients.
      *
      * Generated from protobuf enum <code>TOO_MANY_ACCOUNTS_AT_MANAGER = 13;</code>
      */
-    const TOO_MANY_ACCOUNTS_AT_MANAGER = 13;
+    public const TOO_MANY_ACCOUNTS_AT_MANAGER = 13;
     /**
      * The account is not authorized owner.
      *
      * Generated from protobuf enum <code>NON_OWNER_USER_CANNOT_MODIFY_LINK = 14;</code>
      */
-    const NON_OWNER_USER_CANNOT_MODIFY_LINK = 14;
+    public const NON_OWNER_USER_CANNOT_MODIFY_LINK = 14;
     /**
      * Your manager account is suspended, and you are no longer allowed to link
      * to clients.
      *
      * Generated from protobuf enum <code>SUSPENDED_ACCOUNT_CANNOT_ADD_CLIENTS = 15;</code>
      */
-    const SUSPENDED_ACCOUNT_CANNOT_ADD_CLIENTS = 15;
+    public const SUSPENDED_ACCOUNT_CANNOT_ADD_CLIENTS = 15;
     /**
      * You are not allowed to move a client to a manager that is not under your
      * current hierarchy.
      *
      * Generated from protobuf enum <code>CLIENT_OUTSIDE_TREE = 16;</code>
      */
-    const CLIENT_OUTSIDE_TREE = 16;
+    public const CLIENT_OUTSIDE_TREE = 16;
     /**
      * The changed status for mutate link is invalid.
      *
      * Generated from protobuf enum <code>INVALID_STATUS_CHANGE = 17;</code>
      */
-    const INVALID_STATUS_CHANGE = 17;
+    public const INVALID_STATUS_CHANGE = 17;
     /**
      * The change for mutate link is invalid.
      *
      * Generated from protobuf enum <code>INVALID_CHANGE = 18;</code>
      */
-    const INVALID_CHANGE = 18;
+    public const INVALID_CHANGE = 18;
     /**
      * You are not allowed to link a manager account to itself.
      *
      * Generated from protobuf enum <code>CUSTOMER_CANNOT_MANAGE_SELF = 19;</code>
      */
-    const CUSTOMER_CANNOT_MANAGE_SELF = 19;
+    public const CUSTOMER_CANNOT_MANAGE_SELF = 19;
     /**
      * The link was created with status ACTIVE and not PENDING.
      *
      * Generated from protobuf enum <code>CREATING_ENABLED_LINK_NOT_ALLOWED = 20;</code>
      */
-    const CREATING_ENABLED_LINK_NOT_ALLOWED = 20;
+    public const CREATING_ENABLED_LINK_NOT_ALLOWED = 20;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ACCOUNTS_NOT_COMPATIBLE_FOR_LINKING => 'ACCOUNTS_NOT_COMPATIBLE_FOR_LINKING',
@@ -170,7 +170,7 @@ class ManagerLinkError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -178,10 +178,10 @@ class ManagerLinkError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

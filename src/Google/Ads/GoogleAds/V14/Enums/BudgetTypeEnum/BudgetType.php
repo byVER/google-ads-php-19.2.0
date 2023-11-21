@@ -18,13 +18,13 @@ class BudgetType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Budget type for standard Google Ads usage.
      * Caps daily spend at two times the specified budget amount.
@@ -32,7 +32,7 @@ class BudgetType
      *
      * Generated from protobuf enum <code>STANDARD = 2;</code>
      */
-    const STANDARD = 2;
+    public const STANDARD = 2;
     /**
      * Budget type with a fixed cost-per-acquisition (conversion).
      * Full details: https://support.google.com/google-ads/answer/7528254
@@ -43,7 +43,7 @@ class BudgetType
      *
      * Generated from protobuf enum <code>FIXED_CPA = 4;</code>
      */
-    const FIXED_CPA = 4;
+    public const FIXED_CPA = 4;
     /**
      * Budget type for Smart Campaign.
      * Full details: https://support.google.com/google-ads/answer/7653509
@@ -53,7 +53,7 @@ class BudgetType
      *
      * Generated from protobuf enum <code>SMART_CAMPAIGN = 5;</code>
      */
-    const SMART_CAMPAIGN = 5;
+    public const SMART_CAMPAIGN = 5;
     /**
      * Budget type for Local Services Campaign.
      * Full details: https://support.google.com/localservices/answer/7434558
@@ -62,9 +62,9 @@ class BudgetType
      *
      * Generated from protobuf enum <code>LOCAL_SERVICES = 6;</code>
      */
-    const LOCAL_SERVICES = 6;
+    public const LOCAL_SERVICES = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::STANDARD => 'STANDARD',
@@ -77,7 +77,7 @@ class BudgetType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -85,10 +85,10 @@ class BudgetType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

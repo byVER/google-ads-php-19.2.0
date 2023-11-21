@@ -18,31 +18,31 @@ class MatchingFunctionOperator
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The IN operator.
      *
      * Generated from protobuf enum <code>IN = 2;</code>
      */
-    const IN = 2;
+    public const IN = 2;
     /**
      * The IDENTITY operator.
      *
      * Generated from protobuf enum <code>IDENTITY = 3;</code>
      */
-    const IDENTITY = 3;
+    public const IDENTITY = 3;
     /**
      * The EQUALS operator
      *
      * Generated from protobuf enum <code>EQUALS = 4;</code>
      */
-    const EQUALS = 4;
+    public const EQUALS = 4;
     /**
      * Operator that takes two or more operands that are of type
      * FunctionOperand and checks that all the operands evaluate to true.
@@ -51,7 +51,7 @@ class MatchingFunctionOperator
      *
      * Generated from protobuf enum <code>AND = 5;</code>
      */
-    const PBAND = 5;
+    public const PBAND = 5;
     /**
      * Operator that returns true if the elements in left_operands contain any
      * of the elements in right_operands. Otherwise, return false. The
@@ -60,9 +60,9 @@ class MatchingFunctionOperator
      *
      * Generated from protobuf enum <code>CONTAINS_ANY = 6;</code>
      */
-    const CONTAINS_ANY = 6;
+    public const CONTAINS_ANY = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::IN => 'IN',
@@ -76,7 +76,7 @@ class MatchingFunctionOperator
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -84,12 +84,12 @@ class MatchingFunctionOperator
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
-            $pbconst =  __CLASS__. '::PB' . strtoupper($name);
+            $pbconst =  self::class. '::PB' . strtoupper($name);
             if (!defined($pbconst)) {
                 throw new UnexpectedValueException(sprintf(
-                        'Enum %s has no value defined for name %s', __CLASS__, $name));
+                        'Enum %s has no value defined for name %s', self::class, $name));
             }
             return constant($pbconst);
         }

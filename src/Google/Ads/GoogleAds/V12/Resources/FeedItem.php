@@ -179,7 +179,7 @@ class FeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getFeed()
     {
-        return isset($this->feed) ? $this->feed : '';
+        return $this->feed ?? '';
     }
 
     public function hasFeed()
@@ -215,7 +215,7 @@ class FeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getId()
     {
-        return isset($this->id) ? $this->id : 0;
+        return $this->id ?? 0;
     }
 
     public function hasId()
@@ -254,7 +254,7 @@ class FeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getStartDateTime()
     {
-        return isset($this->start_date_time) ? $this->start_date_time : '';
+        return $this->start_date_time ?? '';
     }
 
     public function hasStartDateTime()
@@ -296,7 +296,7 @@ class FeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getEndDateTime()
     {
-        return isset($this->end_date_time) ? $this->end_date_time : '';
+        return $this->end_date_time ?? '';
     }
 
     public function hasEndDateTime()
@@ -375,7 +375,7 @@ class FeedItem extends \Google\Protobuf\Internal\Message
      */
     public function setGeoTargetingRestriction($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\GeoTargetingRestrictionEnum\GeoTargetingRestriction::class);
+        GPBUtil::checkEnum($var);
         $this->geo_targeting_restriction = $var;
 
         return $this;
@@ -431,7 +431,7 @@ class FeedItem extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FeedItemStatusEnum\FeedItemStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;

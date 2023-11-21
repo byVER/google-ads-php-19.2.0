@@ -18,57 +18,57 @@ class Slot
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Google search: Side.
      *
      * Generated from protobuf enum <code>SEARCH_SIDE = 2;</code>
      */
-    const SEARCH_SIDE = 2;
+    public const SEARCH_SIDE = 2;
     /**
      * Google search: Top.
      *
      * Generated from protobuf enum <code>SEARCH_TOP = 3;</code>
      */
-    const SEARCH_TOP = 3;
+    public const SEARCH_TOP = 3;
     /**
      * Google search: Other.
      *
      * Generated from protobuf enum <code>SEARCH_OTHER = 4;</code>
      */
-    const SEARCH_OTHER = 4;
+    public const SEARCH_OTHER = 4;
     /**
      * Google Display Network.
      *
      * Generated from protobuf enum <code>CONTENT = 5;</code>
      */
-    const CONTENT = 5;
+    public const CONTENT = 5;
     /**
      * Search partners: Top.
      *
      * Generated from protobuf enum <code>SEARCH_PARTNER_TOP = 6;</code>
      */
-    const SEARCH_PARTNER_TOP = 6;
+    public const SEARCH_PARTNER_TOP = 6;
     /**
      * Search partners: Other.
      *
      * Generated from protobuf enum <code>SEARCH_PARTNER_OTHER = 7;</code>
      */
-    const SEARCH_PARTNER_OTHER = 7;
+    public const SEARCH_PARTNER_OTHER = 7;
     /**
      * Cross-network.
      *
      * Generated from protobuf enum <code>MIXED = 8;</code>
      */
-    const MIXED = 8;
+    public const MIXED = 8;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::SEARCH_SIDE => 'SEARCH_SIDE',
@@ -84,7 +84,7 @@ class Slot
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -92,10 +92,10 @@ class Slot
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

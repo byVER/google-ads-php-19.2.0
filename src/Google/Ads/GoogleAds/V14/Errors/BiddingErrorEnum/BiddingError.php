@@ -18,166 +18,166 @@ class BiddingError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Cannot transition to new bidding strategy.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_TRANSITION_NOT_ALLOWED = 2;</code>
      */
-    const BIDDING_STRATEGY_TRANSITION_NOT_ALLOWED = 2;
+    public const BIDDING_STRATEGY_TRANSITION_NOT_ALLOWED = 2;
     /**
      * Cannot attach bidding strategy to campaign.
      *
      * Generated from protobuf enum <code>CANNOT_ATTACH_BIDDING_STRATEGY_TO_CAMPAIGN = 7;</code>
      */
-    const CANNOT_ATTACH_BIDDING_STRATEGY_TO_CAMPAIGN = 7;
+    public const CANNOT_ATTACH_BIDDING_STRATEGY_TO_CAMPAIGN = 7;
     /**
      * Bidding strategy is not supported or cannot be used as anonymous.
      *
      * Generated from protobuf enum <code>INVALID_ANONYMOUS_BIDDING_STRATEGY_TYPE = 10;</code>
      */
-    const INVALID_ANONYMOUS_BIDDING_STRATEGY_TYPE = 10;
+    public const INVALID_ANONYMOUS_BIDDING_STRATEGY_TYPE = 10;
     /**
      * The type does not match the named strategy's type.
      *
      * Generated from protobuf enum <code>INVALID_BIDDING_STRATEGY_TYPE = 14;</code>
      */
-    const INVALID_BIDDING_STRATEGY_TYPE = 14;
+    public const INVALID_BIDDING_STRATEGY_TYPE = 14;
     /**
      * The bid is invalid.
      *
      * Generated from protobuf enum <code>INVALID_BID = 17;</code>
      */
-    const INVALID_BID = 17;
+    public const INVALID_BID = 17;
     /**
      * Bidding strategy is not available for the account type.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_NOT_AVAILABLE_FOR_ACCOUNT_TYPE = 18;</code>
      */
-    const BIDDING_STRATEGY_NOT_AVAILABLE_FOR_ACCOUNT_TYPE = 18;
+    public const BIDDING_STRATEGY_NOT_AVAILABLE_FOR_ACCOUNT_TYPE = 18;
     /**
      * Campaign can not be created with given bidding strategy. It can be
      * transitioned to the strategy, once eligible.
      *
      * Generated from protobuf enum <code>CANNOT_CREATE_CAMPAIGN_WITH_BIDDING_STRATEGY = 21;</code>
      */
-    const CANNOT_CREATE_CAMPAIGN_WITH_BIDDING_STRATEGY = 21;
+    public const CANNOT_CREATE_CAMPAIGN_WITH_BIDDING_STRATEGY = 21;
     /**
      * Cannot target content network only as campaign uses Page One Promoted
      * bidding strategy.
      *
      * Generated from protobuf enum <code>CANNOT_TARGET_CONTENT_NETWORK_ONLY_WITH_CAMPAIGN_LEVEL_POP_BIDDING_STRATEGY = 23;</code>
      */
-    const CANNOT_TARGET_CONTENT_NETWORK_ONLY_WITH_CAMPAIGN_LEVEL_POP_BIDDING_STRATEGY = 23;
+    public const CANNOT_TARGET_CONTENT_NETWORK_ONLY_WITH_CAMPAIGN_LEVEL_POP_BIDDING_STRATEGY = 23;
     /**
      * Budget Optimizer and Target Spend bidding strategies are not supported
      * for campaigns with AdSchedule targeting.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_NOT_SUPPORTED_WITH_AD_SCHEDULE = 24;</code>
      */
-    const BIDDING_STRATEGY_NOT_SUPPORTED_WITH_AD_SCHEDULE = 24;
+    public const BIDDING_STRATEGY_NOT_SUPPORTED_WITH_AD_SCHEDULE = 24;
     /**
      * Pay per conversion is not available to all the customer, only few
      * customers on the allow-list can use this.
      *
      * Generated from protobuf enum <code>PAY_PER_CONVERSION_NOT_AVAILABLE_FOR_CUSTOMER = 25;</code>
      */
-    const PAY_PER_CONVERSION_NOT_AVAILABLE_FOR_CUSTOMER = 25;
+    public const PAY_PER_CONVERSION_NOT_AVAILABLE_FOR_CUSTOMER = 25;
     /**
      * Pay per conversion is not allowed with Target CPA.
      *
      * Generated from protobuf enum <code>PAY_PER_CONVERSION_NOT_ALLOWED_WITH_TARGET_CPA = 26;</code>
      */
-    const PAY_PER_CONVERSION_NOT_ALLOWED_WITH_TARGET_CPA = 26;
+    public const PAY_PER_CONVERSION_NOT_ALLOWED_WITH_TARGET_CPA = 26;
     /**
      * Cannot set bidding strategy to Manual CPM for search network only
      * campaigns.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_NOT_ALLOWED_FOR_SEARCH_ONLY_CAMPAIGNS = 27;</code>
      */
-    const BIDDING_STRATEGY_NOT_ALLOWED_FOR_SEARCH_ONLY_CAMPAIGNS = 27;
+    public const BIDDING_STRATEGY_NOT_ALLOWED_FOR_SEARCH_ONLY_CAMPAIGNS = 27;
     /**
      * The bidding strategy is not supported for use in drafts or experiments.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_NOT_SUPPORTED_IN_DRAFTS_OR_EXPERIMENTS = 28;</code>
      */
-    const BIDDING_STRATEGY_NOT_SUPPORTED_IN_DRAFTS_OR_EXPERIMENTS = 28;
+    public const BIDDING_STRATEGY_NOT_SUPPORTED_IN_DRAFTS_OR_EXPERIMENTS = 28;
     /**
      * Bidding strategy type does not support product type ad group criterion.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_TYPE_DOES_NOT_SUPPORT_PRODUCT_TYPE_ADGROUP_CRITERION = 29;</code>
      */
-    const BIDDING_STRATEGY_TYPE_DOES_NOT_SUPPORT_PRODUCT_TYPE_ADGROUP_CRITERION = 29;
+    public const BIDDING_STRATEGY_TYPE_DOES_NOT_SUPPORT_PRODUCT_TYPE_ADGROUP_CRITERION = 29;
     /**
      * Bid amount is too small.
      *
      * Generated from protobuf enum <code>BID_TOO_SMALL = 30;</code>
      */
-    const BID_TOO_SMALL = 30;
+    public const BID_TOO_SMALL = 30;
     /**
      * Bid amount is too big.
      *
      * Generated from protobuf enum <code>BID_TOO_BIG = 31;</code>
      */
-    const BID_TOO_BIG = 31;
+    public const BID_TOO_BIG = 31;
     /**
      * Bid has too many fractional digit precision.
      *
      * Generated from protobuf enum <code>BID_TOO_MANY_FRACTIONAL_DIGITS = 32;</code>
      */
-    const BID_TOO_MANY_FRACTIONAL_DIGITS = 32;
+    public const BID_TOO_MANY_FRACTIONAL_DIGITS = 32;
     /**
      * Invalid domain name specified.
      *
      * Generated from protobuf enum <code>INVALID_DOMAIN_NAME = 33;</code>
      */
-    const INVALID_DOMAIN_NAME = 33;
+    public const INVALID_DOMAIN_NAME = 33;
     /**
      * The field is not compatible with the payment mode.
      *
      * Generated from protobuf enum <code>NOT_COMPATIBLE_WITH_PAYMENT_MODE = 34;</code>
      */
-    const NOT_COMPATIBLE_WITH_PAYMENT_MODE = 34;
+    public const NOT_COMPATIBLE_WITH_PAYMENT_MODE = 34;
     /**
      * Bidding strategy type is incompatible with shared budget.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_SHARED_BUDGET = 37;</code>
      */
-    const BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_SHARED_BUDGET = 37;
+    public const BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_SHARED_BUDGET = 37;
     /**
      * The attached bidding strategy and budget must be aligned with each other
      * if alignment is specified on either entity.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ALIGNED = 38;</code>
      */
-    const BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ALIGNED = 38;
+    public const BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ALIGNED = 38;
     /**
      * The attached bidding strategy and budget must be attached to the same
      * campaigns to become aligned.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ATTACHED_TO_THE_SAME_CAMPAIGNS_TO_ALIGN = 39;</code>
      */
-    const BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ATTACHED_TO_THE_SAME_CAMPAIGNS_TO_ALIGN = 39;
+    public const BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ATTACHED_TO_THE_SAME_CAMPAIGNS_TO_ALIGN = 39;
     /**
      * The aligned bidding strategy and budget must be removed at the same time.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_AND_BUDGET_MUST_BE_REMOVED_TOGETHER = 40;</code>
      */
-    const BIDDING_STRATEGY_AND_BUDGET_MUST_BE_REMOVED_TOGETHER = 40;
+    public const BIDDING_STRATEGY_AND_BUDGET_MUST_BE_REMOVED_TOGETHER = 40;
     /**
      * cpc_bid_floor_micros is greater than cpc_bid_ceiling_micros.
      *
      * Generated from protobuf enum <code>CPC_BID_FLOOR_MICROS_GREATER_THAN_CPC_BID_CEILING_MICROS = 41;</code>
      */
-    const CPC_BID_FLOOR_MICROS_GREATER_THAN_CPC_BID_CEILING_MICROS = 41;
+    public const CPC_BID_FLOOR_MICROS_GREATER_THAN_CPC_BID_CEILING_MICROS = 41;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::BIDDING_STRATEGY_TRANSITION_NOT_ALLOWED => 'BIDDING_STRATEGY_TRANSITION_NOT_ALLOWED',
@@ -210,7 +210,7 @@ class BiddingError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -218,10 +218,10 @@ class BiddingError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

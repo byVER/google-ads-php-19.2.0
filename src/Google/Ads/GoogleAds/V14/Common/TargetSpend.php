@@ -77,7 +77,7 @@ class TargetSpend extends \Google\Protobuf\Internal\Message
     public function getTargetSpendMicros()
     {
         @trigger_error('target_spend_micros is deprecated.', E_USER_DEPRECATED);
-        return isset($this->target_spend_micros) ? $this->target_spend_micros : 0;
+        return $this->target_spend_micros ?? 0;
     }
 
     public function hasTargetSpendMicros()
@@ -124,7 +124,7 @@ class TargetSpend extends \Google\Protobuf\Internal\Message
      */
     public function getCpcBidCeilingMicros()
     {
-        return isset($this->cpc_bid_ceiling_micros) ? $this->cpc_bid_ceiling_micros : 0;
+        return $this->cpc_bid_ceiling_micros ?? 0;
     }
 
     public function hasCpcBidCeilingMicros()

@@ -77,7 +77,7 @@ class ListingGroupInfo extends \Google\Protobuf\Internal\Message
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\ListingGroupTypeEnum\ListingGroupType::class);
+        GPBUtil::checkEnum($var);
         $this->type = $var;
 
         return $this;
@@ -130,7 +130,7 @@ class ListingGroupInfo extends \Google\Protobuf\Internal\Message
      */
     public function getParentAdGroupCriterion()
     {
-        return isset($this->parent_ad_group_criterion) ? $this->parent_ad_group_criterion : '';
+        return $this->parent_ad_group_criterion ?? '';
     }
 
     public function hasParentAdGroupCriterion()

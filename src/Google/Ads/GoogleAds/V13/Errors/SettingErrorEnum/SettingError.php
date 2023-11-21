@@ -18,25 +18,25 @@ class SettingError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The campaign setting is not available for this Google Ads account.
      *
      * Generated from protobuf enum <code>SETTING_TYPE_IS_NOT_AVAILABLE = 3;</code>
      */
-    const SETTING_TYPE_IS_NOT_AVAILABLE = 3;
+    public const SETTING_TYPE_IS_NOT_AVAILABLE = 3;
     /**
      * The setting is not compatible with the campaign.
      *
      * Generated from protobuf enum <code>SETTING_TYPE_IS_NOT_COMPATIBLE_WITH_CAMPAIGN = 4;</code>
      */
-    const SETTING_TYPE_IS_NOT_COMPATIBLE_WITH_CAMPAIGN = 4;
+    public const SETTING_TYPE_IS_NOT_COMPATIBLE_WITH_CAMPAIGN = 4;
     /**
      * The supplied TargetingSetting contains an invalid CriterionTypeGroup. See
      * CriterionTypeGroup documentation for CriterionTypeGroups allowed
@@ -44,7 +44,7 @@ class SettingError
      *
      * Generated from protobuf enum <code>TARGETING_SETTING_CONTAINS_INVALID_CRITERION_TYPE_GROUP = 5;</code>
      */
-    const TARGETING_SETTING_CONTAINS_INVALID_CRITERION_TYPE_GROUP = 5;
+    public const TARGETING_SETTING_CONTAINS_INVALID_CRITERION_TYPE_GROUP = 5;
     /**
      * TargetingSetting must not explicitly
      * set any of the Demographic CriterionTypeGroups (AGE_RANGE, GENDER,
@@ -53,7 +53,7 @@ class SettingError
      *
      * Generated from protobuf enum <code>TARGETING_SETTING_DEMOGRAPHIC_CRITERION_TYPE_GROUPS_MUST_BE_SET_TO_TARGET_ALL = 6;</code>
      */
-    const TARGETING_SETTING_DEMOGRAPHIC_CRITERION_TYPE_GROUPS_MUST_BE_SET_TO_TARGET_ALL = 6;
+    public const TARGETING_SETTING_DEMOGRAPHIC_CRITERION_TYPE_GROUPS_MUST_BE_SET_TO_TARGET_ALL = 6;
     /**
      * TargetingSetting cannot change any of
      * the Demographic CriterionTypeGroups (AGE_RANGE, GENDER, PARENT,
@@ -61,44 +61,44 @@ class SettingError
      *
      * Generated from protobuf enum <code>TARGETING_SETTING_CANNOT_CHANGE_TARGET_ALL_TO_FALSE_FOR_DEMOGRAPHIC_CRITERION_TYPE_GROUP = 7;</code>
      */
-    const TARGETING_SETTING_CANNOT_CHANGE_TARGET_ALL_TO_FALSE_FOR_DEMOGRAPHIC_CRITERION_TYPE_GROUP = 7;
+    public const TARGETING_SETTING_CANNOT_CHANGE_TARGET_ALL_TO_FALSE_FOR_DEMOGRAPHIC_CRITERION_TYPE_GROUP = 7;
     /**
      * At least one feed id should be present.
      *
      * Generated from protobuf enum <code>DYNAMIC_SEARCH_ADS_SETTING_AT_LEAST_ONE_FEED_ID_MUST_BE_PRESENT = 8;</code>
      */
-    const DYNAMIC_SEARCH_ADS_SETTING_AT_LEAST_ONE_FEED_ID_MUST_BE_PRESENT = 8;
+    public const DYNAMIC_SEARCH_ADS_SETTING_AT_LEAST_ONE_FEED_ID_MUST_BE_PRESENT = 8;
     /**
      * The supplied DynamicSearchAdsSetting contains an invalid domain name.
      *
      * Generated from protobuf enum <code>DYNAMIC_SEARCH_ADS_SETTING_CONTAINS_INVALID_DOMAIN_NAME = 9;</code>
      */
-    const DYNAMIC_SEARCH_ADS_SETTING_CONTAINS_INVALID_DOMAIN_NAME = 9;
+    public const DYNAMIC_SEARCH_ADS_SETTING_CONTAINS_INVALID_DOMAIN_NAME = 9;
     /**
      * The supplied DynamicSearchAdsSetting contains a subdomain name.
      *
      * Generated from protobuf enum <code>DYNAMIC_SEARCH_ADS_SETTING_CONTAINS_SUBDOMAIN_NAME = 10;</code>
      */
-    const DYNAMIC_SEARCH_ADS_SETTING_CONTAINS_SUBDOMAIN_NAME = 10;
+    public const DYNAMIC_SEARCH_ADS_SETTING_CONTAINS_SUBDOMAIN_NAME = 10;
     /**
      * The supplied DynamicSearchAdsSetting contains an invalid language code.
      *
      * Generated from protobuf enum <code>DYNAMIC_SEARCH_ADS_SETTING_CONTAINS_INVALID_LANGUAGE_CODE = 11;</code>
      */
-    const DYNAMIC_SEARCH_ADS_SETTING_CONTAINS_INVALID_LANGUAGE_CODE = 11;
+    public const DYNAMIC_SEARCH_ADS_SETTING_CONTAINS_INVALID_LANGUAGE_CODE = 11;
     /**
      * TargetingSettings in search campaigns should not have
      * CriterionTypeGroup.PLACEMENT set to targetAll.
      *
      * Generated from protobuf enum <code>TARGET_ALL_IS_NOT_ALLOWED_FOR_PLACEMENT_IN_SEARCH_CAMPAIGN = 12;</code>
      */
-    const TARGET_ALL_IS_NOT_ALLOWED_FOR_PLACEMENT_IN_SEARCH_CAMPAIGN = 12;
+    public const TARGET_ALL_IS_NOT_ALLOWED_FOR_PLACEMENT_IN_SEARCH_CAMPAIGN = 12;
     /**
      * The setting value is not compatible with the campaign type.
      *
      * Generated from protobuf enum <code>SETTING_VALUE_NOT_COMPATIBLE_WITH_CAMPAIGN = 20;</code>
      */
-    const SETTING_VALUE_NOT_COMPATIBLE_WITH_CAMPAIGN = 20;
+    public const SETTING_VALUE_NOT_COMPATIBLE_WITH_CAMPAIGN = 20;
     /**
      * Switching from observation setting to targeting setting is not allowed
      * for Customer Match lists. See
@@ -106,9 +106,9 @@ class SettingError
      *
      * Generated from protobuf enum <code>BID_ONLY_IS_NOT_ALLOWED_TO_BE_MODIFIED_WITH_CUSTOMER_MATCH_TARGETING = 21;</code>
      */
-    const BID_ONLY_IS_NOT_ALLOWED_TO_BE_MODIFIED_WITH_CUSTOMER_MATCH_TARGETING = 21;
+    public const BID_ONLY_IS_NOT_ALLOWED_TO_BE_MODIFIED_WITH_CUSTOMER_MATCH_TARGETING = 21;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::SETTING_TYPE_IS_NOT_AVAILABLE => 'SETTING_TYPE_IS_NOT_AVAILABLE',
@@ -129,7 +129,7 @@ class SettingError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -137,10 +137,10 @@ class SettingError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

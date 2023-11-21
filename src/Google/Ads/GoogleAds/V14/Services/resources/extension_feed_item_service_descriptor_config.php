@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.ExtensionFeedItemService' => [
             'MutateExtensionFeedItems' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateExtensionFeedItemsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateExtensionFeedItemsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

@@ -139,7 +139,7 @@ class UserInterest extends \Google\Protobuf\Internal\Message
      */
     public function setTaxonomyType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\UserInterestTaxonomyTypeEnum\UserInterestTaxonomyType::class);
+        GPBUtil::checkEnum($var);
         $this->taxonomy_type = $var;
 
         return $this;
@@ -153,7 +153,7 @@ class UserInterest extends \Google\Protobuf\Internal\Message
      */
     public function getUserInterestId()
     {
-        return isset($this->user_interest_id) ? $this->user_interest_id : 0;
+        return $this->user_interest_id ?? 0;
     }
 
     public function hasUserInterestId()
@@ -189,7 +189,7 @@ class UserInterest extends \Google\Protobuf\Internal\Message
      */
     public function getName()
     {
-        return isset($this->name) ? $this->name : '';
+        return $this->name ?? '';
     }
 
     public function hasName()
@@ -225,7 +225,7 @@ class UserInterest extends \Google\Protobuf\Internal\Message
      */
     public function getUserInterestParent()
     {
-        return isset($this->user_interest_parent) ? $this->user_interest_parent : '';
+        return $this->user_interest_parent ?? '';
     }
 
     public function hasUserInterestParent()
@@ -261,7 +261,7 @@ class UserInterest extends \Google\Protobuf\Internal\Message
      */
     public function getLaunchedToAll()
     {
-        return isset($this->launched_to_all) ? $this->launched_to_all : false;
+        return $this->launched_to_all ?? false;
     }
 
     public function hasLaunchedToAll()

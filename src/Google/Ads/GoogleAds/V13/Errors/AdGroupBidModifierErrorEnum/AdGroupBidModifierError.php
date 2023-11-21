@@ -18,28 +18,28 @@ class AdGroupBidModifierError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The criterion ID does not support bid modification.
      *
      * Generated from protobuf enum <code>CRITERION_ID_NOT_SUPPORTED = 2;</code>
      */
-    const CRITERION_ID_NOT_SUPPORTED = 2;
+    public const CRITERION_ID_NOT_SUPPORTED = 2;
     /**
      * Cannot override the bid modifier for the given criterion ID if the parent
      * campaign is opted out of the same criterion.
      *
      * Generated from protobuf enum <code>CANNOT_OVERRIDE_OPTED_OUT_CAMPAIGN_CRITERION_BID_MODIFIER = 3;</code>
      */
-    const CANNOT_OVERRIDE_OPTED_OUT_CAMPAIGN_CRITERION_BID_MODIFIER = 3;
+    public const CANNOT_OVERRIDE_OPTED_OUT_CAMPAIGN_CRITERION_BID_MODIFIER = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CRITERION_ID_NOT_SUPPORTED => 'CRITERION_ID_NOT_SUPPORTED',
@@ -50,7 +50,7 @@ class AdGroupBidModifierError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -58,10 +58,10 @@ class AdGroupBidModifierError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

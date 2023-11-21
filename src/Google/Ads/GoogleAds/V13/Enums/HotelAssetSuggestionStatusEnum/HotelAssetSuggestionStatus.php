@@ -18,33 +18,33 @@ class HotelAssetSuggestionStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The hotel asset suggestion was successfully retrieved.
      *
      * Generated from protobuf enum <code>SUCCESS = 2;</code>
      */
-    const SUCCESS = 2;
+    public const SUCCESS = 2;
     /**
      * A hotel look up returns nothing.
      *
      * Generated from protobuf enum <code>HOTEL_NOT_FOUND = 3;</code>
      */
-    const HOTEL_NOT_FOUND = 3;
+    public const HOTEL_NOT_FOUND = 3;
     /**
      * A Google Places ID is invalid and cannot be decoded.
      *
      * Generated from protobuf enum <code>INVALID_PLACE_ID = 4;</code>
      */
-    const INVALID_PLACE_ID = 4;
+    public const INVALID_PLACE_ID = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::SUCCESS => 'SUCCESS',
@@ -56,7 +56,7 @@ class HotelAssetSuggestionStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -64,10 +64,10 @@ class HotelAssetSuggestionStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

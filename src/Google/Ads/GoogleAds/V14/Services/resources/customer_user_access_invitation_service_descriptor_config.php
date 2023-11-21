@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.CustomerUserAccessInvitationService' => [
             'MutateCustomerUserAccessInvitation' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCustomerUserAccessInvitationResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCustomerUserAccessInvitationResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

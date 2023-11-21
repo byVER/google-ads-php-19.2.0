@@ -5,8 +5,8 @@ return [
         'google.ads.googleads.v14.services.ExperimentService' => [
             'PromoteExperiment' => [
                 'longRunning' => [
-                    'operationReturnType' => '\Google\Protobuf\GPBEmpty',
-                    'metadataReturnType' => '\Google\Ads\GoogleAds\V14\Services\PromoteExperimentMetadata',
+                    'operationReturnType' => '\\' . \Google\Protobuf\GPBEmpty::class,
+                    'metadataReturnType' => '\\' . \Google\Ads\GoogleAds\V14\Services\PromoteExperimentMetadata::class,
                     'initialPollDelayMillis' => '500',
                     'pollDelayMultiplier' => '1.5',
                     'maxPollDelayMillis' => '5000',
@@ -24,8 +24,8 @@ return [
             ],
             'ScheduleExperiment' => [
                 'longRunning' => [
-                    'operationReturnType' => '\Google\Protobuf\GPBEmpty',
-                    'metadataReturnType' => '\Google\Ads\GoogleAds\V14\Services\ScheduleExperimentMetadata',
+                    'operationReturnType' => '\\' . \Google\Protobuf\GPBEmpty::class,
+                    'metadataReturnType' => '\\' . \Google\Ads\GoogleAds\V14\Services\ScheduleExperimentMetadata::class,
                     'initialPollDelayMillis' => '500',
                     'pollDelayMultiplier' => '1.5',
                     'maxPollDelayMillis' => '5000',
@@ -43,7 +43,7 @@ return [
             ],
             'EndExperiment' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Protobuf\GPBEmpty',
+                'responseType' => \Google\Protobuf\GPBEmpty::class,
                 'headerParams' => [
                     [
                         'keyName' => 'experiment',
@@ -55,7 +55,7 @@ return [
             ],
             'GraduateExperiment' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Protobuf\GPBEmpty',
+                'responseType' => \Google\Protobuf\GPBEmpty::class,
                 'headerParams' => [
                     [
                         'keyName' => 'experiment',
@@ -75,7 +75,7 @@ return [
                     'resourcesGetMethod' => 'getErrors',
                 ],
                 'callType' => \Google\ApiCore\Call::PAGINATED_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\ListExperimentAsyncErrorsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\ListExperimentAsyncErrorsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'resource_name',
@@ -87,7 +87,7 @@ return [
             ],
             'MutateExperiments' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateExperimentsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateExperimentsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

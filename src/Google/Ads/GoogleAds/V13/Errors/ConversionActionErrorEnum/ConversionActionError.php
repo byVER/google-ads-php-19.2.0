@@ -18,60 +18,60 @@ class ConversionActionError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The specified conversion action name already exists.
      *
      * Generated from protobuf enum <code>DUPLICATE_NAME = 2;</code>
      */
-    const DUPLICATE_NAME = 2;
+    public const DUPLICATE_NAME = 2;
     /**
      * Another conversion action with the specified app id already exists.
      *
      * Generated from protobuf enum <code>DUPLICATE_APP_ID = 3;</code>
      */
-    const DUPLICATE_APP_ID = 3;
+    public const DUPLICATE_APP_ID = 3;
     /**
      * Android first open action conflicts with Google play codeless download
      * action tracking the same app.
      *
      * Generated from protobuf enum <code>TWO_CONVERSION_ACTIONS_BIDDING_ON_SAME_APP_DOWNLOAD = 4;</code>
      */
-    const TWO_CONVERSION_ACTIONS_BIDDING_ON_SAME_APP_DOWNLOAD = 4;
+    public const TWO_CONVERSION_ACTIONS_BIDDING_ON_SAME_APP_DOWNLOAD = 4;
     /**
      * Android first open action conflicts with Google play codeless download
      * action tracking the same app.
      *
      * Generated from protobuf enum <code>BIDDING_ON_SAME_APP_DOWNLOAD_AS_GLOBAL_ACTION = 5;</code>
      */
-    const BIDDING_ON_SAME_APP_DOWNLOAD_AS_GLOBAL_ACTION = 5;
+    public const BIDDING_ON_SAME_APP_DOWNLOAD_AS_GLOBAL_ACTION = 5;
     /**
      * The attribution model cannot be set to DATA_DRIVEN because a data-driven
      * model has never been generated.
      *
      * Generated from protobuf enum <code>DATA_DRIVEN_MODEL_WAS_NEVER_GENERATED = 6;</code>
      */
-    const DATA_DRIVEN_MODEL_WAS_NEVER_GENERATED = 6;
+    public const DATA_DRIVEN_MODEL_WAS_NEVER_GENERATED = 6;
     /**
      * The attribution model cannot be set to DATA_DRIVEN because the
      * data-driven model is expired.
      *
      * Generated from protobuf enum <code>DATA_DRIVEN_MODEL_EXPIRED = 7;</code>
      */
-    const DATA_DRIVEN_MODEL_EXPIRED = 7;
+    public const DATA_DRIVEN_MODEL_EXPIRED = 7;
     /**
      * The attribution model cannot be set to DATA_DRIVEN because the
      * data-driven model is stale.
      *
      * Generated from protobuf enum <code>DATA_DRIVEN_MODEL_STALE = 8;</code>
      */
-    const DATA_DRIVEN_MODEL_STALE = 8;
+    public const DATA_DRIVEN_MODEL_STALE = 8;
     /**
      * The attribution model cannot be set to DATA_DRIVEN because the
      * data-driven model is unavailable or the conversion action was newly
@@ -79,22 +79,22 @@ class ConversionActionError
      *
      * Generated from protobuf enum <code>DATA_DRIVEN_MODEL_UNKNOWN = 9;</code>
      */
-    const DATA_DRIVEN_MODEL_UNKNOWN = 9;
+    public const DATA_DRIVEN_MODEL_UNKNOWN = 9;
     /**
      * Creation of this conversion action type isn't supported by Google
      * Ads API.
      *
      * Generated from protobuf enum <code>CREATION_NOT_SUPPORTED = 10;</code>
      */
-    const CREATION_NOT_SUPPORTED = 10;
+    public const CREATION_NOT_SUPPORTED = 10;
     /**
      * Update of this conversion action isn't supported by Google Ads API.
      *
      * Generated from protobuf enum <code>UPDATE_NOT_SUPPORTED = 11;</code>
      */
-    const UPDATE_NOT_SUPPORTED = 11;
+    public const UPDATE_NOT_SUPPORTED = 11;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::DUPLICATE_NAME => 'DUPLICATE_NAME',
@@ -113,7 +113,7 @@ class ConversionActionError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -121,10 +121,10 @@ class ConversionActionError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

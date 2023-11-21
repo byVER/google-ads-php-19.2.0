@@ -48,7 +48,7 @@ class SuggestionDataOneof
      * Name of the field for which the oneof is set, as it appears in the protobuf in
      * lower_camel_case.
      */
-    private $selectedOneofFieldName = '';
+    private string $selectedOneofFieldName = '';
 
     /**
      * Sets this oneof to campaign and updates its value.

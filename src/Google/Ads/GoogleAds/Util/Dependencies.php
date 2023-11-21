@@ -40,7 +40,7 @@ class Dependencies
             return null;
         }
 
-        $composerLockJson = json_decode($composerLockFileContents, true);
+        $composerLockJson = json_decode($composerLockFileContents, true, 512, JSON_THROW_ON_ERROR);
         if (!array_key_exists('packages', $composerLockJson)) {
             return null;
         }

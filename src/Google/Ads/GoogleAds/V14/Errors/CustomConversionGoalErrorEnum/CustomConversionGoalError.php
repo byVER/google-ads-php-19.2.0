@@ -18,54 +18,54 @@ class CustomConversionGoalError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Cannot find a conversion action with the specified id.
      *
      * Generated from protobuf enum <code>INVALID_CONVERSION_ACTION = 2;</code>
      */
-    const INVALID_CONVERSION_ACTION = 2;
+    public const INVALID_CONVERSION_ACTION = 2;
     /**
      * The conversion action is not enabled so it cannot be included in a custom
      * conversion goal.
      *
      * Generated from protobuf enum <code>CONVERSION_ACTION_NOT_ENABLED = 3;</code>
      */
-    const CONVERSION_ACTION_NOT_ENABLED = 3;
+    public const CONVERSION_ACTION_NOT_ENABLED = 3;
     /**
      * The custom conversion goal cannot be removed because it's linked to a
      * campaign.
      *
      * Generated from protobuf enum <code>CANNOT_REMOVE_LINKED_CUSTOM_CONVERSION_GOAL = 4;</code>
      */
-    const CANNOT_REMOVE_LINKED_CUSTOM_CONVERSION_GOAL = 4;
+    public const CANNOT_REMOVE_LINKED_CUSTOM_CONVERSION_GOAL = 4;
     /**
      * Custom goal with the same name already exists.
      *
      * Generated from protobuf enum <code>CUSTOM_GOAL_DUPLICATE_NAME = 5;</code>
      */
-    const CUSTOM_GOAL_DUPLICATE_NAME = 5;
+    public const CUSTOM_GOAL_DUPLICATE_NAME = 5;
     /**
      * Custom goal with the same conversion action list already exists.
      *
      * Generated from protobuf enum <code>DUPLICATE_CONVERSION_ACTION_LIST = 6;</code>
      */
-    const DUPLICATE_CONVERSION_ACTION_LIST = 6;
+    public const DUPLICATE_CONVERSION_ACTION_LIST = 6;
     /**
      * Conversion types that cannot be biddable should not be included in custom
      * goal.
      *
      * Generated from protobuf enum <code>NON_BIDDABLE_CONVERSION_ACTION_NOT_ELIGIBLE_FOR_CUSTOM_GOAL = 7;</code>
      */
-    const NON_BIDDABLE_CONVERSION_ACTION_NOT_ELIGIBLE_FOR_CUSTOM_GOAL = 7;
+    public const NON_BIDDABLE_CONVERSION_ACTION_NOT_ELIGIBLE_FOR_CUSTOM_GOAL = 7;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INVALID_CONVERSION_ACTION => 'INVALID_CONVERSION_ACTION',
@@ -80,7 +80,7 @@ class CustomConversionGoalError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -88,10 +88,10 @@ class CustomConversionGoalError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -18,84 +18,84 @@ class AdGroupAdError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * No link found between the adgroup ad and the label.
      *
      * Generated from protobuf enum <code>AD_GROUP_AD_LABEL_DOES_NOT_EXIST = 2;</code>
      */
-    const AD_GROUP_AD_LABEL_DOES_NOT_EXIST = 2;
+    public const AD_GROUP_AD_LABEL_DOES_NOT_EXIST = 2;
     /**
      * The label has already been attached to the adgroup ad.
      *
      * Generated from protobuf enum <code>AD_GROUP_AD_LABEL_ALREADY_EXISTS = 3;</code>
      */
-    const AD_GROUP_AD_LABEL_ALREADY_EXISTS = 3;
+    public const AD_GROUP_AD_LABEL_ALREADY_EXISTS = 3;
     /**
      * The specified ad was not found in the adgroup
      *
      * Generated from protobuf enum <code>AD_NOT_UNDER_ADGROUP = 4;</code>
      */
-    const AD_NOT_UNDER_ADGROUP = 4;
+    public const AD_NOT_UNDER_ADGROUP = 4;
     /**
      * Removed ads may not be modified
      *
      * Generated from protobuf enum <code>CANNOT_OPERATE_ON_REMOVED_ADGROUPAD = 5;</code>
      */
-    const CANNOT_OPERATE_ON_REMOVED_ADGROUPAD = 5;
+    public const CANNOT_OPERATE_ON_REMOVED_ADGROUPAD = 5;
     /**
      * An ad of this type is deprecated and cannot be created. Only deletions
      * are permitted.
      *
      * Generated from protobuf enum <code>CANNOT_CREATE_DEPRECATED_ADS = 6;</code>
      */
-    const CANNOT_CREATE_DEPRECATED_ADS = 6;
+    public const CANNOT_CREATE_DEPRECATED_ADS = 6;
     /**
      * Text ads are deprecated and cannot be created. Use expanded text ads
      * instead.
      *
      * Generated from protobuf enum <code>CANNOT_CREATE_TEXT_ADS = 7;</code>
      */
-    const CANNOT_CREATE_TEXT_ADS = 7;
+    public const CANNOT_CREATE_TEXT_ADS = 7;
     /**
      * A required field was not specified or is an empty string.
      *
      * Generated from protobuf enum <code>EMPTY_FIELD = 8;</code>
      */
-    const EMPTY_FIELD = 8;
+    public const EMPTY_FIELD = 8;
     /**
      * An ad may only be modified once per call
      *
      * Generated from protobuf enum <code>RESOURCE_REFERENCED_IN_MULTIPLE_OPS = 9;</code>
      */
-    const RESOURCE_REFERENCED_IN_MULTIPLE_OPS = 9;
+    public const RESOURCE_REFERENCED_IN_MULTIPLE_OPS = 9;
     /**
      * AdGroupAds with the given ad type cannot be paused.
      *
      * Generated from protobuf enum <code>AD_TYPE_CANNOT_BE_PAUSED = 10;</code>
      */
-    const AD_TYPE_CANNOT_BE_PAUSED = 10;
+    public const AD_TYPE_CANNOT_BE_PAUSED = 10;
     /**
      * AdGroupAds with the given ad type cannot be removed.
      *
      * Generated from protobuf enum <code>AD_TYPE_CANNOT_BE_REMOVED = 11;</code>
      */
-    const AD_TYPE_CANNOT_BE_REMOVED = 11;
+    public const AD_TYPE_CANNOT_BE_REMOVED = 11;
     /**
      * An ad of this type is deprecated and cannot be updated. Only removals
      * are permitted.
      *
      * Generated from protobuf enum <code>CANNOT_UPDATE_DEPRECATED_ADS = 12;</code>
      */
-    const CANNOT_UPDATE_DEPRECATED_ADS = 12;
+    public const CANNOT_UPDATE_DEPRECATED_ADS = 12;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::AD_GROUP_AD_LABEL_DOES_NOT_EXIST => 'AD_GROUP_AD_LABEL_DOES_NOT_EXIST',
@@ -115,7 +115,7 @@ class AdGroupAdError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -123,10 +123,10 @@ class AdGroupAdError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

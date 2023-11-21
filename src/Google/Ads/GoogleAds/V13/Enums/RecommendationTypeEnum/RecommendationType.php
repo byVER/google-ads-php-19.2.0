@@ -18,13 +18,13 @@ class RecommendationType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Budget recommendation for campaigns that are currently budget-constrained
      * (as opposed to the FORECASTING_CAMPAIGN_BUDGET recommendation, which
@@ -33,73 +33,73 @@ class RecommendationType
      *
      * Generated from protobuf enum <code>CAMPAIGN_BUDGET = 2;</code>
      */
-    const CAMPAIGN_BUDGET = 2;
+    public const CAMPAIGN_BUDGET = 2;
     /**
      * Keyword recommendation.
      *
      * Generated from protobuf enum <code>KEYWORD = 3;</code>
      */
-    const KEYWORD = 3;
+    public const KEYWORD = 3;
     /**
      * Recommendation to add a new text ad.
      *
      * Generated from protobuf enum <code>TEXT_AD = 4;</code>
      */
-    const TEXT_AD = 4;
+    public const TEXT_AD = 4;
     /**
      * Recommendation to update a campaign to use a Target CPA bidding strategy.
      *
      * Generated from protobuf enum <code>TARGET_CPA_OPT_IN = 5;</code>
      */
-    const TARGET_CPA_OPT_IN = 5;
+    public const TARGET_CPA_OPT_IN = 5;
     /**
      * Recommendation to update a campaign to use the Maximize Conversions
      * bidding strategy.
      *
      * Generated from protobuf enum <code>MAXIMIZE_CONVERSIONS_OPT_IN = 6;</code>
      */
-    const MAXIMIZE_CONVERSIONS_OPT_IN = 6;
+    public const MAXIMIZE_CONVERSIONS_OPT_IN = 6;
     /**
      * Recommendation to enable Enhanced Cost Per Click for a campaign.
      *
      * Generated from protobuf enum <code>ENHANCED_CPC_OPT_IN = 7;</code>
      */
-    const ENHANCED_CPC_OPT_IN = 7;
+    public const ENHANCED_CPC_OPT_IN = 7;
     /**
      * Recommendation to start showing your campaign's ads on Google Search
      * Partners Websites.
      *
      * Generated from protobuf enum <code>SEARCH_PARTNERS_OPT_IN = 8;</code>
      */
-    const SEARCH_PARTNERS_OPT_IN = 8;
+    public const SEARCH_PARTNERS_OPT_IN = 8;
     /**
      * Recommendation to update a campaign to use a Maximize Clicks bidding
      * strategy.
      *
      * Generated from protobuf enum <code>MAXIMIZE_CLICKS_OPT_IN = 9;</code>
      */
-    const MAXIMIZE_CLICKS_OPT_IN = 9;
+    public const MAXIMIZE_CLICKS_OPT_IN = 9;
     /**
      * Recommendation to start using the "Optimize" ad rotation setting for the
      * given ad group.
      *
      * Generated from protobuf enum <code>OPTIMIZE_AD_ROTATION = 10;</code>
      */
-    const OPTIMIZE_AD_ROTATION = 10;
+    public const OPTIMIZE_AD_ROTATION = 10;
     /**
      * Recommendation to change an existing keyword from one match type to a
      * broader match type.
      *
      * Generated from protobuf enum <code>KEYWORD_MATCH_TYPE = 14;</code>
      */
-    const KEYWORD_MATCH_TYPE = 14;
+    public const KEYWORD_MATCH_TYPE = 14;
     /**
      * Recommendation to move unused budget from one budget to a constrained
      * budget.
      *
      * Generated from protobuf enum <code>MOVE_UNUSED_BUDGET = 15;</code>
      */
-    const MOVE_UNUSED_BUDGET = 15;
+    public const MOVE_UNUSED_BUDGET = 15;
     /**
      * Budget recommendation for campaigns that are expected to become
      * budget-constrained in the future (as opposed to the CAMPAIGN_BUDGET
@@ -108,66 +108,66 @@ class RecommendationType
      *
      * Generated from protobuf enum <code>FORECASTING_CAMPAIGN_BUDGET = 16;</code>
      */
-    const FORECASTING_CAMPAIGN_BUDGET = 16;
+    public const FORECASTING_CAMPAIGN_BUDGET = 16;
     /**
      * Recommendation to update a campaign to use a Target ROAS bidding
      * strategy.
      *
      * Generated from protobuf enum <code>TARGET_ROAS_OPT_IN = 17;</code>
      */
-    const TARGET_ROAS_OPT_IN = 17;
+    public const TARGET_ROAS_OPT_IN = 17;
     /**
      * Recommendation to add a new responsive search ad.
      *
      * Generated from protobuf enum <code>RESPONSIVE_SEARCH_AD = 18;</code>
      */
-    const RESPONSIVE_SEARCH_AD = 18;
+    public const RESPONSIVE_SEARCH_AD = 18;
     /**
      * Budget recommendation for campaigns whose ROI is predicted to increase
      * with a budget adjustment.
      *
      * Generated from protobuf enum <code>MARGINAL_ROI_CAMPAIGN_BUDGET = 19;</code>
      */
-    const MARGINAL_ROI_CAMPAIGN_BUDGET = 19;
+    public const MARGINAL_ROI_CAMPAIGN_BUDGET = 19;
     /**
      * Recommendation to add broad match versions of keywords for fully
      * automated conversion-based bidding campaigns.
      *
      * Generated from protobuf enum <code>USE_BROAD_MATCH_KEYWORD = 20;</code>
      */
-    const USE_BROAD_MATCH_KEYWORD = 20;
+    public const USE_BROAD_MATCH_KEYWORD = 20;
     /**
      * Recommendation to add new responsive search ad assets.
      *
      * Generated from protobuf enum <code>RESPONSIVE_SEARCH_AD_ASSET = 21;</code>
      */
-    const RESPONSIVE_SEARCH_AD_ASSET = 21;
+    public const RESPONSIVE_SEARCH_AD_ASSET = 21;
     /**
      * Recommendation to upgrade a Smart Shopping campaign to a Performance Max
      * campaign.
      *
      * Generated from protobuf enum <code>UPGRADE_SMART_SHOPPING_CAMPAIGN_TO_PERFORMANCE_MAX = 22;</code>
      */
-    const UPGRADE_SMART_SHOPPING_CAMPAIGN_TO_PERFORMANCE_MAX = 22;
+    public const UPGRADE_SMART_SHOPPING_CAMPAIGN_TO_PERFORMANCE_MAX = 22;
     /**
      * Recommendation to improve strength of responsive search ad.
      *
      * Generated from protobuf enum <code>RESPONSIVE_SEARCH_AD_IMPROVE_AD_STRENGTH = 23;</code>
      */
-    const RESPONSIVE_SEARCH_AD_IMPROVE_AD_STRENGTH = 23;
+    public const RESPONSIVE_SEARCH_AD_IMPROVE_AD_STRENGTH = 23;
     /**
      * Recommendation to update a campaign to use Display Expansion.
      *
      * Generated from protobuf enum <code>DISPLAY_EXPANSION_OPT_IN = 24;</code>
      */
-    const DISPLAY_EXPANSION_OPT_IN = 24;
+    public const DISPLAY_EXPANSION_OPT_IN = 24;
     /**
      * Recommendation to upgrade a Local campaign to a Performance Max
      * campaign.
      *
      * Generated from protobuf enum <code>UPGRADE_LOCAL_CAMPAIGN_TO_PERFORMANCE_MAX = 25;</code>
      */
-    const UPGRADE_LOCAL_CAMPAIGN_TO_PERFORMANCE_MAX = 25;
+    public const UPGRADE_LOCAL_CAMPAIGN_TO_PERFORMANCE_MAX = 25;
     /**
      * Recommendation to raise target CPA when it is too low and there are very
      * few or no conversions.
@@ -176,7 +176,7 @@ class RecommendationType
      *
      * Generated from protobuf enum <code>RAISE_TARGET_CPA_BID_TOO_LOW = 26;</code>
      */
-    const RAISE_TARGET_CPA_BID_TOO_LOW = 26;
+    public const RAISE_TARGET_CPA_BID_TOO_LOW = 26;
     /**
      * Recommendation to raise the budget in advance of a seasonal event that is
      * forecasted to increase traffic, and change bidding strategy from maximize
@@ -184,108 +184,108 @@ class RecommendationType
      *
      * Generated from protobuf enum <code>FORECASTING_SET_TARGET_ROAS = 27;</code>
      */
-    const FORECASTING_SET_TARGET_ROAS = 27;
+    public const FORECASTING_SET_TARGET_ROAS = 27;
     /**
      * Recommendation to add callout assets to campaign or customer level.
      *
      * Generated from protobuf enum <code>CALLOUT_ASSET = 28;</code>
      */
-    const CALLOUT_ASSET = 28;
+    public const CALLOUT_ASSET = 28;
     /**
      * Recommendation to add sitelink assets to campaign or customer level.
      *
      * Generated from protobuf enum <code>SITELINK_ASSET = 29;</code>
      */
-    const SITELINK_ASSET = 29;
+    public const SITELINK_ASSET = 29;
     /**
      * Recommendation to add call assets to campaign or customer level.
      *
      * Generated from protobuf enum <code>CALL_ASSET = 30;</code>
      */
-    const CALL_ASSET = 30;
+    public const CALL_ASSET = 30;
     /**
      * Recommendation to add the age group attribute to offers that are
      * demoted because of a missing age group.
      *
      * Generated from protobuf enum <code>SHOPPING_ADD_AGE_GROUP = 31;</code>
      */
-    const SHOPPING_ADD_AGE_GROUP = 31;
+    public const SHOPPING_ADD_AGE_GROUP = 31;
     /**
      * Recommendation to add a color to offers that are demoted
      * because of a missing color.
      *
      * Generated from protobuf enum <code>SHOPPING_ADD_COLOR = 32;</code>
      */
-    const SHOPPING_ADD_COLOR = 32;
+    public const SHOPPING_ADD_COLOR = 32;
     /**
      * Recommendation to add a gender to offers that are demoted
      * because of a missing gender.
      *
      * Generated from protobuf enum <code>SHOPPING_ADD_GENDER = 33;</code>
      */
-    const SHOPPING_ADD_GENDER = 33;
+    public const SHOPPING_ADD_GENDER = 33;
     /**
      * Recommendation to add a GTIN (Global Trade Item Number) to offers
      * that are demoted because of a missing GTIN.
      *
      * Generated from protobuf enum <code>SHOPPING_ADD_GTIN = 34;</code>
      */
-    const SHOPPING_ADD_GTIN = 34;
+    public const SHOPPING_ADD_GTIN = 34;
     /**
      * Recommendation to add more identifiers to offers that are demoted because
      * of missing identifiers.
      *
      * Generated from protobuf enum <code>SHOPPING_ADD_MORE_IDENTIFIERS = 35;</code>
      */
-    const SHOPPING_ADD_MORE_IDENTIFIERS = 35;
+    public const SHOPPING_ADD_MORE_IDENTIFIERS = 35;
     /**
      * Recommendation to add the size to offers that are demoted
      * because of a missing size.
      *
      * Generated from protobuf enum <code>SHOPPING_ADD_SIZE = 36;</code>
      */
-    const SHOPPING_ADD_SIZE = 36;
+    public const SHOPPING_ADD_SIZE = 36;
     /**
      * Recommendation informing a customer about a campaign that cannot serve
      * because no products are being targeted.
      *
      * Generated from protobuf enum <code>SHOPPING_ADD_PRODUCTS_TO_CAMPAIGN = 37;</code>
      */
-    const SHOPPING_ADD_PRODUCTS_TO_CAMPAIGN = 37;
+    public const SHOPPING_ADD_PRODUCTS_TO_CAMPAIGN = 37;
     /**
      * The shopping recommendation informing a customer about campaign with a
      * high percentage of disapproved products.
      *
      * Generated from protobuf enum <code>SHOPPING_FIX_DISAPPROVED_PRODUCTS = 38;</code>
      */
-    const SHOPPING_FIX_DISAPPROVED_PRODUCTS = 38;
+    public const SHOPPING_FIX_DISAPPROVED_PRODUCTS = 38;
     /**
      * Recommendation to create a catch-all campaign that targets all offers.
      *
      * Generated from protobuf enum <code>SHOPPING_TARGET_ALL_OFFERS = 39;</code>
      */
-    const SHOPPING_TARGET_ALL_OFFERS = 39;
+    public const SHOPPING_TARGET_ALL_OFFERS = 39;
     /**
      * Recommendation to fix Merchant Center account suspension issues.
      *
      * Generated from protobuf enum <code>SHOPPING_FIX_SUSPENDED_MERCHANT_CENTER_ACCOUNT = 40;</code>
      */
-    const SHOPPING_FIX_SUSPENDED_MERCHANT_CENTER_ACCOUNT = 40;
+    public const SHOPPING_FIX_SUSPENDED_MERCHANT_CENTER_ACCOUNT = 40;
     /**
      * Recommendation to fix Merchant Center account suspension warning issues.
      *
      * Generated from protobuf enum <code>SHOPPING_FIX_MERCHANT_CENTER_ACCOUNT_SUSPENSION_WARNING = 41;</code>
      */
-    const SHOPPING_FIX_MERCHANT_CENTER_ACCOUNT_SUSPENSION_WARNING = 41;
+    public const SHOPPING_FIX_MERCHANT_CENTER_ACCOUNT_SUSPENSION_WARNING = 41;
     /**
      * Recommendation to migrate offers targeted by Regular Shopping Campaigns
      * to existing Performance Max campaigns.
      *
      * Generated from protobuf enum <code>SHOPPING_MIGRATE_REGULAR_SHOPPING_CAMPAIGN_OFFERS_TO_PERFORMANCE_MAX = 42;</code>
      */
-    const SHOPPING_MIGRATE_REGULAR_SHOPPING_CAMPAIGN_OFFERS_TO_PERFORMANCE_MAX = 42;
+    public const SHOPPING_MIGRATE_REGULAR_SHOPPING_CAMPAIGN_OFFERS_TO_PERFORMANCE_MAX = 42;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CAMPAIGN_BUDGET => 'CAMPAIGN_BUDGET',
@@ -332,7 +332,7 @@ class RecommendationType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -340,10 +340,10 @@ class RecommendationType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -18,112 +18,112 @@ class FunctionError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The format of the function is not recognized as a supported function
      * format.
      *
      * Generated from protobuf enum <code>INVALID_FUNCTION_FORMAT = 2;</code>
      */
-    const INVALID_FUNCTION_FORMAT = 2;
+    public const INVALID_FUNCTION_FORMAT = 2;
     /**
      * Operand data types do not match.
      *
      * Generated from protobuf enum <code>DATA_TYPE_MISMATCH = 3;</code>
      */
-    const DATA_TYPE_MISMATCH = 3;
+    public const DATA_TYPE_MISMATCH = 3;
     /**
      * The operands cannot be used together in a conjunction.
      *
      * Generated from protobuf enum <code>INVALID_CONJUNCTION_OPERANDS = 4;</code>
      */
-    const INVALID_CONJUNCTION_OPERANDS = 4;
+    public const INVALID_CONJUNCTION_OPERANDS = 4;
     /**
      * Invalid numer of Operands.
      *
      * Generated from protobuf enum <code>INVALID_NUMBER_OF_OPERANDS = 5;</code>
      */
-    const INVALID_NUMBER_OF_OPERANDS = 5;
+    public const INVALID_NUMBER_OF_OPERANDS = 5;
     /**
      * Operand Type not supported.
      *
      * Generated from protobuf enum <code>INVALID_OPERAND_TYPE = 6;</code>
      */
-    const INVALID_OPERAND_TYPE = 6;
+    public const INVALID_OPERAND_TYPE = 6;
     /**
      * Operator not supported.
      *
      * Generated from protobuf enum <code>INVALID_OPERATOR = 7;</code>
      */
-    const INVALID_OPERATOR = 7;
+    public const INVALID_OPERATOR = 7;
     /**
      * Request context type not supported.
      *
      * Generated from protobuf enum <code>INVALID_REQUEST_CONTEXT_TYPE = 8;</code>
      */
-    const INVALID_REQUEST_CONTEXT_TYPE = 8;
+    public const INVALID_REQUEST_CONTEXT_TYPE = 8;
     /**
      * The matching function is not allowed for call placeholders
      *
      * Generated from protobuf enum <code>INVALID_FUNCTION_FOR_CALL_PLACEHOLDER = 9;</code>
      */
-    const INVALID_FUNCTION_FOR_CALL_PLACEHOLDER = 9;
+    public const INVALID_FUNCTION_FOR_CALL_PLACEHOLDER = 9;
     /**
      * The matching function is not allowed for the specified placeholder
      *
      * Generated from protobuf enum <code>INVALID_FUNCTION_FOR_PLACEHOLDER = 10;</code>
      */
-    const INVALID_FUNCTION_FOR_PLACEHOLDER = 10;
+    public const INVALID_FUNCTION_FOR_PLACEHOLDER = 10;
     /**
      * Invalid operand.
      *
      * Generated from protobuf enum <code>INVALID_OPERAND = 11;</code>
      */
-    const INVALID_OPERAND = 11;
+    public const INVALID_OPERAND = 11;
     /**
      * Missing value for the constant operand.
      *
      * Generated from protobuf enum <code>MISSING_CONSTANT_OPERAND_VALUE = 12;</code>
      */
-    const MISSING_CONSTANT_OPERAND_VALUE = 12;
+    public const MISSING_CONSTANT_OPERAND_VALUE = 12;
     /**
      * The value of the constant operand is invalid.
      *
      * Generated from protobuf enum <code>INVALID_CONSTANT_OPERAND_VALUE = 13;</code>
      */
-    const INVALID_CONSTANT_OPERAND_VALUE = 13;
+    public const INVALID_CONSTANT_OPERAND_VALUE = 13;
     /**
      * Invalid function nesting.
      *
      * Generated from protobuf enum <code>INVALID_NESTING = 14;</code>
      */
-    const INVALID_NESTING = 14;
+    public const INVALID_NESTING = 14;
     /**
      * The Feed ID was different from another Feed ID in the same function.
      *
      * Generated from protobuf enum <code>MULTIPLE_FEED_IDS_NOT_SUPPORTED = 15;</code>
      */
-    const MULTIPLE_FEED_IDS_NOT_SUPPORTED = 15;
+    public const MULTIPLE_FEED_IDS_NOT_SUPPORTED = 15;
     /**
      * The matching function is invalid for use with a feed with a fixed schema.
      *
      * Generated from protobuf enum <code>INVALID_FUNCTION_FOR_FEED_WITH_FIXED_SCHEMA = 16;</code>
      */
-    const INVALID_FUNCTION_FOR_FEED_WITH_FIXED_SCHEMA = 16;
+    public const INVALID_FUNCTION_FOR_FEED_WITH_FIXED_SCHEMA = 16;
     /**
      * Invalid attribute name.
      *
      * Generated from protobuf enum <code>INVALID_ATTRIBUTE_NAME = 17;</code>
      */
-    const INVALID_ATTRIBUTE_NAME = 17;
+    public const INVALID_ATTRIBUTE_NAME = 17;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INVALID_FUNCTION_FORMAT => 'INVALID_FUNCTION_FORMAT',
@@ -148,7 +148,7 @@ class FunctionError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -156,10 +156,10 @@ class FunctionError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

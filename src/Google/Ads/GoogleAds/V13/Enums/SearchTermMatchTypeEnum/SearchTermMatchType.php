@@ -18,45 +18,45 @@ class SearchTermMatchType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Broad match.
      *
      * Generated from protobuf enum <code>BROAD = 2;</code>
      */
-    const BROAD = 2;
+    public const BROAD = 2;
     /**
      * Exact match.
      *
      * Generated from protobuf enum <code>EXACT = 3;</code>
      */
-    const EXACT = 3;
+    public const EXACT = 3;
     /**
      * Phrase match.
      *
      * Generated from protobuf enum <code>PHRASE = 4;</code>
      */
-    const PHRASE = 4;
+    public const PHRASE = 4;
     /**
      * Exact match (close variant).
      *
      * Generated from protobuf enum <code>NEAR_EXACT = 5;</code>
      */
-    const NEAR_EXACT = 5;
+    public const NEAR_EXACT = 5;
     /**
      * Phrase match (close variant).
      *
      * Generated from protobuf enum <code>NEAR_PHRASE = 6;</code>
      */
-    const NEAR_PHRASE = 6;
+    public const NEAR_PHRASE = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::BROAD => 'BROAD',
@@ -70,7 +70,7 @@ class SearchTermMatchType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -78,10 +78,10 @@ class SearchTermMatchType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

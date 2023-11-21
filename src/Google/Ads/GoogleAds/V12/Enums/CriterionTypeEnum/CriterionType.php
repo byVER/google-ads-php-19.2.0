@@ -18,219 +18,219 @@ class CriterionType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Keyword, for example, 'mars cruise'.
      *
      * Generated from protobuf enum <code>KEYWORD = 2;</code>
      */
-    const KEYWORD = 2;
+    public const KEYWORD = 2;
     /**
      * Placement, also known as Website, for example, 'www.flowers4sale.com'
      *
      * Generated from protobuf enum <code>PLACEMENT = 3;</code>
      */
-    const PLACEMENT = 3;
+    public const PLACEMENT = 3;
     /**
      * Mobile application categories to target.
      *
      * Generated from protobuf enum <code>MOBILE_APP_CATEGORY = 4;</code>
      */
-    const MOBILE_APP_CATEGORY = 4;
+    public const MOBILE_APP_CATEGORY = 4;
     /**
      * Mobile applications to target.
      *
      * Generated from protobuf enum <code>MOBILE_APPLICATION = 5;</code>
      */
-    const MOBILE_APPLICATION = 5;
+    public const MOBILE_APPLICATION = 5;
     /**
      * Devices to target.
      *
      * Generated from protobuf enum <code>DEVICE = 6;</code>
      */
-    const DEVICE = 6;
+    public const DEVICE = 6;
     /**
      * Locations to target.
      *
      * Generated from protobuf enum <code>LOCATION = 7;</code>
      */
-    const LOCATION = 7;
+    public const LOCATION = 7;
     /**
      * Listing groups to target.
      *
      * Generated from protobuf enum <code>LISTING_GROUP = 8;</code>
      */
-    const LISTING_GROUP = 8;
+    public const LISTING_GROUP = 8;
     /**
      * Ad Schedule.
      *
      * Generated from protobuf enum <code>AD_SCHEDULE = 9;</code>
      */
-    const AD_SCHEDULE = 9;
+    public const AD_SCHEDULE = 9;
     /**
      * Age range.
      *
      * Generated from protobuf enum <code>AGE_RANGE = 10;</code>
      */
-    const AGE_RANGE = 10;
+    public const AGE_RANGE = 10;
     /**
      * Gender.
      *
      * Generated from protobuf enum <code>GENDER = 11;</code>
      */
-    const GENDER = 11;
+    public const GENDER = 11;
     /**
      * Income Range.
      *
      * Generated from protobuf enum <code>INCOME_RANGE = 12;</code>
      */
-    const INCOME_RANGE = 12;
+    public const INCOME_RANGE = 12;
     /**
      * Parental status.
      *
      * Generated from protobuf enum <code>PARENTAL_STATUS = 13;</code>
      */
-    const PARENTAL_STATUS = 13;
+    public const PARENTAL_STATUS = 13;
     /**
      * YouTube Video.
      *
      * Generated from protobuf enum <code>YOUTUBE_VIDEO = 14;</code>
      */
-    const YOUTUBE_VIDEO = 14;
+    public const YOUTUBE_VIDEO = 14;
     /**
      * YouTube Channel.
      *
      * Generated from protobuf enum <code>YOUTUBE_CHANNEL = 15;</code>
      */
-    const YOUTUBE_CHANNEL = 15;
+    public const YOUTUBE_CHANNEL = 15;
     /**
      * User list.
      *
      * Generated from protobuf enum <code>USER_LIST = 16;</code>
      */
-    const USER_LIST = 16;
+    public const USER_LIST = 16;
     /**
      * Proximity.
      *
      * Generated from protobuf enum <code>PROXIMITY = 17;</code>
      */
-    const PROXIMITY = 17;
+    public const PROXIMITY = 17;
     /**
      * A topic target on the display network (for example, "Pets & Animals").
      *
      * Generated from protobuf enum <code>TOPIC = 18;</code>
      */
-    const TOPIC = 18;
+    public const TOPIC = 18;
     /**
      * Listing scope to target.
      *
      * Generated from protobuf enum <code>LISTING_SCOPE = 19;</code>
      */
-    const LISTING_SCOPE = 19;
+    public const LISTING_SCOPE = 19;
     /**
      * Language.
      *
      * Generated from protobuf enum <code>LANGUAGE = 20;</code>
      */
-    const LANGUAGE = 20;
+    public const LANGUAGE = 20;
     /**
      * IpBlock.
      *
      * Generated from protobuf enum <code>IP_BLOCK = 21;</code>
      */
-    const IP_BLOCK = 21;
+    public const IP_BLOCK = 21;
     /**
      * Content Label for category exclusion.
      *
      * Generated from protobuf enum <code>CONTENT_LABEL = 22;</code>
      */
-    const CONTENT_LABEL = 22;
+    public const CONTENT_LABEL = 22;
     /**
      * Carrier.
      *
      * Generated from protobuf enum <code>CARRIER = 23;</code>
      */
-    const CARRIER = 23;
+    public const CARRIER = 23;
     /**
      * A category the user is interested in.
      *
      * Generated from protobuf enum <code>USER_INTEREST = 24;</code>
      */
-    const USER_INTEREST = 24;
+    public const USER_INTEREST = 24;
     /**
      * Webpage criterion for dynamic search ads.
      *
      * Generated from protobuf enum <code>WEBPAGE = 25;</code>
      */
-    const WEBPAGE = 25;
+    public const WEBPAGE = 25;
     /**
      * Operating system version.
      *
      * Generated from protobuf enum <code>OPERATING_SYSTEM_VERSION = 26;</code>
      */
-    const OPERATING_SYSTEM_VERSION = 26;
+    public const OPERATING_SYSTEM_VERSION = 26;
     /**
      * App payment model.
      *
      * Generated from protobuf enum <code>APP_PAYMENT_MODEL = 27;</code>
      */
-    const APP_PAYMENT_MODEL = 27;
+    public const APP_PAYMENT_MODEL = 27;
     /**
      * Mobile device.
      *
      * Generated from protobuf enum <code>MOBILE_DEVICE = 28;</code>
      */
-    const MOBILE_DEVICE = 28;
+    public const MOBILE_DEVICE = 28;
     /**
      * Custom affinity.
      *
      * Generated from protobuf enum <code>CUSTOM_AFFINITY = 29;</code>
      */
-    const CUSTOM_AFFINITY = 29;
+    public const CUSTOM_AFFINITY = 29;
     /**
      * Custom intent.
      *
      * Generated from protobuf enum <code>CUSTOM_INTENT = 30;</code>
      */
-    const CUSTOM_INTENT = 30;
+    public const CUSTOM_INTENT = 30;
     /**
      * Location group.
      *
      * Generated from protobuf enum <code>LOCATION_GROUP = 31;</code>
      */
-    const LOCATION_GROUP = 31;
+    public const LOCATION_GROUP = 31;
     /**
      * Custom audience
      *
      * Generated from protobuf enum <code>CUSTOM_AUDIENCE = 32;</code>
      */
-    const CUSTOM_AUDIENCE = 32;
+    public const CUSTOM_AUDIENCE = 32;
     /**
      * Combined audience
      *
      * Generated from protobuf enum <code>COMBINED_AUDIENCE = 33;</code>
      */
-    const COMBINED_AUDIENCE = 33;
+    public const COMBINED_AUDIENCE = 33;
     /**
      * Smart Campaign keyword theme
      *
      * Generated from protobuf enum <code>KEYWORD_THEME = 34;</code>
      */
-    const KEYWORD_THEME = 34;
+    public const KEYWORD_THEME = 34;
     /**
      * Audience
      *
      * Generated from protobuf enum <code>AUDIENCE = 35;</code>
      */
-    const AUDIENCE = 35;
+    public const AUDIENCE = 35;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::KEYWORD => 'KEYWORD',
@@ -273,7 +273,7 @@ class CriterionType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -281,10 +281,10 @@ class CriterionType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

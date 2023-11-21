@@ -188,7 +188,7 @@ class ListBatchJobResultsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setResponseContentType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\ResponseContentTypeEnum\ResponseContentType::class);
+        GPBUtil::checkEnum($var);
         $this->response_content_type = $var;
 
         return $this;

@@ -18,45 +18,45 @@ class DateRangeError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Invalid date.
      *
      * Generated from protobuf enum <code>INVALID_DATE = 2;</code>
      */
-    const INVALID_DATE = 2;
+    public const INVALID_DATE = 2;
     /**
      * The start date was after the end date.
      *
      * Generated from protobuf enum <code>START_DATE_AFTER_END_DATE = 3;</code>
      */
-    const START_DATE_AFTER_END_DATE = 3;
+    public const START_DATE_AFTER_END_DATE = 3;
     /**
      * Cannot set date to past time
      *
      * Generated from protobuf enum <code>CANNOT_SET_DATE_TO_PAST = 4;</code>
      */
-    const CANNOT_SET_DATE_TO_PAST = 4;
+    public const CANNOT_SET_DATE_TO_PAST = 4;
     /**
      * A date was used that is past the system "last" date.
      *
      * Generated from protobuf enum <code>AFTER_MAXIMUM_ALLOWABLE_DATE = 5;</code>
      */
-    const AFTER_MAXIMUM_ALLOWABLE_DATE = 5;
+    public const AFTER_MAXIMUM_ALLOWABLE_DATE = 5;
     /**
      * Trying to change start date on a resource that has started.
      *
      * Generated from protobuf enum <code>CANNOT_MODIFY_START_DATE_IF_ALREADY_STARTED = 6;</code>
      */
-    const CANNOT_MODIFY_START_DATE_IF_ALREADY_STARTED = 6;
+    public const CANNOT_MODIFY_START_DATE_IF_ALREADY_STARTED = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INVALID_DATE => 'INVALID_DATE',
@@ -70,7 +70,7 @@ class DateRangeError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -78,10 +78,10 @@ class DateRangeError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -58,7 +58,7 @@ class RecommendationServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v14.services.RecommendationService/ApplyRecommendation',
         $argument,
-        ['\Google\Ads\GoogleAds\V14\Services\ApplyRecommendationResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V14\Services\ApplyRecommendationResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -82,7 +82,7 @@ class RecommendationServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v14.services.RecommendationService/DismissRecommendation',
         $argument,
-        ['\Google\Ads\GoogleAds\V14\Services\DismissRecommendationResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V14\Services\DismissRecommendationResponse::class, 'decode'],
         $metadata, $options);
     }
 

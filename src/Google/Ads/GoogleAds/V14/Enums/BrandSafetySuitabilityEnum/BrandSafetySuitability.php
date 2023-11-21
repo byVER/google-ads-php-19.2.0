@@ -18,13 +18,13 @@ class BrandSafetySuitability
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * This option lets you show ads across all inventory on YouTube and video
      * partners that meet our standards for monetization. This option may be an
@@ -35,7 +35,7 @@ class BrandSafetySuitability
      *
      * Generated from protobuf enum <code>EXPANDED_INVENTORY = 2;</code>
      */
-    const EXPANDED_INVENTORY = 2;
+    public const EXPANDED_INVENTORY = 2;
     /**
      * This option lets you show ads across a wide range of content that's
      * appropriate for most brands, such as popular music videos, documentaries,
@@ -48,7 +48,7 @@ class BrandSafetySuitability
      *
      * Generated from protobuf enum <code>STANDARD_INVENTORY = 3;</code>
      */
-    const STANDARD_INVENTORY = 3;
+    public const STANDARD_INVENTORY = 3;
     /**
      * This option lets you show ads on a reduced range of content that's
      * appropriate for brands with particularly strict guidelines around
@@ -62,9 +62,9 @@ class BrandSafetySuitability
      *
      * Generated from protobuf enum <code>LIMITED_INVENTORY = 4;</code>
      */
-    const LIMITED_INVENTORY = 4;
+    public const LIMITED_INVENTORY = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::EXPANDED_INVENTORY => 'EXPANDED_INVENTORY',
@@ -76,7 +76,7 @@ class BrandSafetySuitability
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -84,10 +84,10 @@ class BrandSafetySuitability
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -97,7 +97,7 @@ class BatchJobMetadata extends \Google\Protobuf\Internal\Message
      */
     public function getCreationDateTime()
     {
-        return isset($this->creation_date_time) ? $this->creation_date_time : '';
+        return $this->creation_date_time ?? '';
     }
 
     public function hasCreationDateTime()
@@ -135,7 +135,7 @@ class BatchJobMetadata extends \Google\Protobuf\Internal\Message
      */
     public function getStartDateTime()
     {
-        return isset($this->start_date_time) ? $this->start_date_time : '';
+        return $this->start_date_time ?? '';
     }
 
     public function hasStartDateTime()
@@ -173,7 +173,7 @@ class BatchJobMetadata extends \Google\Protobuf\Internal\Message
      */
     public function getCompletionDateTime()
     {
-        return isset($this->completion_date_time) ? $this->completion_date_time : '';
+        return $this->completion_date_time ?? '';
     }
 
     public function hasCompletionDateTime()
@@ -211,7 +211,7 @@ class BatchJobMetadata extends \Google\Protobuf\Internal\Message
      */
     public function getEstimatedCompletionRatio()
     {
-        return isset($this->estimated_completion_ratio) ? $this->estimated_completion_ratio : 0.0;
+        return $this->estimated_completion_ratio ?? 0.0;
     }
 
     public function hasEstimatedCompletionRatio()
@@ -248,7 +248,7 @@ class BatchJobMetadata extends \Google\Protobuf\Internal\Message
      */
     public function getOperationCount()
     {
-        return isset($this->operation_count) ? $this->operation_count : 0;
+        return $this->operation_count ?? 0;
     }
 
     public function hasOperationCount()
@@ -285,7 +285,7 @@ class BatchJobMetadata extends \Google\Protobuf\Internal\Message
      */
     public function getExecutedOperationCount()
     {
-        return isset($this->executed_operation_count) ? $this->executed_operation_count : 0;
+        return $this->executed_operation_count ?? 0;
     }
 
     public function hasExecutedOperationCount()

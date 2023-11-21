@@ -277,7 +277,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function getId()
     {
-        return isset($this->id) ? $this->id : 0;
+        return $this->id ?? 0;
     }
 
     public function hasId()
@@ -315,7 +315,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function getName()
     {
-        return isset($this->name) ? $this->name : '';
+        return $this->name ?? '';
     }
 
     public function hasName()
@@ -365,7 +365,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\ConversionActionStatusEnum\ConversionActionStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;
@@ -391,7 +391,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\ConversionActionTypeEnum\ConversionActionType::class);
+        GPBUtil::checkEnum($var);
         $this->type = $var;
 
         return $this;
@@ -417,7 +417,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function setOrigin($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\ConversionOriginEnum\ConversionOrigin::class);
+        GPBUtil::checkEnum($var);
         $this->origin = $var;
 
         return $this;
@@ -440,7 +440,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function getPrimaryForGoal()
     {
-        return isset($this->primary_for_goal) ? $this->primary_for_goal : false;
+        return $this->primary_for_goal ?? false;
     }
 
     public function hasPrimaryForGoal()
@@ -497,7 +497,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function setCategory($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\ConversionActionCategoryEnum\ConversionActionCategory::class);
+        GPBUtil::checkEnum($var);
         $this->category = $var;
 
         return $this;
@@ -512,7 +512,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function getOwnerCustomer()
     {
-        return isset($this->owner_customer) ? $this->owner_customer : '';
+        return $this->owner_customer ?? '';
     }
 
     public function hasOwnerCustomer()
@@ -550,7 +550,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function getIncludeInConversionsMetric()
     {
-        return isset($this->include_in_conversions_metric) ? $this->include_in_conversions_metric : false;
+        return $this->include_in_conversions_metric ?? false;
     }
 
     public function hasIncludeInConversionsMetric()
@@ -588,7 +588,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function getClickThroughLookbackWindowDays()
     {
-        return isset($this->click_through_lookback_window_days) ? $this->click_through_lookback_window_days : 0;
+        return $this->click_through_lookback_window_days ?? 0;
     }
 
     public function hasClickThroughLookbackWindowDays()
@@ -626,7 +626,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function getViewThroughLookbackWindowDays()
     {
-        return isset($this->view_through_lookback_window_days) ? $this->view_through_lookback_window_days : 0;
+        return $this->view_through_lookback_window_days ?? 0;
     }
 
     public function hasViewThroughLookbackWindowDays()
@@ -713,7 +713,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function setCountingType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\ConversionActionCountingTypeEnum\ConversionActionCountingType::class);
+        GPBUtil::checkEnum($var);
         $this->counting_type = $var;
 
         return $this;
@@ -791,7 +791,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function getPhoneCallDurationSeconds()
     {
-        return isset($this->phone_call_duration_seconds) ? $this->phone_call_duration_seconds : 0;
+        return $this->phone_call_duration_seconds ?? 0;
     }
 
     public function hasPhoneCallDurationSeconds()
@@ -829,7 +829,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function getAppId()
     {
-        return isset($this->app_id) ? $this->app_id : '';
+        return $this->app_id ?? '';
     }
 
     public function hasAppId()
@@ -877,7 +877,7 @@ class ConversionAction extends \Google\Protobuf\Internal\Message
      */
     public function setMobileAppVendor($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\MobileAppVendorEnum\MobileAppVendor::class);
+        GPBUtil::checkEnum($var);
         $this->mobile_app_vendor = $var;
 
         return $this;

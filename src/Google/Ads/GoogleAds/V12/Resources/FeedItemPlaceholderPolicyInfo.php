@@ -124,7 +124,7 @@ class FeedItemPlaceholderPolicyInfo extends \Google\Protobuf\Internal\Message
      */
     public function setPlaceholderTypeEnum($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\PlaceholderTypeEnum\PlaceholderType::class);
+        GPBUtil::checkEnum($var);
         $this->placeholder_type_enum = $var;
 
         return $this;
@@ -138,7 +138,7 @@ class FeedItemPlaceholderPolicyInfo extends \Google\Protobuf\Internal\Message
      */
     public function getFeedMappingResourceName()
     {
-        return isset($this->feed_mapping_resource_name) ? $this->feed_mapping_resource_name : '';
+        return $this->feed_mapping_resource_name ?? '';
     }
 
     public function hasFeedMappingResourceName()
@@ -186,7 +186,7 @@ class FeedItemPlaceholderPolicyInfo extends \Google\Protobuf\Internal\Message
      */
     public function setReviewStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\PolicyReviewStatusEnum\PolicyReviewStatus::class);
+        GPBUtil::checkEnum($var);
         $this->review_status = $var;
 
         return $this;
@@ -214,7 +214,7 @@ class FeedItemPlaceholderPolicyInfo extends \Google\Protobuf\Internal\Message
      */
     public function setApprovalStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\PolicyApprovalStatusEnum\PolicyApprovalStatus::class);
+        GPBUtil::checkEnum($var);
         $this->approval_status = $var;
 
         return $this;
@@ -266,7 +266,7 @@ class FeedItemPlaceholderPolicyInfo extends \Google\Protobuf\Internal\Message
      */
     public function setValidationStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FeedItemValidationStatusEnum\FeedItemValidationStatus::class);
+        GPBUtil::checkEnum($var);
         $this->validation_status = $var;
 
         return $this;
@@ -318,7 +318,7 @@ class FeedItemPlaceholderPolicyInfo extends \Google\Protobuf\Internal\Message
      */
     public function setQualityApprovalStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FeedItemQualityApprovalStatusEnum\FeedItemQualityApprovalStatus::class);
+        GPBUtil::checkEnum($var);
         $this->quality_approval_status = $var;
 
         return $this;

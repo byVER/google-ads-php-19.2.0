@@ -151,7 +151,7 @@ class AdGroupAd extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AdGroupAdStatusEnum\AdGroupAdStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;
@@ -165,7 +165,7 @@ class AdGroupAd extends \Google\Protobuf\Internal\Message
      */
     public function getAdGroup()
     {
-        return isset($this->ad_group) ? $this->ad_group : '';
+        return $this->ad_group ?? '';
     }
 
     public function hasAdGroup()
@@ -285,7 +285,7 @@ class AdGroupAd extends \Google\Protobuf\Internal\Message
      */
     public function setAdStrength($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AdStrengthEnum\AdStrength::class);
+        GPBUtil::checkEnum($var);
         $this->ad_strength = $var;
 
         return $this;

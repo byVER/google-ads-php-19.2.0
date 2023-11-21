@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.RecommendationService' => [
             'ApplyRecommendation' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\ApplyRecommendationResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\ApplyRecommendationResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',
@@ -17,7 +17,7 @@ return [
             ],
             'DismissRecommendation' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\DismissRecommendationResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\DismissRecommendationResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

@@ -25,7 +25,7 @@ class GoogleAdsResponseMetadata
 {
     use GoogleAdsMetadataTrait;
 
-    private $metadata;
+    private array $metadata;
 
     /**
      * Creates a `GoogleAdsResponseMetadata` instance with the specified parameters.

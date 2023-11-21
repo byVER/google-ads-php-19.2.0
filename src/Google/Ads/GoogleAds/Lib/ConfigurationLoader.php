@@ -27,7 +27,7 @@ use UnexpectedValueException;
  */
 final class ConfigurationLoader
 {
-    private $environmentalVariables;
+    private \Google\Ads\GoogleAds\Util\EnvironmentalVariables $environmentalVariables;
 
     /**
      * @param EnvironmentalVariables $environmentalVariables

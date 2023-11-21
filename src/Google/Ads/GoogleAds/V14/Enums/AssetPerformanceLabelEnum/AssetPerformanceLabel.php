@@ -19,47 +19,47 @@ class AssetPerformanceLabel
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * This asset does not yet have any performance informantion. This may be
      * because it is still under review.
      *
      * Generated from protobuf enum <code>PENDING = 2;</code>
      */
-    const PENDING = 2;
+    public const PENDING = 2;
     /**
      * The asset has started getting impressions but the stats are not
      * statistically significant enough to get an asset performance label.
      *
      * Generated from protobuf enum <code>LEARNING = 3;</code>
      */
-    const LEARNING = 3;
+    public const LEARNING = 3;
     /**
      * Worst performing assets.
      *
      * Generated from protobuf enum <code>LOW = 4;</code>
      */
-    const LOW = 4;
+    public const LOW = 4;
     /**
      * Good performing assets.
      *
      * Generated from protobuf enum <code>GOOD = 5;</code>
      */
-    const GOOD = 5;
+    public const GOOD = 5;
     /**
      * Best performing assets.
      *
      * Generated from protobuf enum <code>BEST = 6;</code>
      */
-    const BEST = 6;
+    public const BEST = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::PENDING => 'PENDING',
@@ -73,7 +73,7 @@ class AssetPerformanceLabel
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -81,10 +81,10 @@ class AssetPerformanceLabel
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

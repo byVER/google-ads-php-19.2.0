@@ -163,7 +163,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getBidModifier()
     {
-        return isset($this->bid_modifier) ? $this->bid_modifier : 0.0;
+        return $this->bid_modifier ?? 0.0;
     }
 
     public function hasBidModifier()
@@ -200,7 +200,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getBiddableConversions()
     {
-        return isset($this->biddable_conversions) ? $this->biddable_conversions : 0.0;
+        return $this->biddable_conversions ?? 0.0;
     }
 
     public function hasBiddableConversions()
@@ -238,7 +238,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getBiddableConversionsValue()
     {
-        return isset($this->biddable_conversions_value) ? $this->biddable_conversions_value : 0.0;
+        return $this->biddable_conversions_value ?? 0.0;
     }
 
     public function hasBiddableConversionsValue()
@@ -275,7 +275,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getClicks()
     {
-        return isset($this->clicks) ? $this->clicks : 0;
+        return $this->clicks ?? 0;
     }
 
     public function hasClicks()
@@ -311,7 +311,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getCostMicros()
     {
-        return isset($this->cost_micros) ? $this->cost_micros : 0;
+        return $this->cost_micros ?? 0;
     }
 
     public function hasCostMicros()
@@ -347,7 +347,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getImpressions()
     {
-        return isset($this->impressions) ? $this->impressions : 0;
+        return $this->impressions ?? 0;
     }
 
     public function hasImpressions()
@@ -384,7 +384,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getTopSlotImpressions()
     {
-        return isset($this->top_slot_impressions) ? $this->top_slot_impressions : 0;
+        return $this->top_slot_impressions ?? 0;
     }
 
     public function hasTopSlotImpressions()
@@ -422,7 +422,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getParentBiddableConversions()
     {
-        return isset($this->parent_biddable_conversions) ? $this->parent_biddable_conversions : 0.0;
+        return $this->parent_biddable_conversions ?? 0.0;
     }
 
     public function hasParentBiddableConversions()
@@ -460,7 +460,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getParentBiddableConversionsValue()
     {
-        return isset($this->parent_biddable_conversions_value) ? $this->parent_biddable_conversions_value : 0.0;
+        return $this->parent_biddable_conversions_value ?? 0.0;
     }
 
     public function hasParentBiddableConversionsValue()
@@ -497,7 +497,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getParentClicks()
     {
-        return isset($this->parent_clicks) ? $this->parent_clicks : 0;
+        return $this->parent_clicks ?? 0;
     }
 
     public function hasParentClicks()
@@ -533,7 +533,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getParentCostMicros()
     {
-        return isset($this->parent_cost_micros) ? $this->parent_cost_micros : 0;
+        return $this->parent_cost_micros ?? 0;
     }
 
     public function hasParentCostMicros()
@@ -569,7 +569,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getParentImpressions()
     {
-        return isset($this->parent_impressions) ? $this->parent_impressions : 0;
+        return $this->parent_impressions ?? 0;
     }
 
     public function hasParentImpressions()
@@ -606,7 +606,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getParentTopSlotImpressions()
     {
-        return isset($this->parent_top_slot_impressions) ? $this->parent_top_slot_impressions : 0;
+        return $this->parent_top_slot_impressions ?? 0;
     }
 
     public function hasParentTopSlotImpressions()
@@ -644,7 +644,7 @@ class BidModifierSimulationPoint extends \Google\Protobuf\Internal\Message
      */
     public function getParentRequiredBudgetMicros()
     {
-        return isset($this->parent_required_budget_micros) ? $this->parent_required_budget_micros : 0;
+        return $this->parent_required_budget_micros ?? 0;
     }
 
     public function hasParentRequiredBudgetMicros()

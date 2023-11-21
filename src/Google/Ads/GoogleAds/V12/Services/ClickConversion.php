@@ -167,7 +167,7 @@ class ClickConversion extends \Google\Protobuf\Internal\Message
      */
     public function getGclid()
     {
-        return isset($this->gclid) ? $this->gclid : '';
+        return $this->gclid ?? '';
     }
 
     public function hasGclid()
@@ -262,7 +262,7 @@ class ClickConversion extends \Google\Protobuf\Internal\Message
      */
     public function getConversionAction()
     {
-        return isset($this->conversion_action) ? $this->conversion_action : '';
+        return $this->conversion_action ?? '';
     }
 
     public function hasConversionAction()
@@ -303,7 +303,7 @@ class ClickConversion extends \Google\Protobuf\Internal\Message
      */
     public function getConversionDateTime()
     {
-        return isset($this->conversion_date_time) ? $this->conversion_date_time : '';
+        return $this->conversion_date_time ?? '';
     }
 
     public function hasConversionDateTime()
@@ -341,7 +341,7 @@ class ClickConversion extends \Google\Protobuf\Internal\Message
      */
     public function getConversionValue()
     {
-        return isset($this->conversion_value) ? $this->conversion_value : 0.0;
+        return $this->conversion_value ?? 0.0;
     }
 
     public function hasConversionValue()
@@ -378,7 +378,7 @@ class ClickConversion extends \Google\Protobuf\Internal\Message
      */
     public function getCurrencyCode()
     {
-        return isset($this->currency_code) ? $this->currency_code : '';
+        return $this->currency_code ?? '';
     }
 
     public function hasCurrencyCode()
@@ -416,7 +416,7 @@ class ClickConversion extends \Google\Protobuf\Internal\Message
      */
     public function getOrderId()
     {
-        return isset($this->order_id) ? $this->order_id : '';
+        return $this->order_id ?? '';
     }
 
     public function hasOrderId()
@@ -597,7 +597,7 @@ class ClickConversion extends \Google\Protobuf\Internal\Message
      */
     public function setConversionEnvironment($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\ConversionEnvironmentEnum\ConversionEnvironment::class);
+        GPBUtil::checkEnum($var);
         $this->conversion_environment = $var;
 
         return $this;

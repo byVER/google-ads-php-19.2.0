@@ -72,25 +72,25 @@ class BillingSetupServiceGapicClient
     use GapicClientTrait;
 
     /** The name of the service. */
-    const SERVICE_NAME = 'google.ads.googleads.v13.services.BillingSetupService';
+    public const SERVICE_NAME = 'google.ads.googleads.v13.services.BillingSetupService';
 
     /** The default address of the service. */
-    const SERVICE_ADDRESS = 'googleads.googleapis.com';
+    public const SERVICE_ADDRESS = 'googleads.googleapis.com';
 
     /** The default port of the service. */
-    const DEFAULT_SERVICE_PORT = 443;
+    public const DEFAULT_SERVICE_PORT = 443;
 
     /** The name of the code generator, to be included in the agent header. */
-    const CODEGEN_NAME = 'gapic';
+    public const CODEGEN_NAME = 'gapic';
 
     /** The default scopes required by the service. */
     public static $serviceScopes = [
         'https://www.googleapis.com/auth/adwords',
     ];
 
-    private static $billingSetupNameTemplate;
+    private static ?\Google\ApiCore\PathTemplate $billingSetupNameTemplate = null;
 
-    private static $pathTemplateMap;
+    private static ?array $pathTemplateMap = null;
 
     private static function getClientDefaults()
     {

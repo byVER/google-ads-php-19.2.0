@@ -18,76 +18,76 @@ class ChangeClientType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents an unclassified client type
      * unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Changes made through the "ads.google.com".
      * For example, changes made through campaign management.
      *
      * Generated from protobuf enum <code>GOOGLE_ADS_WEB_CLIENT = 2;</code>
      */
-    const GOOGLE_ADS_WEB_CLIENT = 2;
+    public const GOOGLE_ADS_WEB_CLIENT = 2;
     /**
      * Changes made through Google Ads automated rules.
      *
      * Generated from protobuf enum <code>GOOGLE_ADS_AUTOMATED_RULE = 3;</code>
      */
-    const GOOGLE_ADS_AUTOMATED_RULE = 3;
+    public const GOOGLE_ADS_AUTOMATED_RULE = 3;
     /**
      * Changes made through Google Ads scripts.
      *
      * Generated from protobuf enum <code>GOOGLE_ADS_SCRIPTS = 4;</code>
      */
-    const GOOGLE_ADS_SCRIPTS = 4;
+    public const GOOGLE_ADS_SCRIPTS = 4;
     /**
      * Changes made by Google Ads bulk upload.
      *
      * Generated from protobuf enum <code>GOOGLE_ADS_BULK_UPLOAD = 5;</code>
      */
-    const GOOGLE_ADS_BULK_UPLOAD = 5;
+    public const GOOGLE_ADS_BULK_UPLOAD = 5;
     /**
      * Changes made by Google Ads API.
      *
      * Generated from protobuf enum <code>GOOGLE_ADS_API = 6;</code>
      */
-    const GOOGLE_ADS_API = 6;
+    public const GOOGLE_ADS_API = 6;
     /**
      * Changes made by Google Ads Editor. This value is a placeholder.
      * The API does not return these changes.
      *
      * Generated from protobuf enum <code>GOOGLE_ADS_EDITOR = 7;</code>
      */
-    const GOOGLE_ADS_EDITOR = 7;
+    public const GOOGLE_ADS_EDITOR = 7;
     /**
      * Changes made by Google Ads mobile app.
      *
      * Generated from protobuf enum <code>GOOGLE_ADS_MOBILE_APP = 8;</code>
      */
-    const GOOGLE_ADS_MOBILE_APP = 8;
+    public const GOOGLE_ADS_MOBILE_APP = 8;
     /**
      * Changes made through Google Ads recommendations.
      *
      * Generated from protobuf enum <code>GOOGLE_ADS_RECOMMENDATIONS = 9;</code>
      */
-    const GOOGLE_ADS_RECOMMENDATIONS = 9;
+    public const GOOGLE_ADS_RECOMMENDATIONS = 9;
     /**
      * Changes made through Search Ads 360 Sync.
      *
      * Generated from protobuf enum <code>SEARCH_ADS_360_SYNC = 10;</code>
      */
-    const SEARCH_ADS_360_SYNC = 10;
+    public const SEARCH_ADS_360_SYNC = 10;
     /**
      * Changes made through Search Ads 360 Post.
      *
      * Generated from protobuf enum <code>SEARCH_ADS_360_POST = 11;</code>
      */
-    const SEARCH_ADS_360_POST = 11;
+    public const SEARCH_ADS_360_POST = 11;
     /**
      * Changes made through internal tools.
      * For example, when a user sets a URL template on an entity like a
@@ -95,16 +95,16 @@ class ChangeClientType
      *
      * Generated from protobuf enum <code>INTERNAL_TOOL = 12;</code>
      */
-    const INTERNAL_TOOL = 12;
+    public const INTERNAL_TOOL = 12;
     /**
      * Types of changes that are not categorized, for example,
      * changes made by coupon redemption through Google Ads.
      *
      * Generated from protobuf enum <code>OTHER = 13;</code>
      */
-    const OTHER = 13;
+    public const OTHER = 13;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::GOOGLE_ADS_WEB_CLIENT => 'GOOGLE_ADS_WEB_CLIENT',
@@ -125,7 +125,7 @@ class ChangeClientType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -133,10 +133,10 @@ class ChangeClientType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

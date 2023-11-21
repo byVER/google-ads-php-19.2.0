@@ -78,7 +78,7 @@ class RecommendationMetrics extends \Google\Protobuf\Internal\Message
      */
     public function getImpressions()
     {
-        return isset($this->impressions) ? $this->impressions : 0.0;
+        return $this->impressions ?? 0.0;
     }
 
     public function hasImpressions()
@@ -114,7 +114,7 @@ class RecommendationMetrics extends \Google\Protobuf\Internal\Message
      */
     public function getClicks()
     {
-        return isset($this->clicks) ? $this->clicks : 0.0;
+        return $this->clicks ?? 0.0;
     }
 
     public function hasClicks()
@@ -150,7 +150,7 @@ class RecommendationMetrics extends \Google\Protobuf\Internal\Message
      */
     public function getCostMicros()
     {
-        return isset($this->cost_micros) ? $this->cost_micros : 0;
+        return $this->cost_micros ?? 0;
     }
 
     public function hasCostMicros()
@@ -186,7 +186,7 @@ class RecommendationMetrics extends \Google\Protobuf\Internal\Message
      */
     public function getConversions()
     {
-        return isset($this->conversions) ? $this->conversions : 0.0;
+        return $this->conversions ?? 0.0;
     }
 
     public function hasConversions()
@@ -222,7 +222,7 @@ class RecommendationMetrics extends \Google\Protobuf\Internal\Message
      */
     public function getVideoViews()
     {
-        return isset($this->video_views) ? $this->video_views : 0.0;
+        return $this->video_views ?? 0.0;
     }
 
     public function hasVideoViews()

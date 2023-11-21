@@ -109,7 +109,7 @@ class MatchingFunction extends \Google\Protobuf\Internal\Message
      */
     public function getFunctionString()
     {
-        return isset($this->function_string) ? $this->function_string : '';
+        return $this->function_string ?? '';
     }
 
     public function hasFunctionString()
@@ -169,7 +169,7 @@ class MatchingFunction extends \Google\Protobuf\Internal\Message
      */
     public function setOperator($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\MatchingFunctionOperatorEnum\MatchingFunctionOperator::class);
+        GPBUtil::checkEnum($var);
         $this->operator = $var;
 
         return $this;

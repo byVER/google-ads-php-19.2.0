@@ -204,7 +204,7 @@ class ExtensionFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getId()
     {
-        return isset($this->id) ? $this->id : 0;
+        return $this->id ?? 0;
     }
 
     public function hasId()
@@ -254,7 +254,7 @@ class ExtensionFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function setExtensionType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\ExtensionTypeEnum\ExtensionType::class);
+        GPBUtil::checkEnum($var);
         $this->extension_type = $var;
 
         return $this;
@@ -271,7 +271,7 @@ class ExtensionFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getStartDateTime()
     {
-        return isset($this->start_date_time) ? $this->start_date_time : '';
+        return $this->start_date_time ?? '';
     }
 
     public function hasStartDateTime()
@@ -313,7 +313,7 @@ class ExtensionFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getEndDateTime()
     {
-        return isset($this->end_date_time) ? $this->end_date_time : '';
+        return $this->end_date_time ?? '';
     }
 
     public function hasEndDateTime()
@@ -394,7 +394,7 @@ class ExtensionFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function setDevice($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FeedItemTargetDeviceEnum\FeedItemTargetDevice::class);
+        GPBUtil::checkEnum($var);
         $this->device = $var;
 
         return $this;
@@ -408,7 +408,7 @@ class ExtensionFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getTargetedGeoTargetConstant()
     {
-        return isset($this->targeted_geo_target_constant) ? $this->targeted_geo_target_constant : '';
+        return $this->targeted_geo_target_constant ?? '';
     }
 
     public function hasTargetedGeoTargetConstant()
@@ -494,7 +494,7 @@ class ExtensionFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\FeedItemStatusEnum\FeedItemStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;

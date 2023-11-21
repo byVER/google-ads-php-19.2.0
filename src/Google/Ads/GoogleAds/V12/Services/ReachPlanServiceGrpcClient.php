@@ -57,7 +57,7 @@ class ReachPlanServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.ReachPlanService/ListPlannableLocations',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\ListPlannableLocationsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\ListPlannableLocationsResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -81,7 +81,7 @@ class ReachPlanServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.ReachPlanService/ListPlannableProducts',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\ListPlannableProductsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\ListPlannableProductsResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -107,7 +107,7 @@ class ReachPlanServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.ReachPlanService/GenerateReachForecast',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\GenerateReachForecastResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\GenerateReachForecastResponse::class, 'decode'],
         $metadata, $options);
     }
 

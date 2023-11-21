@@ -24,50 +24,50 @@ class AssetLinkPrimaryStatusReason
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The asset is paused for its linked rollup level. Contributes to a
      * PrimaryStatus of PAUSED.
      *
      * Generated from protobuf enum <code>ASSET_LINK_PAUSED = 2;</code>
      */
-    const ASSET_LINK_PAUSED = 2;
+    public const ASSET_LINK_PAUSED = 2;
     /**
      * The asset is removed for its linked rollup level. Contributes to a
      * PrimaryStatus of REMOVED.
      *
      * Generated from protobuf enum <code>ASSET_LINK_REMOVED = 3;</code>
      */
-    const ASSET_LINK_REMOVED = 3;
+    public const ASSET_LINK_REMOVED = 3;
     /**
      * The asset has been marked as disapproved. Contributes to a PrimaryStatus
      * of NOT_ELIGIBLE
      *
      * Generated from protobuf enum <code>ASSET_DISAPPROVED = 4;</code>
      */
-    const ASSET_DISAPPROVED = 4;
+    public const ASSET_DISAPPROVED = 4;
     /**
      * The asset has not completed policy review. Contributes to a PrimaryStatus
      * of PENDING.
      *
      * Generated from protobuf enum <code>ASSET_UNDER_REVIEW = 5;</code>
      */
-    const ASSET_UNDER_REVIEW = 5;
+    public const ASSET_UNDER_REVIEW = 5;
     /**
      * The asset is approved with policies applied. Contributes to a
      * PrimaryStatus of LIMITED.
      *
      * Generated from protobuf enum <code>ASSET_APPROVED_LABELED = 6;</code>
      */
-    const ASSET_APPROVED_LABELED = 6;
+    public const ASSET_APPROVED_LABELED = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ASSET_LINK_PAUSED => 'ASSET_LINK_PAUSED',
@@ -81,7 +81,7 @@ class AssetLinkPrimaryStatusReason
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -89,10 +89,10 @@ class AssetLinkPrimaryStatusReason
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

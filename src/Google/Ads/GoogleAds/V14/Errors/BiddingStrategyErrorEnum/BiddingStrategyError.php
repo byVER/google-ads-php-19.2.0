@@ -18,47 +18,47 @@ class BiddingStrategyError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Each bidding strategy must have a unique name.
      *
      * Generated from protobuf enum <code>DUPLICATE_NAME = 2;</code>
      */
-    const DUPLICATE_NAME = 2;
+    public const DUPLICATE_NAME = 2;
     /**
      * Bidding strategy type is immutable.
      *
      * Generated from protobuf enum <code>CANNOT_CHANGE_BIDDING_STRATEGY_TYPE = 3;</code>
      */
-    const CANNOT_CHANGE_BIDDING_STRATEGY_TYPE = 3;
+    public const CANNOT_CHANGE_BIDDING_STRATEGY_TYPE = 3;
     /**
      * Only bidding strategies not linked to campaigns, adgroups or adgroup
      * criteria can be removed.
      *
      * Generated from protobuf enum <code>CANNOT_REMOVE_ASSOCIATED_STRATEGY = 4;</code>
      */
-    const CANNOT_REMOVE_ASSOCIATED_STRATEGY = 4;
+    public const CANNOT_REMOVE_ASSOCIATED_STRATEGY = 4;
     /**
      * The specified bidding strategy is not supported.
      *
      * Generated from protobuf enum <code>BIDDING_STRATEGY_NOT_SUPPORTED = 5;</code>
      */
-    const BIDDING_STRATEGY_NOT_SUPPORTED = 5;
+    public const BIDDING_STRATEGY_NOT_SUPPORTED = 5;
     /**
      * The bidding strategy is incompatible with the campaign's bidding
      * strategy goal type.
      *
      * Generated from protobuf enum <code>INCOMPATIBLE_BIDDING_STRATEGY_AND_BIDDING_STRATEGY_GOAL_TYPE = 6;</code>
      */
-    const INCOMPATIBLE_BIDDING_STRATEGY_AND_BIDDING_STRATEGY_GOAL_TYPE = 6;
+    public const INCOMPATIBLE_BIDDING_STRATEGY_AND_BIDDING_STRATEGY_GOAL_TYPE = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::DUPLICATE_NAME => 'DUPLICATE_NAME',
@@ -72,7 +72,7 @@ class BiddingStrategyError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -80,10 +80,10 @@ class BiddingStrategyError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

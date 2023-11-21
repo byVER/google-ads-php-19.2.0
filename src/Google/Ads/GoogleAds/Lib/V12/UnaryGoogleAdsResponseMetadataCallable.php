@@ -44,7 +44,7 @@ class UnaryGoogleAdsResponseMetadataCallable extends GoogleAdsMiddlewareAbstract
         ) {
             $next = new ResponseMetadataMiddleware($this->getNextHandler());
             return $next($call, $options)->then(function ($responseList) {
-                list($response, $metadata) = $responseList;
+                [$response, $metadata] = $responseList;
                 return [$response, new GoogleAdsResponseMetadata($metadata)];
             });
         } else {

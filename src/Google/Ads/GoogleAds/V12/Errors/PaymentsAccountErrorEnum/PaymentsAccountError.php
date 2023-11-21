@@ -18,21 +18,21 @@ class PaymentsAccountError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Manager customers are not supported for payments account service.
      *
      * Generated from protobuf enum <code>NOT_SUPPORTED_FOR_MANAGER_CUSTOMER = 2;</code>
      */
-    const NOT_SUPPORTED_FOR_MANAGER_CUSTOMER = 2;
+    public const NOT_SUPPORTED_FOR_MANAGER_CUSTOMER = 2;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::NOT_SUPPORTED_FOR_MANAGER_CUSTOMER => 'NOT_SUPPORTED_FOR_MANAGER_CUSTOMER',
@@ -42,7 +42,7 @@ class PaymentsAccountError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -50,10 +50,10 @@ class PaymentsAccountError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

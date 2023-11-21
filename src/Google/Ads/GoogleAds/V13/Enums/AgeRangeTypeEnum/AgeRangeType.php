@@ -19,57 +19,57 @@ class AgeRangeType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Between 18 and 24 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_18_24 = 503001;</code>
      */
-    const AGE_RANGE_18_24 = 503001;
+    public const AGE_RANGE_18_24 = 503001;
     /**
      * Between 25 and 34 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_25_34 = 503002;</code>
      */
-    const AGE_RANGE_25_34 = 503002;
+    public const AGE_RANGE_25_34 = 503002;
     /**
      * Between 35 and 44 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_35_44 = 503003;</code>
      */
-    const AGE_RANGE_35_44 = 503003;
+    public const AGE_RANGE_35_44 = 503003;
     /**
      * Between 45 and 54 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_45_54 = 503004;</code>
      */
-    const AGE_RANGE_45_54 = 503004;
+    public const AGE_RANGE_45_54 = 503004;
     /**
      * Between 55 and 64 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_55_64 = 503005;</code>
      */
-    const AGE_RANGE_55_64 = 503005;
+    public const AGE_RANGE_55_64 = 503005;
     /**
      * 65 years old and beyond.
      *
      * Generated from protobuf enum <code>AGE_RANGE_65_UP = 503006;</code>
      */
-    const AGE_RANGE_65_UP = 503006;
+    public const AGE_RANGE_65_UP = 503006;
     /**
      * Undetermined age range.
      *
      * Generated from protobuf enum <code>AGE_RANGE_UNDETERMINED = 503999;</code>
      */
-    const AGE_RANGE_UNDETERMINED = 503999;
+    public const AGE_RANGE_UNDETERMINED = 503999;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::AGE_RANGE_18_24 => 'AGE_RANGE_18_24',
@@ -85,7 +85,7 @@ class AgeRangeType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -93,10 +93,10 @@ class AgeRangeType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

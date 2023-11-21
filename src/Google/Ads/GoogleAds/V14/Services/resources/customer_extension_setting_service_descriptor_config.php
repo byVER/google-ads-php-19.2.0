@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.CustomerExtensionSettingService' => [
             'MutateCustomerExtensionSettings' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCustomerExtensionSettingsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCustomerExtensionSettingsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

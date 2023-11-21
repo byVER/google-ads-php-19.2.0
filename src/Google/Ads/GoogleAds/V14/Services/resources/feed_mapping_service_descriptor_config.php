@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.FeedMappingService' => [
             'MutateFeedMappings' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateFeedMappingsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateFeedMappingsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

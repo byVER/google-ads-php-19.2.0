@@ -18,123 +18,123 @@ class FeedItemQualityDisapprovalReason
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Price contains repetitive headers.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_REPETITIVE_HEADERS = 2;</code>
      */
-    const PRICE_TABLE_REPETITIVE_HEADERS = 2;
+    public const PRICE_TABLE_REPETITIVE_HEADERS = 2;
     /**
      * Price contains repetitive description.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_REPETITIVE_DESCRIPTION = 3;</code>
      */
-    const PRICE_TABLE_REPETITIVE_DESCRIPTION = 3;
+    public const PRICE_TABLE_REPETITIVE_DESCRIPTION = 3;
     /**
      * Price contains inconsistent items.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_INCONSISTENT_ROWS = 4;</code>
      */
-    const PRICE_TABLE_INCONSISTENT_ROWS = 4;
+    public const PRICE_TABLE_INCONSISTENT_ROWS = 4;
     /**
      * Price contains qualifiers in description.
      *
      * Generated from protobuf enum <code>PRICE_DESCRIPTION_HAS_PRICE_QUALIFIERS = 5;</code>
      */
-    const PRICE_DESCRIPTION_HAS_PRICE_QUALIFIERS = 5;
+    public const PRICE_DESCRIPTION_HAS_PRICE_QUALIFIERS = 5;
     /**
      * Price contains an unsupported language.
      *
      * Generated from protobuf enum <code>PRICE_UNSUPPORTED_LANGUAGE = 6;</code>
      */
-    const PRICE_UNSUPPORTED_LANGUAGE = 6;
+    public const PRICE_UNSUPPORTED_LANGUAGE = 6;
     /**
      * Price item header is not relevant to the price type.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_ROW_HEADER_TABLE_TYPE_MISMATCH = 7;</code>
      */
-    const PRICE_TABLE_ROW_HEADER_TABLE_TYPE_MISMATCH = 7;
+    public const PRICE_TABLE_ROW_HEADER_TABLE_TYPE_MISMATCH = 7;
     /**
      * Price item header has promotional text.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_ROW_HEADER_HAS_PROMOTIONAL_TEXT = 8;</code>
      */
-    const PRICE_TABLE_ROW_HEADER_HAS_PROMOTIONAL_TEXT = 8;
+    public const PRICE_TABLE_ROW_HEADER_HAS_PROMOTIONAL_TEXT = 8;
     /**
      * Price item description is not relevant to the item header.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_ROW_DESCRIPTION_NOT_RELEVANT = 9;</code>
      */
-    const PRICE_TABLE_ROW_DESCRIPTION_NOT_RELEVANT = 9;
+    public const PRICE_TABLE_ROW_DESCRIPTION_NOT_RELEVANT = 9;
     /**
      * Price item description contains promotional text.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_ROW_DESCRIPTION_HAS_PROMOTIONAL_TEXT = 10;</code>
      */
-    const PRICE_TABLE_ROW_DESCRIPTION_HAS_PROMOTIONAL_TEXT = 10;
+    public const PRICE_TABLE_ROW_DESCRIPTION_HAS_PROMOTIONAL_TEXT = 10;
     /**
      * Price item header and description are repetitive.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_ROW_HEADER_DESCRIPTION_REPETITIVE = 11;</code>
      */
-    const PRICE_TABLE_ROW_HEADER_DESCRIPTION_REPETITIVE = 11;
+    public const PRICE_TABLE_ROW_HEADER_DESCRIPTION_REPETITIVE = 11;
     /**
      * Price item is in a foreign language, nonsense, or can't be rated.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_ROW_UNRATEABLE = 12;</code>
      */
-    const PRICE_TABLE_ROW_UNRATEABLE = 12;
+    public const PRICE_TABLE_ROW_UNRATEABLE = 12;
     /**
      * Price item price is invalid or inaccurate.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_ROW_PRICE_INVALID = 13;</code>
      */
-    const PRICE_TABLE_ROW_PRICE_INVALID = 13;
+    public const PRICE_TABLE_ROW_PRICE_INVALID = 13;
     /**
      * Price item URL is invalid or irrelevant.
      *
      * Generated from protobuf enum <code>PRICE_TABLE_ROW_URL_INVALID = 14;</code>
      */
-    const PRICE_TABLE_ROW_URL_INVALID = 14;
+    public const PRICE_TABLE_ROW_URL_INVALID = 14;
     /**
      * Price item header or description has price.
      *
      * Generated from protobuf enum <code>PRICE_HEADER_OR_DESCRIPTION_HAS_PRICE = 15;</code>
      */
-    const PRICE_HEADER_OR_DESCRIPTION_HAS_PRICE = 15;
+    public const PRICE_HEADER_OR_DESCRIPTION_HAS_PRICE = 15;
     /**
      * Structured snippet values do not match the header.
      *
      * Generated from protobuf enum <code>STRUCTURED_SNIPPETS_HEADER_POLICY_VIOLATED = 16;</code>
      */
-    const STRUCTURED_SNIPPETS_HEADER_POLICY_VIOLATED = 16;
+    public const STRUCTURED_SNIPPETS_HEADER_POLICY_VIOLATED = 16;
     /**
      * Structured snippet values are repeated.
      *
      * Generated from protobuf enum <code>STRUCTURED_SNIPPETS_REPEATED_VALUES = 17;</code>
      */
-    const STRUCTURED_SNIPPETS_REPEATED_VALUES = 17;
+    public const STRUCTURED_SNIPPETS_REPEATED_VALUES = 17;
     /**
      * Structured snippet values violate editorial guidelines like punctuation.
      *
      * Generated from protobuf enum <code>STRUCTURED_SNIPPETS_EDITORIAL_GUIDELINES = 18;</code>
      */
-    const STRUCTURED_SNIPPETS_EDITORIAL_GUIDELINES = 18;
+    public const STRUCTURED_SNIPPETS_EDITORIAL_GUIDELINES = 18;
     /**
      * Structured snippet contain promotional text.
      *
      * Generated from protobuf enum <code>STRUCTURED_SNIPPETS_HAS_PROMOTIONAL_TEXT = 19;</code>
      */
-    const STRUCTURED_SNIPPETS_HAS_PROMOTIONAL_TEXT = 19;
+    public const STRUCTURED_SNIPPETS_HAS_PROMOTIONAL_TEXT = 19;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::PRICE_TABLE_REPETITIVE_HEADERS => 'PRICE_TABLE_REPETITIVE_HEADERS',
@@ -161,7 +161,7 @@ class FeedItemQualityDisapprovalReason
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -169,10 +169,10 @@ class FeedItemQualityDisapprovalReason
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

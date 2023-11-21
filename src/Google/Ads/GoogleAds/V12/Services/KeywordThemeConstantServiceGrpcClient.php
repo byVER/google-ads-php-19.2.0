@@ -53,7 +53,7 @@ class KeywordThemeConstantServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.KeywordThemeConstantService/SuggestKeywordThemeConstants',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\SuggestKeywordThemeConstantsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\SuggestKeywordThemeConstantsResponse::class, 'decode'],
         $metadata, $options);
     }
 

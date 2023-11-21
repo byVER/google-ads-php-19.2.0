@@ -131,7 +131,7 @@ class AdGroupExtensionSetting extends \Google\Protobuf\Internal\Message
      */
     public function setExtensionType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\ExtensionTypeEnum\ExtensionType::class);
+        GPBUtil::checkEnum($var);
         $this->extension_type = $var;
 
         return $this;
@@ -147,7 +147,7 @@ class AdGroupExtensionSetting extends \Google\Protobuf\Internal\Message
      */
     public function getAdGroup()
     {
-        return isset($this->ad_group) ? $this->ad_group : '';
+        return $this->ad_group ?? '';
     }
 
     public function hasAdGroup()
@@ -227,7 +227,7 @@ class AdGroupExtensionSetting extends \Google\Protobuf\Internal\Message
      */
     public function setDevice($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\ExtensionSettingDeviceEnum\ExtensionSettingDevice::class);
+        GPBUtil::checkEnum($var);
         $this->device = $var;
 
         return $this;

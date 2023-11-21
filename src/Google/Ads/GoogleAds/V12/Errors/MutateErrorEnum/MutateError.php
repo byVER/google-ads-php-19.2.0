@@ -18,70 +18,70 @@ class MutateError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Requested resource was not found.
      *
      * Generated from protobuf enum <code>RESOURCE_NOT_FOUND = 3;</code>
      */
-    const RESOURCE_NOT_FOUND = 3;
+    public const RESOURCE_NOT_FOUND = 3;
     /**
      * Cannot mutate the same resource twice in one request.
      *
      * Generated from protobuf enum <code>ID_EXISTS_IN_MULTIPLE_MUTATES = 7;</code>
      */
-    const ID_EXISTS_IN_MULTIPLE_MUTATES = 7;
+    public const ID_EXISTS_IN_MULTIPLE_MUTATES = 7;
     /**
      * The field's contents don't match another field that represents the same
      * data.
      *
      * Generated from protobuf enum <code>INCONSISTENT_FIELD_VALUES = 8;</code>
      */
-    const INCONSISTENT_FIELD_VALUES = 8;
+    public const INCONSISTENT_FIELD_VALUES = 8;
     /**
      * Mutates are not allowed for the requested resource.
      *
      * Generated from protobuf enum <code>MUTATE_NOT_ALLOWED = 9;</code>
      */
-    const MUTATE_NOT_ALLOWED = 9;
+    public const MUTATE_NOT_ALLOWED = 9;
     /**
      * The resource isn't in Google Ads. It belongs to another ads system.
      *
      * Generated from protobuf enum <code>RESOURCE_NOT_IN_GOOGLE_ADS = 10;</code>
      */
-    const RESOURCE_NOT_IN_GOOGLE_ADS = 10;
+    public const RESOURCE_NOT_IN_GOOGLE_ADS = 10;
     /**
      * The resource being created already exists.
      *
      * Generated from protobuf enum <code>RESOURCE_ALREADY_EXISTS = 11;</code>
      */
-    const RESOURCE_ALREADY_EXISTS = 11;
+    public const RESOURCE_ALREADY_EXISTS = 11;
     /**
      * This resource cannot be used with "validate_only".
      *
      * Generated from protobuf enum <code>RESOURCE_DOES_NOT_SUPPORT_VALIDATE_ONLY = 12;</code>
      */
-    const RESOURCE_DOES_NOT_SUPPORT_VALIDATE_ONLY = 12;
+    public const RESOURCE_DOES_NOT_SUPPORT_VALIDATE_ONLY = 12;
     /**
      * This operation cannot be used with "partial_failure".
      *
      * Generated from protobuf enum <code>OPERATION_DOES_NOT_SUPPORT_PARTIAL_FAILURE = 16;</code>
      */
-    const OPERATION_DOES_NOT_SUPPORT_PARTIAL_FAILURE = 16;
+    public const OPERATION_DOES_NOT_SUPPORT_PARTIAL_FAILURE = 16;
     /**
      * Attempt to write to read-only fields.
      *
      * Generated from protobuf enum <code>RESOURCE_READ_ONLY = 13;</code>
      */
-    const RESOURCE_READ_ONLY = 13;
+    public const RESOURCE_READ_ONLY = 13;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::RESOURCE_NOT_FOUND => 'RESOURCE_NOT_FOUND',
@@ -99,7 +99,7 @@ class MutateError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -107,10 +107,10 @@ class MutateError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

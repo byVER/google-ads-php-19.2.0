@@ -109,7 +109,7 @@ class MerchantCenterLink extends \Google\Protobuf\Internal\Message
      */
     public function getId()
     {
-        return isset($this->id) ? $this->id : 0;
+        return $this->id ?? 0;
     }
 
     public function hasId()
@@ -147,7 +147,7 @@ class MerchantCenterLink extends \Google\Protobuf\Internal\Message
      */
     public function getMerchantCenterAccountName()
     {
-        return isset($this->merchant_center_account_name) ? $this->merchant_center_account_name : '';
+        return $this->merchant_center_account_name ?? '';
     }
 
     public function hasMerchantCenterAccountName()
@@ -196,7 +196,7 @@ class MerchantCenterLink extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\MerchantCenterLinkStatusEnum\MerchantCenterLinkStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;

@@ -18,43 +18,43 @@ class SmartCampaignNotEligibleReason
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received value is not known in this version.
      * This is a response-only value.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The campaign is not eligible to serve because of an issue with the
      * account.
      *
      * Generated from protobuf enum <code>ACCOUNT_ISSUE = 2;</code>
      */
-    const ACCOUNT_ISSUE = 2;
+    public const ACCOUNT_ISSUE = 2;
     /**
      * The campaign is not eligible to serve because of a payment issue.
      *
      * Generated from protobuf enum <code>BILLING_ISSUE = 3;</code>
      */
-    const BILLING_ISSUE = 3;
+    public const BILLING_ISSUE = 3;
     /**
      * The business profile location associated with the campaign has been
      * removed.
      *
      * Generated from protobuf enum <code>BUSINESS_PROFILE_LOCATION_REMOVED = 4;</code>
      */
-    const BUSINESS_PROFILE_LOCATION_REMOVED = 4;
+    public const BUSINESS_PROFILE_LOCATION_REMOVED = 4;
     /**
      * All system-generated ads have been disapproved. Consult the
      * policy_summary field in the AdGroupAd resource for more details.
      *
      * Generated from protobuf enum <code>ALL_ADS_DISAPPROVED = 5;</code>
      */
-    const ALL_ADS_DISAPPROVED = 5;
+    public const ALL_ADS_DISAPPROVED = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ACCOUNT_ISSUE => 'ACCOUNT_ISSUE',
@@ -67,7 +67,7 @@ class SmartCampaignNotEligibleReason
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -75,10 +75,10 @@ class SmartCampaignNotEligibleReason
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

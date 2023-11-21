@@ -143,7 +143,7 @@ class BillingSetup extends \Google\Protobuf\Internal\Message
      */
     public function getId()
     {
-        return isset($this->id) ? $this->id : 0;
+        return $this->id ?? 0;
     }
 
     public function hasId()
@@ -191,7 +191,7 @@ class BillingSetup extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\BillingSetupStatusEnum\BillingSetupStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;
@@ -211,7 +211,7 @@ class BillingSetup extends \Google\Protobuf\Internal\Message
      */
     public function getPaymentsAccount()
     {
-        return isset($this->payments_account) ? $this->payments_account : '';
+        return $this->payments_account ?? '';
     }
 
     public function hasPaymentsAccount()
@@ -347,7 +347,7 @@ class BillingSetup extends \Google\Protobuf\Internal\Message
      */
     public function setStartTimeType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\TimeTypeEnum\TimeType::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(10, $var);
 
         return $this;
@@ -409,7 +409,7 @@ class BillingSetup extends \Google\Protobuf\Internal\Message
      */
     public function setEndTimeType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\TimeTypeEnum\TimeType::class);
+        GPBUtil::checkEnum($var);
         $this->writeOneof(14, $var);
 
         return $this;

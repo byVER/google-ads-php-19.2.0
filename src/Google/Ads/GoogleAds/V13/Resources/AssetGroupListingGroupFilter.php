@@ -202,7 +202,7 @@ class AssetGroupListingGroupFilter extends \Google\Protobuf\Internal\Message
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\ListingGroupFilterTypeEnum\ListingGroupFilterType::class);
+        GPBUtil::checkEnum($var);
         $this->type = $var;
 
         return $this;
@@ -230,7 +230,7 @@ class AssetGroupListingGroupFilter extends \Google\Protobuf\Internal\Message
      */
     public function setVertical($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\ListingGroupFilterVerticalEnum\ListingGroupFilterVertical::class);
+        GPBUtil::checkEnum($var);
         $this->vertical = $var;
 
         return $this;

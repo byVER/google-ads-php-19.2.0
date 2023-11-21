@@ -18,25 +18,25 @@ class HotelRateType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Rate type information is unavailable.
      *
      * Generated from protobuf enum <code>UNAVAILABLE = 2;</code>
      */
-    const UNAVAILABLE = 2;
+    public const UNAVAILABLE = 2;
     /**
      * Rates available to everyone.
      *
      * Generated from protobuf enum <code>PUBLIC_RATE = 3;</code>
      */
-    const PUBLIC_RATE = 3;
+    public const PUBLIC_RATE = 3;
     /**
      * A membership program rate is available and satisfies basic requirements
      * like having a public rate available. UI treatment will strikethrough the
@@ -46,7 +46,7 @@ class HotelRateType
      *
      * Generated from protobuf enum <code>QUALIFIED_RATE = 4;</code>
      */
-    const QUALIFIED_RATE = 4;
+    public const QUALIFIED_RATE = 4;
     /**
      * Rates available to users that satisfy some eligibility criteria, for
      * example, all signed-in users, 20% of mobile users, all mobile users in
@@ -54,9 +54,9 @@ class HotelRateType
      *
      * Generated from protobuf enum <code>PRIVATE_RATE = 5;</code>
      */
-    const PRIVATE_RATE = 5;
+    public const PRIVATE_RATE = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::UNAVAILABLE => 'UNAVAILABLE',
@@ -69,7 +69,7 @@ class HotelRateType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -77,10 +77,10 @@ class HotelRateType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

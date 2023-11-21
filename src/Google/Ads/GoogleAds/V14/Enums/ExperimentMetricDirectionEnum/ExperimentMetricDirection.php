@@ -18,47 +18,47 @@ class ExperimentMetricDirection
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The goal of the experiment is to not change the metric.
      *
      * Generated from protobuf enum <code>NO_CHANGE = 2;</code>
      */
-    const NO_CHANGE = 2;
+    public const NO_CHANGE = 2;
     /**
      * The goal of the experiment is to increate the metric.
      *
      * Generated from protobuf enum <code>INCREASE = 3;</code>
      */
-    const INCREASE = 3;
+    public const INCREASE = 3;
     /**
      * The goal of the experiment is to decrease the metric.
      *
      * Generated from protobuf enum <code>DECREASE = 4;</code>
      */
-    const DECREASE = 4;
+    public const DECREASE = 4;
     /**
      * The goal of the experiment is to either not change or increase the
      * metric.
      *
      * Generated from protobuf enum <code>NO_CHANGE_OR_INCREASE = 5;</code>
      */
-    const NO_CHANGE_OR_INCREASE = 5;
+    public const NO_CHANGE_OR_INCREASE = 5;
     /**
      * The goal of the experiment is to either not change or decrease the
      * metric.
      *
      * Generated from protobuf enum <code>NO_CHANGE_OR_DECREASE = 6;</code>
      */
-    const NO_CHANGE_OR_DECREASE = 6;
+    public const NO_CHANGE_OR_DECREASE = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::NO_CHANGE => 'NO_CHANGE',
@@ -72,7 +72,7 @@ class ExperimentMetricDirection
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -80,10 +80,10 @@ class ExperimentMetricDirection
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

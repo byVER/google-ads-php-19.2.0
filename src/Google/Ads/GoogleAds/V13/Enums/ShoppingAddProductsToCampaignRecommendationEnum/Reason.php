@@ -18,42 +18,42 @@ class Reason
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The Merchant Center account does not have any submitted products.
      *
      * Generated from protobuf enum <code>MERCHANT_CENTER_ACCOUNT_HAS_NO_SUBMITTED_PRODUCTS = 2;</code>
      */
-    const MERCHANT_CENTER_ACCOUNT_HAS_NO_SUBMITTED_PRODUCTS = 2;
+    public const MERCHANT_CENTER_ACCOUNT_HAS_NO_SUBMITTED_PRODUCTS = 2;
     /**
      * The Merchant Center account does not have any submitted products in the
      * feed.
      *
      * Generated from protobuf enum <code>MERCHANT_CENTER_ACCOUNT_HAS_NO_SUBMITTED_PRODUCTS_IN_FEED = 3;</code>
      */
-    const MERCHANT_CENTER_ACCOUNT_HAS_NO_SUBMITTED_PRODUCTS_IN_FEED = 3;
+    public const MERCHANT_CENTER_ACCOUNT_HAS_NO_SUBMITTED_PRODUCTS_IN_FEED = 3;
     /**
      * The Google Ads account has active campaign filters that prevents
      * inclusion of offers in the campaign.
      *
      * Generated from protobuf enum <code>ADS_ACCOUNT_EXCLUDES_OFFERS_FROM_CAMPAIGN = 4;</code>
      */
-    const ADS_ACCOUNT_EXCLUDES_OFFERS_FROM_CAMPAIGN = 4;
+    public const ADS_ACCOUNT_EXCLUDES_OFFERS_FROM_CAMPAIGN = 4;
     /**
      * All products available have been explicitly excluded from
      * being targeted by the campaign.
      *
      * Generated from protobuf enum <code>ALL_PRODUCTS_ARE_EXCLUDED_FROM_CAMPAIGN = 5;</code>
      */
-    const ALL_PRODUCTS_ARE_EXCLUDED_FROM_CAMPAIGN = 5;
+    public const ALL_PRODUCTS_ARE_EXCLUDED_FROM_CAMPAIGN = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::MERCHANT_CENTER_ACCOUNT_HAS_NO_SUBMITTED_PRODUCTS => 'MERCHANT_CENTER_ACCOUNT_HAS_NO_SUBMITTED_PRODUCTS',
@@ -66,7 +66,7 @@ class Reason
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -74,10 +74,10 @@ class Reason
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

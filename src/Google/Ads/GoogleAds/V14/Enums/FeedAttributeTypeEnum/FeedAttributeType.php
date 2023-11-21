@@ -18,93 +18,93 @@ class FeedAttributeType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Int64.
      *
      * Generated from protobuf enum <code>INT64 = 2;</code>
      */
-    const INT64 = 2;
+    public const INT64 = 2;
     /**
      * Double.
      *
      * Generated from protobuf enum <code>DOUBLE = 3;</code>
      */
-    const DOUBLE = 3;
+    public const DOUBLE = 3;
     /**
      * String.
      *
      * Generated from protobuf enum <code>STRING = 4;</code>
      */
-    const STRING = 4;
+    public const STRING = 4;
     /**
      * Boolean.
      *
      * Generated from protobuf enum <code>BOOLEAN = 5;</code>
      */
-    const BOOLEAN = 5;
+    public const BOOLEAN = 5;
     /**
      * Url.
      *
      * Generated from protobuf enum <code>URL = 6;</code>
      */
-    const URL = 6;
+    public const URL = 6;
     /**
      * Datetime.
      *
      * Generated from protobuf enum <code>DATE_TIME = 7;</code>
      */
-    const DATE_TIME = 7;
+    public const DATE_TIME = 7;
     /**
      * Int64 list.
      *
      * Generated from protobuf enum <code>INT64_LIST = 8;</code>
      */
-    const INT64_LIST = 8;
+    public const INT64_LIST = 8;
     /**
      * Double (8 bytes) list.
      *
      * Generated from protobuf enum <code>DOUBLE_LIST = 9;</code>
      */
-    const DOUBLE_LIST = 9;
+    public const DOUBLE_LIST = 9;
     /**
      * String list.
      *
      * Generated from protobuf enum <code>STRING_LIST = 10;</code>
      */
-    const STRING_LIST = 10;
+    public const STRING_LIST = 10;
     /**
      * Boolean list.
      *
      * Generated from protobuf enum <code>BOOLEAN_LIST = 11;</code>
      */
-    const BOOLEAN_LIST = 11;
+    public const BOOLEAN_LIST = 11;
     /**
      * Url list.
      *
      * Generated from protobuf enum <code>URL_LIST = 12;</code>
      */
-    const URL_LIST = 12;
+    public const URL_LIST = 12;
     /**
      * Datetime list.
      *
      * Generated from protobuf enum <code>DATE_TIME_LIST = 13;</code>
      */
-    const DATE_TIME_LIST = 13;
+    public const DATE_TIME_LIST = 13;
     /**
      * Price.
      *
      * Generated from protobuf enum <code>PRICE = 14;</code>
      */
-    const PRICE = 14;
+    public const PRICE = 14;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::INT64 => 'INT64',
@@ -126,7 +126,7 @@ class FeedAttributeType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -134,10 +134,10 @@ class FeedAttributeType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

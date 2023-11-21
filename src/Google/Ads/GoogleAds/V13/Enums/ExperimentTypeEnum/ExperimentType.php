@@ -18,75 +18,75 @@ class ExperimentType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * This is a DISPLAY_AND_VIDEO_360 experiment.
      *
      * Generated from protobuf enum <code>DISPLAY_AND_VIDEO_360 = 2;</code>
      */
-    const DISPLAY_AND_VIDEO_360 = 2;
+    public const DISPLAY_AND_VIDEO_360 = 2;
     /**
      * This is an ad variation experiment.
      *
      * Generated from protobuf enum <code>AD_VARIATION = 3;</code>
      */
-    const AD_VARIATION = 3;
+    public const AD_VARIATION = 3;
     /**
      * A custom experiment consisting of Video campaigns.
      *
      * Generated from protobuf enum <code>YOUTUBE_CUSTOM = 5;</code>
      */
-    const YOUTUBE_CUSTOM = 5;
+    public const YOUTUBE_CUSTOM = 5;
     /**
      * A custom experiment consisting of display campaigns.
      *
      * Generated from protobuf enum <code>DISPLAY_CUSTOM = 6;</code>
      */
-    const DISPLAY_CUSTOM = 6;
+    public const DISPLAY_CUSTOM = 6;
     /**
      * A custom experiment consisting of search campaigns.
      *
      * Generated from protobuf enum <code>SEARCH_CUSTOM = 7;</code>
      */
-    const SEARCH_CUSTOM = 7;
+    public const SEARCH_CUSTOM = 7;
     /**
      * An experiment that compares bidding strategies for display campaigns.
      *
      * Generated from protobuf enum <code>DISPLAY_AUTOMATED_BIDDING_STRATEGY = 8;</code>
      */
-    const DISPLAY_AUTOMATED_BIDDING_STRATEGY = 8;
+    public const DISPLAY_AUTOMATED_BIDDING_STRATEGY = 8;
     /**
      * An experiment that compares bidding strategies for search campaigns."
      *
      * Generated from protobuf enum <code>SEARCH_AUTOMATED_BIDDING_STRATEGY = 9;</code>
      */
-    const SEARCH_AUTOMATED_BIDDING_STRATEGY = 9;
+    public const SEARCH_AUTOMATED_BIDDING_STRATEGY = 9;
     /**
      * An experiment that compares bidding strategies for shopping campaigns.
      *
      * Generated from protobuf enum <code>SHOPPING_AUTOMATED_BIDDING_STRATEGY = 10;</code>
      */
-    const SHOPPING_AUTOMATED_BIDDING_STRATEGY = 10;
+    public const SHOPPING_AUTOMATED_BIDDING_STRATEGY = 10;
     /**
      * DEPRECATED. A smart matching experiment with search campaigns.
      *
      * Generated from protobuf enum <code>SMART_MATCHING = 11;</code>
      */
-    const SMART_MATCHING = 11;
+    public const SMART_MATCHING = 11;
     /**
      * A custom experiment consisting of hotel campaigns.
      *
      * Generated from protobuf enum <code>HOTEL_CUSTOM = 12;</code>
      */
-    const HOTEL_CUSTOM = 12;
+    public const HOTEL_CUSTOM = 12;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::DISPLAY_AND_VIDEO_360 => 'DISPLAY_AND_VIDEO_360',
@@ -105,7 +105,7 @@ class ExperimentType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -113,10 +113,10 @@ class ExperimentType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

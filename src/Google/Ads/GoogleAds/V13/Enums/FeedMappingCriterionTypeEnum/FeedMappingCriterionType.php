@@ -18,27 +18,27 @@ class FeedMappingCriterionType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Allows campaign targeting at locations within a location feed.
      *
      * Generated from protobuf enum <code>LOCATION_EXTENSION_TARGETING = 4;</code>
      */
-    const LOCATION_EXTENSION_TARGETING = 4;
+    public const LOCATION_EXTENSION_TARGETING = 4;
     /**
      * Allows url targeting for your dynamic search ads within a page feed.
      *
      * Generated from protobuf enum <code>DSA_PAGE_FEED = 3;</code>
      */
-    const DSA_PAGE_FEED = 3;
+    public const DSA_PAGE_FEED = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::LOCATION_EXTENSION_TARGETING => 'LOCATION_EXTENSION_TARGETING',
@@ -49,7 +49,7 @@ class FeedMappingCriterionType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -57,10 +57,10 @@ class FeedMappingCriterionType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

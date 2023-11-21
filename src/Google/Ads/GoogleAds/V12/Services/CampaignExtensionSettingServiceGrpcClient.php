@@ -75,7 +75,7 @@ class CampaignExtensionSettingServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.CampaignExtensionSettingService/MutateCampaignExtensionSettings',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\MutateCampaignExtensionSettingsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\MutateCampaignExtensionSettingsResponse::class, 'decode'],
         $metadata, $options);
     }
 

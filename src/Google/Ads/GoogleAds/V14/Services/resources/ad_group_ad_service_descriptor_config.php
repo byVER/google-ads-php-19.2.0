@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.AdGroupAdService' => [
             'MutateAdGroupAds' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateAdGroupAdsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateAdGroupAdsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

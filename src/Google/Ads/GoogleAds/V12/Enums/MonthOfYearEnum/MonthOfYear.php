@@ -18,87 +18,87 @@ class MonthOfYear
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * January.
      *
      * Generated from protobuf enum <code>JANUARY = 2;</code>
      */
-    const JANUARY = 2;
+    public const JANUARY = 2;
     /**
      * February.
      *
      * Generated from protobuf enum <code>FEBRUARY = 3;</code>
      */
-    const FEBRUARY = 3;
+    public const FEBRUARY = 3;
     /**
      * March.
      *
      * Generated from protobuf enum <code>MARCH = 4;</code>
      */
-    const MARCH = 4;
+    public const MARCH = 4;
     /**
      * April.
      *
      * Generated from protobuf enum <code>APRIL = 5;</code>
      */
-    const APRIL = 5;
+    public const APRIL = 5;
     /**
      * May.
      *
      * Generated from protobuf enum <code>MAY = 6;</code>
      */
-    const MAY = 6;
+    public const MAY = 6;
     /**
      * June.
      *
      * Generated from protobuf enum <code>JUNE = 7;</code>
      */
-    const JUNE = 7;
+    public const JUNE = 7;
     /**
      * July.
      *
      * Generated from protobuf enum <code>JULY = 8;</code>
      */
-    const JULY = 8;
+    public const JULY = 8;
     /**
      * August.
      *
      * Generated from protobuf enum <code>AUGUST = 9;</code>
      */
-    const AUGUST = 9;
+    public const AUGUST = 9;
     /**
      * September.
      *
      * Generated from protobuf enum <code>SEPTEMBER = 10;</code>
      */
-    const SEPTEMBER = 10;
+    public const SEPTEMBER = 10;
     /**
      * October.
      *
      * Generated from protobuf enum <code>OCTOBER = 11;</code>
      */
-    const OCTOBER = 11;
+    public const OCTOBER = 11;
     /**
      * November.
      *
      * Generated from protobuf enum <code>NOVEMBER = 12;</code>
      */
-    const NOVEMBER = 12;
+    public const NOVEMBER = 12;
     /**
      * December.
      *
      * Generated from protobuf enum <code>DECEMBER = 13;</code>
      */
-    const DECEMBER = 13;
+    public const DECEMBER = 13;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::JANUARY => 'JANUARY',
@@ -119,7 +119,7 @@ class MonthOfYear
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -127,10 +127,10 @@ class MonthOfYear
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

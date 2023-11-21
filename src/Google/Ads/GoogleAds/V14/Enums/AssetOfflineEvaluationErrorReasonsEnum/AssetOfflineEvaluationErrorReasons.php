@@ -18,49 +18,49 @@ class AssetOfflineEvaluationErrorReasons
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * One or more descriptions repeats its corresponding row header.
      *
      * Generated from protobuf enum <code>PRICE_ASSET_DESCRIPTION_REPEATS_ROW_HEADER = 2;</code>
      */
-    const PRICE_ASSET_DESCRIPTION_REPEATS_ROW_HEADER = 2;
+    public const PRICE_ASSET_DESCRIPTION_REPEATS_ROW_HEADER = 2;
     /**
      * Price asset contains repetitive headers.
      *
      * Generated from protobuf enum <code>PRICE_ASSET_REPETITIVE_HEADERS = 3;</code>
      */
-    const PRICE_ASSET_REPETITIVE_HEADERS = 3;
+    public const PRICE_ASSET_REPETITIVE_HEADERS = 3;
     /**
      * Price item header is not relevant to the price type.
      *
      * Generated from protobuf enum <code>PRICE_ASSET_HEADER_INCOMPATIBLE_WITH_PRICE_TYPE = 4;</code>
      */
-    const PRICE_ASSET_HEADER_INCOMPATIBLE_WITH_PRICE_TYPE = 4;
+    public const PRICE_ASSET_HEADER_INCOMPATIBLE_WITH_PRICE_TYPE = 4;
     /**
      * Price item description is not relevant to the item header.
      *
      * Generated from protobuf enum <code>PRICE_ASSET_DESCRIPTION_INCOMPATIBLE_WITH_ITEM_HEADER = 5;</code>
      */
-    const PRICE_ASSET_DESCRIPTION_INCOMPATIBLE_WITH_ITEM_HEADER = 5;
+    public const PRICE_ASSET_DESCRIPTION_INCOMPATIBLE_WITH_ITEM_HEADER = 5;
     /**
      * Price asset has a price qualifier in a description.
      *
      * Generated from protobuf enum <code>PRICE_ASSET_DESCRIPTION_HAS_PRICE_QUALIFIER = 6;</code>
      */
-    const PRICE_ASSET_DESCRIPTION_HAS_PRICE_QUALIFIER = 6;
+    public const PRICE_ASSET_DESCRIPTION_HAS_PRICE_QUALIFIER = 6;
     /**
      * Unsupported language for price assets
      *
      * Generated from protobuf enum <code>PRICE_ASSET_UNSUPPORTED_LANGUAGE = 7;</code>
      */
-    const PRICE_ASSET_UNSUPPORTED_LANGUAGE = 7;
+    public const PRICE_ASSET_UNSUPPORTED_LANGUAGE = 7;
     /**
      * Human raters identified an issue with the price asset that isn't captured
      * by other error reasons. The primary purpose of this value is to represent
@@ -68,9 +68,9 @@ class AssetOfflineEvaluationErrorReasons
      *
      * Generated from protobuf enum <code>PRICE_ASSET_OTHER_ERROR = 8;</code>
      */
-    const PRICE_ASSET_OTHER_ERROR = 8;
+    public const PRICE_ASSET_OTHER_ERROR = 8;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::PRICE_ASSET_DESCRIPTION_REPEATS_ROW_HEADER => 'PRICE_ASSET_DESCRIPTION_REPEATS_ROW_HEADER',
@@ -86,7 +86,7 @@ class AssetOfflineEvaluationErrorReasons
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -94,10 +94,10 @@ class AssetOfflineEvaluationErrorReasons
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

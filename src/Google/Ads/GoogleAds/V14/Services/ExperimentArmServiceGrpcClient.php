@@ -55,7 +55,7 @@ class ExperimentArmServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v14.services.ExperimentArmService/MutateExperimentArms',
         $argument,
-        ['\Google\Ads\GoogleAds\V14\Services\MutateExperimentArmsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V14\Services\MutateExperimentArmsResponse::class, 'decode'],
         $metadata, $options);
     }
 

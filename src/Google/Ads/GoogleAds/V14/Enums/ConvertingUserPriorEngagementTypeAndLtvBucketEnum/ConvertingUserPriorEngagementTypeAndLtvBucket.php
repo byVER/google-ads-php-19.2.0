@@ -18,19 +18,19 @@ class ConvertingUserPriorEngagementTypeAndLtvBucket
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Converting user is new to the advertiser.
      *
      * Generated from protobuf enum <code>NEW = 2;</code>
      */
-    const PBNEW = 2;
+    public const PBNEW = 2;
     /**
      * Converting user is returning to the advertiser. Definition of returning
      * differs among conversion types, such as a second store visit versus a
@@ -38,15 +38,15 @@ class ConvertingUserPriorEngagementTypeAndLtvBucket
      *
      * Generated from protobuf enum <code>RETURNING = 3;</code>
      */
-    const RETURNING = 3;
+    public const RETURNING = 3;
     /**
      * Converting user is new to the advertiser and has high lifetime value.
      *
      * Generated from protobuf enum <code>NEW_AND_HIGH_LTV = 4;</code>
      */
-    const NEW_AND_HIGH_LTV = 4;
+    public const NEW_AND_HIGH_LTV = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::PBNEW => 'NEW',
@@ -58,7 +58,7 @@ class ConvertingUserPriorEngagementTypeAndLtvBucket
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -66,12 +66,12 @@ class ConvertingUserPriorEngagementTypeAndLtvBucket
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
-            $pbconst =  __CLASS__. '::PB' . strtoupper($name);
+            $pbconst =  self::class. '::PB' . strtoupper($name);
             if (!defined($pbconst)) {
                 throw new UnexpectedValueException(sprintf(
-                        'Enum %s has no value defined for name %s', __CLASS__, $name));
+                        'Enum %s has no value defined for name %s', self::class, $name));
             }
             return constant($pbconst);
         }

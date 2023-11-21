@@ -20,70 +20,70 @@ class AssetGroupPrimaryStatusReason
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The user-specified asset group status is paused.
      *
      * Generated from protobuf enum <code>ASSET_GROUP_PAUSED = 2;</code>
      */
-    const ASSET_GROUP_PAUSED = 2;
+    public const ASSET_GROUP_PAUSED = 2;
     /**
      * The user-specified asset group status is removed.
      *
      * Generated from protobuf enum <code>ASSET_GROUP_REMOVED = 3;</code>
      */
-    const ASSET_GROUP_REMOVED = 3;
+    public const ASSET_GROUP_REMOVED = 3;
     /**
      * The user-specified campaign status is removed.
      *
      * Generated from protobuf enum <code>CAMPAIGN_REMOVED = 4;</code>
      */
-    const CAMPAIGN_REMOVED = 4;
+    public const CAMPAIGN_REMOVED = 4;
     /**
      * The user-specified campaign status is paused.
      *
      * Generated from protobuf enum <code>CAMPAIGN_PAUSED = 5;</code>
      */
-    const CAMPAIGN_PAUSED = 5;
+    public const CAMPAIGN_PAUSED = 5;
     /**
      * The user-specified time for this campaign to start is in the future.
      *
      * Generated from protobuf enum <code>CAMPAIGN_PENDING = 6;</code>
      */
-    const CAMPAIGN_PENDING = 6;
+    public const CAMPAIGN_PENDING = 6;
     /**
      * The user-specified time for this campaign to end has passed.
      *
      * Generated from protobuf enum <code>CAMPAIGN_ENDED = 7;</code>
      */
-    const CAMPAIGN_ENDED = 7;
+    public const CAMPAIGN_ENDED = 7;
     /**
      * The asset group is approved but only serves in limited capacity due to
      * policies.
      *
      * Generated from protobuf enum <code>ASSET_GROUP_LIMITED = 8;</code>
      */
-    const ASSET_GROUP_LIMITED = 8;
+    public const ASSET_GROUP_LIMITED = 8;
     /**
      * The asset group has been marked as disapproved.
      *
      * Generated from protobuf enum <code>ASSET_GROUP_DISAPPROVED = 9;</code>
      */
-    const ASSET_GROUP_DISAPPROVED = 9;
+    public const ASSET_GROUP_DISAPPROVED = 9;
     /**
      * The asset group has not completed policy review.
      *
      * Generated from protobuf enum <code>ASSET_GROUP_UNDER_REVIEW = 10;</code>
      */
-    const ASSET_GROUP_UNDER_REVIEW = 10;
+    public const ASSET_GROUP_UNDER_REVIEW = 10;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ASSET_GROUP_PAUSED => 'ASSET_GROUP_PAUSED',
@@ -101,7 +101,7 @@ class AssetGroupPrimaryStatusReason
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -109,10 +109,10 @@ class AssetGroupPrimaryStatusReason
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

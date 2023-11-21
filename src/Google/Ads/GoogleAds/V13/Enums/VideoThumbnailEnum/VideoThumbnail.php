@@ -18,40 +18,40 @@ class VideoThumbnail
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received value is not known in this version.
      * This is a response-only value.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The default thumbnail. Can be auto-generated or user-uploaded.
      *
      * Generated from protobuf enum <code>DEFAULT_THUMBNAIL = 2;</code>
      */
-    const DEFAULT_THUMBNAIL = 2;
+    public const DEFAULT_THUMBNAIL = 2;
     /**
      * Thumbnail 1, generated from the video.
      *
      * Generated from protobuf enum <code>THUMBNAIL_1 = 3;</code>
      */
-    const THUMBNAIL_1 = 3;
+    public const THUMBNAIL_1 = 3;
     /**
      * Thumbnail 2, generated from the video.
      *
      * Generated from protobuf enum <code>THUMBNAIL_2 = 4;</code>
      */
-    const THUMBNAIL_2 = 4;
+    public const THUMBNAIL_2 = 4;
     /**
      * Thumbnail 3, generated from the video.
      *
      * Generated from protobuf enum <code>THUMBNAIL_3 = 5;</code>
      */
-    const THUMBNAIL_3 = 5;
+    public const THUMBNAIL_3 = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::DEFAULT_THUMBNAIL => 'DEFAULT_THUMBNAIL',
@@ -64,7 +64,7 @@ class VideoThumbnail
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -72,10 +72,10 @@ class VideoThumbnail
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

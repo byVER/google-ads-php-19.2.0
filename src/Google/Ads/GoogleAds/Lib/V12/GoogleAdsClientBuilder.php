@@ -44,22 +44,22 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
     private const DEFAULT_LOGGER_CHANNEL = 'google-ads';
     private const DEFAULT_GRPC_CHANNEL_IS_SECURE = true;
 
-    private $loggerFactory;
+    private \Google\Ads\GoogleAds\Lib\V12\LoggerFactory $loggerFactory;
 
     private $developerToken;
     private $loginCustomerId;
     private $linkedCustomerId;
     private $endpoint;
-    private $oAuth2Credential;
+    private ?\Google\Auth\FetchAuthTokenInterface $oAuth2Credential = null;
     private $logger;
     private $logLevel;
     private $proxy;
     private $transport;
-    private $grpcChannelIsSecure;
-    private $grpcChannelCredential;
-    private $unaryMiddlewares = [];
-    private $streamingMiddlewares = [];
-    private $grpcInterceptors = [];
+    private $grpcChannelIsSecure = self::DEFAULT_GRPC_CHANNEL_IS_SECURE;
+    private ?\Grpc\ChannelCredentials $grpcChannelCredential = null;
+    private array $unaryMiddlewares = [];
+    private array $streamingMiddlewares = [];
+    private array $grpcInterceptors = [];
 
     public function __construct(
         ConfigurationLoader $configurationLoader = null,
@@ -67,7 +67,6 @@ final class GoogleAdsClientBuilder extends AbstractGoogleAdsBuilder
     ) {
         parent::__construct($configurationLoader, $environmentalVariables);
         $this->loggerFactory = new LoggerFactory();
-        $this->grpcChannelIsSecure = self::DEFAULT_GRPC_CHANNEL_IS_SECURE;
     }
 
     /**

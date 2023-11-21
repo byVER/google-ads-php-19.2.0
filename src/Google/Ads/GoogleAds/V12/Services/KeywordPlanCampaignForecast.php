@@ -56,7 +56,7 @@ class KeywordPlanCampaignForecast extends \Google\Protobuf\Internal\Message
      */
     public function getKeywordPlanCampaign()
     {
-        return isset($this->keyword_plan_campaign) ? $this->keyword_plan_campaign : '';
+        return $this->keyword_plan_campaign ?? '';
     }
 
     public function hasKeywordPlanCampaign()

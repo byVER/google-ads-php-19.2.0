@@ -53,7 +53,7 @@ class AdServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.AdService/GetAd',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Resources\Ad', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Resources\Ad::class, 'decode'],
         $metadata, $options);
     }
 
@@ -109,7 +109,7 @@ class AdServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.AdService/MutateAds',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\MutateAdsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\MutateAdsResponse::class, 'decode'],
         $metadata, $options);
     }
 

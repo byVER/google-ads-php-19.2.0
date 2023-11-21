@@ -18,27 +18,27 @@ class UserListCombinedRuleOperator
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * A AND B.
      *
      * Generated from protobuf enum <code>AND = 2;</code>
      */
-    const PBAND = 2;
+    public const PBAND = 2;
     /**
      * A AND NOT B.
      *
      * Generated from protobuf enum <code>AND_NOT = 3;</code>
      */
-    const AND_NOT = 3;
+    public const AND_NOT = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::PBAND => 'AND',
@@ -49,7 +49,7 @@ class UserListCombinedRuleOperator
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -57,12 +57,12 @@ class UserListCombinedRuleOperator
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
-            $pbconst =  __CLASS__. '::PB' . strtoupper($name);
+            $pbconst =  self::class. '::PB' . strtoupper($name);
             if (!defined($pbconst)) {
                 throw new UnexpectedValueException(sprintf(
-                        'Enum %s has no value defined for name %s', __CLASS__, $name));
+                        'Enum %s has no value defined for name %s', self::class, $name));
             }
             return constant($pbconst);
         }

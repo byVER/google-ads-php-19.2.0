@@ -18,143 +18,143 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The user will be asked to fill in their given and family name. This field
      * cannot be set at the same time as GIVEN_NAME or FAMILY_NAME.
      *
      * Generated from protobuf enum <code>FULL_NAME = 2;</code>
      */
-    const FULL_NAME = 2;
+    public const FULL_NAME = 2;
     /**
      * The user will be asked to fill in their email address.
      *
      * Generated from protobuf enum <code>EMAIL = 3;</code>
      */
-    const EMAIL = 3;
+    public const EMAIL = 3;
     /**
      * The user will be asked to fill in their phone number.
      *
      * Generated from protobuf enum <code>PHONE_NUMBER = 4;</code>
      */
-    const PHONE_NUMBER = 4;
+    public const PHONE_NUMBER = 4;
     /**
      * The user will be asked to fill in their zip code.
      *
      * Generated from protobuf enum <code>POSTAL_CODE = 5;</code>
      */
-    const POSTAL_CODE = 5;
+    public const POSTAL_CODE = 5;
     /**
      * The user will be asked to fill in their street address.
      *
      * Generated from protobuf enum <code>STREET_ADDRESS = 8;</code>
      */
-    const STREET_ADDRESS = 8;
+    public const STREET_ADDRESS = 8;
     /**
      * The user will be asked to fill in their city.
      *
      * Generated from protobuf enum <code>CITY = 9;</code>
      */
-    const CITY = 9;
+    public const CITY = 9;
     /**
      * The user will be asked to fill in their region part of the address (for
      * example, state for US, province for Canada).
      *
      * Generated from protobuf enum <code>REGION = 10;</code>
      */
-    const REGION = 10;
+    public const REGION = 10;
     /**
      * The user will be asked to fill in their country.
      *
      * Generated from protobuf enum <code>COUNTRY = 11;</code>
      */
-    const COUNTRY = 11;
+    public const COUNTRY = 11;
     /**
      * The user will be asked to fill in their work email address.
      *
      * Generated from protobuf enum <code>WORK_EMAIL = 12;</code>
      */
-    const WORK_EMAIL = 12;
+    public const WORK_EMAIL = 12;
     /**
      * The user will be asked to fill in their company name.
      *
      * Generated from protobuf enum <code>COMPANY_NAME = 13;</code>
      */
-    const COMPANY_NAME = 13;
+    public const COMPANY_NAME = 13;
     /**
      * The user will be asked to fill in their work phone.
      *
      * Generated from protobuf enum <code>WORK_PHONE = 14;</code>
      */
-    const WORK_PHONE = 14;
+    public const WORK_PHONE = 14;
     /**
      * The user will be asked to fill in their job title.
      *
      * Generated from protobuf enum <code>JOB_TITLE = 15;</code>
      */
-    const JOB_TITLE = 15;
+    public const JOB_TITLE = 15;
     /**
      * The user will be asked to fill in their CPF for Brazil users.
      *
      * Generated from protobuf enum <code>GOVERNMENT_ISSUED_ID_CPF_BR = 16;</code>
      */
-    const GOVERNMENT_ISSUED_ID_CPF_BR = 16;
+    public const GOVERNMENT_ISSUED_ID_CPF_BR = 16;
     /**
      * The user will be asked to fill in their DNI for Argentina users.
      *
      * Generated from protobuf enum <code>GOVERNMENT_ISSUED_ID_DNI_AR = 17;</code>
      */
-    const GOVERNMENT_ISSUED_ID_DNI_AR = 17;
+    public const GOVERNMENT_ISSUED_ID_DNI_AR = 17;
     /**
      * The user will be asked to fill in their DNI for Peru users.
      *
      * Generated from protobuf enum <code>GOVERNMENT_ISSUED_ID_DNI_PE = 18;</code>
      */
-    const GOVERNMENT_ISSUED_ID_DNI_PE = 18;
+    public const GOVERNMENT_ISSUED_ID_DNI_PE = 18;
     /**
      * The user will be asked to fill in their RUT for Chile users.
      *
      * Generated from protobuf enum <code>GOVERNMENT_ISSUED_ID_RUT_CL = 19;</code>
      */
-    const GOVERNMENT_ISSUED_ID_RUT_CL = 19;
+    public const GOVERNMENT_ISSUED_ID_RUT_CL = 19;
     /**
      * The user will be asked to fill in their CC for Colombia users.
      *
      * Generated from protobuf enum <code>GOVERNMENT_ISSUED_ID_CC_CO = 20;</code>
      */
-    const GOVERNMENT_ISSUED_ID_CC_CO = 20;
+    public const GOVERNMENT_ISSUED_ID_CC_CO = 20;
     /**
      * The user will be asked to fill in their CI for Ecuador users.
      *
      * Generated from protobuf enum <code>GOVERNMENT_ISSUED_ID_CI_EC = 21;</code>
      */
-    const GOVERNMENT_ISSUED_ID_CI_EC = 21;
+    public const GOVERNMENT_ISSUED_ID_CI_EC = 21;
     /**
      * The user will be asked to fill in their RFC for Mexico users.
      *
      * Generated from protobuf enum <code>GOVERNMENT_ISSUED_ID_RFC_MX = 22;</code>
      */
-    const GOVERNMENT_ISSUED_ID_RFC_MX = 22;
+    public const GOVERNMENT_ISSUED_ID_RFC_MX = 22;
     /**
      * The user will be asked to fill in their first name. This
      * field can not be set at the same time as FULL_NAME.
      *
      * Generated from protobuf enum <code>FIRST_NAME = 23;</code>
      */
-    const FIRST_NAME = 23;
+    public const FIRST_NAME = 23;
     /**
      * The user will be asked to fill in their last name. This
      * field can not be set at the same time as FULL_NAME.
      *
      * Generated from protobuf enum <code>LAST_NAME = 24;</code>
      */
-    const LAST_NAME = 24;
+    public const LAST_NAME = 24;
     /**
      * Question: "Which model are you interested in?"
      * Category: "Auto"
@@ -163,7 +163,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>VEHICLE_MODEL = 1001;</code>
      */
-    const VEHICLE_MODEL = 1001;
+    public const VEHICLE_MODEL = 1001;
     /**
      * Question: "Which type of vehicle are you interested in?"
      * Category: "Auto"
@@ -172,7 +172,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>VEHICLE_TYPE = 1002;</code>
      */
-    const VEHICLE_TYPE = 1002;
+    public const VEHICLE_TYPE = 1002;
     /**
      * Question: "What is your preferred dealership?"
      * Category: "Auto"
@@ -181,7 +181,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PREFERRED_DEALERSHIP = 1003;</code>
      */
-    const PREFERRED_DEALERSHIP = 1003;
+    public const PREFERRED_DEALERSHIP = 1003;
     /**
      * Question: "When do you plan on purchasing a vehicle?"
      * Category: "Auto"
@@ -190,7 +190,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>VEHICLE_PURCHASE_TIMELINE = 1004;</code>
      */
-    const VEHICLE_PURCHASE_TIMELINE = 1004;
+    public const VEHICLE_PURCHASE_TIMELINE = 1004;
     /**
      * Question: "Do you own a vehicle?"
      * Category: "Auto"
@@ -199,7 +199,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>VEHICLE_OWNERSHIP = 1005;</code>
      */
-    const VEHICLE_OWNERSHIP = 1005;
+    public const VEHICLE_OWNERSHIP = 1005;
     /**
      * Question: "What vehicle ownership option are you interested in?"
      * Category: "Auto"
@@ -208,7 +208,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>VEHICLE_PAYMENT_TYPE = 1009;</code>
      */
-    const VEHICLE_PAYMENT_TYPE = 1009;
+    public const VEHICLE_PAYMENT_TYPE = 1009;
     /**
      * Question: "What type of vehicle condition are you interested in?"
      * Category: "Auto"
@@ -217,7 +217,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>VEHICLE_CONDITION = 1010;</code>
      */
-    const VEHICLE_CONDITION = 1010;
+    public const VEHICLE_CONDITION = 1010;
     /**
      * Question: "What size is your company?"
      * Category: "Business"
@@ -226,7 +226,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>COMPANY_SIZE = 1006;</code>
      */
-    const COMPANY_SIZE = 1006;
+    public const COMPANY_SIZE = 1006;
     /**
      * Question: "What is your annual sales volume?"
      * Category: "Business"
@@ -235,7 +235,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>ANNUAL_SALES = 1007;</code>
      */
-    const ANNUAL_SALES = 1007;
+    public const ANNUAL_SALES = 1007;
     /**
      * Question: "How many years have you been in business?"
      * Category: "Business"
@@ -244,7 +244,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>YEARS_IN_BUSINESS = 1008;</code>
      */
-    const YEARS_IN_BUSINESS = 1008;
+    public const YEARS_IN_BUSINESS = 1008;
     /**
      * Question: "What is your job department?"
      * Category: "Business"
@@ -253,7 +253,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>JOB_DEPARTMENT = 1011;</code>
      */
-    const JOB_DEPARTMENT = 1011;
+    public const JOB_DEPARTMENT = 1011;
     /**
      * Question: "What is your job role?"
      * Category: "Business"
@@ -262,7 +262,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>JOB_ROLE = 1012;</code>
      */
-    const JOB_ROLE = 1012;
+    public const JOB_ROLE = 1012;
     /**
      * Question: "Are you over 18 years of age?"
      * Category: "Demographics"
@@ -271,7 +271,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_18_AGE = 1078;</code>
      */
-    const OVER_18_AGE = 1078;
+    public const OVER_18_AGE = 1078;
     /**
      * Question: "Are you over 19 years of age?"
      * Category: "Demographics"
@@ -280,7 +280,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_19_AGE = 1079;</code>
      */
-    const OVER_19_AGE = 1079;
+    public const OVER_19_AGE = 1079;
     /**
      * Question: "Are you over 20 years of age?"
      * Category: "Demographics"
@@ -289,7 +289,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_20_AGE = 1080;</code>
      */
-    const OVER_20_AGE = 1080;
+    public const OVER_20_AGE = 1080;
     /**
      * Question: "Are you over 21 years of age?"
      * Category: "Demographics"
@@ -298,7 +298,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_21_AGE = 1081;</code>
      */
-    const OVER_21_AGE = 1081;
+    public const OVER_21_AGE = 1081;
     /**
      * Question: "Are you over 22 years of age?"
      * Category: "Demographics"
@@ -307,7 +307,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_22_AGE = 1082;</code>
      */
-    const OVER_22_AGE = 1082;
+    public const OVER_22_AGE = 1082;
     /**
      * Question: "Are you over 23 years of age?"
      * Category: "Demographics"
@@ -316,7 +316,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_23_AGE = 1083;</code>
      */
-    const OVER_23_AGE = 1083;
+    public const OVER_23_AGE = 1083;
     /**
      * Question: "Are you over 24 years of age?"
      * Category: "Demographics"
@@ -325,7 +325,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_24_AGE = 1084;</code>
      */
-    const OVER_24_AGE = 1084;
+    public const OVER_24_AGE = 1084;
     /**
      * Question: "Are you over 25 years of age?"
      * Category: "Demographics"
@@ -334,7 +334,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_25_AGE = 1085;</code>
      */
-    const OVER_25_AGE = 1085;
+    public const OVER_25_AGE = 1085;
     /**
      * Question: "Are you over 26 years of age?"
      * Category: "Demographics"
@@ -343,7 +343,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_26_AGE = 1086;</code>
      */
-    const OVER_26_AGE = 1086;
+    public const OVER_26_AGE = 1086;
     /**
      * Question: "Are you over 27 years of age?"
      * Category: "Demographics"
@@ -352,7 +352,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_27_AGE = 1087;</code>
      */
-    const OVER_27_AGE = 1087;
+    public const OVER_27_AGE = 1087;
     /**
      * Question: "Are you over 28 years of age?"
      * Category: "Demographics"
@@ -361,7 +361,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_28_AGE = 1088;</code>
      */
-    const OVER_28_AGE = 1088;
+    public const OVER_28_AGE = 1088;
     /**
      * Question: "Are you over 29 years of age?"
      * Category: "Demographics"
@@ -370,7 +370,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_29_AGE = 1089;</code>
      */
-    const OVER_29_AGE = 1089;
+    public const OVER_29_AGE = 1089;
     /**
      * Question: "Are you over 30 years of age?"
      * Category: "Demographics"
@@ -379,7 +379,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_30_AGE = 1090;</code>
      */
-    const OVER_30_AGE = 1090;
+    public const OVER_30_AGE = 1090;
     /**
      * Question: "Are you over 31 years of age?"
      * Category: "Demographics"
@@ -388,7 +388,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_31_AGE = 1091;</code>
      */
-    const OVER_31_AGE = 1091;
+    public const OVER_31_AGE = 1091;
     /**
      * Question: "Are you over 32 years of age?"
      * Category: "Demographics"
@@ -397,7 +397,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_32_AGE = 1092;</code>
      */
-    const OVER_32_AGE = 1092;
+    public const OVER_32_AGE = 1092;
     /**
      * Question: "Are you over 33 years of age?"
      * Category: "Demographics"
@@ -406,7 +406,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_33_AGE = 1093;</code>
      */
-    const OVER_33_AGE = 1093;
+    public const OVER_33_AGE = 1093;
     /**
      * Question: "Are you over 34 years of age?"
      * Category: "Demographics"
@@ -415,7 +415,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_34_AGE = 1094;</code>
      */
-    const OVER_34_AGE = 1094;
+    public const OVER_34_AGE = 1094;
     /**
      * Question: "Are you over 35 years of age?"
      * Category: "Demographics"
@@ -424,7 +424,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_35_AGE = 1095;</code>
      */
-    const OVER_35_AGE = 1095;
+    public const OVER_35_AGE = 1095;
     /**
      * Question: "Are you over 36 years of age?"
      * Category: "Demographics"
@@ -433,7 +433,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_36_AGE = 1096;</code>
      */
-    const OVER_36_AGE = 1096;
+    public const OVER_36_AGE = 1096;
     /**
      * Question: "Are you over 37 years of age?"
      * Category: "Demographics"
@@ -442,7 +442,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_37_AGE = 1097;</code>
      */
-    const OVER_37_AGE = 1097;
+    public const OVER_37_AGE = 1097;
     /**
      * Question: "Are you over 38 years of age?"
      * Category: "Demographics"
@@ -451,7 +451,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_38_AGE = 1098;</code>
      */
-    const OVER_38_AGE = 1098;
+    public const OVER_38_AGE = 1098;
     /**
      * Question: "Are you over 39 years of age?"
      * Category: "Demographics"
@@ -460,7 +460,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_39_AGE = 1099;</code>
      */
-    const OVER_39_AGE = 1099;
+    public const OVER_39_AGE = 1099;
     /**
      * Question: "Are you over 40 years of age?"
      * Category: "Demographics"
@@ -469,7 +469,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_40_AGE = 1100;</code>
      */
-    const OVER_40_AGE = 1100;
+    public const OVER_40_AGE = 1100;
     /**
      * Question: "Are you over 41 years of age?"
      * Category: "Demographics"
@@ -478,7 +478,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_41_AGE = 1101;</code>
      */
-    const OVER_41_AGE = 1101;
+    public const OVER_41_AGE = 1101;
     /**
      * Question: "Are you over 42 years of age?"
      * Category: "Demographics"
@@ -487,7 +487,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_42_AGE = 1102;</code>
      */
-    const OVER_42_AGE = 1102;
+    public const OVER_42_AGE = 1102;
     /**
      * Question: "Are you over 43 years of age?"
      * Category: "Demographics"
@@ -496,7 +496,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_43_AGE = 1103;</code>
      */
-    const OVER_43_AGE = 1103;
+    public const OVER_43_AGE = 1103;
     /**
      * Question: "Are you over 44 years of age?"
      * Category: "Demographics"
@@ -505,7 +505,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_44_AGE = 1104;</code>
      */
-    const OVER_44_AGE = 1104;
+    public const OVER_44_AGE = 1104;
     /**
      * Question: "Are you over 45 years of age?"
      * Category: "Demographics"
@@ -514,7 +514,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_45_AGE = 1105;</code>
      */
-    const OVER_45_AGE = 1105;
+    public const OVER_45_AGE = 1105;
     /**
      * Question: "Are you over 46 years of age?"
      * Category: "Demographics"
@@ -523,7 +523,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_46_AGE = 1106;</code>
      */
-    const OVER_46_AGE = 1106;
+    public const OVER_46_AGE = 1106;
     /**
      * Question: "Are you over 47 years of age?"
      * Category: "Demographics"
@@ -532,7 +532,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_47_AGE = 1107;</code>
      */
-    const OVER_47_AGE = 1107;
+    public const OVER_47_AGE = 1107;
     /**
      * Question: "Are you over 48 years of age?"
      * Category: "Demographics"
@@ -541,7 +541,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_48_AGE = 1108;</code>
      */
-    const OVER_48_AGE = 1108;
+    public const OVER_48_AGE = 1108;
     /**
      * Question: "Are you over 49 years of age?"
      * Category: "Demographics"
@@ -550,7 +550,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_49_AGE = 1109;</code>
      */
-    const OVER_49_AGE = 1109;
+    public const OVER_49_AGE = 1109;
     /**
      * Question: "Are you over 50 years of age?"
      * Category: "Demographics"
@@ -559,7 +559,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_50_AGE = 1110;</code>
      */
-    const OVER_50_AGE = 1110;
+    public const OVER_50_AGE = 1110;
     /**
      * Question: "Are you over 51 years of age?"
      * Category: "Demographics"
@@ -568,7 +568,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_51_AGE = 1111;</code>
      */
-    const OVER_51_AGE = 1111;
+    public const OVER_51_AGE = 1111;
     /**
      * Question: "Are you over 52 years of age?"
      * Category: "Demographics"
@@ -577,7 +577,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_52_AGE = 1112;</code>
      */
-    const OVER_52_AGE = 1112;
+    public const OVER_52_AGE = 1112;
     /**
      * Question: "Are you over 53 years of age?"
      * Category: "Demographics"
@@ -586,7 +586,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_53_AGE = 1113;</code>
      */
-    const OVER_53_AGE = 1113;
+    public const OVER_53_AGE = 1113;
     /**
      * Question: "Are you over 54 years of age?"
      * Category: "Demographics"
@@ -595,7 +595,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_54_AGE = 1114;</code>
      */
-    const OVER_54_AGE = 1114;
+    public const OVER_54_AGE = 1114;
     /**
      * Question: "Are you over 55 years of age?"
      * Category: "Demographics"
@@ -604,7 +604,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_55_AGE = 1115;</code>
      */
-    const OVER_55_AGE = 1115;
+    public const OVER_55_AGE = 1115;
     /**
      * Question: "Are you over 56 years of age?"
      * Category: "Demographics"
@@ -613,7 +613,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_56_AGE = 1116;</code>
      */
-    const OVER_56_AGE = 1116;
+    public const OVER_56_AGE = 1116;
     /**
      * Question: "Are you over 57 years of age?"
      * Category: "Demographics"
@@ -622,7 +622,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_57_AGE = 1117;</code>
      */
-    const OVER_57_AGE = 1117;
+    public const OVER_57_AGE = 1117;
     /**
      * Question: "Are you over 58 years of age?"
      * Category: "Demographics"
@@ -631,7 +631,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_58_AGE = 1118;</code>
      */
-    const OVER_58_AGE = 1118;
+    public const OVER_58_AGE = 1118;
     /**
      * Question: "Are you over 59 years of age?"
      * Category: "Demographics"
@@ -640,7 +640,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_59_AGE = 1119;</code>
      */
-    const OVER_59_AGE = 1119;
+    public const OVER_59_AGE = 1119;
     /**
      * Question: "Are you over 60 years of age?"
      * Category: "Demographics"
@@ -649,7 +649,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_60_AGE = 1120;</code>
      */
-    const OVER_60_AGE = 1120;
+    public const OVER_60_AGE = 1120;
     /**
      * Question: "Are you over 61 years of age?"
      * Category: "Demographics"
@@ -658,7 +658,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_61_AGE = 1121;</code>
      */
-    const OVER_61_AGE = 1121;
+    public const OVER_61_AGE = 1121;
     /**
      * Question: "Are you over 62 years of age?"
      * Category: "Demographics"
@@ -667,7 +667,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_62_AGE = 1122;</code>
      */
-    const OVER_62_AGE = 1122;
+    public const OVER_62_AGE = 1122;
     /**
      * Question: "Are you over 63 years of age?"
      * Category: "Demographics"
@@ -676,7 +676,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_63_AGE = 1123;</code>
      */
-    const OVER_63_AGE = 1123;
+    public const OVER_63_AGE = 1123;
     /**
      * Question: "Are you over 64 years of age?"
      * Category: "Demographics"
@@ -685,7 +685,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_64_AGE = 1124;</code>
      */
-    const OVER_64_AGE = 1124;
+    public const OVER_64_AGE = 1124;
     /**
      * Question: "Are you over 65 years of age?"
      * Category: "Demographics"
@@ -694,7 +694,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OVER_65_AGE = 1125;</code>
      */
-    const OVER_65_AGE = 1125;
+    public const OVER_65_AGE = 1125;
     /**
      * Question: "Which program are you interested in?"
      * Category: "Education"
@@ -703,7 +703,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>EDUCATION_PROGRAM = 1013;</code>
      */
-    const EDUCATION_PROGRAM = 1013;
+    public const EDUCATION_PROGRAM = 1013;
     /**
      * Question: "Which course are you interested in?"
      * Category: "Education"
@@ -712,7 +712,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>EDUCATION_COURSE = 1014;</code>
      */
-    const EDUCATION_COURSE = 1014;
+    public const EDUCATION_COURSE = 1014;
     /**
      * Question: "Which product are you interested in?"
      * Category: "General"
@@ -721,7 +721,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PRODUCT = 1016;</code>
      */
-    const PRODUCT = 1016;
+    public const PRODUCT = 1016;
     /**
      * Question: "Which service are you interested in?"
      * Category: "General"
@@ -730,7 +730,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>SERVICE = 1017;</code>
      */
-    const SERVICE = 1017;
+    public const SERVICE = 1017;
     /**
      * Question: "Which offer are you interested in?"
      * Category: "General"
@@ -739,7 +739,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>OFFER = 1018;</code>
      */
-    const OFFER = 1018;
+    public const OFFER = 1018;
     /**
      * Question: "Which category are you interested in?"
      * Category: "General"
@@ -748,7 +748,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>CATEGORY = 1019;</code>
      */
-    const CATEGORY = 1019;
+    public const CATEGORY = 1019;
     /**
      * Question: "What is your preferred method of contact?"
      * Category: "General"
@@ -757,7 +757,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PREFERRED_CONTACT_METHOD = 1020;</code>
      */
-    const PREFERRED_CONTACT_METHOD = 1020;
+    public const PREFERRED_CONTACT_METHOD = 1020;
     /**
      * Question: "What is your preferred location?"
      * Category: "General"
@@ -766,7 +766,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PREFERRED_LOCATION = 1021;</code>
      */
-    const PREFERRED_LOCATION = 1021;
+    public const PREFERRED_LOCATION = 1021;
     /**
      * Question: "What is the best time to contact you?"
      * Category: "General"
@@ -775,7 +775,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PREFERRED_CONTACT_TIME = 1022;</code>
      */
-    const PREFERRED_CONTACT_TIME = 1022;
+    public const PREFERRED_CONTACT_TIME = 1022;
     /**
      * Question: "When are you looking to make a purchase?"
      * Category: "General"
@@ -784,7 +784,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PURCHASE_TIMELINE = 1023;</code>
      */
-    const PURCHASE_TIMELINE = 1023;
+    public const PURCHASE_TIMELINE = 1023;
     /**
      * Question: "How many years of work experience do you have?"
      * Category: "Jobs"
@@ -793,7 +793,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>YEARS_OF_EXPERIENCE = 1048;</code>
      */
-    const YEARS_OF_EXPERIENCE = 1048;
+    public const YEARS_OF_EXPERIENCE = 1048;
     /**
      * Question: "What industry do you work in?"
      * Category: "Jobs"
@@ -802,7 +802,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>JOB_INDUSTRY = 1049;</code>
      */
-    const JOB_INDUSTRY = 1049;
+    public const JOB_INDUSTRY = 1049;
     /**
      * Question: "What is your highest level of education?"
      * Category: "Jobs"
@@ -811,7 +811,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>LEVEL_OF_EDUCATION = 1050;</code>
      */
-    const LEVEL_OF_EDUCATION = 1050;
+    public const LEVEL_OF_EDUCATION = 1050;
     /**
      * Question: "What type of property are you looking for?"
      * Category: "Real Estate"
@@ -820,7 +820,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PROPERTY_TYPE = 1024;</code>
      */
-    const PROPERTY_TYPE = 1024;
+    public const PROPERTY_TYPE = 1024;
     /**
      * Question: "What do you need a realtor's help with?"
      * Category: "Real Estate"
@@ -829,7 +829,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>REALTOR_HELP_GOAL = 1025;</code>
      */
-    const REALTOR_HELP_GOAL = 1025;
+    public const REALTOR_HELP_GOAL = 1025;
     /**
      * Question: "What neighborhood are you interested in?"
      * Category: "Real Estate"
@@ -838,7 +838,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PROPERTY_COMMUNITY = 1026;</code>
      */
-    const PROPERTY_COMMUNITY = 1026;
+    public const PROPERTY_COMMUNITY = 1026;
     /**
      * Question: "What price range are you looking for?"
      * Category: "Real Estate"
@@ -847,7 +847,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PRICE_RANGE = 1027;</code>
      */
-    const PRICE_RANGE = 1027;
+    public const PRICE_RANGE = 1027;
     /**
      * Question: "How many bedrooms are you looking for?"
      * Category: "Real Estate"
@@ -856,7 +856,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>NUMBER_OF_BEDROOMS = 1028;</code>
      */
-    const NUMBER_OF_BEDROOMS = 1028;
+    public const NUMBER_OF_BEDROOMS = 1028;
     /**
      * Question: "Are you looking for a fully furnished property?"
      * Category: "Real Estate"
@@ -865,7 +865,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>FURNISHED_PROPERTY = 1029;</code>
      */
-    const FURNISHED_PROPERTY = 1029;
+    public const FURNISHED_PROPERTY = 1029;
     /**
      * Question: "Are you looking for properties that allow pets?"
      * Category: "Real Estate"
@@ -874,7 +874,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PETS_ALLOWED_PROPERTY = 1030;</code>
      */
-    const PETS_ALLOWED_PROPERTY = 1030;
+    public const PETS_ALLOWED_PROPERTY = 1030;
     /**
      * Question: "What is the next product you plan to purchase?"
      * Category: "Retail"
@@ -883,7 +883,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>NEXT_PLANNED_PURCHASE = 1031;</code>
      */
-    const NEXT_PLANNED_PURCHASE = 1031;
+    public const NEXT_PLANNED_PURCHASE = 1031;
     /**
      * Question: "Would you like to sign up for an event?"
      * Category: "Retail"
@@ -892,7 +892,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>EVENT_SIGNUP_INTEREST = 1033;</code>
      */
-    const EVENT_SIGNUP_INTEREST = 1033;
+    public const EVENT_SIGNUP_INTEREST = 1033;
     /**
      * Question: "Where are you interested in shopping?"
      * Category: "Retail"
@@ -901,7 +901,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>PREFERRED_SHOPPING_PLACES = 1034;</code>
      */
-    const PREFERRED_SHOPPING_PLACES = 1034;
+    public const PREFERRED_SHOPPING_PLACES = 1034;
     /**
      * Question: "What is your favorite brand?"
      * Category: "Retail"
@@ -910,7 +910,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>FAVORITE_BRAND = 1035;</code>
      */
-    const FAVORITE_BRAND = 1035;
+    public const FAVORITE_BRAND = 1035;
     /**
      * Question: "Which type of valid commercial license do you have?"
      * Category: "Transportation"
@@ -919,7 +919,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>TRANSPORTATION_COMMERCIAL_LICENSE_TYPE = 1036;</code>
      */
-    const TRANSPORTATION_COMMERCIAL_LICENSE_TYPE = 1036;
+    public const TRANSPORTATION_COMMERCIAL_LICENSE_TYPE = 1036;
     /**
      * Question: "Interested in booking an event?"
      * Category: "Travel"
@@ -928,7 +928,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>EVENT_BOOKING_INTEREST = 1038;</code>
      */
-    const EVENT_BOOKING_INTEREST = 1038;
+    public const EVENT_BOOKING_INTEREST = 1038;
     /**
      * Question: "What is your destination country?"
      * Category: "Travel"
@@ -937,7 +937,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>DESTINATION_COUNTRY = 1039;</code>
      */
-    const DESTINATION_COUNTRY = 1039;
+    public const DESTINATION_COUNTRY = 1039;
     /**
      * Question: "What is your destination city?"
      * Category: "Travel"
@@ -946,7 +946,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>DESTINATION_CITY = 1040;</code>
      */
-    const DESTINATION_CITY = 1040;
+    public const DESTINATION_CITY = 1040;
     /**
      * Question: "What is your departure country?"
      * Category: "Travel"
@@ -955,7 +955,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>DEPARTURE_COUNTRY = 1041;</code>
      */
-    const DEPARTURE_COUNTRY = 1041;
+    public const DEPARTURE_COUNTRY = 1041;
     /**
      * Question: "What is your departure city?"
      * Category: "Travel"
@@ -964,7 +964,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>DEPARTURE_CITY = 1042;</code>
      */
-    const DEPARTURE_CITY = 1042;
+    public const DEPARTURE_CITY = 1042;
     /**
      * Question: "What is your departure date?"
      * Category: "Travel"
@@ -973,7 +973,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>DEPARTURE_DATE = 1043;</code>
      */
-    const DEPARTURE_DATE = 1043;
+    public const DEPARTURE_DATE = 1043;
     /**
      * Question: "What is your return date?"
      * Category: "Travel"
@@ -982,7 +982,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>RETURN_DATE = 1044;</code>
      */
-    const RETURN_DATE = 1044;
+    public const RETURN_DATE = 1044;
     /**
      * Question: "How many people are you traveling with?"
      * Category: "Travel"
@@ -991,7 +991,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>NUMBER_OF_TRAVELERS = 1045;</code>
      */
-    const NUMBER_OF_TRAVELERS = 1045;
+    public const NUMBER_OF_TRAVELERS = 1045;
     /**
      * Question: "What is your travel budget?"
      * Category: "Travel"
@@ -1000,7 +1000,7 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>TRAVEL_BUDGET = 1046;</code>
      */
-    const TRAVEL_BUDGET = 1046;
+    public const TRAVEL_BUDGET = 1046;
     /**
      * Question: "Where do you want to stay during your travel?"
      * Category: "Travel"
@@ -1009,9 +1009,9 @@ class LeadFormFieldUserInputType
      *
      * Generated from protobuf enum <code>TRAVEL_ACCOMMODATION = 1047;</code>
      */
-    const TRAVEL_ACCOMMODATION = 1047;
+    public const TRAVEL_ACCOMMODATION = 1047;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::FULL_NAME => 'FULL_NAME',
@@ -1136,7 +1136,7 @@ class LeadFormFieldUserInputType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -1144,10 +1144,10 @@ class LeadFormFieldUserInputType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

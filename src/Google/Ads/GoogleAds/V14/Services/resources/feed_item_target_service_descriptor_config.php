@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.FeedItemTargetService' => [
             'MutateFeedItemTargets' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateFeedItemTargetsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateFeedItemTargetsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

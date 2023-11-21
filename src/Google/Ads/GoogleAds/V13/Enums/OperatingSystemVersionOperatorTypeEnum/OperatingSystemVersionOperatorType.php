@@ -18,27 +18,27 @@ class OperatingSystemVersionOperatorType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Equals to the specified version.
      *
      * Generated from protobuf enum <code>EQUALS_TO = 2;</code>
      */
-    const EQUALS_TO = 2;
+    public const EQUALS_TO = 2;
     /**
      * Greater than or equals to the specified version.
      *
      * Generated from protobuf enum <code>GREATER_THAN_EQUALS_TO = 4;</code>
      */
-    const GREATER_THAN_EQUALS_TO = 4;
+    public const GREATER_THAN_EQUALS_TO = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::EQUALS_TO => 'EQUALS_TO',
@@ -49,7 +49,7 @@ class OperatingSystemVersionOperatorType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -57,10 +57,10 @@ class OperatingSystemVersionOperatorType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

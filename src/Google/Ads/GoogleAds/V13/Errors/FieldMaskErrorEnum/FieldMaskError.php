@@ -18,31 +18,31 @@ class FieldMaskError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The field mask must be provided for update operations.
      *
      * Generated from protobuf enum <code>FIELD_MASK_MISSING = 5;</code>
      */
-    const FIELD_MASK_MISSING = 5;
+    public const FIELD_MASK_MISSING = 5;
     /**
      * The field mask must be empty for create and remove operations.
      *
      * Generated from protobuf enum <code>FIELD_MASK_NOT_ALLOWED = 4;</code>
      */
-    const FIELD_MASK_NOT_ALLOWED = 4;
+    public const FIELD_MASK_NOT_ALLOWED = 4;
     /**
      * The field mask contained an invalid field.
      *
      * Generated from protobuf enum <code>FIELD_NOT_FOUND = 2;</code>
      */
-    const FIELD_NOT_FOUND = 2;
+    public const FIELD_NOT_FOUND = 2;
     /**
      * The field mask updated a field with subfields. Fields with subfields may
      * be cleared, but not updated. To fix this, the field mask should select
@@ -50,9 +50,9 @@ class FieldMaskError
      *
      * Generated from protobuf enum <code>FIELD_HAS_SUBFIELDS = 3;</code>
      */
-    const FIELD_HAS_SUBFIELDS = 3;
+    public const FIELD_HAS_SUBFIELDS = 3;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::FIELD_MASK_MISSING => 'FIELD_MASK_MISSING',
@@ -65,7 +65,7 @@ class FieldMaskError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -73,10 +73,10 @@ class FieldMaskError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

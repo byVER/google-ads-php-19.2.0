@@ -154,7 +154,7 @@ class PlacesLocationFeedData extends \Google\Protobuf\Internal\Message
      */
     public function getEmailAddress()
     {
-        return isset($this->email_address) ? $this->email_address : '';
+        return $this->email_address ?? '';
     }
 
     public function hasEmailAddress()
@@ -225,7 +225,7 @@ class PlacesLocationFeedData extends \Google\Protobuf\Internal\Message
      */
     public function getBusinessNameFilter()
     {
-        return isset($this->business_name_filter) ? $this->business_name_filter : '';
+        return $this->business_name_filter ?? '';
     }
 
     public function hasBusinessNameFilter()

@@ -18,22 +18,22 @@ class ResponseContentType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The mutate response will be the resource name.
      *
      * Generated from protobuf enum <code>RESOURCE_NAME_ONLY = 1;</code>
      */
-    const RESOURCE_NAME_ONLY = 1;
+    public const RESOURCE_NAME_ONLY = 1;
     /**
      * The mutate response will be the resource name and the resource with
      * all mutable fields.
      *
      * Generated from protobuf enum <code>MUTABLE_RESOURCE = 2;</code>
      */
-    const MUTABLE_RESOURCE = 2;
+    public const MUTABLE_RESOURCE = 2;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::RESOURCE_NAME_ONLY => 'RESOURCE_NAME_ONLY',
         self::MUTABLE_RESOURCE => 'MUTABLE_RESOURCE',
@@ -43,7 +43,7 @@ class ResponseContentType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -51,10 +51,10 @@ class ResponseContentType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

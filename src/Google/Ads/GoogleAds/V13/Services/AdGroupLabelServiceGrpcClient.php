@@ -59,7 +59,7 @@ class AdGroupLabelServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v13.services.AdGroupLabelService/MutateAdGroupLabels',
         $argument,
-        ['\Google\Ads\GoogleAds\V13\Services\MutateAdGroupLabelsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V13\Services\MutateAdGroupLabelsResponse::class, 'decode'],
         $metadata, $options);
     }
 

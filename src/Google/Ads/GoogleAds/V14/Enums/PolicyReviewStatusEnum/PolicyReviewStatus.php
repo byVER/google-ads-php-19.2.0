@@ -18,42 +18,42 @@ class PolicyReviewStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received value is not known in this version.
      * This is a response-only value.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Currently under review.
      *
      * Generated from protobuf enum <code>REVIEW_IN_PROGRESS = 2;</code>
      */
-    const REVIEW_IN_PROGRESS = 2;
+    public const REVIEW_IN_PROGRESS = 2;
     /**
      * Primary review complete. Other reviews may be continuing.
      *
      * Generated from protobuf enum <code>REVIEWED = 3;</code>
      */
-    const REVIEWED = 3;
+    public const REVIEWED = 3;
     /**
      * The resource has been resubmitted for approval or its policy decision has
      * been appealed.
      *
      * Generated from protobuf enum <code>UNDER_APPEAL = 4;</code>
      */
-    const UNDER_APPEAL = 4;
+    public const UNDER_APPEAL = 4;
     /**
      * The resource is eligible and may be serving but could still undergo
      * further review.
      *
      * Generated from protobuf enum <code>ELIGIBLE_MAY_SERVE = 5;</code>
      */
-    const ELIGIBLE_MAY_SERVE = 5;
+    public const ELIGIBLE_MAY_SERVE = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::REVIEW_IN_PROGRESS => 'REVIEW_IN_PROGRESS',
@@ -66,7 +66,7 @@ class PolicyReviewStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -74,10 +74,10 @@ class PolicyReviewStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

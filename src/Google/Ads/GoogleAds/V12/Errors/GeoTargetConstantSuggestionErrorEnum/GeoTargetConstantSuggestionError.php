@@ -18,41 +18,41 @@ class GeoTargetConstantSuggestionError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * A location name cannot be greater than 300 characters.
      *
      * Generated from protobuf enum <code>LOCATION_NAME_SIZE_LIMIT = 2;</code>
      */
-    const LOCATION_NAME_SIZE_LIMIT = 2;
+    public const LOCATION_NAME_SIZE_LIMIT = 2;
     /**
      * At most 25 location names can be specified in a SuggestGeoTargetConstants
      * method.
      *
      * Generated from protobuf enum <code>LOCATION_NAME_LIMIT = 3;</code>
      */
-    const LOCATION_NAME_LIMIT = 3;
+    public const LOCATION_NAME_LIMIT = 3;
     /**
      * The country code is invalid.
      *
      * Generated from protobuf enum <code>INVALID_COUNTRY_CODE = 4;</code>
      */
-    const INVALID_COUNTRY_CODE = 4;
+    public const INVALID_COUNTRY_CODE = 4;
     /**
      * Geo target constant resource names or location names must be provided in
      * the request.
      *
      * Generated from protobuf enum <code>REQUEST_PARAMETERS_UNSET = 5;</code>
      */
-    const REQUEST_PARAMETERS_UNSET = 5;
+    public const REQUEST_PARAMETERS_UNSET = 5;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::LOCATION_NAME_SIZE_LIMIT => 'LOCATION_NAME_SIZE_LIMIT',
@@ -65,7 +65,7 @@ class GeoTargetConstantSuggestionError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -73,10 +73,10 @@ class GeoTargetConstantSuggestionError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

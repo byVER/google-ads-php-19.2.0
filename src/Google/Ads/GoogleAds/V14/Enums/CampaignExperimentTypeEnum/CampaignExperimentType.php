@@ -19,19 +19,19 @@ class CampaignExperimentType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * This is a regular campaign.
      *
      * Generated from protobuf enum <code>BASE = 2;</code>
      */
-    const BASE = 2;
+    public const BASE = 2;
     /**
      * This is a draft version of a campaign.
      * It has some modifications from a base campaign,
@@ -39,7 +39,7 @@ class CampaignExperimentType
      *
      * Generated from protobuf enum <code>DRAFT = 3;</code>
      */
-    const DRAFT = 3;
+    public const DRAFT = 3;
     /**
      * This is an experiment version of a campaign.
      * It has some modifications from a base campaign,
@@ -48,9 +48,9 @@ class CampaignExperimentType
      *
      * Generated from protobuf enum <code>EXPERIMENT = 4;</code>
      */
-    const EXPERIMENT = 4;
+    public const EXPERIMENT = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::BASE => 'BASE',
@@ -62,7 +62,7 @@ class CampaignExperimentType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -70,10 +70,10 @@ class CampaignExperimentType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

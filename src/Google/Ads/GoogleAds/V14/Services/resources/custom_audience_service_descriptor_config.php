@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.CustomAudienceService' => [
             'MutateCustomAudiences' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCustomAudiencesResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCustomAudiencesResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

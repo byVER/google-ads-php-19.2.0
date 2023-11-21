@@ -77,7 +77,7 @@ class ForecastMetrics extends \Google\Protobuf\Internal\Message
      */
     public function getImpressions()
     {
-        return isset($this->impressions) ? $this->impressions : 0.0;
+        return $this->impressions ?? 0.0;
     }
 
     public function hasImpressions()
@@ -113,7 +113,7 @@ class ForecastMetrics extends \Google\Protobuf\Internal\Message
      */
     public function getCtr()
     {
-        return isset($this->ctr) ? $this->ctr : 0.0;
+        return $this->ctr ?? 0.0;
     }
 
     public function hasCtr()
@@ -149,7 +149,7 @@ class ForecastMetrics extends \Google\Protobuf\Internal\Message
      */
     public function getAverageCpc()
     {
-        return isset($this->average_cpc) ? $this->average_cpc : 0;
+        return $this->average_cpc ?? 0;
     }
 
     public function hasAverageCpc()
@@ -185,7 +185,7 @@ class ForecastMetrics extends \Google\Protobuf\Internal\Message
      */
     public function getClicks()
     {
-        return isset($this->clicks) ? $this->clicks : 0.0;
+        return $this->clicks ?? 0.0;
     }
 
     public function hasClicks()
@@ -221,7 +221,7 @@ class ForecastMetrics extends \Google\Protobuf\Internal\Message
      */
     public function getCostMicros()
     {
-        return isset($this->cost_micros) ? $this->cost_micros : 0;
+        return $this->cost_micros ?? 0;
     }
 
     public function hasCostMicros()

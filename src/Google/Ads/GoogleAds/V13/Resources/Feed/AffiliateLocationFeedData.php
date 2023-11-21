@@ -96,7 +96,7 @@ class AffiliateLocationFeedData extends \Google\Protobuf\Internal\Message
      */
     public function setRelationshipType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\AffiliateLocationFeedRelationshipTypeEnum\AffiliateLocationFeedRelationshipType::class);
+        GPBUtil::checkEnum($var);
         $this->relationship_type = $var;
 
         return $this;

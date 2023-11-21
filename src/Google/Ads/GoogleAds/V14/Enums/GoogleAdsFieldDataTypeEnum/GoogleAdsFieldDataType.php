@@ -18,20 +18,20 @@ class GoogleAdsFieldDataType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Unknown
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Maps to google.protobuf.BoolValue
      * Applicable operators:  =, !=
      *
      * Generated from protobuf enum <code>BOOLEAN = 2;</code>
      */
-    const BOOLEAN = 2;
+    public const BOOLEAN = 2;
     /**
      * Maps to google.protobuf.StringValue. It can be compared using the set of
      * operators specific to dates however.
@@ -39,42 +39,42 @@ class GoogleAdsFieldDataType
      *
      * Generated from protobuf enum <code>DATE = 3;</code>
      */
-    const DATE = 3;
+    public const DATE = 3;
     /**
      * Maps to google.protobuf.DoubleValue
      * Applicable operators:  =, !=, <, >, IN, NOT IN
      *
      * Generated from protobuf enum <code>DOUBLE = 4;</code>
      */
-    const DOUBLE = 4;
+    public const DOUBLE = 4;
     /**
      * Maps to an enum. It's specific definition can be found at type_url.
      * Applicable operators:  =, !=, IN, NOT IN
      *
      * Generated from protobuf enum <code>ENUM = 5;</code>
      */
-    const ENUM = 5;
+    public const ENUM = 5;
     /**
      * Maps to google.protobuf.FloatValue
      * Applicable operators:  =, !=, <, >, IN, NOT IN
      *
      * Generated from protobuf enum <code>FLOAT = 6;</code>
      */
-    const FLOAT = 6;
+    public const FLOAT = 6;
     /**
      * Maps to google.protobuf.Int32Value
      * Applicable operators:  =, !=, <, >, <=, >=, BETWEEN, IN, NOT IN
      *
      * Generated from protobuf enum <code>INT32 = 7;</code>
      */
-    const INT32 = 7;
+    public const INT32 = 7;
     /**
      * Maps to google.protobuf.Int64Value
      * Applicable operators:  =, !=, <, >, <=, >=, BETWEEN, IN, NOT IN
      *
      * Generated from protobuf enum <code>INT64 = 8;</code>
      */
-    const INT64 = 8;
+    public const INT64 = 8;
     /**
      * Maps to a protocol buffer message type. The data type's details can be
      * found in type_url.
@@ -82,7 +82,7 @@ class GoogleAdsFieldDataType
      *
      * Generated from protobuf enum <code>MESSAGE = 9;</code>
      */
-    const MESSAGE = 9;
+    public const MESSAGE = 9;
     /**
      * Maps to google.protobuf.StringValue. Represents the resource name
      * (unique id) of a resource or one of its foreign keys.
@@ -90,23 +90,23 @@ class GoogleAdsFieldDataType
      *
      * Generated from protobuf enum <code>RESOURCE_NAME = 10;</code>
      */
-    const RESOURCE_NAME = 10;
+    public const RESOURCE_NAME = 10;
     /**
      * Maps to google.protobuf.StringValue.
      * Applicable operators:  =, !=, LIKE, NOT LIKE, IN, NOT IN
      *
      * Generated from protobuf enum <code>STRING = 11;</code>
      */
-    const STRING = 11;
+    public const STRING = 11;
     /**
      * Maps to google.protobuf.UInt64Value
      * Applicable operators:  =, !=, <, >, <=, >=, BETWEEN, IN, NOT IN
      *
      * Generated from protobuf enum <code>UINT64 = 12;</code>
      */
-    const UINT64 = 12;
+    public const UINT64 = 12;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::BOOLEAN => 'BOOLEAN',
@@ -126,7 +126,7 @@ class GoogleAdsFieldDataType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -134,10 +134,10 @@ class GoogleAdsFieldDataType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -43,7 +43,7 @@ class ServerStreamingGoogleAdsResponseMetadataCallable extends GoogleAdsMiddlewa
 
         return new class ($stream) extends GoogleAdsServerStreamDecorator
         {
-            private $responseMetadata;
+            private \Google\Ads\GoogleAds\Lib\V13\GoogleAdsResponseMetadata $responseMetadata;
 
             /**
              * {@inheritdoc}

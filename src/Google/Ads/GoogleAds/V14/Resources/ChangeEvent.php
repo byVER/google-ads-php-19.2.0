@@ -240,7 +240,7 @@ class ChangeEvent extends \Google\Protobuf\Internal\Message
      */
     public function setChangeResourceType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\ChangeEventResourceTypeEnum\ChangeEventResourceType::class);
+        GPBUtil::checkEnum($var);
         $this->change_resource_type = $var;
 
         return $this;
@@ -292,7 +292,7 @@ class ChangeEvent extends \Google\Protobuf\Internal\Message
      */
     public function setClientType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\ChangeClientTypeEnum\ChangeClientType::class);
+        GPBUtil::checkEnum($var);
         $this->client_type = $var;
 
         return $this;
@@ -420,7 +420,7 @@ class ChangeEvent extends \Google\Protobuf\Internal\Message
      */
     public function setResourceChangeOperation($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\ResourceChangeOperationEnum\ResourceChangeOperation::class);
+        GPBUtil::checkEnum($var);
         $this->resource_change_operation = $var;
 
         return $this;

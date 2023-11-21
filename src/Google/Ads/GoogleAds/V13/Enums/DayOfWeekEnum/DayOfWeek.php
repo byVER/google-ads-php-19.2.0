@@ -18,57 +18,57 @@ class DayOfWeek
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Monday.
      *
      * Generated from protobuf enum <code>MONDAY = 2;</code>
      */
-    const MONDAY = 2;
+    public const MONDAY = 2;
     /**
      * Tuesday.
      *
      * Generated from protobuf enum <code>TUESDAY = 3;</code>
      */
-    const TUESDAY = 3;
+    public const TUESDAY = 3;
     /**
      * Wednesday.
      *
      * Generated from protobuf enum <code>WEDNESDAY = 4;</code>
      */
-    const WEDNESDAY = 4;
+    public const WEDNESDAY = 4;
     /**
      * Thursday.
      *
      * Generated from protobuf enum <code>THURSDAY = 5;</code>
      */
-    const THURSDAY = 5;
+    public const THURSDAY = 5;
     /**
      * Friday.
      *
      * Generated from protobuf enum <code>FRIDAY = 6;</code>
      */
-    const FRIDAY = 6;
+    public const FRIDAY = 6;
     /**
      * Saturday.
      *
      * Generated from protobuf enum <code>SATURDAY = 7;</code>
      */
-    const SATURDAY = 7;
+    public const SATURDAY = 7;
     /**
      * Sunday.
      *
      * Generated from protobuf enum <code>SUNDAY = 8;</code>
      */
-    const SUNDAY = 8;
+    public const SUNDAY = 8;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::MONDAY => 'MONDAY',
@@ -84,7 +84,7 @@ class DayOfWeek
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -92,10 +92,10 @@ class DayOfWeek
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

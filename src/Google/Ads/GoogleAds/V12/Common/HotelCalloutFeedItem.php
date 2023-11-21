@@ -58,7 +58,7 @@ class HotelCalloutFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getText()
     {
-        return isset($this->text) ? $this->text : '';
+        return $this->text ?? '';
     }
 
     public function hasText()
@@ -96,7 +96,7 @@ class HotelCalloutFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getLanguageCode()
     {
-        return isset($this->language_code) ? $this->language_code : '';
+        return $this->language_code ?? '';
     }
 
     public function hasLanguageCode()

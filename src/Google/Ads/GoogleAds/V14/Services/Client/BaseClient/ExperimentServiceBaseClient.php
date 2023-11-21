@@ -137,7 +137,7 @@ abstract class ExperimentServiceBaseClient
      */
     public function resumeOperation($operationName, $methodName = null)
     {
-        $options = isset($this->descriptors[$methodName]['longRunning']) ? $this->descriptors[$methodName]['longRunning'] : [];
+        $options = $this->descriptors[$methodName]['longRunning'] ?? [];
         $operation = new OperationResponse($operationName, $this->getOperationsClient(), $options);
         $operation->reload();
         return $operation;
@@ -285,7 +285,7 @@ abstract class ExperimentServiceBaseClient
     public function __call($method, $args)
     {
         if (substr($method, -5) !== 'Async') {
-            trigger_error('Call to undefined method ' . __CLASS__ . "::$method()", E_USER_ERROR);
+            trigger_error('Call to undefined method ' . self::class . "::$method()", E_USER_ERROR);
         }
 
         array_unshift($args, substr($method, 0, -5));

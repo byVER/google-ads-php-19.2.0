@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.CustomerAssetSetService' => [
             'MutateCustomerAssetSets' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateCustomerAssetSetsResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateCustomerAssetSetsResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

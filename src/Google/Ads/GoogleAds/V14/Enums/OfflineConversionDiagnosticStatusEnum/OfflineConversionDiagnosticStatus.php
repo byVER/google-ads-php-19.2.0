@@ -18,43 +18,43 @@ class OfflineConversionDiagnosticStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Your offline data ingestion setup is active and optimal for downstream
      * processing.
      *
      * Generated from protobuf enum <code>EXCELLENT = 2;</code>
      */
-    const EXCELLENT = 2;
+    public const EXCELLENT = 2;
     /**
      * Your offline ingestion setup is active, but there are further
      * improvements you could make. See alerts.
      *
      * Generated from protobuf enum <code>GOOD = 3;</code>
      */
-    const GOOD = 3;
+    public const GOOD = 3;
     /**
      * Your offline ingestion setup is active, but there are errors that require
      * your attention. See alerts.
      *
      * Generated from protobuf enum <code>NEEDS_ATTENTION = 4;</code>
      */
-    const NEEDS_ATTENTION = 4;
+    public const NEEDS_ATTENTION = 4;
     /**
      * Your offline ingestion setup has not received data in the last 28 days,
      * there may be something wrong.
      *
      * Generated from protobuf enum <code>NO_RECENT_UPLOAD = 6;</code>
      */
-    const NO_RECENT_UPLOAD = 6;
+    public const NO_RECENT_UPLOAD = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::EXCELLENT => 'EXCELLENT',
@@ -67,7 +67,7 @@ class OfflineConversionDiagnosticStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -75,10 +75,10 @@ class OfflineConversionDiagnosticStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

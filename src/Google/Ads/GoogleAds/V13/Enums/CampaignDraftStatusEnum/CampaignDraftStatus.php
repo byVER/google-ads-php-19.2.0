@@ -18,26 +18,26 @@ class CampaignDraftStatus
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Initial state of the draft, the advertiser can start adding changes with
      * no effect on serving.
      *
      * Generated from protobuf enum <code>PROPOSED = 2;</code>
      */
-    const PROPOSED = 2;
+    public const PROPOSED = 2;
     /**
      * The campaign draft is removed.
      *
      * Generated from protobuf enum <code>REMOVED = 3;</code>
      */
-    const REMOVED = 3;
+    public const REMOVED = 3;
     /**
      * Advertiser requested to promote draft's changes back into the original
      * campaign. Advertiser can poll the long running operation returned by
@@ -45,14 +45,14 @@ class CampaignDraftStatus
      *
      * Generated from protobuf enum <code>PROMOTING = 5;</code>
      */
-    const PROMOTING = 5;
+    public const PROMOTING = 5;
     /**
      * The process to merge changes in the draft back to the original campaign
      * has completed successfully.
      *
      * Generated from protobuf enum <code>PROMOTED = 4;</code>
      */
-    const PROMOTED = 4;
+    public const PROMOTED = 4;
     /**
      * The promotion failed after it was partially applied. Promote cannot be
      * attempted again safely, so the issue must be corrected in the original
@@ -60,9 +60,9 @@ class CampaignDraftStatus
      *
      * Generated from protobuf enum <code>PROMOTE_FAILED = 6;</code>
      */
-    const PROMOTE_FAILED = 6;
+    public const PROMOTE_FAILED = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::PROPOSED => 'PROPOSED',
@@ -76,7 +76,7 @@ class CampaignDraftStatus
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -84,10 +84,10 @@ class CampaignDraftStatus
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

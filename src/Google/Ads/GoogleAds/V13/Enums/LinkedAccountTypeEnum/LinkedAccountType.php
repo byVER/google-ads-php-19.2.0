@@ -19,37 +19,37 @@ class LinkedAccountType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * A link to provide third party app analytics data.
      *
      * Generated from protobuf enum <code>THIRD_PARTY_APP_ANALYTICS = 2;</code>
      */
-    const THIRD_PARTY_APP_ANALYTICS = 2;
+    public const THIRD_PARTY_APP_ANALYTICS = 2;
     /**
      * A link to Data partner.
      *
      * Generated from protobuf enum <code>DATA_PARTNER = 3;</code>
      */
-    const DATA_PARTNER = 3;
+    public const DATA_PARTNER = 3;
     /**
      * A link to Google Ads.
      *
      * Generated from protobuf enum <code>GOOGLE_ADS = 4;</code>
      */
-    const GOOGLE_ADS = 4;
+    public const GOOGLE_ADS = 4;
     /**
      * A link to Hotel Center.
      *
      * Generated from protobuf enum <code>HOTEL_CENTER = 5;</code>
      */
-    const HOTEL_CENTER = 5;
+    public const HOTEL_CENTER = 5;
     /**
      * A link to Google Ads account of the partner advertiser.
      * Increase performance and share data by partnering with businesses that
@@ -57,9 +57,9 @@ class LinkedAccountType
      *
      * Generated from protobuf enum <code>ADVERTISING_PARTNER = 6;</code>
      */
-    const ADVERTISING_PARTNER = 6;
+    public const ADVERTISING_PARTNER = 6;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::THIRD_PARTY_APP_ANALYTICS => 'THIRD_PARTY_APP_ANALYTICS',
@@ -73,7 +73,7 @@ class LinkedAccountType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -81,10 +81,10 @@ class LinkedAccountType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

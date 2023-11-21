@@ -127,7 +127,7 @@ class CampaignFeed extends \Google\Protobuf\Internal\Message
      */
     public function getFeed()
     {
-        return isset($this->feed) ? $this->feed : '';
+        return $this->feed ?? '';
     }
 
     public function hasFeed()
@@ -163,7 +163,7 @@ class CampaignFeed extends \Google\Protobuf\Internal\Message
      */
     public function getCampaign()
     {
-        return isset($this->campaign) ? $this->campaign : '';
+        return $this->campaign ?? '';
     }
 
     public function hasCampaign()
@@ -281,7 +281,7 @@ class CampaignFeed extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\FeedLinkStatusEnum\FeedLinkStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;

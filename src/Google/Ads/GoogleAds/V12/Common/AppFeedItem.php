@@ -117,7 +117,7 @@ class AppFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getLinkText()
     {
-        return isset($this->link_text) ? $this->link_text : '';
+        return $this->link_text ?? '';
     }
 
     public function hasLinkText()
@@ -156,7 +156,7 @@ class AppFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getAppId()
     {
-        return isset($this->app_id) ? $this->app_id : '';
+        return $this->app_id ?? '';
     }
 
     public function hasAppId()
@@ -207,7 +207,7 @@ class AppFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function setAppStore($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AppStoreEnum\AppStore::class);
+        GPBUtil::checkEnum($var);
         $this->app_store = $var;
 
         return $this;
@@ -275,7 +275,7 @@ class AppFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getTrackingUrlTemplate()
     {
-        return isset($this->tracking_url_template) ? $this->tracking_url_template : '';
+        return $this->tracking_url_template ?? '';
     }
 
     public function hasTrackingUrlTemplate()
@@ -340,7 +340,7 @@ class AppFeedItem extends \Google\Protobuf\Internal\Message
      */
     public function getFinalUrlSuffix()
     {
-        return isset($this->final_url_suffix) ? $this->final_url_suffix : '';
+        return $this->final_url_suffix ?? '';
     }
 
     public function hasFinalUrlSuffix()

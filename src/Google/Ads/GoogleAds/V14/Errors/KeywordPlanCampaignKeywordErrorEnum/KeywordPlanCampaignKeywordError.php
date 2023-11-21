@@ -19,21 +19,21 @@ class KeywordPlanCampaignKeywordError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Keyword plan campaign keyword is positive.
      *
      * Generated from protobuf enum <code>CAMPAIGN_KEYWORD_IS_POSITIVE = 8;</code>
      */
-    const CAMPAIGN_KEYWORD_IS_POSITIVE = 8;
+    public const CAMPAIGN_KEYWORD_IS_POSITIVE = 8;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CAMPAIGN_KEYWORD_IS_POSITIVE => 'CAMPAIGN_KEYWORD_IS_POSITIVE',
@@ -43,7 +43,7 @@ class KeywordPlanCampaignKeywordError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -51,10 +51,10 @@ class KeywordPlanCampaignKeywordError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

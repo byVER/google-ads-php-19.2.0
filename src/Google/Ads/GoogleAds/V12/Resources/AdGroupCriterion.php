@@ -403,7 +403,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getCriterionId()
     {
-        return isset($this->criterion_id) ? $this->criterion_id : 0;
+        return $this->criterion_id ?? 0;
     }
 
     public function hasCriterionId()
@@ -496,7 +496,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AdGroupCriterionStatusEnum\AdGroupCriterionStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;
@@ -546,7 +546,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getAdGroup()
     {
-        return isset($this->ad_group) ? $this->ad_group : '';
+        return $this->ad_group ?? '';
     }
 
     public function hasAdGroup()
@@ -594,7 +594,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\CriterionTypeEnum\CriterionType::class);
+        GPBUtil::checkEnum($var);
         $this->type = $var;
 
         return $this;
@@ -610,7 +610,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getNegative()
     {
-        return isset($this->negative) ? $this->negative : false;
+        return $this->negative ?? false;
     }
 
     public function hasNegative()
@@ -660,7 +660,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function setSystemServingStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\CriterionSystemServingStatusEnum\CriterionSystemServingStatus::class);
+        GPBUtil::checkEnum($var);
         $this->system_serving_status = $var;
 
         return $this;
@@ -686,7 +686,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function setApprovalStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\AdGroupCriterionApprovalStatusEnum\AdGroupCriterionApprovalStatus::class);
+        GPBUtil::checkEnum($var);
         $this->approval_status = $var;
 
         return $this;
@@ -759,7 +759,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getBidModifier()
     {
-        return isset($this->bid_modifier) ? $this->bid_modifier : 0.0;
+        return $this->bid_modifier ?? 0.0;
     }
 
     public function hasBidModifier()
@@ -796,7 +796,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getCpcBidMicros()
     {
-        return isset($this->cpc_bid_micros) ? $this->cpc_bid_micros : 0;
+        return $this->cpc_bid_micros ?? 0;
     }
 
     public function hasCpcBidMicros()
@@ -832,7 +832,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getCpmBidMicros()
     {
-        return isset($this->cpm_bid_micros) ? $this->cpm_bid_micros : 0;
+        return $this->cpm_bid_micros ?? 0;
     }
 
     public function hasCpmBidMicros()
@@ -868,7 +868,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getCpvBidMicros()
     {
-        return isset($this->cpv_bid_micros) ? $this->cpv_bid_micros : 0;
+        return $this->cpv_bid_micros ?? 0;
     }
 
     public function hasCpvBidMicros()
@@ -906,7 +906,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getPercentCpcBidMicros()
     {
-        return isset($this->percent_cpc_bid_micros) ? $this->percent_cpc_bid_micros : 0;
+        return $this->percent_cpc_bid_micros ?? 0;
     }
 
     public function hasPercentCpcBidMicros()
@@ -944,7 +944,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getEffectiveCpcBidMicros()
     {
-        return isset($this->effective_cpc_bid_micros) ? $this->effective_cpc_bid_micros : 0;
+        return $this->effective_cpc_bid_micros ?? 0;
     }
 
     public function hasEffectiveCpcBidMicros()
@@ -980,7 +980,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getEffectiveCpmBidMicros()
     {
-        return isset($this->effective_cpm_bid_micros) ? $this->effective_cpm_bid_micros : 0;
+        return $this->effective_cpm_bid_micros ?? 0;
     }
 
     public function hasEffectiveCpmBidMicros()
@@ -1016,7 +1016,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getEffectiveCpvBidMicros()
     {
-        return isset($this->effective_cpv_bid_micros) ? $this->effective_cpv_bid_micros : 0;
+        return $this->effective_cpv_bid_micros ?? 0;
     }
 
     public function hasEffectiveCpvBidMicros()
@@ -1052,7 +1052,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getEffectivePercentCpcBidMicros()
     {
-        return isset($this->effective_percent_cpc_bid_micros) ? $this->effective_percent_cpc_bid_micros : 0;
+        return $this->effective_percent_cpc_bid_micros ?? 0;
     }
 
     public function hasEffectivePercentCpcBidMicros()
@@ -1100,7 +1100,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function setEffectiveCpcBidSource($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\BiddingSourceEnum\BiddingSource::class);
+        GPBUtil::checkEnum($var);
         $this->effective_cpc_bid_source = $var;
 
         return $this;
@@ -1126,7 +1126,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function setEffectiveCpmBidSource($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\BiddingSourceEnum\BiddingSource::class);
+        GPBUtil::checkEnum($var);
         $this->effective_cpm_bid_source = $var;
 
         return $this;
@@ -1152,7 +1152,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function setEffectiveCpvBidSource($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\BiddingSourceEnum\BiddingSource::class);
+        GPBUtil::checkEnum($var);
         $this->effective_cpv_bid_source = $var;
 
         return $this;
@@ -1178,7 +1178,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function setEffectivePercentCpcBidSource($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V12\Enums\BiddingSourceEnum\BiddingSource::class);
+        GPBUtil::checkEnum($var);
         $this->effective_percent_cpc_bid_source = $var;
 
         return $this;
@@ -1282,7 +1282,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getFinalUrlSuffix()
     {
-        return isset($this->final_url_suffix) ? $this->final_url_suffix : '';
+        return $this->final_url_suffix ?? '';
     }
 
     public function hasFinalUrlSuffix()
@@ -1318,7 +1318,7 @@ class AdGroupCriterion extends \Google\Protobuf\Internal\Message
      */
     public function getTrackingUrlTemplate()
     {
-        return isset($this->tracking_url_template) ? $this->tracking_url_template : '';
+        return $this->tracking_url_template ?? '';
     }
 
     public function hasTrackingUrlTemplate()

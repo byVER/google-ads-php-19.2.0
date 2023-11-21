@@ -61,7 +61,7 @@ class KeywordPlanServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.KeywordPlanService/MutateKeywordPlans',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\MutateKeywordPlansResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\MutateKeywordPlansResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -90,7 +90,7 @@ class KeywordPlanServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.KeywordPlanService/GenerateForecastCurve',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\GenerateForecastCurveResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\GenerateForecastCurveResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -120,7 +120,7 @@ class KeywordPlanServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.KeywordPlanService/GenerateForecastTimeSeries',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\GenerateForecastTimeSeriesResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\GenerateForecastTimeSeriesResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -144,7 +144,7 @@ class KeywordPlanServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.KeywordPlanService/GenerateForecastMetrics',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\GenerateForecastMetricsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\GenerateForecastMetricsResponse::class, 'decode'],
         $metadata, $options);
     }
 
@@ -168,7 +168,7 @@ class KeywordPlanServiceGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.ads.googleads.v12.services.KeywordPlanService/GenerateHistoricalMetrics',
         $argument,
-        ['\Google\Ads\GoogleAds\V12\Services\GenerateHistoricalMetricsResponse', 'decode'],
+        ['\\' . \Google\Ads\GoogleAds\V12\Services\GenerateHistoricalMetricsResponse::class, 'decode'],
         $metadata, $options);
     }
 

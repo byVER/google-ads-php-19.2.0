@@ -18,154 +18,154 @@ class FeedError
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The received error code is not known in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The names of the FeedAttributes must be unique.
      *
      * Generated from protobuf enum <code>ATTRIBUTE_NAMES_NOT_UNIQUE = 2;</code>
      */
-    const ATTRIBUTE_NAMES_NOT_UNIQUE = 2;
+    public const ATTRIBUTE_NAMES_NOT_UNIQUE = 2;
     /**
      * The attribute list must be an exact copy of the existing list if the
      * attribute ID's are present.
      *
      * Generated from protobuf enum <code>ATTRIBUTES_DO_NOT_MATCH_EXISTING_ATTRIBUTES = 3;</code>
      */
-    const ATTRIBUTES_DO_NOT_MATCH_EXISTING_ATTRIBUTES = 3;
+    public const ATTRIBUTES_DO_NOT_MATCH_EXISTING_ATTRIBUTES = 3;
     /**
      * Cannot specify USER origin for a system generated feed.
      *
      * Generated from protobuf enum <code>CANNOT_SPECIFY_USER_ORIGIN_FOR_SYSTEM_FEED = 4;</code>
      */
-    const CANNOT_SPECIFY_USER_ORIGIN_FOR_SYSTEM_FEED = 4;
+    public const CANNOT_SPECIFY_USER_ORIGIN_FOR_SYSTEM_FEED = 4;
     /**
      * Cannot specify GOOGLE origin for a non-system generated feed.
      *
      * Generated from protobuf enum <code>CANNOT_SPECIFY_GOOGLE_ORIGIN_FOR_NON_SYSTEM_FEED = 5;</code>
      */
-    const CANNOT_SPECIFY_GOOGLE_ORIGIN_FOR_NON_SYSTEM_FEED = 5;
+    public const CANNOT_SPECIFY_GOOGLE_ORIGIN_FOR_NON_SYSTEM_FEED = 5;
     /**
      * Cannot specify feed attributes for system feed.
      *
      * Generated from protobuf enum <code>CANNOT_SPECIFY_FEED_ATTRIBUTES_FOR_SYSTEM_FEED = 6;</code>
      */
-    const CANNOT_SPECIFY_FEED_ATTRIBUTES_FOR_SYSTEM_FEED = 6;
+    public const CANNOT_SPECIFY_FEED_ATTRIBUTES_FOR_SYSTEM_FEED = 6;
     /**
      * Cannot update FeedAttributes on feed with origin GOOGLE.
      *
      * Generated from protobuf enum <code>CANNOT_UPDATE_FEED_ATTRIBUTES_WITH_ORIGIN_GOOGLE = 7;</code>
      */
-    const CANNOT_UPDATE_FEED_ATTRIBUTES_WITH_ORIGIN_GOOGLE = 7;
+    public const CANNOT_UPDATE_FEED_ATTRIBUTES_WITH_ORIGIN_GOOGLE = 7;
     /**
      * The given ID refers to a removed Feed. Removed Feeds are immutable.
      *
      * Generated from protobuf enum <code>FEED_REMOVED = 8;</code>
      */
-    const FEED_REMOVED = 8;
+    public const FEED_REMOVED = 8;
     /**
      * The origin of the feed is not valid for the client.
      *
      * Generated from protobuf enum <code>INVALID_ORIGIN_VALUE = 9;</code>
      */
-    const INVALID_ORIGIN_VALUE = 9;
+    public const INVALID_ORIGIN_VALUE = 9;
     /**
      * A user can only create and modify feeds with USER origin.
      *
      * Generated from protobuf enum <code>FEED_ORIGIN_IS_NOT_USER = 10;</code>
      */
-    const FEED_ORIGIN_IS_NOT_USER = 10;
+    public const FEED_ORIGIN_IS_NOT_USER = 10;
     /**
      * Invalid auth token for the given email.
      *
      * Generated from protobuf enum <code>INVALID_AUTH_TOKEN_FOR_EMAIL = 11;</code>
      */
-    const INVALID_AUTH_TOKEN_FOR_EMAIL = 11;
+    public const INVALID_AUTH_TOKEN_FOR_EMAIL = 11;
     /**
      * Invalid email specified.
      *
      * Generated from protobuf enum <code>INVALID_EMAIL = 12;</code>
      */
-    const INVALID_EMAIL = 12;
+    public const INVALID_EMAIL = 12;
     /**
      * Feed name matches that of another active Feed.
      *
      * Generated from protobuf enum <code>DUPLICATE_FEED_NAME = 13;</code>
      */
-    const DUPLICATE_FEED_NAME = 13;
+    public const DUPLICATE_FEED_NAME = 13;
     /**
      * Name of feed is not allowed.
      *
      * Generated from protobuf enum <code>INVALID_FEED_NAME = 14;</code>
      */
-    const INVALID_FEED_NAME = 14;
+    public const INVALID_FEED_NAME = 14;
     /**
      * Missing OAuthInfo.
      *
      * Generated from protobuf enum <code>MISSING_OAUTH_INFO = 15;</code>
      */
-    const MISSING_OAUTH_INFO = 15;
+    public const MISSING_OAUTH_INFO = 15;
     /**
      * New FeedAttributes must not affect the unique key.
      *
      * Generated from protobuf enum <code>NEW_ATTRIBUTE_CANNOT_BE_PART_OF_UNIQUE_KEY = 16;</code>
      */
-    const NEW_ATTRIBUTE_CANNOT_BE_PART_OF_UNIQUE_KEY = 16;
+    public const NEW_ATTRIBUTE_CANNOT_BE_PART_OF_UNIQUE_KEY = 16;
     /**
      * Too many FeedAttributes for a Feed.
      *
      * Generated from protobuf enum <code>TOO_MANY_ATTRIBUTES = 17;</code>
      */
-    const TOO_MANY_ATTRIBUTES = 17;
+    public const TOO_MANY_ATTRIBUTES = 17;
     /**
      * The business account is not valid.
      *
      * Generated from protobuf enum <code>INVALID_BUSINESS_ACCOUNT = 18;</code>
      */
-    const INVALID_BUSINESS_ACCOUNT = 18;
+    public const INVALID_BUSINESS_ACCOUNT = 18;
     /**
      * Business account cannot access Business Profile.
      *
      * Generated from protobuf enum <code>BUSINESS_ACCOUNT_CANNOT_ACCESS_LOCATION_ACCOUNT = 19;</code>
      */
-    const BUSINESS_ACCOUNT_CANNOT_ACCESS_LOCATION_ACCOUNT = 19;
+    public const BUSINESS_ACCOUNT_CANNOT_ACCESS_LOCATION_ACCOUNT = 19;
     /**
      * Invalid chain ID provided for affiliate location feed.
      *
      * Generated from protobuf enum <code>INVALID_AFFILIATE_CHAIN_ID = 20;</code>
      */
-    const INVALID_AFFILIATE_CHAIN_ID = 20;
+    public const INVALID_AFFILIATE_CHAIN_ID = 20;
     /**
      * There is already a feed with the given system feed generation data.
      *
      * Generated from protobuf enum <code>DUPLICATE_SYSTEM_FEED = 21;</code>
      */
-    const DUPLICATE_SYSTEM_FEED = 21;
+    public const DUPLICATE_SYSTEM_FEED = 21;
     /**
      * An error occurred accessing Business Profile.
      *
      * Generated from protobuf enum <code>GMB_ACCESS_ERROR = 22;</code>
      */
-    const GMB_ACCESS_ERROR = 22;
+    public const GMB_ACCESS_ERROR = 22;
     /**
      * A customer cannot have both LOCATION and AFFILIATE_LOCATION feeds.
      *
      * Generated from protobuf enum <code>CANNOT_HAVE_LOCATION_AND_AFFILIATE_LOCATION_FEEDS = 23;</code>
      */
-    const CANNOT_HAVE_LOCATION_AND_AFFILIATE_LOCATION_FEEDS = 23;
+    public const CANNOT_HAVE_LOCATION_AND_AFFILIATE_LOCATION_FEEDS = 23;
     /**
      * Feed-based extension is read-only for this extension type.
      *
      * Generated from protobuf enum <code>LEGACY_EXTENSION_TYPE_READ_ONLY = 24;</code>
      */
-    const LEGACY_EXTENSION_TYPE_READ_ONLY = 24;
+    public const LEGACY_EXTENSION_TYPE_READ_ONLY = 24;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::ATTRIBUTE_NAMES_NOT_UNIQUE => 'ATTRIBUTE_NAMES_NOT_UNIQUE',
@@ -197,7 +197,7 @@ class FeedError
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -205,10 +205,10 @@ class FeedError
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

@@ -155,7 +155,7 @@ class CreateCustomerClientRequest extends \Google\Protobuf\Internal\Message
      */
     public function getEmailAddress()
     {
-        return isset($this->email_address) ? $this->email_address : '';
+        return $this->email_address ?? '';
     }
 
     public function hasEmailAddress()
@@ -206,7 +206,7 @@ class CreateCustomerClientRequest extends \Google\Protobuf\Internal\Message
      */
     public function setAccessRole($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V13\Enums\AccessRoleEnum\AccessRole::class);
+        GPBUtil::checkEnum($var);
         $this->access_role = $var;
 
         return $this;

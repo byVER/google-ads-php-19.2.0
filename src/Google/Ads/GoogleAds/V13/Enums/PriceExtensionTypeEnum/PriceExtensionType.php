@@ -18,69 +18,69 @@ class PriceExtensionType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * The type for showing a list of brands.
      *
      * Generated from protobuf enum <code>BRANDS = 2;</code>
      */
-    const BRANDS = 2;
+    public const BRANDS = 2;
     /**
      * The type for showing a list of events.
      *
      * Generated from protobuf enum <code>EVENTS = 3;</code>
      */
-    const EVENTS = 3;
+    public const EVENTS = 3;
     /**
      * The type for showing locations relevant to your business.
      *
      * Generated from protobuf enum <code>LOCATIONS = 4;</code>
      */
-    const LOCATIONS = 4;
+    public const LOCATIONS = 4;
     /**
      * The type for showing sub-regions or districts within a city or region.
      *
      * Generated from protobuf enum <code>NEIGHBORHOODS = 5;</code>
      */
-    const NEIGHBORHOODS = 5;
+    public const NEIGHBORHOODS = 5;
     /**
      * The type for showing a collection of product categories.
      *
      * Generated from protobuf enum <code>PRODUCT_CATEGORIES = 6;</code>
      */
-    const PRODUCT_CATEGORIES = 6;
+    public const PRODUCT_CATEGORIES = 6;
     /**
      * The type for showing a collection of related product tiers.
      *
      * Generated from protobuf enum <code>PRODUCT_TIERS = 7;</code>
      */
-    const PRODUCT_TIERS = 7;
+    public const PRODUCT_TIERS = 7;
     /**
      * The type for showing a collection of services offered by your business.
      *
      * Generated from protobuf enum <code>SERVICES = 8;</code>
      */
-    const SERVICES = 8;
+    public const SERVICES = 8;
     /**
      * The type for showing a collection of service categories.
      *
      * Generated from protobuf enum <code>SERVICE_CATEGORIES = 9;</code>
      */
-    const SERVICE_CATEGORIES = 9;
+    public const SERVICE_CATEGORIES = 9;
     /**
      * The type for showing a collection of related service tiers.
      *
      * Generated from protobuf enum <code>SERVICE_TIERS = 10;</code>
      */
-    const SERVICE_TIERS = 10;
+    public const SERVICE_TIERS = 10;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::BRANDS => 'BRANDS',
@@ -98,7 +98,7 @@ class PriceExtensionType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -106,10 +106,10 @@ class PriceExtensionType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

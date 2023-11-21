@@ -234,7 +234,7 @@ class AssetGroupAsset extends \Google\Protobuf\Internal\Message
      */
     public function setFieldType($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\AssetFieldTypeEnum\AssetFieldType::class);
+        GPBUtil::checkEnum($var);
         $this->field_type = $var;
 
         return $this;
@@ -260,7 +260,7 @@ class AssetGroupAsset extends \Google\Protobuf\Internal\Message
      */
     public function setStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\AssetLinkStatusEnum\AssetLinkStatus::class);
+        GPBUtil::checkEnum($var);
         $this->status = $var;
 
         return $this;
@@ -296,7 +296,7 @@ class AssetGroupAsset extends \Google\Protobuf\Internal\Message
      */
     public function setPrimaryStatus($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\AssetLinkPrimaryStatusEnum\AssetLinkPrimaryStatus::class);
+        GPBUtil::checkEnum($var);
         $this->primary_status = $var;
 
         return $this;
@@ -378,7 +378,7 @@ class AssetGroupAsset extends \Google\Protobuf\Internal\Message
      */
     public function setPerformanceLabel($var)
     {
-        GPBUtil::checkEnum($var, \Google\Ads\GoogleAds\V14\Enums\AssetPerformanceLabelEnum\AssetPerformanceLabel::class);
+        GPBUtil::checkEnum($var);
         $this->performance_label = $var;
 
         return $this;

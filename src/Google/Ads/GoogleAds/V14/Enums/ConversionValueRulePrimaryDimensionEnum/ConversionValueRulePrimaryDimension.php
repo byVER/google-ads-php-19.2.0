@@ -18,58 +18,58 @@ class ConversionValueRulePrimaryDimension
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * For no-value-rule-applied conversions after value rule is enabled.
      *
      * Generated from protobuf enum <code>NO_RULE_APPLIED = 2;</code>
      */
-    const NO_RULE_APPLIED = 2;
+    public const NO_RULE_APPLIED = 2;
     /**
      * Below are for value-rule-applied conversions:
      * The original stats.
      *
      * Generated from protobuf enum <code>ORIGINAL = 3;</code>
      */
-    const ORIGINAL = 3;
+    public const ORIGINAL = 3;
     /**
      * When a new or returning customer condition is satisfied.
      *
      * Generated from protobuf enum <code>NEW_VS_RETURNING_USER = 4;</code>
      */
-    const NEW_VS_RETURNING_USER = 4;
+    public const NEW_VS_RETURNING_USER = 4;
     /**
      * When a query-time Geo location condition is satisfied.
      *
      * Generated from protobuf enum <code>GEO_LOCATION = 5;</code>
      */
-    const GEO_LOCATION = 5;
+    public const GEO_LOCATION = 5;
     /**
      * When a query-time browsing device condition is satisfied.
      *
      * Generated from protobuf enum <code>DEVICE = 6;</code>
      */
-    const DEVICE = 6;
+    public const DEVICE = 6;
     /**
      * When a query-time audience condition is satisfied.
      *
      * Generated from protobuf enum <code>AUDIENCE = 7;</code>
      */
-    const AUDIENCE = 7;
+    public const AUDIENCE = 7;
     /**
      * When multiple rules are applied.
      *
      * Generated from protobuf enum <code>MULTIPLE = 8;</code>
      */
-    const MULTIPLE = 8;
+    public const MULTIPLE = 8;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::NO_RULE_APPLIED => 'NO_RULE_APPLIED',
@@ -85,7 +85,7 @@ class ConversionValueRulePrimaryDimension
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -93,10 +93,10 @@ class ConversionValueRulePrimaryDimension
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

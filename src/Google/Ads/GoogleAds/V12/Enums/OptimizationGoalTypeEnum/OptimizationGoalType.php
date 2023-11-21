@@ -18,20 +18,20 @@ class OptimizationGoalType
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used as a return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Optimize for call clicks. Call click conversions are times people
      * selected 'Call' to contact a store after viewing an ad.
      *
      * Generated from protobuf enum <code>CALL_CLICKS = 2;</code>
      */
-    const CALL_CLICKS = 2;
+    public const CALL_CLICKS = 2;
     /**
      * Optimize for driving directions. Driving directions conversions are
      * times people selected 'Get directions' to navigate to a store after
@@ -39,7 +39,7 @@ class OptimizationGoalType
      *
      * Generated from protobuf enum <code>DRIVING_DIRECTIONS = 3;</code>
      */
-    const DRIVING_DIRECTIONS = 3;
+    public const DRIVING_DIRECTIONS = 3;
     /**
      * Optimize for pre-registration. Pre-registration conversions are the
      * number of pre-registration signups to receive a notification when the app
@@ -47,9 +47,9 @@ class OptimizationGoalType
      *
      * Generated from protobuf enum <code>APP_PRE_REGISTRATION = 4;</code>
      */
-    const APP_PRE_REGISTRATION = 4;
+    public const APP_PRE_REGISTRATION = 4;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::CALL_CLICKS => 'CALL_CLICKS',
@@ -61,7 +61,7 @@ class OptimizationGoalType
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -69,10 +69,10 @@ class OptimizationGoalType
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

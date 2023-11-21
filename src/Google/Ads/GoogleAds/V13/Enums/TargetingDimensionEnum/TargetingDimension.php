@@ -18,13 +18,13 @@ class TargetingDimension
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * Used for return value only. Represents value unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Keyword criteria, for example, 'mars cruise'. KEYWORD may be used as a
      * custom bid dimension. Keywords are always a targeting dimension, so may
@@ -32,33 +32,33 @@ class TargetingDimension
      *
      * Generated from protobuf enum <code>KEYWORD = 2;</code>
      */
-    const KEYWORD = 2;
+    public const KEYWORD = 2;
     /**
      * Audience criteria, which include user list, user interest, custom
      * affinity,  and custom in market.
      *
      * Generated from protobuf enum <code>AUDIENCE = 3;</code>
      */
-    const AUDIENCE = 3;
+    public const AUDIENCE = 3;
     /**
      * Topic criteria for targeting categories of content, for example,
      * 'category::Animals>Pets' Used for Display and Video targeting.
      *
      * Generated from protobuf enum <code>TOPIC = 4;</code>
      */
-    const TOPIC = 4;
+    public const TOPIC = 4;
     /**
      * Criteria for targeting gender.
      *
      * Generated from protobuf enum <code>GENDER = 5;</code>
      */
-    const GENDER = 5;
+    public const GENDER = 5;
     /**
      * Criteria for targeting age ranges.
      *
      * Generated from protobuf enum <code>AGE_RANGE = 6;</code>
      */
-    const AGE_RANGE = 6;
+    public const AGE_RANGE = 6;
     /**
      * Placement criteria, which include websites like 'www.flowers4sale.com',
      * as well as mobile applications, mobile app categories, YouTube videos,
@@ -66,21 +66,21 @@ class TargetingDimension
      *
      * Generated from protobuf enum <code>PLACEMENT = 7;</code>
      */
-    const PLACEMENT = 7;
+    public const PLACEMENT = 7;
     /**
      * Criteria for parental status targeting.
      *
      * Generated from protobuf enum <code>PARENTAL_STATUS = 8;</code>
      */
-    const PARENTAL_STATUS = 8;
+    public const PARENTAL_STATUS = 8;
     /**
      * Criteria for income range targeting.
      *
      * Generated from protobuf enum <code>INCOME_RANGE = 9;</code>
      */
-    const INCOME_RANGE = 9;
+    public const INCOME_RANGE = 9;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::KEYWORD => 'KEYWORD',
@@ -97,7 +97,7 @@ class TargetingDimension
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -105,10 +105,10 @@ class TargetingDimension
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }

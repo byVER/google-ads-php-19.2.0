@@ -5,7 +5,7 @@ return [
         'google.ads.googleads.v14.services.MediaFileService' => [
             'MutateMediaFiles' => [
                 'callType' => \Google\ApiCore\Call::UNARY_CALL,
-                'responseType' => 'Google\Ads\GoogleAds\V14\Services\MutateMediaFilesResponse',
+                'responseType' => \Google\Ads\GoogleAds\V14\Services\MutateMediaFilesResponse::class,
                 'headerParams' => [
                     [
                         'keyName' => 'customer_id',

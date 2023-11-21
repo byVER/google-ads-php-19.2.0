@@ -26,8 +26,8 @@ use InvalidArgumentException;
  */
 abstract class AbstractGoogleAdsBuilder implements GoogleAdsBuilder
 {
-    private $configurationLoader;
-    private $environmentalVariables;
+    private \Google\Ads\GoogleAds\Lib\ConfigurationLoader $configurationLoader;
+    private \Google\Ads\GoogleAds\Util\EnvironmentalVariables $environmentalVariables;
 
     public function __construct(
         ConfigurationLoader $configurationLoader = null,

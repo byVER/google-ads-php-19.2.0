@@ -18,171 +18,171 @@ class ReachPlanAgeRange
      *
      * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNSPECIFIED = 0;
+    public const UNSPECIFIED = 0;
     /**
      * The value is unknown in this version.
      *
      * Generated from protobuf enum <code>UNKNOWN = 1;</code>
      */
-    const UNKNOWN = 1;
+    public const UNKNOWN = 1;
     /**
      * Between 18 and 24 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_18_24 = 503001;</code>
      */
-    const AGE_RANGE_18_24 = 503001;
+    public const AGE_RANGE_18_24 = 503001;
     /**
      * Between 18 and 34 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_18_34 = 2;</code>
      */
-    const AGE_RANGE_18_34 = 2;
+    public const AGE_RANGE_18_34 = 2;
     /**
      * Between 18 and 44 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_18_44 = 3;</code>
      */
-    const AGE_RANGE_18_44 = 3;
+    public const AGE_RANGE_18_44 = 3;
     /**
      * Between 18 and 49 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_18_49 = 4;</code>
      */
-    const AGE_RANGE_18_49 = 4;
+    public const AGE_RANGE_18_49 = 4;
     /**
      * Between 18 and 54 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_18_54 = 5;</code>
      */
-    const AGE_RANGE_18_54 = 5;
+    public const AGE_RANGE_18_54 = 5;
     /**
      * Between 18 and 64 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_18_64 = 6;</code>
      */
-    const AGE_RANGE_18_64 = 6;
+    public const AGE_RANGE_18_64 = 6;
     /**
      * Between 18 and 65+ years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_18_65_UP = 7;</code>
      */
-    const AGE_RANGE_18_65_UP = 7;
+    public const AGE_RANGE_18_65_UP = 7;
     /**
      * Between 21 and 34 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_21_34 = 8;</code>
      */
-    const AGE_RANGE_21_34 = 8;
+    public const AGE_RANGE_21_34 = 8;
     /**
      * Between 25 and 34 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_25_34 = 503002;</code>
      */
-    const AGE_RANGE_25_34 = 503002;
+    public const AGE_RANGE_25_34 = 503002;
     /**
      * Between 25 and 44 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_25_44 = 9;</code>
      */
-    const AGE_RANGE_25_44 = 9;
+    public const AGE_RANGE_25_44 = 9;
     /**
      * Between 25 and 49 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_25_49 = 10;</code>
      */
-    const AGE_RANGE_25_49 = 10;
+    public const AGE_RANGE_25_49 = 10;
     /**
      * Between 25 and 54 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_25_54 = 11;</code>
      */
-    const AGE_RANGE_25_54 = 11;
+    public const AGE_RANGE_25_54 = 11;
     /**
      * Between 25 and 64 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_25_64 = 12;</code>
      */
-    const AGE_RANGE_25_64 = 12;
+    public const AGE_RANGE_25_64 = 12;
     /**
      * Between 25 and 65+ years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_25_65_UP = 13;</code>
      */
-    const AGE_RANGE_25_65_UP = 13;
+    public const AGE_RANGE_25_65_UP = 13;
     /**
      * Between 35 and 44 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_35_44 = 503003;</code>
      */
-    const AGE_RANGE_35_44 = 503003;
+    public const AGE_RANGE_35_44 = 503003;
     /**
      * Between 35 and 49 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_35_49 = 14;</code>
      */
-    const AGE_RANGE_35_49 = 14;
+    public const AGE_RANGE_35_49 = 14;
     /**
      * Between 35 and 54 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_35_54 = 15;</code>
      */
-    const AGE_RANGE_35_54 = 15;
+    public const AGE_RANGE_35_54 = 15;
     /**
      * Between 35 and 64 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_35_64 = 16;</code>
      */
-    const AGE_RANGE_35_64 = 16;
+    public const AGE_RANGE_35_64 = 16;
     /**
      * Between 35 and 65+ years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_35_65_UP = 17;</code>
      */
-    const AGE_RANGE_35_65_UP = 17;
+    public const AGE_RANGE_35_65_UP = 17;
     /**
      * Between 45 and 54 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_45_54 = 503004;</code>
      */
-    const AGE_RANGE_45_54 = 503004;
+    public const AGE_RANGE_45_54 = 503004;
     /**
      * Between 45 and 64 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_45_64 = 18;</code>
      */
-    const AGE_RANGE_45_64 = 18;
+    public const AGE_RANGE_45_64 = 18;
     /**
      * Between 45 and 65+ years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_45_65_UP = 19;</code>
      */
-    const AGE_RANGE_45_65_UP = 19;
+    public const AGE_RANGE_45_65_UP = 19;
     /**
      * Between 50 and 65+ years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_50_65_UP = 20;</code>
      */
-    const AGE_RANGE_50_65_UP = 20;
+    public const AGE_RANGE_50_65_UP = 20;
     /**
      * Between 55 and 64 years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_55_64 = 503005;</code>
      */
-    const AGE_RANGE_55_64 = 503005;
+    public const AGE_RANGE_55_64 = 503005;
     /**
      * Between 55 and 65+ years old.
      *
      * Generated from protobuf enum <code>AGE_RANGE_55_65_UP = 21;</code>
      */
-    const AGE_RANGE_55_65_UP = 21;
+    public const AGE_RANGE_55_65_UP = 21;
     /**
      * 65 years old and beyond.
      *
      * Generated from protobuf enum <code>AGE_RANGE_65_UP = 503006;</code>
      */
-    const AGE_RANGE_65_UP = 503006;
+    public const AGE_RANGE_65_UP = 503006;
 
-    private static $valueToName = [
+    private static array $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
         self::UNKNOWN => 'UNKNOWN',
         self::AGE_RANGE_18_24 => 'AGE_RANGE_18_24',
@@ -217,7 +217,7 @@ class ReachPlanAgeRange
     {
         if (!isset(self::$valueToName[$value])) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no name defined for value %s', __CLASS__, $value));
+                    'Enum %s has no name defined for value %s', self::class, $value));
         }
         return self::$valueToName[$value];
     }
@@ -225,10 +225,10 @@ class ReachPlanAgeRange
 
     public static function value($name)
     {
-        $const = __CLASS__ . '::' . strtoupper($name);
+        $const = self::class . '::' . strtoupper($name);
         if (!defined($const)) {
             throw new UnexpectedValueException(sprintf(
-                    'Enum %s has no value defined for name %s', __CLASS__, $name));
+                    'Enum %s has no value defined for name %s', self::class, $name));
         }
         return constant($const);
     }
