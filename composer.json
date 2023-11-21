@@ -1,5 +1,5 @@
 {
-  "name": "googleads/google-ads-php",
+  "name": "byver/google-ads-php-19.2.0",
   "homepage": "https://github.com/googleads/google-ads-php",
   "description": "Google Ads API client for PHP",
   "require": {
